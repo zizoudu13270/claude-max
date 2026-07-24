@@ -1,0 +1,14 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "psu:recycle_emerald_pickaxe"
+        },
+        "tags": [
+            "furnace",
+            "blast_furnace"
+        ],
+        "input": "psu:emerald_pickaxe",
+        "output": "minecraft:emerald"
+    }
+}

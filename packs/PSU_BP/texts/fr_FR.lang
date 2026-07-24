@@ -1,0 +1,6 @@
+## ============================================================
+##  Pack Survie Ultime - pack de comportement - Français (fr_FR)
+## ============================================================
+
+pack.name=Pack Survie Ultime
+pack.description=Abattage d'arbres, minage de filons, lumière dynamique, vraie main gauche, étiquettes de butin, coffre-tombe et 12 autres modules de confort. Entièrement bilingue FR/EN, chaque module se désactive dans scripts/config.js.

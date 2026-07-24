@@ -1,0 +1,28 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "psu:lantern_compat"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "NNN",
+            "NTN",
+            "NNN"
+        ],
+        "key": {
+            "N": {
+                "item": "minecraft:iron_nugget"
+            },
+            "T": {
+                "item": "psu:torch"
+            }
+        },
+        "result": {
+            "item": "minecraft:lantern",
+            "count": 1
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "psu:recycle_leather_helmet"
+        },
+        "tags": [
+            "furnace"
+        ],
+        "input": "minecraft:leather_helmet",
+        "output": "minecraft:leather"
+    }
+}

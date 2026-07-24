@@ -1,0 +1,21 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "psu:redstone_torch"
+        },
+        "components": {
+            "minecraft:icon": {
+                "texture": "psu_redstone_torch"
+            },
+            "minecraft:display_name": {
+                "value": "item.psu.redstone_torch.name"
+            },
+            "minecraft:max_stack_size": 64,
+            "minecraft:allow_off_hand": true,
+            "minecraft:block_placer": {
+                "block": "minecraft:redstone_torch"
+            }
+        }
+    }
+}

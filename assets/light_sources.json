@@ -1,0 +1,43 @@
+{
+  "_comment": [
+    "Single source of truth for the custom light-source twins.",
+    "tools/generate_items.py regenerates the behaviour-pack items, the",
+    "resource-pack attachables and textures/item_texture.json from this file.",
+    "tools/validate.py checks that scripts/lightmap.js and the .lang files",
+    "agree with it.",
+    "",
+    "name          : psu:<name> identifier and psu_<name> texture alias",
+    "vanilla_item  : the vanilla item the twin is converted from / back to",
+    "vanilla_block : the block minecraft:block_placer actually places",
+    "texture       : vanilla texture path used for the icon and the held model",
+    "animated      : the vanilla texture is a flipbook strip (16 x 16n). Those",
+    "                get a flipbook declaration so the icon animates instead of",
+    "                showing the whole strip squashed, and they get NO",
+    "                attachable: a flat attachable quad cannot play a flipbook,",
+    "                so the default item sprite renderer is used in hand."
+  ],
+  "twins": [
+    { "name": "torch", "vanilla_item": "minecraft:torch", "vanilla_block": "minecraft:torch", "texture": "textures/blocks/torch_on" },
+    { "name": "soul_torch", "vanilla_item": "minecraft:soul_torch", "vanilla_block": "minecraft:soul_torch", "texture": "textures/blocks/soul_torch" },
+    { "name": "redstone_torch", "vanilla_item": "minecraft:redstone_torch", "vanilla_block": "minecraft:redstone_torch", "texture": "textures/blocks/redstone_torch_on" },
+    { "name": "lantern", "vanilla_item": "minecraft:lantern", "vanilla_block": "minecraft:lantern", "texture": "textures/blocks/lantern" },
+    { "name": "soul_lantern", "vanilla_item": "minecraft:soul_lantern", "vanilla_block": "minecraft:soul_lantern", "texture": "textures/blocks/soul_lantern" },
+    { "name": "glowstone", "vanilla_item": "minecraft:glowstone", "vanilla_block": "minecraft:glowstone", "texture": "textures/blocks/glowstone" },
+    { "name": "sea_lantern", "vanilla_item": "minecraft:sea_lantern", "vanilla_block": "minecraft:sea_lantern", "texture": "textures/blocks/sea_lantern", "animated": true },
+    { "name": "shroomlight", "vanilla_item": "minecraft:shroomlight", "vanilla_block": "minecraft:shroomlight", "texture": "textures/blocks/shroomlight" },
+    { "name": "end_rod", "vanilla_item": "minecraft:end_rod", "vanilla_block": "minecraft:end_rod", "texture": "textures/blocks/end_rod" },
+    { "name": "magma", "vanilla_item": "minecraft:magma", "vanilla_block": "minecraft:magma", "texture": "textures/blocks/magma", "animated": true },
+    { "name": "crying_obsidian", "vanilla_item": "minecraft:crying_obsidian", "vanilla_block": "minecraft:crying_obsidian", "texture": "textures/blocks/crying_obsidian" },
+    { "name": "ochre_froglight", "vanilla_item": "minecraft:ochre_froglight", "vanilla_block": "minecraft:ochre_froglight", "texture": "textures/blocks/ochre_froglight_side" },
+    { "name": "verdant_froglight", "vanilla_item": "minecraft:verdant_froglight", "vanilla_block": "minecraft:verdant_froglight", "texture": "textures/blocks/verdant_froglight_side" },
+    { "name": "pearlescent_froglight", "vanilla_item": "minecraft:pearlescent_froglight", "vanilla_block": "minecraft:pearlescent_froglight", "texture": "textures/blocks/pearlescent_froglight_side" },
+    { "name": "campfire", "vanilla_item": "minecraft:campfire", "vanilla_block": "minecraft:campfire", "texture": "textures/items/campfire" },
+    { "name": "soul_campfire", "vanilla_item": "minecraft:soul_campfire", "vanilla_block": "minecraft:soul_campfire", "texture": "textures/items/soul_campfire" },
+    { "name": "beacon", "vanilla_item": "minecraft:beacon", "vanilla_block": "minecraft:beacon", "texture": "textures/blocks/beacon" },
+    { "name": "jack_o_lantern", "vanilla_item": "minecraft:lit_pumpkin", "vanilla_block": "minecraft:lit_pumpkin", "texture": "textures/blocks/pumpkin_face_on" }
+  ],
+  "standalone_textures": {
+    "psu_emerald_pickaxe": "textures/items/psu_emerald_pickaxe",
+    "psu_axe_anim": "textures/items/psu_axe_anim"
+  }
+}

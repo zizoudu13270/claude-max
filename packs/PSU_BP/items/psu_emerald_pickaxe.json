@@ -1,0 +1,57 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "psu:emerald_pickaxe",
+            "menu_category": {
+                "category": "equipment",
+                "group": "itemGroup.name.pickaxe"
+            }
+        },
+        "components": {
+            "minecraft:icon": {
+                "texture": "psu_emerald_pickaxe"
+            },
+            "minecraft:display_name": {
+                "value": "item.psu.emerald_pickaxe.name"
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:damage": 5,
+            "minecraft:durability": {
+                "max_durability": 1561
+            },
+            "minecraft:enchantable": {
+                "value": 10,
+                "slot": "pickaxe"
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "minecraft:emerald"
+                        ],
+                        "repair_amount": 200
+                    }
+                ]
+            },
+            "minecraft:digger": {
+                "use_efficiency": true,
+                "destroy_speeds": [
+                    {
+                        "block": {
+                            "tags": "q.any_tag('stone','metal','diamond_pick_diggable','mob_spawner','rail')"
+                        },
+                        "speed": 8
+                    }
+                ]
+            },
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:is_pickaxe",
+                    "minecraft:diamond_tier"
+                ]
+            }
+        }
+    }
+}

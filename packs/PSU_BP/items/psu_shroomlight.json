@@ -1,0 +1,21 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "psu:shroomlight"
+        },
+        "components": {
+            "minecraft:icon": {
+                "texture": "psu_shroomlight"
+            },
+            "minecraft:display_name": {
+                "value": "item.psu.shroomlight.name"
+            },
+            "minecraft:max_stack_size": 64,
+            "minecraft:allow_off_hand": true,
+            "minecraft:block_placer": {
+                "block": "minecraft:shroomlight"
+            }
+        }
+    }
+}

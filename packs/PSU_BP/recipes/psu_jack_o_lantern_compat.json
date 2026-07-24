@@ -1,0 +1,27 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "psu:jack_o_lantern_compat"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "P",
+            "T"
+        ],
+        "key": {
+            "P": {
+                "item": "minecraft:carved_pumpkin"
+            },
+            "T": {
+                "item": "psu:torch"
+            }
+        },
+        "result": {
+            "item": "minecraft:lit_pumpkin",
+            "count": 1
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "psu:comparator_compat"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " T ",
+            "TQT",
+            "III"
+        ],
+        "key": {
+            "T": {
+                "item": "psu:redstone_torch"
+            },
+            "Q": {
+                "item": "minecraft:quartz"
+            },
+            "I": {
+                "item": "minecraft:stone"
+            }
+        },
+        "result": {
+            "item": "minecraft:comparator",
+            "count": 1
+        }
+    }
+}

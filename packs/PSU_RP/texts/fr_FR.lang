@@ -1,0 +1,96 @@
+## ============================================================
+##  Pack Survie Ultime - Français (fr_FR)
+##
+##  Chaque clé de ce fichier existe aussi dans en_US.lang.
+##  tools/validate.py échoue si les deux fichiers divergent.
+## ============================================================
+
+pack.name=Pack Survie Ultime - Ressources
+pack.description=Ressources du Pack Survie Ultime : modèles des objets en main gauche, icônes animées, étiquettes de butin flottantes et traduction complète anglais/français.
+
+## --- Objets -------------------------------------------------
+item.psu.torch.name=Torche
+item.psu.soul_torch.name=Torche des âmes
+item.psu.redstone_torch.name=Torche de redstone
+item.psu.lantern.name=Lanterne
+item.psu.soul_lantern.name=Lanterne des âmes
+item.psu.glowstone.name=Pierre lumineuse
+item.psu.sea_lantern.name=Lanterne aquatique
+item.psu.shroomlight.name=Champilumière
+item.psu.end_rod.name=Barre de l'End
+item.psu.magma.name=Bloc de magma
+item.psu.crying_obsidian.name=Obsidienne pleureuse
+item.psu.ochre_froglight.name=Luminogrenouille ocre
+item.psu.verdant_froglight.name=Luminogrenouille verdoyante
+item.psu.pearlescent_froglight.name=Luminogrenouille nacrée
+item.psu.campfire.name=Feu de camp
+item.psu.soul_campfire.name=Feu de camp des âmes
+item.psu.beacon.name=Balise
+item.psu.jack_o_lantern.name=Citrouille-lanterne
+item.psu.emerald_pickaxe.name=Pioche en émeraude
+item.psu.icone_animee.name=Icône animée (démo)
+
+## --- Entités ------------------------------------------------
+entity.psu:loot_label.name=Étiquette de butin
+
+## --- Démarrage ----------------------------------------------
+psu.load.title=§a[Pack Survie Ultime v%s] §factif §7(%s/%s modules)
+psu.load.failed=§cModules en échec : §f%s
+psu.load.hint.offhand=§7Main gauche : §faccroupi + saut§7, ou §faccroupi + clic dans le vide§7.
+psu.load.hint.help=§7Diagnostic : §f/scriptevent psu:diag §7| Aide : §f/scriptevent psu:aide
+
+## --- Aide ---------------------------------------------------
+psu.help.header=§e--- Pack Survie Ultime : aide ---
+psu.help.offhand=§7Main gauche : §faccroupi + saut §7ou §faccroupi + clic dans le vide
+psu.help.sort=§7Trier un conteneur : §faccroupi + clic dessus
+psu.help.replant=§7Récolte auto : §fclic sur une culture mûre
+psu.help.anvil=§7Enclume : §fclic avec un lingot de fer sur une enclume abîmée
+psu.help.spawner=§7Générateur : §fmine-le avec une pioche Toucher de Soie
+psu.help.tree=§7Abattage : §fcasse une bûche avec une hache §7(accroupi = une seule bûche)
+psu.help.vein=§7Filon : §fcasse un minerai avec une pioche §7(accroupi = un seul bloc)
+psu.help.commands=§7Commandes : §f/scriptevent psu:diag, psu:mort, psu:trier, psu:poubelle, psu:lumiere, psu:cleanlight, psu:swap, psu:vanilla
+
+## --- Diagnostic ---------------------------------------------
+psu.diag.header=§e--- Pack Survie Ultime v%s ---
+psu.diag.modules=§7Actifs : §f%s
+psu.diag.disabled=§7Désactivés : §f%s
+psu.diag.failed=§7En échec : §f%s
+psu.diag.labels=§7Étiquettes : §f%s §7(%s actives)
+psu.diag.labeltest=§7Test d'étiquette : §f%s
+psu.diag.light=§7Lumière dynamique : §f%s §7| posées : §f%s §7| échecs : §f%s
+psu.diag.lighttest=§7Test de lumière : §f%s
+psu.diag.held=§7Source lumineuse tenue : §f%s
+psu.diag.offhand=§7Emplacement main gauche : §f%s
+psu.diag.twins=§7Jumeaux définis : §f%s §7| remplacement total : §f%s
+
+## --- Réponses aux commandes ---------------------------------
+psu.cmd.light=§7Test de lumière : §f%s
+psu.cmd.cleanlight=§7Blocs de lumière orphelins retirés : §f%s
+psu.cmd.swap=§7Échange des mains : §f%s
+psu.cmd.vanilla=§7Piles reconverties en vanilla : §f%s
+psu.cmd.death=§7Dernière mort :
+psu.cmd.sort=§7Tri terminé : §f%s §7emplacement(s) utilisé(s)
+
+## --- Main gauche --------------------------------------------
+psu.offhand.rejected=§cRefusé en main gauche : §f%s
+psu.offhand.set=§7Main gauche : §f%s
+psu.offhand.cleared=§7Main gauche : §8vide
+
+## --- Modules ------------------------------------------------
+psu.anvil.repaired=§7Enclume réparée
+psu.spawner.recovered=§7Générateur récupéré §8(vide : utilise un œuf dessus)
+psu.sorter.done=§7Contenu trié §8(%s emplacements)
+psu.sorter.error=§cLe tri a échoué.
+psu.trash.done=§7Détruit : §f%sx %s
+psu.trash.empty=§7Ta main est vide.
+
+## --- Marqueur de mort ---------------------------------------
+psu.death.title=§c§lTu es mort.
+psu.death.coords=§7Coordonnées : §f%s %s %s
+psu.death.grave=§7Un coffre contenant §f%s §7pile(s) t'attend sur place.
+psu.death.reminder=§8Rappel : /scriptevent psu:mort
+psu.death.none=§8aucune mort enregistrée depuis le chargement du monde
+
+psu.dim.overworld=§7(Surface)
+psu.dim.nether=§7(Nether)
+psu.dim.end=§7(End)

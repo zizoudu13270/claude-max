@@ -1,0 +1,96 @@
+## ============================================================
+##  Ultimate Survival Pack - English (en_US)
+##
+##  Every key below is also present in fr_FR.lang.
+##  tools/validate.py fails the build if the two ever drift apart.
+## ============================================================
+
+pack.name=Ultimate Survival Pack - Resources
+pack.description=Resources for the Ultimate Survival Pack: off-hand item models, animated icons, floating loot labels and the full English/French translation.
+
+## --- Items --------------------------------------------------
+item.psu.torch.name=Torch
+item.psu.soul_torch.name=Soul Torch
+item.psu.redstone_torch.name=Redstone Torch
+item.psu.lantern.name=Lantern
+item.psu.soul_lantern.name=Soul Lantern
+item.psu.glowstone.name=Glowstone
+item.psu.sea_lantern.name=Sea Lantern
+item.psu.shroomlight.name=Shroomlight
+item.psu.end_rod.name=End Rod
+item.psu.magma.name=Magma Block
+item.psu.crying_obsidian.name=Crying Obsidian
+item.psu.ochre_froglight.name=Ochre Froglight
+item.psu.verdant_froglight.name=Verdant Froglight
+item.psu.pearlescent_froglight.name=Pearlescent Froglight
+item.psu.campfire.name=Campfire
+item.psu.soul_campfire.name=Soul Campfire
+item.psu.beacon.name=Beacon
+item.psu.jack_o_lantern.name=Jack o'Lantern
+item.psu.emerald_pickaxe.name=Emerald Pickaxe
+item.psu.icone_animee.name=Animated Icon (demo)
+
+## --- Entities -----------------------------------------------
+entity.psu:loot_label.name=Loot Label
+
+## --- Start-up -----------------------------------------------
+psu.load.title=§a[Ultimate Survival Pack v%s] §factive §7(%s/%s modules)
+psu.load.failed=§cModules that failed to load: §f%s
+psu.load.hint.offhand=§7Off-hand: §fsneak + jump§7, or §fsneak + tap on empty air§7.
+psu.load.hint.help=§7Diagnostics: §f/scriptevent psu:diag §7| Help: §f/scriptevent psu:help
+
+## --- Help ---------------------------------------------------
+psu.help.header=§e--- Ultimate Survival Pack: help ---
+psu.help.offhand=§7Off-hand: §fsneak + jump §7or §fsneak + tap on empty air
+psu.help.sort=§7Sort a container: §fsneak + tap on it
+psu.help.replant=§7Auto harvest: §ftap a fully grown crop
+psu.help.anvil=§7Anvil: §ftap a damaged anvil with an iron ingot
+psu.help.spawner=§7Spawner: §fmine it with a Silk Touch pickaxe
+psu.help.tree=§7TreeCapitator: §fbreak a log with an axe §7(sneak to fell one log)
+psu.help.vein=§7VeinMiner: §fbreak an ore with a pickaxe §7(sneak to mine one block)
+psu.help.commands=§7Commands: §f/scriptevent psu:diag, psu:death, psu:sort, psu:trash, psu:light, psu:cleanlight, psu:swap, psu:vanilla
+
+## --- Diagnostics --------------------------------------------
+psu.diag.header=§e--- Ultimate Survival Pack v%s ---
+psu.diag.modules=§7Active: §f%s
+psu.diag.disabled=§7Turned off: §f%s
+psu.diag.failed=§7Failed: §f%s
+psu.diag.labels=§7Loot labels: §f%s §7(%s active)
+psu.diag.labeltest=§7Label probe: §f%s
+psu.diag.light=§7Dynamic light: §f%s §7| placed: §f%s §7| failed: §f%s
+psu.diag.lighttest=§7Light probe: §f%s
+psu.diag.held=§7Held light source: §f%s
+psu.diag.offhand=§7Off-hand slot: §f%s
+psu.diag.twins=§7Light twins defined: §f%s §7| full replacement: §f%s
+
+## --- Command replies ----------------------------------------
+psu.cmd.light=§7Light test: §f%s
+psu.cmd.cleanlight=§7Stray light blocks removed: §f%s
+psu.cmd.swap=§7Hand swap: §f%s
+psu.cmd.vanilla=§7Stacks converted back to vanilla: §f%s
+psu.cmd.death=§7Last death:
+psu.cmd.sort=§7Sorted: §f%s §7slot(s) in use
+
+## --- Off-hand -----------------------------------------------
+psu.offhand.rejected=§cThe off-hand slot refuses: §f%s
+psu.offhand.set=§7Off-hand: §f%s
+psu.offhand.cleared=§7Off-hand: §8empty
+
+## --- Modules ------------------------------------------------
+psu.anvil.repaired=§7Anvil repaired
+psu.spawner.recovered=§7Spawner collected §8(empty: use a spawn egg on it)
+psu.sorter.done=§7Contents sorted §8(%s slots)
+psu.sorter.error=§cSorting failed.
+psu.trash.done=§7Destroyed: §f%sx %s
+psu.trash.empty=§7Your hand is empty.
+
+## --- Death marker -------------------------------------------
+psu.death.title=§c§lYou died.
+psu.death.coords=§7Coordinates: §f%s %s %s
+psu.death.grave=§7A chest holding §f%s §7stack(s) is waiting for you there.
+psu.death.reminder=§8Reminder: /scriptevent psu:death
+psu.death.none=§8no death recorded since the world was loaded
+
+psu.dim.overworld=§7(Overworld)
+psu.dim.nether=§7(Nether)
+psu.dim.end=§7(The End)

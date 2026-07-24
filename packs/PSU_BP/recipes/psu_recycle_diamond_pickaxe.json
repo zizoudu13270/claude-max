@@ -1,0 +1,14 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "psu:recycle_diamond_pickaxe"
+        },
+        "tags": [
+            "furnace",
+            "blast_furnace"
+        ],
+        "input": "minecraft:diamond_pickaxe",
+        "output": "minecraft:diamond"
+    }
+}
