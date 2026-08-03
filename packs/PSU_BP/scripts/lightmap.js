@@ -3,11 +3,14 @@
 //
 //  To add one:
 //    1. one line in TO_CUSTOM below,
-//    2. one file in PSU_BP/items/,
-//    3. one attachable in PSU_RP/attachables/,
-//    4. one entry in PSU_RP/textures/item_texture.json,
-//    5. one name key in PSU_RP/texts/*.lang.
-//  `tools/validate.py` fails the build if any of the five is missing.
+//    2. one entry in assets/light_sources.json, then run
+//       `python3 tools/generate_items.py` to write PSU_BP/items/,
+//    3. one name key in PSU_RP/texts/*.lang (both languages).
+//  `tools/validate.py` fails the build if any of the three is missing.
+//
+//  No icon and no attachable: the twins are drawn by the engine's own
+//  item renderer, which is the only thing that gets a block right both
+//  in the inventory and in the off-hand. See tools/generate_items.py.
 // ============================================================
 
 // vanilla -> custom twin (the twins are the only items Bedrock lets

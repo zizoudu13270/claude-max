@@ -6,7 +6,7 @@
 ## ============================================================
 
 pack.name=Ultimate Survival Pack - Resources
-pack.description=Resources for the Ultimate Survival Pack: off-hand item models, animated icons, floating loot labels and the full English/French translation.
+pack.description=The resource half of the Ultimate Survival Pack by LBR: the animated tier icon, the emerald pickaxe sprite, the floating loot labels and the complete English and French translation. Enable it alongside the behaviour pack - on its own it draws nothing.
 
 ## --- Items --------------------------------------------------
 item.psu.torch.name=Torch

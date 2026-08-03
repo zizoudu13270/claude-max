@@ -22,7 +22,7 @@ import { initAutoTool } from "./autotool.js";
 import { initTrash, trashHeld } from "./trash.js";
 import { initEmeraldPickaxe } from "./emeraldpick.js";
 
-const VERSION = "4.0.0";
+const VERSION = "4.1.0";
 
 // ------------------------------------------------------------
 //  Module registry. Each module is isolated: one failing module

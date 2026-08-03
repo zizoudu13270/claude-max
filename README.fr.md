@@ -1,4 +1,4 @@
-# Pack Survie Ultime — v4.0.0
+# Pack Survie Ultime — v4.1.0
 
 *[English version](README.md)*
 
@@ -9,11 +9,12 @@ le tout en français et en anglais, choisi automatiquement pour chaque joueur.
 
 | | |
 |---|---|
-| **Version** | 4.0.0 |
-| **Minecraft minimum** | Bedrock 1.21.0 |
+| **Créateur** | LBR |
+| **Version** | 4.1.0 |
+| **Minecraft minimum** | Bedrock 1.21.50 |
 | **API de script** | `@minecraft/server` 1.11.0 |
 | **Langues** | Français (`fr_FR`), anglais (`en_US`) |
-| **Téléchargement** | [`dist/Pack_Survie_Ultime_v4.0.0.mcaddon`](dist/Pack_Survie_Ultime_v4.0.0.mcaddon) |
+| **Téléchargement** | [`dist/Pack_Survie_Ultime_v4.1.0.mcaddon`](dist/Pack_Survie_Ultime_v4.1.0.mcaddon) |
 
 ---
 
@@ -150,6 +151,14 @@ La vitesse se règle avec `ticks_per_frame` dans `flipbook_textures.json`
 dans `assets/frames/` (elles défilent dans l'ordre des noms de fichiers) et
 lance `python3 tools/make_assets.py`.
 
+### S'il te faut une icône animée pour une page de vente
+
+`tools/make_assets.py` écrit aussi **`dist/pack_icon_animated.gif`** : les mêmes
+sept images en GIF bouclé. Le jeu ne le lira pas, mais une fiche Marketplace,
+une miniature ou une bande-annonce si — et c'est le seul endroit où une icône
+animée peut réellement s'afficher. `packs/*/pack_icon.png` reste un rendu fixe
+en 256×256, parce que c'est tout ce que la liste des packs sait dessiner.
+
 ---
 
 ## Développement
@@ -157,16 +166,16 @@ lance `python3 tools/make_assets.py`.
 ```
 assets/            images source + table des sources de lumière
 packs/PSU_BP/      pack de comportement : objets, recettes, entités, scripts
-packs/PSU_RP/      pack de ressources : attachables, modèles, textures, traductions
+packs/PSU_RP/      pack de ressources : textures, traductions, entité étiquette de butin
 tools/             générateurs, validateur et tests
 dist/              le .mcaddon construit
 ```
 
 ```bash
-python3 tools/generate_items.py   # régénère objets / attachables / textures
+python3 tools/generate_items.py   # régénère objets + atlas de textures
 python3 tools/make_assets.py      # reconstruit la planche flipbook et les icônes
-python3 tools/validate.py         # 780+ contrôles structurels
-node    tools/test_scripts.mjs    # 37 tests unitaires et de non-régression
+python3 tools/validate.py         # 753 contrôles structurels
+node    tools/test_scripts.mjs    # 45 tests unitaires et de non-régression
 python3 tools/build.py            # valide + teste + empaquette le .mcaddon
 ```
 
@@ -206,4 +215,4 @@ personne n'y passe une soirée.
 ## Journal des modifications
 
 Voir [CHANGELOG.md](CHANGELOG.md) pour la liste complète des correctifs de la
-4.0.0.
+4.1.0.

@@ -1,13 +1,10 @@
 {
-    "format_version": "1.20.80",
+    "format_version": "1.21.50",
     "minecraft:item": {
         "description": {
             "identifier": "psu:crying_obsidian"
         },
         "components": {
-            "minecraft:icon": {
-                "texture": "psu_crying_obsidian"
-            },
             "minecraft:display_name": {
                 "value": "item.psu.crying_obsidian.name"
             },

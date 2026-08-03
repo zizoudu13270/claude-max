@@ -85,8 +85,15 @@ def check_manifests():
               f"{name} manifest: header.description should be the 'pack.description' key")
         check(isinstance(header.get("version"), list) and len(header["version"]) == 3,
               f"{name} manifest: header.version must be [major, minor, patch]")
-        check(header.get("min_engine_version") == [1, 21, 0],
-              f"{name} manifest: min_engine_version must stay [1, 21, 0]")
+        # 1.21.50 is the floor for minecraft:block_placer standing in for
+        # minecraft:icon, which is how the light twins get a real block icon.
+        check(header.get("min_engine_version") == [1, 21, 50],
+              f"{name} manifest: min_engine_version must stay [1, 21, 50] - the "
+              f"items rely on format_version 1.21.50")
+
+        authors = manifest.get("metadata", {}).get("authors", [])
+        check("LBR" in authors,
+              f"{name} manifest: metadata.authors must credit LBR")
 
         for module in manifest.get("modules", []):
             uuids.append(module.get("uuid"))
@@ -140,21 +147,22 @@ def check_items_and_textures():
     texture_data = atlas.get("texture_data", {})
 
     langs = {code: parse_lang(RP / "texts" / f"{code}.lang") for code in ("en_US", "fr_FR")}
-    attachable_ids = set()
 
-    for path in sorted((RP / "attachables").glob("*.json")):
-        data = load_json(path)
-        if not data:
-            continue
-        desc = data.get("minecraft:attachable", {}).get("description", {})
-        attachable_ids.add(desc.get("identifier"))
-        check(desc.get("geometry", {}).get("default") == "geometry.psu_item",
-              f"{rel(path)}: geometry must be geometry.psu_item")
-        check(desc.get("render_controllers") == ["controller.render.psu_item"],
-              f"{rel(path)}: unexpected render controller")
-        texture = desc.get("textures", {}).get("default", "")
-        check(texture.startswith("textures/"),
-              f"{rel(path)}: the default texture must be a full path, not an atlas alias")
+    # v4.1 removed every attachable. They drew a flat quad at one hard-coded
+    # pose, which put an off-hand item on the left arm at the main-hand angle.
+    # A leftover file would still win over the engine's own renderer, so the
+    # bug would come back silently - hence a check rather than a comment.
+    stale = sorted((RP / "attachables").glob("*.json")) if (RP / "attachables").is_dir() else []
+    check(not stale,
+          "attachables must not come back: they override the engine renderer and "
+          "reintroduce the off-hand pose bug (" + ", ".join(rel(p) for p in stale) + ")")
+    for leftover, why in (
+        ("models/entity/psu_item.geo.json", "the flat held-item quad"),
+        ("animations/psu_item.animation.json", "the hard-coded hold poses"),
+        ("render_controllers/psu_item.render_controllers.json", "the attachable render controller"),
+    ):
+        check(not (RP / leftover).exists(),
+              f"{leftover} is dead weight now ({why} went with the attachables)")
 
     for path in sorted((BP / "items").glob("*.json")):
         data = load_json(path)
@@ -166,9 +174,20 @@ def check_items_and_textures():
 
         check(identifier.startswith("psu:"), f"{rel(path)}: identifier must live in the psu: namespace")
 
-        alias = components.get("minecraft:icon", {}).get("texture")
-        check(alias in texture_data,
-              f"{rel(path)}: icon alias '{alias}' is missing from item_texture.json (pink chequerboard)")
+        icon = components.get("minecraft:icon")
+        if icon is not None:
+            alias = icon.get("texture")
+            check(alias in texture_data,
+                  f"{rel(path)}: icon alias '{alias}' is missing from item_texture.json "
+                  f"(pink chequerboard)")
+        else:
+            # No icon is only legal when block_placer can supply one instead.
+            check("minecraft:block_placer" in components,
+                  f"{rel(path)}: an item with neither minecraft:icon nor "
+                  f"minecraft:block_placer has no way to draw itself")
+            check(format_at_least(data.get("format_version", ""), (1, 21, 50)),
+                  f"{rel(path)}: block_placer only stands in for minecraft:icon from "
+                  f"format_version 1.21.50 on, found '{data.get('format_version')}'")
 
         expected_key = "item." + identifier.replace(":", ".") + ".name"
         actual_key = components.get("minecraft:display_name", {}).get("value")
@@ -183,6 +202,9 @@ def check_items_and_textures():
         if placer:
             check(components.get("minecraft:allow_off_hand") is True,
                   f"{rel(path)}: a light twin must carry minecraft:allow_off_hand")
+            check("minecraft:icon" not in components,
+                  f"{rel(path)}: drop minecraft:icon - it flattens the block to a 2D "
+                  f"sprite in the inventory; block_placer draws the real block icon")
 
     # Texture files owned by the pack must actually exist.
     for alias, entry in texture_data.items():
@@ -192,13 +214,23 @@ def check_items_and_textures():
         check((RP / f"{texture}.png").exists(),
               f"item_texture.json: '{alias}' points at {texture}.png which is not in the pack")
 
-    return attachable_ids, langs
+    return langs
+
+
+def format_at_least(value: str, minimum: tuple[int, int, int]) -> bool:
+    """True when a "1.21.50"-style format_version is >= minimum."""
+    try:
+        parts = [int(p) for p in str(value).split(".")]
+    except ValueError:
+        return False
+    parts = (parts + [0, 0, 0])[:3]
+    return tuple(parts) >= minimum
 
 
 # ------------------------------------------------------------------
 # 4. the light-source table, the script and the packs agree
 # ------------------------------------------------------------------
-def check_light_table(attachable_ids):
+def check_light_table():
     table = load_json(TABLE)
     if not table:
         return
@@ -218,20 +250,16 @@ def check_light_table(attachable_ids):
         check((BP / "items" / f"psu_{name}.json").exists(),
               f"missing behaviour item for {item_id}")
 
-        attachable = RP / "attachables" / f"psu_{name}.attachable.json"
-        if twin.get("animated"):
-            check(not attachable.exists(),
-                  f"{name} uses an animated vanilla texture: it must NOT have an attachable "
-                  f"(a flat quad cannot play a flipbook)")
-        else:
-            check(item_id in attachable_ids, f"missing attachable for {item_id}")
-
+    # The vanilla flipbooks (sea lantern, magma) must NOT be redeclared any
+    # more. v4.0 aliased them onto custom atlas tiles to feed minecraft:icon;
+    # now that the twins have no icon, the block's own animated icon is used,
+    # and a leftover declaration would only be a second source of truth.
     flipbooks = load_json(RP / "textures" / "flipbook_textures.json") or []
     tiles = {f.get("atlas_tile") for f in flipbooks}
     for twin in twins:
-        if twin.get("animated"):
-            check(f"psu_{twin['name']}" in tiles,
-                  f"flipbook_textures.json: psu_{twin['name']} needs a flipbook declaration")
+        check(f"psu_{twin['name']}" not in tiles,
+              f"flipbook_textures.json: psu_{twin['name']} no longer needs a flipbook - "
+              f"the block icon animates by itself now")
 
     sheet = RP / "textures" / "items" / "psu_axe_anim.png"
     check(sheet.exists(), "the animated axe sheet is missing")
@@ -398,8 +426,8 @@ def check_entities():
 def main() -> int:
     check_json_parses()
     check_manifests()
-    attachable_ids, langs = check_items_and_textures()
-    check_light_table(attachable_ids)
+    langs = check_items_and_textures()
+    check_light_table()
     check_recipes()
     check_translations(langs)
     check_script_imports()

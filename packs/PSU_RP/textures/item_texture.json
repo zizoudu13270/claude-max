@@ -2,60 +2,6 @@
     "resource_pack_name": "psu",
     "texture_name": "atlas.items",
     "texture_data": {
-        "psu_torch": {
-            "textures": "textures/blocks/torch_on"
-        },
-        "psu_soul_torch": {
-            "textures": "textures/blocks/soul_torch"
-        },
-        "psu_redstone_torch": {
-            "textures": "textures/blocks/redstone_torch_on"
-        },
-        "psu_lantern": {
-            "textures": "textures/blocks/lantern"
-        },
-        "psu_soul_lantern": {
-            "textures": "textures/blocks/soul_lantern"
-        },
-        "psu_glowstone": {
-            "textures": "textures/blocks/glowstone"
-        },
-        "psu_sea_lantern": {
-            "textures": "textures/blocks/sea_lantern"
-        },
-        "psu_shroomlight": {
-            "textures": "textures/blocks/shroomlight"
-        },
-        "psu_end_rod": {
-            "textures": "textures/blocks/end_rod"
-        },
-        "psu_magma": {
-            "textures": "textures/blocks/magma"
-        },
-        "psu_crying_obsidian": {
-            "textures": "textures/blocks/crying_obsidian"
-        },
-        "psu_ochre_froglight": {
-            "textures": "textures/blocks/ochre_froglight_side"
-        },
-        "psu_verdant_froglight": {
-            "textures": "textures/blocks/verdant_froglight_side"
-        },
-        "psu_pearlescent_froglight": {
-            "textures": "textures/blocks/pearlescent_froglight_side"
-        },
-        "psu_campfire": {
-            "textures": "textures/items/campfire"
-        },
-        "psu_soul_campfire": {
-            "textures": "textures/items/soul_campfire"
-        },
-        "psu_beacon": {
-            "textures": "textures/blocks/beacon"
-        },
-        "psu_jack_o_lantern": {
-            "textures": "textures/blocks/pumpkin_face_on"
-        },
         "psu_emerald_pickaxe": {
             "textures": "textures/items/psu_emerald_pickaxe"
         },

@@ -492,6 +492,159 @@ test("the join message is queued and translated", () => {
 });
 
 // ------------------------------------------------------------------
+//  Double doors
+//
+//  Regression cover for the two v4.0 bugs that made the module a no-op:
+//  the hinge was read off the lower half (where both leaves report the
+//  same value), and the twin was only ever looked for along the axis the
+//  direction table said to use.
+// ------------------------------------------------------------------
+function placeDoor(dimension, { x, y, z }, { facing = 0, open = false, hinge = false }) {
+    const lower = dimension.getBlock({ x, y, z });
+    lower.setPermutation(api.BlockPermutation.resolve("minecraft:oak_door", {
+        direction: facing,
+        open_bit: open,
+        upper_block_bit: false,
+        // The trap: on a real door the lower half does not carry a
+        // meaningful hinge, so both leaves of a pair look identical here.
+        door_hinge_bit: false
+    }));
+
+    const upper = dimension.getBlock({ x, y: y + 1, z });
+    upper.setPermutation(api.BlockPermutation.resolve("minecraft:oak_door", {
+        direction: facing,
+        open_bit: open,
+        upper_block_bit: true,
+        door_hinge_bit: hinge
+    }));
+
+    return { lower, upper };
+}
+
+function openedState(door) {
+    return door.lower.permutation.getState("open_bit");
+}
+
+/** Click `block`, let the deferred system.run() fire, return the sound log. */
+function interact(player, block) {
+    const before = registry.sounds.length;
+    fire("after", "playerInteractWithBlock", { player, block });
+    drainRunQueue();
+    return registry.sounds.slice(before);
+}
+
+test("double doors: the twin opens even though both lower halves share a hinge value", () => {
+    const dimension = new Dimension("minecraft:overworld");
+    const player = fakePlayer(dimension);
+
+    // Facing east (0): the pair sits along Z.
+    const left = placeDoor(dimension, { x: 0, y: 64, z: 0 }, { facing: 0, hinge: false });
+    const right = placeDoor(dimension, { x: 0, y: 64, z: 1 }, { facing: 0, hinge: true });
+
+    // The player opened the left leaf; the engine has already flipped it.
+    left.lower.setPermutation(left.lower.permutation.withState("open_bit", true));
+
+    interact(player, left.lower);
+    assert(openedState(right) === true,
+        "the second leaf stayed shut - the hinge is being read off the lower half again");
+});
+
+test("double doors: closing one leaf closes the other", () => {
+    const dimension = new Dimension("minecraft:overworld");
+    const player = fakePlayer(dimension);
+
+    const left = placeDoor(dimension, { x: 0, y: 64, z: 0 }, { facing: 0, open: true, hinge: false });
+    const right = placeDoor(dimension, { x: 0, y: 64, z: 1 }, { facing: 0, open: true, hinge: true });
+
+    left.lower.setPermutation(left.lower.permutation.withState("open_bit", false));
+
+    interact(player, left.lower);
+    assert(openedState(right) === false, "the second leaf stayed open");
+});
+
+test("double doors: two doors sharing a hinge are not a pair", () => {
+    const dimension = new Dimension("minecraft:overworld");
+    const player = fakePlayer(dimension);
+
+    const left = placeDoor(dimension, { x: 0, y: 64, z: 0 }, { facing: 0, hinge: true });
+    const right = placeDoor(dimension, { x: 0, y: 64, z: 1 }, { facing: 0, hinge: true });
+
+    left.lower.setPermutation(left.lower.permutation.withState("open_bit", true));
+
+    interact(player, left.lower);
+    assert(openedState(right) === false,
+        "two same-hinge doors side by side must stay independent");
+});
+
+test("double doors: a different door type next door is left alone", () => {
+    const dimension = new Dimension("minecraft:overworld");
+    const player = fakePlayer(dimension);
+
+    const left = placeDoor(dimension, { x: 0, y: 64, z: 0 }, { facing: 0, hinge: false });
+    const right = placeDoor(dimension, { x: 0, y: 64, z: 1 }, { facing: 0, hinge: true });
+    right.lower.setPermutation(
+        api.BlockPermutation.resolve("minecraft:spruce_door", right.lower.permutation._states));
+
+    left.lower.setPermutation(left.lower.permutation.withState("open_bit", true));
+
+    interact(player, left.lower);
+    assert(openedState(right) === false, "an oak door must not drive a spruce door");
+});
+
+test("double doors: clicking the upper half still works", () => {
+    const dimension = new Dimension("minecraft:overworld");
+    const player = fakePlayer(dimension);
+
+    const left = placeDoor(dimension, { x: 0, y: 64, z: 0 }, { facing: 0, hinge: false });
+    const right = placeDoor(dimension, { x: 0, y: 64, z: 1 }, { facing: 0, hinge: true });
+
+    left.lower.setPermutation(left.lower.permutation.withState("open_bit", true));
+
+    interact(player, left.upper);
+    assert(openedState(right) === true, "clicking the top of a door must resolve to its lower half");
+});
+
+test("double doors: the twin is found even when the direction table points the wrong way", () => {
+    const dimension = new Dimension("minecraft:overworld");
+    const player = fakePlayer(dimension);
+
+    // Facing 0 makes the module try the Z neighbours first; this pair is
+    // along X, so it is only found by the all-four-sides fallback.
+    const left = placeDoor(dimension, { x: 0, y: 64, z: 0 }, { facing: 0, hinge: false });
+    const right = placeDoor(dimension, { x: 1, y: 64, z: 0 }, { facing: 0, hinge: true });
+
+    left.lower.setPermutation(left.lower.permutation.withState("open_bit", true));
+
+    interact(player, left.lower);
+    assert(openedState(right) === true,
+        "a wrong direction->axis mapping must not be able to break the module");
+});
+
+test("double doors: the second leaf plays a door sound", () => {
+    const dimension = new Dimension("minecraft:overworld");
+    const player = fakePlayer(dimension);
+
+    const left = placeDoor(dimension, { x: 0, y: 64, z: 0 }, { facing: 0, hinge: false });
+    placeDoor(dimension, { x: 0, y: 64, z: 1 }, { facing: 0, hinge: true });
+
+    left.lower.setPermutation(left.lower.permutation.withState("open_bit", true));
+
+    const sounds = interact(player, left.lower);
+    assert(sounds.some((s) => s.id === "open.door"), "no sound played for the second leaf");
+});
+
+test("double doors: a lone door does not throw", () => {
+    const dimension = new Dimension("minecraft:overworld");
+    const player = fakePlayer(dimension);
+
+    const only = placeDoor(dimension, { x: 0, y: 64, z: 0 }, { facing: 0, hinge: false });
+    only.lower.setPermutation(only.lower.permutation.withState("open_bit", true));
+
+    interact(player, only.lower);   // throwing would fail the test outright
+    assert(openedState(only) === true, "the clicked door must keep its own state");
+});
+
+// ------------------------------------------------------------------
 //  Report
 // ------------------------------------------------------------------
 rmSync(SANDBOX, { recursive: true, force: true });

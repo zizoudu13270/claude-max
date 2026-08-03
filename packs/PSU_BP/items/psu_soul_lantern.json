@@ -1,13 +1,10 @@
 {
-    "format_version": "1.20.80",
+    "format_version": "1.21.50",
     "minecraft:item": {
         "description": {
             "identifier": "psu:soul_lantern"
         },
         "components": {
-            "minecraft:icon": {
-                "texture": "psu_soul_lantern"
-            },
             "minecraft:display_name": {
                 "value": "item.psu.soul_lantern.name"
             },

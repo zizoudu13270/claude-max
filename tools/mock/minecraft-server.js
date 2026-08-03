@@ -117,7 +117,8 @@ export const registry = {
     intervals: [],
     timeouts: [],
     commands: [],
-    warnings: []
+    warnings: [],
+    sounds: []
 };
 
 function eventBus(store) {
@@ -197,6 +198,10 @@ export class Dimension {
     runCommand(command) {
         registry.commands.push(command);
         return { successCount: 1 };
+    }
+
+    playSound(id, location) {
+        registry.sounds.push({ id, location, dimension: this.id });
     }
 }
 

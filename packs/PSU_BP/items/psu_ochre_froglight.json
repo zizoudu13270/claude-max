@@ -1,13 +1,10 @@
 {
-    "format_version": "1.20.80",
+    "format_version": "1.21.50",
     "minecraft:item": {
         "description": {
             "identifier": "psu:ochre_froglight"
         },
         "components": {
-            "minecraft:icon": {
-                "texture": "psu_ochre_froglight"
-            },
             "minecraft:display_name": {
                 "value": "item.psu.ochre_froglight.name"
             },

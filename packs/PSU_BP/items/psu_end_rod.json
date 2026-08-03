@@ -1,13 +1,10 @@
 {
-    "format_version": "1.20.80",
+    "format_version": "1.21.50",
     "minecraft:item": {
         "description": {
             "identifier": "psu:end_rod"
         },
         "components": {
-            "minecraft:icon": {
-                "texture": "psu_end_rod"
-            },
             "minecraft:display_name": {
                 "value": "item.psu.end_rod.name"
             },

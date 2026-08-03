@@ -1,13 +1,10 @@
 {
-    "format_version": "1.20.80",
+    "format_version": "1.21.50",
     "minecraft:item": {
         "description": {
             "identifier": "psu:jack_o_lantern"
         },
         "components": {
-            "minecraft:icon": {
-                "texture": "psu_jack_o_lantern"
-            },
             "minecraft:display_name": {
                 "value": "item.psu.jack_o_lantern.name"
             },

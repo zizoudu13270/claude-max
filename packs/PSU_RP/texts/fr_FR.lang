@@ -6,7 +6,7 @@
 ## ============================================================
 
 pack.name=Pack Survie Ultime - Ressources
-pack.description=Ressources du Pack Survie Ultime : modèles des objets en main gauche, icônes animées, étiquettes de butin flottantes et traduction complète anglais/français.
+pack.description=La partie ressources du Pack Survie Ultime par LBR : l'icône animée des paliers, le sprite de la pioche en émeraude, les étiquettes de butin flottantes et la traduction complète français/anglais. À activer avec le pack de comportement : seule, elle n'affiche rien.
 
 ## --- Objets -------------------------------------------------
 item.psu.torch.name=Torche

@@ -1,4 +1,4 @@
-# Ultimate Survival Pack — v4.0.0
+# Ultimate Survival Pack — v4.1.0
 
 *[Version française](README.fr.md)*
 
@@ -9,11 +9,12 @@ in English and French, chosen automatically per player.
 
 | | |
 |---|---|
-| **Version** | 4.0.0 |
-| **Minimum Minecraft** | Bedrock 1.21.0 |
+| **Creator** | LBR |
+| **Version** | 4.1.0 |
+| **Minimum Minecraft** | Bedrock 1.21.50 |
 | **Script API** | `@minecraft/server` 1.11.0 |
 | **Languages** | English (`en_US`), French (`fr_FR`) |
-| **Download** | [`dist/Pack_Survie_Ultime_v4.0.0.mcaddon`](dist/Pack_Survie_Ultime_v4.0.0.mcaddon) |
+| **Download** | [`dist/Pack_Survie_Ultime_v4.1.0.mcaddon`](dist/Pack_Survie_Ultime_v4.1.0.mcaddon) |
 
 ---
 
@@ -139,6 +140,14 @@ Playback speed is `ticks_per_frame` in `flipbook_textures.json` (20 ticks =
 1 second). To use your own frames, drop 16×16 PNGs into `assets/frames/`
 (they play in filename order) and run `python3 tools/make_assets.py`.
 
+### If you need a moving icon for a store page
+
+`tools/make_assets.py` also writes **`dist/pack_icon_animated.gif`** — the same
+seven frames as a looping GIF. The game will not read it, but a Marketplace
+listing, a thumbnail or a trailer will, which is the one place a moving icon
+can actually be shown. `packs/*/pack_icon.png` stays a static 256×256 render
+because that is all the pack list will ever draw.
+
 ---
 
 ## Development
@@ -146,16 +155,16 @@ Playback speed is `ticks_per_frame` in `flipbook_textures.json` (20 ticks =
 ```
 assets/            source frames + the light-source table
 packs/PSU_BP/      behaviour pack: items, recipes, entities, scripts
-packs/PSU_RP/      resource pack: attachables, models, textures, translations
+packs/PSU_RP/      resource pack: textures, translations, loot-label entity
 tools/             generators, validator and test suite
 dist/              the built .mcaddon
 ```
 
 ```bash
-python3 tools/generate_items.py   # regenerate items/attachables/textures
+python3 tools/generate_items.py   # regenerate items + texture atlas
 python3 tools/make_assets.py      # rebuild the flipbook sheet and pack icons
-python3 tools/validate.py         # 780+ structural checks
-node    tools/test_scripts.mjs    # 37 unit and regression tests
+python3 tools/validate.py         # 753 structural checks
+node    tools/test_scripts.mjs    # 45 unit and regression tests
 python3 tools/build.py            # validate + test + package the .mcaddon
 ```
 
@@ -192,4 +201,4 @@ chasing them.
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) for the full list of fixes in 4.0.0.
+See [CHANGELOG.md](CHANGELOG.md) for the full list of fixes in 4.1.0.
