@@ -46,9 +46,9 @@ psu.help.sort=§7Trier un conteneur : §faccroupi + clic dessus
 psu.help.replant=§7Récolte auto : §fclic sur une culture mûre
 psu.help.anvil=§7Enclume : §fclic avec un lingot de fer sur une enclume abîmée
 psu.help.spawner=§7Générateur : §fmine-le avec une pioche Toucher de Soie
-psu.help.tree=§7Abattage : §fcasse une bûche avec une hache §7(accroupi = une seule bûche)
+psu.help.tree=§7Abattage : §fcasse une bûche avec une hache §7(accroupi = une seule bûche). Les constructions en bois ne sont pas touchées.
 psu.help.vein=§7Filon : §fcasse un minerai avec une pioche §7(accroupi = un seul bloc)
-psu.help.commands=§7Commandes : §f/scriptevent psu:diag, psu:mort, psu:trier, psu:poubelle, psu:lumiere, psu:cleanlight, psu:swap, psu:vanilla
+psu.help.commands=§7Commandes : §f/scriptevent psu:diag, psu:arbre, psu:mort, psu:trier, psu:poubelle, psu:lumiere, psu:cleanlight, psu:swap, psu:vanilla
 
 ## --- Diagnostic ---------------------------------------------
 psu.diag.header=§e--- Pack Survie Ultime v%s ---
@@ -61,9 +61,11 @@ psu.diag.light=§7Lumière dynamique : §f%s §7| posées : §f%s §7| échecs :
 psu.diag.lighttest=§7Test de lumière : §f%s
 psu.diag.held=§7Source lumineuse tenue : §f%s
 psu.diag.offhand=§7Emplacement main gauche : §f%s
+psu.diag.tree=§7Analyse d'arbre : §f%s
 psu.diag.twins=§7Jumeaux définis : §f%s §7| remplacement total : §f%s
 
 ## --- Réponses aux commandes ---------------------------------
+psu.cmd.tree=§7Analyse d'arbre : §f%s
 psu.cmd.light=§7Test de lumière : §f%s
 psu.cmd.cleanlight=§7Blocs de lumière orphelins retirés : §f%s
 psu.cmd.swap=§7Échange des mains : §f%s

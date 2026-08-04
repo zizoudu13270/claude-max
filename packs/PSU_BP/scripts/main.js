@@ -3,7 +3,7 @@ import { CONFIG } from "./config.js";
 import { t, raw, tell, tellRaw } from "./i18n.js";
 import { offhandItem } from "./utils.js";
 
-import { initTreecapitator } from "./treecapitator.js";
+import { initTreecapitator, probeTree } from "./treecapitator.js";
 import { initVeinminer } from "./veinminer.js";
 import { initLootLabels, labelStatus, testLabelSpawn } from "./lootlabels.js";
 import { initDynamicLight, lightStatus, getHeldLight, testLight, cleanupLights } from "./dynamiclight.js";
@@ -22,7 +22,7 @@ import { initAutoTool } from "./autotool.js";
 import { initTrash, trashHeld } from "./trash.js";
 import { initEmeraldPickaxe } from "./emeraldpick.js";
 
-const VERSION = "4.0.0";
+const VERSION = "4.1.0";
 
 // ------------------------------------------------------------
 //  Module registry. Each module is isolated: one failing module
@@ -91,10 +91,10 @@ try {
         if (!event.initialSpawn || !CONFIG.showLoadMessage) return;
         system.runTimeout(() => {
             const player = event.player;
-            tell(player, "psu.load.title", VERSION, loaded.length, MODULES.length);
-            if (failed.length) tell(player, "psu.load.failed", failed.join(" | "));
-            tell(player, "psu.load.hint.offhand");
-            tell(player, "psu.load.hint.help");
+            tell(player, "load.title", VERSION, loaded.length, MODULES.length);
+            if (failed.length) tell(player, "load.failed", failed.join(" | "));
+            tell(player, "load.hint.offhand");
+            tell(player, "load.hint.help");
         }, 40);
     });
 } catch (e) {
@@ -117,30 +117,31 @@ function showDiagnostics(player) {
         ? "untested"
         : (labelStatus.spawnOk ? "OK" : "SPAWN FAILED -> " + labelStatus.lastError);
 
-    tell(player, "psu.diag.header", VERSION);
-    tell(player, "psu.diag.modules", loaded.join(", ") || "-");
-    tell(player, "psu.diag.disabled", disabled.join(", ") || "-");
-    tell(player, "psu.diag.failed", failed.join(" | ") || "-");
-    tell(player, "psu.diag.labels", labelState, labelStatus.count);
-    tell(player, "psu.diag.labeltest", testLabelSpawn(player));
-    tell(player, "psu.diag.light", lightStatus.method, lightStatus.placed, lightStatus.failed);
-    tell(player, "psu.diag.lighttest", testLight(player));
-    tell(player, "psu.diag.held", getHeldLight(player) ?? "-");
-    tell(player, "psu.diag.offhand", offhandText);
-    tell(player, "psu.diag.twins", Object.keys(TO_CUSTOM).length, String(CONFIG.lightItems.replaceVanilla));
+    tell(player, "diag.header", VERSION);
+    tell(player, "diag.modules", loaded.join(", ") || "-");
+    tell(player, "diag.disabled", disabled.join(", ") || "-");
+    tell(player, "diag.failed", failed.join(" | ") || "-");
+    tell(player, "diag.labels", labelState, labelStatus.count);
+    tell(player, "diag.labeltest", testLabelSpawn(player));
+    tell(player, "diag.light", lightStatus.method, lightStatus.placed, lightStatus.failed);
+    tell(player, "diag.lighttest", testLight(player));
+    tell(player, "diag.held", getHeldLight(player) ?? "-");
+    tell(player, "diag.offhand", offhandText);
+    tell(player, "diag.twins", Object.keys(TO_CUSTOM).length, String(CONFIG.lightItems.replaceVanilla));
+    tell(player, "diag.tree", probeTree(player));
 }
 
 function showHelp(player) {
     for (const key of [
-        "psu.help.header",
-        "psu.help.offhand",
-        "psu.help.sort",
-        "psu.help.replant",
-        "psu.help.anvil",
-        "psu.help.spawner",
-        "psu.help.tree",
-        "psu.help.vein",
-        "psu.help.commands"
+        "help.header",
+        "help.offhand",
+        "help.sort",
+        "help.replant",
+        "help.anvil",
+        "help.spawner",
+        "help.tree",
+        "help.vein",
+        "help.commands"
     ]) {
         tell(player, key);
     }
@@ -150,20 +151,23 @@ function showHelp(player) {
 const COMMANDS = {
     "psu:diag": showDiagnostics,
 
+    "psu:tree": (player) => tell(player, "cmd.tree", probeTree(player)),
+    "psu:arbre": (player) => tell(player, "cmd.tree", probeTree(player)),
+
     "psu:help": showHelp,
     "psu:aide": showHelp,
 
-    "psu:light": (player) => tell(player, "psu.cmd.light", testLight(player)),
-    "psu:lumiere": (player) => tell(player, "psu.cmd.light", testLight(player)),
+    "psu:light": (player) => tell(player, "cmd.light", testLight(player)),
+    "psu:lumiere": (player) => tell(player, "cmd.light", testLight(player)),
 
-    "psu:cleanlight": (player) => tell(player, "psu.cmd.cleanlight", cleanupLights(player)),
+    "psu:cleanlight": (player) => tell(player, "cmd.cleanlight", cleanupLights(player)),
 
-    "psu:swap": (player) => tell(player, "psu.cmd.swap", swapHands(player)),
+    "psu:swap": (player) => tell(player, "cmd.swap", swapHands(player)),
 
-    "psu:vanilla": (player) => tell(player, "psu.cmd.vanilla", convertAllToVanilla(player)),
+    "psu:vanilla": (player) => tell(player, "cmd.vanilla", convertAllToVanilla(player)),
 
-    "psu:death": (player) => tellRaw(player, raw(t("psu.cmd.death"), " ", lastDeathMessage(player))),
-    "psu:mort": (player) => tellRaw(player, raw(t("psu.cmd.death"), " ", lastDeathMessage(player))),
+    "psu:death": (player) => tellRaw(player, raw(t("cmd.death"), " ", lastDeathMessage(player))),
+    "psu:mort": (player) => tellRaw(player, raw(t("cmd.death"), " ", lastDeathMessage(player))),
 
     "psu:sort": sortInventory,
     "psu:trier": sortInventory,
@@ -174,14 +178,14 @@ const COMMANDS = {
 
 function sortInventory(player) {
     const used = sortPlayerInventory(player);
-    if (used < 0) tell(player, "psu.sorter.error");
-    else tell(player, "psu.cmd.sort", used);
+    if (used < 0) tell(player, "sorter.error");
+    else tell(player, "cmd.sort", used);
 }
 
 function emptyHand(player) {
     const result = trashHeld(player);
-    if (!result) tell(player, "psu.trash.empty");
-    else tell(player, "psu.trash.done", result.amount, result.name);
+    if (!result) tell(player, "trash.empty");
+    else tell(player, "trash.done", result.amount, result.name);
 }
 
 try {

@@ -76,7 +76,7 @@ export function initAnvilRepair() {
                 }
 
                 player.playSound("random.anvil_use");
-                bar(player, "psu.anvil.repaired");
+                bar(player, "anvil.repaired");
             } catch { /* anvil or player gone */ }
         });
     });

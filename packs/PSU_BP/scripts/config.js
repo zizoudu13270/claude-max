@@ -10,6 +10,11 @@
 // ============================================================
 
 export const CONFIG = {
+    // Translation-key namespace. Every key the scripts ask for is
+    // prefixed with this, so two add-ons built on the same shared
+    // modules never fight over the same .lang entries.
+    namespace: "psu",
+
     // Welcome message on join. Set to false once everything works.
     // Message d'accueil a la connexion.
     showLoadMessage: true,
@@ -59,6 +64,15 @@ export const CONFIG = {
         // true  = full replacement: every light source in the
         //         inventory becomes its custom version.
         replaceVanilla: false
+    },
+
+    // --- Drop clumping ----------------------------------------
+    // After a tree or a vein, the loose drops are merged into full
+    // stacks so 300 separate entities do not sit there lagging the
+    // area. Items whose payload the API cannot read are left alone.
+    clump: {
+        enabled: true,
+        radius: 20
     },
 
     // ============================================================
@@ -145,17 +159,33 @@ export const CONFIG = {
     // --- Mining ------------------------------------------------
     tree: {
         enabled: true,
-        maxBlocks: 600,
-        gatherRadius: 20,
         requireAxe: true,       // bare-handed breaking stays vanilla
         sneakDisables: true,    // sneak to fell a single log
-        blocksPerTick: 12
+        breakLeaves: true,      // also clear the canopy
+        blocksPerTick: 12,
+        explainRefusal: false,  // print why a cluster was not felled
+
+        // How a TREE is told apart from a BUILDING made of logs.
+        // /scriptevent psu:tree prints these numbers for whatever you
+        // are looking at, which is the easy way to tune them.
+        validate: {
+            maxLogs: 600,           // scan cap, also the felling cap
+            maxRadius: 10,          // horizontal half-width of the scan box
+            maxUp: 40,
+            maxDown: 4,
+            minHeight: 4,           // a log floor is one block tall
+            maxBaseColumns: 4,      // 1x1 trunk, or 2x2 for a giant
+            minLeaves: 5,           // absolute leaf count
+            leafRatio: 0.35,        // leaves per log: a cabin scores far lower
+            maxBuildContacts: 4,    // planks/stairs/glass/doors touching the logs
+            requireNaturalGround: true,   // the trunk must stand on dirt, not planks
+            matchSpecies: true      // oak logs want oak (or azalea) leaves
+        }
     },
 
     vein: {
         enabled: true,
         maxBlocks: 150,
-        gatherRadius: 15,
         requirePickaxe: true,
         sneakDisables: true,
         blocksPerTick: 8,

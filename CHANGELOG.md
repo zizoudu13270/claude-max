@@ -1,8 +1,97 @@
 # Changelog
 
-All notable changes to the Ultimate Survival Pack / Pack Survie Ultime.
+All notable changes to the two add-ons in this repository:
+Survival Core / Pack Survie Essentiel, and
+Ultimate Survival Pack / Pack Survie Ultime.
 Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 the project follows [Semantic Versioning](https://semver.org/).
+
+---
+
+## Survival Core [1.0.0] — new add-on
+
+A focused add-on with four systems and nothing else, for players who want the
+mining quality-of-life without the rest.
+
+* **TreeCapitator** with real tree detection (see below).
+* **VeinMiner** with Silk Touch, Fortune and ore experience.
+* **Drop clumping** with the floating dynamic labels.
+* **Dynamic light** — reading the plain vanilla item in your hand.
+
+**No off-hand module and no custom light items.** The `psu:` twins, the hand
+swap and everything that went with them are absent by design, not disabled:
+`scripts/offhand.js`, `lightitems.js` and `lightmap.js` are simply not in the
+pack, and a test asserts it. The add-on adds no items at all — it ships one
+entity (the loot label) and four scripts.
+
+Namespace `psc:`, its own UUIDs, so it can sit next to the Ultimate pack in the
+same installation without colliding. Do not enable both in the same world
+though: two TreeCapitators would fight over the same tree.
+
+---
+
+## [4.1.0] — Tree detection, shared modules
+
+### Added — TreeCapitator can tell a tree from a building
+
+The headline change, shared by both add-ons. v4.0.0 flood-filled every
+connected log: breaking one log of a log cabin brought the cabin down.
+
+Felling is now two phases. **Analyse** walks the connected log cluster
+read-only — nothing is broken while it runs — and scores it against six
+independent signals; **fell** only happens on an `ok` verdict, and only over
+the block list phase 1 produced, so the destruction cannot wander into a wall.
+
+| Signal | Refuses |
+|---|---|
+| Trunk type | `oak_wood` (bark on six sides) and every `stripped_*`: player-made by definition |
+| Height | a log floor is one block tall |
+| Base footprint | a wall or a floor covers many columns on its lowest layer |
+| Leaves | absolute count **and** ratio per log, so a cabin brushing a canopy still fails |
+| Build contact | planks, stairs, glass, doors, torches touching the logs |
+| Natural ground | a trunk standing on planks or stone bricks |
+
+Natural neighbours (moss carpet, bee nests, cocoa, mangrove roots, vines, snow)
+are whitelisted so they never read as construction. Anything refused behaves
+like vanilla: one log breaks.
+
+`/scriptevent psu:tree` (alias `psu:arbre`) prints the full verdict for the
+block you are looking at without breaking it, and every threshold is exposed
+under `tree.validate` in `config.js`. `tree.explainRefusal` prints the reason to
+the action bar.
+
+Twenty tests cover this, over synthetic worlds built the way players build:
+an oak, a giant 2×2 spruce, a crimson fungus, a log cabin, **a log cabin
+standing inside a forest** (leaves everywhere, so only the footprint test can
+save it), a decorative pillar in a room, a tree grown against a house, a bark
+pillar, a stripped pillar, a log floor. Five of them run end to end through the
+real break event and assert how many blocks were actually destroyed.
+
+### Fixed
+
+* **`"stairs".includes("air")`.** The first draft of the validator whitelisted
+  natural blocks by substring, and `air` matched `oak_stairs` — so a room built
+  out of stairs read as untouched nature. The whitelist is gone; build blocks
+  are matched directly with an exact-id exception list, and the ground check
+  uses exact ids because `stone` would otherwise accept stone bricks and a
+  cobblestone wall. Caught by the test suite before it shipped.
+
+### Changed
+
+* **Shared modules extracted to `shared/scripts/`.** Ten modules — TreeCapitator,
+  VeinMiner, the tree validator, loot labels, dynamic light, drops, items,
+  utils, compat, i18n — live once and are synced into every behaviour pack by
+  `tools/sync_shared.py`. `validate.py` fails the build if a copy drifts.
+* **Translation keys are namespaced at runtime.** Scripts call `t("load.title")`
+  and `i18n.js` prefixes it with `CONFIG.namespace`, so two add-ons running the
+  same modules cannot collide over the same `.lang` entries.
+* **Drop clumping is its own `clump` config section**, shared by TreeCapitator
+  and VeinMiner instead of each carrying its own `gatherRadius`.
+* **`addons.json`** declares which add-ons exist and which checks apply to each;
+  `validate.py` and `build.py` iterate it. `build.py` now produces one
+  `.mcaddon` per add-on and takes add-on ids as arguments.
+* **The dynamic-light source list moved to a per-add-on `lightsources.js`**, so
+  the shared `dynamiclight.js` works with or without the `psu:` twins.
 
 ---
 
@@ -87,7 +176,7 @@ changes below are the ones a player will notice.
 * **A recycling recipe for the emerald pickaxe** (→ 1 emerald), which was the
   only piece of gear without one.
 * **`tools/validate.py`** — 780+ structural checks over the whole add-on.
-* **`tools/test_scripts.mjs`** — 37 tests that load and run the real scripts
+* **`tools/test_scripts.mjs`** — 37 tests (59 as of 4.1.0) that load and run the real scripts
   against a stub of `@minecraft/server`, including a regression test for every
   data-loss bug above.
 * **`tools/generate_items.py`** — the 18 light twins, their attachables and the

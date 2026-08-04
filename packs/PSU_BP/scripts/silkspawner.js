@@ -41,7 +41,7 @@ export function initSilkSpawner() {
                 giveOrDrop(player, stack, { x: pos.x + 0.5, y: pos.y + 0.5, z: pos.z + 0.5 });
                 damageHeld(player, 1);
                 player.playSound("random.pop");
-                bar(player, "psu.spawner.recovered");
+                bar(player, "spawner.recovered");
             } catch { /* block or player gone */ }
         });
     });

@@ -36,36 +36,3 @@ export const TO_CUSTOM = {
 // custom twin -> vanilla
 export const TO_VANILLA = {};
 for (const [vanilla, custom] of Object.entries(TO_CUSTOM)) TO_VANILLA[custom] = vanilla;
-
-// ------------------------------------------------------------
-//  Items that light the world up when held.
-//
-//  v3.5 matched substrings ("torch", "magma", "candle"), so a
-//  TORCHFLOWER, a MAGMA CREAM and an unlit CANDLE all glowed.
-//  The list is explicit now.
-// ------------------------------------------------------------
-const VANILLA_LIGHT_SOURCES = [
-    ...Object.keys(TO_CUSTOM),
-    "minecraft:lava_bucket",
-    "minecraft:glow_berries",
-    "minecraft:conduit",
-    "minecraft:amethyst_cluster",
-    "minecraft:large_amethyst_bud",
-    "minecraft:glow_lichen",
-    "minecraft:sculk_shrieker",
-    "minecraft:froglight"       // safety net for unexpected variants
-];
-
-export const LIGHT_SOURCES = new Set([
-    ...VANILLA_LIGHT_SOURCES,
-    ...Object.values(TO_CUSTOM)
-]);
-
-export function isLightSource(stack) {
-    if (!stack) return false;
-    try {
-        return LIGHT_SOURCES.has(stack.typeId);
-    } catch {
-        return false;
-    }
-}

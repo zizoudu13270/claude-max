@@ -156,7 +156,7 @@ export function initSorter() {
             try {
                 const used = sortContainer(container, spillAt(dimension, spillPos));
                 player.playSound("random.orb");
-                bar(player, "psu.sorter.done", used);
+                bar(player, "sorter.done", used);
             } catch { /* container gone */ }
         });
     });

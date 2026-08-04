@@ -1,0 +1,34 @@
+{
+  "_comment": [
+    "The add-ons this repository builds. tools/build.py produces one",
+    ".mcaddon per entry, tools/validate.py checks each one, and",
+    "tools/sync_shared.py copies shared/scripts into every behaviour pack",
+    "listed in `sharedScripts`.",
+    "",
+    "features tells the validator which checks apply:",
+    "  items       - behaviour-pack items, the icon atlas and attachables",
+    "  lightTwins  - the psu:* off-hand twins from assets/light_sources.json",
+    "  recipes     - crafting and smelting recipes",
+    "  flipbook    - the animated icon sheet"
+  ],
+  "addons": [
+    {
+      "id": "ultimate-survival",
+      "artifact": "Pack_Survie_Ultime",
+      "behaviour": "PSU_BP",
+      "resources": "PSU_RP",
+      "namespace": "psu",
+      "sharedScripts": true,
+      "features": ["items", "lightTwins", "recipes", "flipbook"]
+    },
+    {
+      "id": "survival-core",
+      "artifact": "Survival_Core",
+      "behaviour": "PSC_BP",
+      "resources": "PSC_RP",
+      "namespace": "psc",
+      "sharedScripts": true,
+      "features": []
+    }
+  ]
+}

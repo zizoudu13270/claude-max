@@ -1,0 +1,42 @@
+## ============================================================
+##  Pack Survie Essentiel - Français (fr_FR)
+##
+##  Chaque clé de ce fichier existe aussi dans en_US.lang.
+##  tools/validate.py échoue si les deux fichiers divergent.
+## ============================================================
+
+pack.name=Pack Survie Essentiel - Ressources
+pack.description=Ressources du Pack Survie Essentiel : étiquettes de butin flottantes et traduction complète français/anglais.
+
+## --- Entités ------------------------------------------------
+entity.psc:loot_label.name=Étiquette de butin
+
+## --- Démarrage ----------------------------------------------
+psc.load.title=§a[Pack Survie Essentiel v%s] §factif §7(%s/%s modules)
+psc.load.failed=§cModules en échec : §f%s
+psc.load.hint.help=§7Aide : §f/scriptevent psc:aide §7| Diagnostic : §f/scriptevent psc:diag
+
+## --- Aide ---------------------------------------------------
+psc.help.header=§e--- Pack Survie Essentiel : aide ---
+psc.help.tree=§7Abattage : §fcasse une bûche avec une hache§7. Accroupi = une seule bûche. Les constructions en bois ne sont pas touchées.
+psc.help.vein=§7Filons : §fcasse un minerai avec une pioche§7. Accroupi = un seul bloc. Toucher de Soie et Fortune s'appliquent à tout le filon.
+psc.help.clump=§7Regroupement : §fles drops d'un arbre abattu ou d'un filon miné sont réunis en piles pleines.
+psc.help.light=§7Lumière dynamique : §ftiens une torche, une lanterne, un seau de lave... §7et ça éclaire autour de toi.
+psc.help.commands=§7Commandes : §f/scriptevent psc:diag, psc:arbre, psc:lumiere, psc:cleanlight
+
+## --- Diagnostic ---------------------------------------------
+psc.diag.header=§e--- Pack Survie Essentiel v%s ---
+psc.diag.modules=§7Actifs : §f%s
+psc.diag.disabled=§7Désactivés : §f%s
+psc.diag.failed=§7En échec : §f%s
+psc.diag.labels=§7Étiquettes : §f%s §7(%s actives)
+psc.diag.labeltest=§7Test d'étiquette : §f%s
+psc.diag.light=§7Lumière dynamique : §f%s §7| posées : §f%s §7| échecs : §f%s
+psc.diag.lighttest=§7Test de lumière : §f%s
+psc.diag.held=§7Source lumineuse tenue : §f%s
+psc.diag.tree=§7Analyse d'arbre : §f%s
+
+## --- Réponses aux commandes ---------------------------------
+psc.cmd.tree=§7Analyse d'arbre : §f%s
+psc.cmd.light=§7Test de lumière : §f%s
+psc.cmd.cleanlight=§7Blocs de lumière orphelins retirés : §f%s

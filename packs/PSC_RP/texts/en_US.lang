@@ -1,0 +1,42 @@
+## ============================================================
+##  Survival Core - English (en_US)
+##
+##  Every key below is also present in fr_FR.lang.
+##  tools/validate.py fails the build if the two ever drift apart.
+## ============================================================
+
+pack.name=Survival Core - Resources
+pack.description=Resources for Survival Core: floating loot labels and the full English/French translation.
+
+## --- Entities -----------------------------------------------
+entity.psc:loot_label.name=Loot Label
+
+## --- Start-up -----------------------------------------------
+psc.load.title=§a[Survival Core v%s] §factive §7(%s/%s modules)
+psc.load.failed=§cModules that failed to load: §f%s
+psc.load.hint.help=§7Help: §f/scriptevent psc:help §7| Diagnostics: §f/scriptevent psc:diag
+
+## --- Help ---------------------------------------------------
+psc.help.header=§e--- Survival Core: help ---
+psc.help.tree=§7TreeCapitator: §fbreak a log with an axe§7. Sneak to fell one log. Buildings made of logs are left alone.
+psc.help.vein=§7VeinMiner: §fbreak an ore with a pickaxe§7. Sneak to mine one block. Silk Touch and Fortune apply to the whole vein.
+psc.help.clump=§7Clumping: §fthe drops of a felled tree or a mined vein are merged into full stacks.
+psc.help.light=§7Dynamic light: §fhold a torch, a lantern, a lava bucket... §7and it lights around you.
+psc.help.commands=§7Commands: §f/scriptevent psc:diag, psc:tree, psc:light, psc:cleanlight
+
+## --- Diagnostics --------------------------------------------
+psc.diag.header=§e--- Survival Core v%s ---
+psc.diag.modules=§7Active: §f%s
+psc.diag.disabled=§7Turned off: §f%s
+psc.diag.failed=§7Failed: §f%s
+psc.diag.labels=§7Loot labels: §f%s §7(%s active)
+psc.diag.labeltest=§7Label probe: §f%s
+psc.diag.light=§7Dynamic light: §f%s §7| placed: §f%s §7| failed: §f%s
+psc.diag.lighttest=§7Light probe: §f%s
+psc.diag.held=§7Held light source: §f%s
+psc.diag.tree=§7Tree probe: §f%s
+
+## --- Command replies ----------------------------------------
+psc.cmd.tree=§7Tree analysis: §f%s
+psc.cmd.light=§7Light test: §f%s
+psc.cmd.cleanlight=§7Stray light blocks removed: §f%s

@@ -15,9 +15,9 @@ const C = CONFIG.death;
 const lastDeath = new Map();   // playerId -> { x, y, z, dim }
 
 function dimensionKey(id) {
-    if (id.includes("nether")) return "psu.dim.nether";
-    if (id.includes("the_end")) return "psu.dim.end";
-    return "psu.dim.overworld";
+    if (id.includes("nether")) return "dim.nether";
+    if (id.includes("the_end")) return "dim.end";
+    return "dim.overworld";
 }
 
 function findSpot(dimension, pos) {
@@ -95,14 +95,14 @@ function buildGrave(dimension, pos) {
 }
 
 function announce(player, pos, dimId, stored) {
-    tell(player, "psu.death.title");
+    tell(player, "death.title");
     tellRaw(player, raw(
-        t("psu.death.coords", pos.x, pos.y, pos.z),
+        t("death.coords", pos.x, pos.y, pos.z),
         " ",
         t(dimensionKey(dimId))
     ));
-    if (stored > 0) tell(player, "psu.death.grave", stored);
-    tell(player, "psu.death.reminder");
+    if (stored > 0) tell(player, "death.grave", stored);
+    tell(player, "death.reminder");
 }
 
 export function initDeathMarker() {
@@ -131,9 +131,9 @@ export function initDeathMarker() {
 /** /scriptevent psu:death */
 export function lastDeathMessage(player) {
     const d = lastDeath.get(player.id);
-    if (!d) return t("psu.death.none");
+    if (!d) return t("death.none");
     return raw(
-        t("psu.death.coords", d.x, d.y, d.z),
+        t("death.coords", d.x, d.y, d.z),
         " ",
         t(dimensionKey(d.dim))
     );

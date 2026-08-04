@@ -46,9 +46,9 @@ psu.help.sort=§7Sort a container: §fsneak + tap on it
 psu.help.replant=§7Auto harvest: §ftap a fully grown crop
 psu.help.anvil=§7Anvil: §ftap a damaged anvil with an iron ingot
 psu.help.spawner=§7Spawner: §fmine it with a Silk Touch pickaxe
-psu.help.tree=§7TreeCapitator: §fbreak a log with an axe §7(sneak to fell one log)
+psu.help.tree=§7TreeCapitator: §fbreak a log with an axe §7(sneak to fell one log). Buildings made of logs are left alone.
 psu.help.vein=§7VeinMiner: §fbreak an ore with a pickaxe §7(sneak to mine one block)
-psu.help.commands=§7Commands: §f/scriptevent psu:diag, psu:death, psu:sort, psu:trash, psu:light, psu:cleanlight, psu:swap, psu:vanilla
+psu.help.commands=§7Commands: §f/scriptevent psu:diag, psu:tree, psu:death, psu:sort, psu:trash, psu:light, psu:cleanlight, psu:swap, psu:vanilla
 
 ## --- Diagnostics --------------------------------------------
 psu.diag.header=§e--- Ultimate Survival Pack v%s ---
@@ -61,9 +61,11 @@ psu.diag.light=§7Dynamic light: §f%s §7| placed: §f%s §7| failed: §f%s
 psu.diag.lighttest=§7Light probe: §f%s
 psu.diag.held=§7Held light source: §f%s
 psu.diag.offhand=§7Off-hand slot: §f%s
+psu.diag.tree=§7Tree probe: §f%s
 psu.diag.twins=§7Light twins defined: §f%s §7| full replacement: §f%s
 
 ## --- Command replies ----------------------------------------
+psu.cmd.tree=§7Tree analysis: §f%s
 psu.cmd.light=§7Light test: §f%s
 psu.cmd.cleanlight=§7Stray light blocks removed: §f%s
 psu.cmd.swap=§7Hand swap: §f%s

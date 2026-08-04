@@ -77,7 +77,7 @@ export function swapHands(player) {
         } catch { /* already back to its previous state */ }
 
         if (C.showActionBar) {
-            bar(player, "psu.offhand.rejected", mainItem ? itemDisplayName(mainItem) : "?");
+            bar(player, "offhand.rejected", mainItem ? itemDisplayName(mainItem) : "?");
         }
         try {
             player.playSound("note.bass");
@@ -98,8 +98,8 @@ export function swapHands(player) {
     } catch { /* sound is cosmetic */ }
 
     if (C.showActionBar) {
-        if (toOffhand) bar(player, "psu.offhand.set", itemDisplayName(toOffhand));
-        else bar(player, "psu.offhand.cleared");
+        if (toOffhand) bar(player, "offhand.set", itemDisplayName(toOffhand));
+        else bar(player, "offhand.cleared");
     }
 
     return "ok";

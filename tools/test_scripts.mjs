@@ -18,26 +18,37 @@
  *
  * Run:  node tools/test_scripts.mjs
  */
-import { cpSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
+import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { tmpdir } from "node:os";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = dirname(HERE);
-const SANDBOX = join(tmpdir(), "psu-test-sandbox");
+const SANDBOX_ROOT = join(tmpdir(), "psu-test-sandbox");
 
-// ------------------------------------------------------------------
-//  Sandbox: scripts/ + node_modules/@minecraft/server
-// ------------------------------------------------------------------
-rmSync(SANDBOX, { recursive: true, force: true });
-mkdirSync(join(SANDBOX, "node_modules", "@minecraft", "server"), { recursive: true });
-cpSync(join(ROOT, "packs", "PSU_BP", "scripts"), join(SANDBOX, "scripts"), { recursive: true });
-cpSync(join(HERE, "mock", "minecraft-server.js"),
-    join(SANDBOX, "node_modules", "@minecraft", "server", "index.js"));
-writeFileSync(join(SANDBOX, "node_modules", "@minecraft", "server", "package.json"),
-    JSON.stringify({ name: "@minecraft/server", version: "1.11.0", type: "module", main: "index.js" }));
-writeFileSync(join(SANDBOX, "package.json"), JSON.stringify({ type: "module" }));
+const ADDONS = JSON.parse(readFileSync(join(ROOT, "addons.json"), "utf8")).addons;
+
+rmSync(SANDBOX_ROOT, { recursive: true, force: true });
+
+/** Copy an add-on's scripts next to a stub of @minecraft/server and
+ *  import them for real. Each add-on gets its own stub instance, so the
+ *  two never share an event registry. */
+async function loadAddon(addon) {
+    const sandbox = join(SANDBOX_ROOT, addon.id);
+    const stubDir = join(sandbox, "node_modules", "@minecraft", "server");
+
+    mkdirSync(stubDir, { recursive: true });
+    cpSync(join(ROOT, "packs", addon.behaviour, "scripts"), join(sandbox, "scripts"), { recursive: true });
+    cpSync(join(HERE, "mock", "minecraft-server.js"), join(stubDir, "index.js"));
+    writeFileSync(join(stubDir, "package.json"),
+        JSON.stringify({ name: "@minecraft/server", version: "1.11.0", type: "module", main: "index.js" }));
+    writeFileSync(join(sandbox, "package.json"), JSON.stringify({ type: "module" }));
+
+    const api = await import(join(stubDir, "index.js"));
+    await import(join(sandbox, "scripts", "main.js"));
+    return { addon, api, sandbox, script: (name) => import(join(sandbox, "scripts", name)) };
+}
 
 // ------------------------------------------------------------------
 //  Tiny test runner
@@ -75,29 +86,55 @@ function assertThrows(fn, message) {
 }
 
 // ------------------------------------------------------------------
-//  Load
+//  Load every add-on declared in addons.json
 // ------------------------------------------------------------------
-const api = await import(join(SANDBOX, "node_modules", "@minecraft", "server", "index.js"));
-const { registry, fire, drainRunQueue, ItemStack, Dimension } = api;
+const loaded = [];
+for (const addon of ADDONS) loaded.push(await loadAddon(addon));
 
-await import(join(SANDBOX, "scripts", "main.js"));
+const ultimate = loaded.find((l) => l.addon.id === "ultimate-survival");
+const core = loaded.find((l) => l.addon.id === "survival-core");
 
-const startupLine = registry.warnings.find((w) => w.includes("[PSU]") && w.includes("ready"));
+// Shared behaviour is exercised through the Ultimate sandbox.
+const api = ultimate.api;
+const { registry, fire, drainRunQueue, resetCommands, ItemStack, Dimension } = api;
 
 // ------------------------------------------------------------------
 //  1. start-up
 // ------------------------------------------------------------------
-test("every module loads", () => {
-    assert(startupLine, "no start-up line was logged");
-    const match = startupLine.match(/(\d+)\/(\d+) modules active/);
-    assert(match, "start-up line has no module count: " + startupLine);
-    assertEqual(match[1], match[2], "some modules did not load");
-    assert(startupLine.includes("Failed: none."), "a module failed: " + startupLine);
+test("every add-on loads every one of its modules", () => {
+    for (const entry of loaded) {
+        const line = entry.api.registry.warnings.find(
+            (w) => w.includes("ready") && w.includes("modules active"));
+        assert(line, `${entry.addon.id}: no start-up line was logged`);
+        const match = line.match(/(\d+)\/(\d+) modules active/);
+        assert(match, `${entry.addon.id}: no module count in "${line}"`);
+        assertEqual(match[1], match[2], `${entry.addon.id}: some modules did not load`);
+        assert(line.includes("Failed: none."), `${entry.addon.id}: a module failed: ${line}`);
+    }
+});
+
+test("Survival Core ships exactly the four requested systems", () => {
+    const line = core.api.registry.warnings.find((w) => w.includes("modules active"));
+    assertEqual(line.match(/(\d+)\/(\d+) modules active/)[2], "4",
+        "Survival Core should register four modules");
+});
+
+test("Survival Core carries no off-hand or light-twin code", () => {
+    for (const name of ["offhand.js", "lightitems.js", "lightmap.js"]) {
+        let found = false;
+        try {
+            readFileSync(join(core.sandbox, "scripts", name));
+            found = true;
+        } catch { /* absent, which is the point */ }
+        assert(!found, `Survival Core still ships scripts/${name}`);
+    }
 });
 
 test("no module threw during init", () => {
-    const bad = registry.warnings.filter((w) => w.includes("failed to load"));
-    assertEqual(bad.length, 0, "modules failed: " + bad.join(" | "));
+    for (const entry of loaded) {
+        const bad = entry.api.registry.warnings.filter((w) => w.includes("failed to load"));
+        assertEqual(bad.length, 0, `${entry.addon.id}: ${bad.join(" | ")}`);
+    }
 });
 
 test("world event handlers are registered", () => {
@@ -175,7 +212,7 @@ test("an unknown scriptevent id is ignored", () => {
 // ------------------------------------------------------------------
 //  3. regression: the sorter must not destroy item data
 // ------------------------------------------------------------------
-const { sortContainer } = await import(join(SANDBOX, "scripts", "sorter.js"));
+const { sortContainer } = await ultimate.script("sorter.js");
 
 function fakeContainer(stacks, size = 27) {
     const slots = new Array(size).fill(undefined);
@@ -247,7 +284,7 @@ test("a sort of an empty container is a no-op", () => {
 // ------------------------------------------------------------------
 //  4. item safety data
 // ------------------------------------------------------------------
-const { isMergeable, tierScore, isAxe, isPickaxe } = await import(join(SANDBOX, "scripts", "itemdata.js"));
+const { isMergeable, tierScore, isAxe, isPickaxe } = await ultimate.script("itemdata.js");
 
 test("isMergeable accepts plain blocks", () => {
     assert(isMergeable(new ItemStack("minecraft:cobblestone", 5)));
@@ -308,7 +345,7 @@ test("shears are matched only by themselves", () => {
 // ------------------------------------------------------------------
 //  5. ore drops
 // ------------------------------------------------------------------
-const { oreLoot, isKnownOre } = await import(join(SANDBOX, "scripts", "drops.js"));
+const { oreLoot, isKnownOre } = await ultimate.script("drops.js");
 
 const OPTS = { silkTouch: true, fortune: true, giveXp: true };
 
@@ -385,7 +422,7 @@ test("experience can be switched off", () => {
 // ------------------------------------------------------------------
 //  6. compat helpers
 // ------------------------------------------------------------------
-const { vec3, isValid, posKey, isCreative } = await import(join(SANDBOX, "scripts", "compat.js"));
+const { vec3, isValid, posKey, isCreative } = await ultimate.script("compat.js");
 
 test("REGRESSION: vec3 strips the extra field that broke getBlock", () => {
     const dimension = new Dimension("minecraft:overworld");
@@ -416,7 +453,8 @@ test("position keys are unambiguous", () => {
 // ------------------------------------------------------------------
 //  7. light source detection
 // ------------------------------------------------------------------
-const { isLightSource, TO_CUSTOM, TO_VANILLA } = await import(join(SANDBOX, "scripts", "lightmap.js"));
+const { TO_CUSTOM, TO_VANILLA } = await ultimate.script("lightmap.js");
+const { isLightSource } = await ultimate.script("lightsources.js");
 
 test("the twin tables are exact inverses", () => {
     assertEqual(Object.keys(TO_CUSTOM).length, Object.keys(TO_VANILLA).length);
@@ -492,9 +530,210 @@ test("the join message is queued and translated", () => {
 });
 
 // ------------------------------------------------------------------
+//  9. TREE vs BUILDING
+//     The whole point of the validator: a log cabin must survive an
+//     axe swing that would fell a real tree.
+// ------------------------------------------------------------------
+const { analyseTree, isNaturalTrunk, isBuildBlock } = await ultimate.script("treevalidator.js");
+const worlds = await import(join(HERE, "worlds.mjs"));
+
+function fresh() {
+    return new Dimension("minecraft:overworld");
+}
+
+function verdict(builder, options) {
+    const dimension = fresh();
+    const spot = builder(dimension);
+    const result = analyseTree(dimension, { x: spot.x, y: spot.y, z: spot.z }, spot.trunkId, options);
+    return { dimension, spot, result };
+}
+
+test("a plain oak is felled", () => {
+    const { result } = verdict(worlds.oakTree);
+    assertEqual(result.reason, "ok", "a plain oak was refused");
+    assert(result.logs.length >= 5, "the trunk was not fully collected");
+    assert(result.leaves.length > 10, "the canopy was not collected");
+});
+
+test("a giant 2x2 spruce is felled", () => {
+    const { result } = verdict(worlds.giantSpruce);
+    assertEqual(result.reason, "ok", "a giant spruce was refused: " + JSON.stringify(result.stats));
+    assertEqual(result.stats.baseColumns, 4, "a 2x2 trunk should report four base columns");
+});
+
+test("a crimson fungus counts as a tree", () => {
+    const { result } = verdict(worlds.crimsonFungus);
+    assertEqual(result.reason, "ok", "a nether fungus was refused: " + JSON.stringify(result.stats));
+});
+
+test("THE POINT: a log cabin is NOT felled", () => {
+    const { result } = verdict(worlds.logCabin);
+    assert(!result.isTree, "a log cabin was mistaken for a tree");
+    assertEqual(result.reason, "base_too_wide");
+});
+
+test("THE HARD CASE: a log cabin standing inside a forest is NOT felled", () => {
+    const { result } = verdict(worlds.logCabinInForest);
+    assert(!result.isTree,
+        "a cabin surrounded by canopy was mistaken for a tree: " + JSON.stringify(result.stats));
+    assert(result.stats.leaves > 20,
+        "this test is only meaningful if the leaf count is high: " + result.stats.leaves);
+    assertEqual(result.reason, "base_too_wide",
+        "with leaves everywhere, only the footprint test can save the cabin");
+});
+
+test("a real tree grown against a house is still felled", () => {
+    const { result } = verdict(worlds.treeAgainstAHouse);
+    assertEqual(result.reason, "ok",
+        "a genuine tree brushing a wall was refused: " + JSON.stringify(result.stats));
+});
+
+test("a log floor is not felled", () => {
+    const { result } = verdict(worlds.logFloor);
+    assert(!result.isTree, "a flat log platform was mistaken for a tree");
+});
+
+test("a decorative pillar inside a room is not felled", () => {
+    const { result } = verdict(worlds.decorativePillar);
+    assert(!result.isTree,
+        "a log pillar surrounded by planks and glass was mistaken for a tree");
+    assertEqual(result.reason, "touches_a_build");
+});
+
+test("a bare trunk with no canopy is not felled", () => {
+    const { result } = verdict(worlds.bareTrunk);
+    assert(!result.isTree, "a leafless log column was mistaken for a tree");
+    assertEqual(result.reason, "not_enough_leaves");
+});
+
+test("a tree growing out of a plank floor is not felled", () => {
+    const { result } = verdict(worlds.treeOnPlanks);
+    assert(!result.isTree, "logs standing on planks were mistaken for a tree");
+    assertEqual(result.reason, "not_on_natural_ground");
+});
+
+test("bark blocks and stripped logs are refused outright", () => {
+    for (const builder of [worlds.barkPillar, worlds.strippedPillar]) {
+        const { result } = verdict(builder);
+        assertEqual(result.reason, "not_a_natural_trunk");
+        assertEqual(result.logs.length, 0, "a refused cluster must collect no blocks");
+    }
+    assert(!isNaturalTrunk("minecraft:oak_wood"));
+    assert(!isNaturalTrunk("minecraft:stripped_spruce_log"));
+    assert(isNaturalTrunk("minecraft:cherry_log"));
+    assert(isNaturalTrunk("minecraft:warped_stem"));
+});
+
+test("natural neighbours are not mistaken for a build", () => {
+    for (const id of ["minecraft:moss_carpet", "minecraft:bee_nest", "minecraft:cocoa",
+        "minecraft:mangrove_roots", "minecraft:vine", "minecraft:snow_layer",
+        "minecraft:oak_leaves", "minecraft:glow_lichen"]) {
+        assert(!isBuildBlock(id), id + " grows on trees in the wild");
+    }
+    for (const id of ["minecraft:oak_planks", "minecraft:glass", "minecraft:oak_stairs",
+        "minecraft:torch", "minecraft:chest", "minecraft:white_wool",
+        "minecraft:stripped_oak_log", "minecraft:cobblestone_wall"]) {
+        assert(isBuildBlock(id), id + " means somebody built this");
+    }
+});
+
+test("the analysis never modifies a single block", () => {
+    const dimension = fresh();
+    const spot = worlds.oakTree(dimension);
+    const before = dimension.snapshot();
+    analyseTree(dimension, { x: spot.x, y: spot.y, z: spot.z }, spot.trunkId);
+    const after = dimension.snapshot();
+    for (const [key, typeId] of before) {
+        assertEqual(after.get(key), typeId, `analysis changed the block at ${key}`);
+    }
+});
+
+test("thresholds can be relaxed through the config", () => {
+    // Someone who wants their leafless pillars felled can say so.
+    const { result } = verdict(worlds.bareTrunk, { minLeaves: 0, leafRatio: 0 });
+    assertEqual(result.reason, "ok", "relaxing the leaf thresholds had no effect");
+});
+
+test("the scan stays inside its cap on a huge cluster", () => {
+    const dimension = fresh();
+    const spot = worlds.giantSpruce(dimension, 0, 64, 0, 30);
+    const result = analyseTree(dimension, { x: spot.x, y: spot.y, z: spot.z }, spot.trunkId,
+        { maxLogs: 20 });
+    assert(result.logs.length <= 20, "the log cap was exceeded");
+    assert(result.stats.truncated, "a truncated scan should say so");
+});
+
+// ------------------------------------------------------------------
+//  10. TreeCapitator end to end
+// ------------------------------------------------------------------
+function breakLog(dimension, spot, player) {
+    resetCommands();
+    fire("after", "playerBreakBlock", {
+        player,
+        block: dimension.getBlock({ x: spot.x, y: spot.y, z: spot.z }),
+        brokenBlockPermutation: api.BlockPermutation.resolve(spot.trunkId)
+    });
+    drainRunQueue();
+    return registry.commands.filter((c) => c.startsWith("setblock"));
+}
+
+function axeHolder(dimension) {
+    const player = fakePlayer(dimension);
+    const axe = new ItemStack("minecraft:diamond_axe", 1);
+    player.getComponent = (name) => {
+        if (name !== "equippable") return undefined;
+        return {
+            getEquipmentSlot: (slot) => ({
+                getItem: () => (slot === "Mainhand" ? axe : undefined),
+                setItem: () => { }
+            })
+        };
+    };
+    return player;
+}
+
+test("END TO END: swinging an axe at a real tree breaks blocks", () => {
+    const dimension = fresh();
+    const spot = worlds.oakTree(dimension);
+    const commands = breakLog(dimension, spot, axeHolder(dimension));
+    assert(commands.length > 4, "the tree was not felled: " + commands.length + " blocks broken");
+});
+
+test("END TO END: swinging an axe at a log cabin breaks NOTHING extra", () => {
+    const dimension = fresh();
+    const spot = worlds.logCabin(dimension);
+    const commands = breakLog(dimension, spot, axeHolder(dimension));
+    assertEqual(commands.length, 0,
+        "the cabin lost " + commands.length + " blocks to one axe swing");
+});
+
+test("END TO END: bare hands never fell a tree", () => {
+    const dimension = fresh();
+    const spot = worlds.oakTree(dimension);
+    const commands = breakLog(dimension, spot, fakePlayer(dimension));
+    assertEqual(commands.length, 0, "a bare-handed break felled the tree");
+});
+
+test("END TO END: sneaking breaks a single log", () => {
+    const dimension = fresh();
+    const spot = worlds.oakTree(dimension);
+    const player = axeHolder(dimension);
+    player.isSneaking = true;
+    assertEqual(breakLog(dimension, spot, player).length, 0, "sneaking still felled the tree");
+});
+
+test("END TO END: creative mode is left alone", () => {
+    const dimension = fresh();
+    const spot = worlds.oakTree(dimension);
+    const player = axeHolder(dimension);
+    player.getGameMode = () => "creative";
+    assertEqual(breakLog(dimension, spot, player).length, 0, "creative mode felled the tree");
+});
+
+// ------------------------------------------------------------------
 //  Report
 // ------------------------------------------------------------------
-rmSync(SANDBOX, { recursive: true, force: true });
+rmSync(SANDBOX_ROOT, { recursive: true, force: true });
 
 console.log();
 for (const failure of failures) console.log("  FAIL  " + failure);

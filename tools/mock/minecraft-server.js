@@ -143,6 +143,10 @@ export function fire(kind, name, event) {
     for (const handler of store.get(name) ?? []) handler(event);
 }
 
+export function resetCommands() {
+    registry.commands.length = 0;
+}
+
 /** Run every queued system.run() callback until the queue drains. */
 export function drainRunQueue(limit = 10000) {
     let count = 0;
@@ -181,6 +185,20 @@ export class Dimension {
 
     getEntities() {
         return [];
+    }
+
+    /** Test helper: place a block without going through the engine. */
+    setBlockId(pos, typeId) {
+        const key = `${pos.x},${pos.y},${pos.z}`;
+        this.blocks.set(key, makeBlock(this, pos, typeId));
+        return this;
+    }
+
+    /** Test helper: snapshot every block that has been touched. */
+    snapshot() {
+        const out = new Map();
+        for (const [key, block] of this.blocks) out.set(key, block.typeId);
+        return out;
     }
 
     spawnItem(stack, location) {
