@@ -27,7 +27,9 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = dirname(HERE);
 const SANDBOX_ROOT = join(tmpdir(), "psu-test-sandbox");
 
-const ADDONS = JSON.parse(readFileSync(join(ROOT, "addons.json"), "utf8")).addons;
+// Add-ons that declare their own pipeline bring their own tests.
+const ADDONS = JSON.parse(readFileSync(join(ROOT, "addons.json"), "utf8"))
+    .addons.filter((addon) => !addon.pipeline);
 
 rmSync(SANDBOX_ROOT, { recursive: true, force: true });
 

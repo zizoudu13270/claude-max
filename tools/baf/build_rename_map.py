@@ -214,7 +214,11 @@ def build() -> dict:
         elif target in ctrl_map:
             new = ctrl_map[target].split(".")[-1]
         else:
-            new = strip_prefix(name)       # vanilla target: sleeping, blink, ...
+            # A vanilla target (animation.player.sleeping,
+            # controller.animation.persona.blink, ...). The old alias name says
+            # nothing useful, so name it after what it points at.
+            tail = target.split(".player.")[-1] if ".player." in target else target.split(".")[-1]
+            new = tail.replace(".", "_")
         alias_map[name] = _unique(f"{ALIAS}_{new}", taken_alias)
 
     # Controller state names: keep a meaningful one, otherwise follow the first

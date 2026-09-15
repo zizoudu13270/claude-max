@@ -27,7 +27,8 @@ EXCLUDE_SUFFIXES = {".md", ".bak", ".orig", ".rej", ".pyc", ".log"}
 
 def registry() -> list[dict]:
     data = json.loads((ROOT / "addons.json").read_text(encoding="utf-8"))
-    return data["addons"]
+    # Add-ons that declare their own pipeline are built by it, not here.
+    return [a for a in data["addons"] if not a.get("pipeline")]
 
 
 def version_string(behaviour: str) -> str:

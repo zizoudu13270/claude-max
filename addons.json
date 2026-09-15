@@ -9,7 +9,11 @@
     "  items       - behaviour-pack items, the icon atlas and attachables",
     "  lightTwins  - the psu:* off-hand twins from assets/light_sources.json",
     "  recipes     - crafting and smelting recipes",
-    "  flipbook    - the animated icon sheet"
+    "  flipbook    - the animated icon sheet",
+    "",
+    "pipeline names the toolchain that owns an add-on. The default pipeline",
+    "is the shared one above; an add-on with its own pipeline is skipped by",
+    "tools/build.py and tools/validate.py and built by its own scripts."
   ],
   "addons": [
     {
@@ -19,7 +23,12 @@
       "resources": "PSU_RP",
       "namespace": "psu",
       "sharedScripts": true,
-      "features": ["items", "lightTwins", "recipes", "flipbook"]
+      "features": [
+        "items",
+        "lightTwins",
+        "recipes",
+        "flipbook"
+      ]
     },
     {
       "id": "survival-core",
@@ -28,6 +37,16 @@
       "resources": "PSC_RP",
       "namespace": "psc",
       "sharedScripts": true,
+      "features": []
+    },
+    {
+      "id": "better-animation-feature",
+      "artifact": "Better_Animation_Feature",
+      "behaviour": "BetterAnimationFeature_BP",
+      "resources": "BetterAnimationFeature_RP",
+      "namespace": "lbr",
+      "pipeline": "baf",
+      "sharedScripts": false,
       "features": []
     }
   ]

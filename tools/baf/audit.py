@@ -16,6 +16,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from analyse import is_meaningful
 from baf_common import (BP, RP, LEGACY_PATTERNS, all_files, load, rel,
                         rp_paths, state_animation_names, text_files)
 
@@ -73,10 +74,16 @@ def inventory() -> dict:
         "bp_scripts": sum(1 for _ in BP.glob("scripts/*.js")),
     }
 
-    obfuscated = re.compile(r"\.[a-z]{6}$")
-    counts["animations_obfuscated"] = sum(1 for k in anims if obfuscated.search(k))
-    counts["controllers_obfuscated"] = sum(1 for k in ctrls if obfuscated.search(k))
-    counts["render_controllers_obfuscated"] = sum(1 for k in rcs if obfuscated.search(k))
+    def obfuscated(identifier: str) -> bool:
+        return not is_meaningful(identifier.rsplit(".", 1)[-1])
+
+    counts["animations_obfuscated"] = sum(1 for k in anims if obfuscated(k))
+    counts["controllers_obfuscated"] = sum(1 for k in ctrls if obfuscated(k))
+    counts["render_controllers_obfuscated"] = sum(1 for k in rcs if obfuscated(k))
+    counts["player_geometries_obfuscated"] = sum(
+        1 for g in geos if obfuscated(g["description"]["identifier"]))
+    counts["entity_aliases_obfuscated"] = sum(
+        1 for k in entity["animations"] if not is_meaningful(re.sub(r"^(mp|lbr)_", "", k)))
 
     molang = "\n".join(p.read_text(encoding="utf-8") for p in paths.values())
     counts["molang_mp_variables"] = len(set(re.findall(r"\b(?:v|variable)\.(mp_[a-z_0-9]+)", molang)))

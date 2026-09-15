@@ -454,7 +454,8 @@ def main() -> int:
     registry = load_json(ROOT / "addons.json")
     if not registry:
         return 1
-    addons = registry["addons"]
+    # Add-ons that declare their own pipeline are validated by it, not here.
+    addons = [a for a in registry["addons"] if not a.get("pipeline")]
 
     check_json_parses()
     check_shared_in_sync(addons)

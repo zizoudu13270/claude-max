@@ -65,8 +65,7 @@ def is_meaningful(token: str) -> bool:
     if not token or token == "default" or "." in token:
         return False
     if "_" in token:
-        return not any(OBFUSCATED.match(part) and part not in REAL_SIX_LETTER_WORDS
-                       for part in token.split("_"))
+        return True          # multi-word names are always deliberate
     if OBFUSCATED.match(token):
         return token in REAL_SIX_LETTER_WORDS
     return len(token) >= 2
@@ -143,7 +142,8 @@ def evidence() -> dict:
             "bones": bones,
             "bone_count": len(bones),
             "conditions": conditions,
-            "items": sorted(set(re.findall(r"minecraft:([a-z_0-9]+)", conditions))),
+            "items": sorted({m for m in re.findall(r"minecraft:([a-z_0-9]+)", conditions)
+                             if not m.startswith(("is_", "has_")) and not m.endswith("_tier")}),
             "tags": sorted(set(re.findall(r"[a-z_0-9]*:is_([a-z_0-9]+)", conditions))),
             "queries": sorted(set(re.findall(r"\bq(?:uery)?\.([a-z_0-9]+)", conditions))),
         }

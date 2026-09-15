@@ -149,10 +149,10 @@
               "throw_02": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_throwable')||q.is_item_name_any('slot.weapon.mainhand','minecraft:snowball','minecraft:wind_charge','minecraft:ender_pearl','minecraft:splash_potion','minecraft:lingering_potion','minecraft:experience_bottle','minecraft:egg','minecraft:blue_egg','minecraft:brown_egg','minecraft:ender_eye'))"
             },
             {
-              "golden_dandelion_04": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))"
+              "golden_dandelion_08": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))"
             },
             {
-              "shears_07": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))"
+              "shears_06": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))"
             },
             {
               "punch": "1"
@@ -173,7 +173,7 @@
               "default": "((q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_throwable')||q.is_item_name_any('slot.weapon.mainhand','minecraft:snowball','minecraft:wind_charge','minecraft:ender_pearl','minecraft:splash_potion','minecraft:lingering_potion','minecraft:experience_bottle','minecraft:egg','minecraft:blue_egg','minecraft:brown_egg','minecraft:ender_eye'))||(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_shovel','lbr:is_shovel'))||(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_sword','lbr:is_sword'))||(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_pickaxe','lbr:is_pickaxe'))||(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_axe','lbr:is_axe'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_rod')||q.is_item_name_any('slot.weapon.mainhand','minecraft:stick','minecraft:blaze_rod','minecraft:breeze_rod','minecraft:bone')))||q.all_animations_finished"
             },
             {
-              "state_076": "q.get_animation_frame&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_fishing_rod')||q.is_item_name_any('slot.weapon.mainhand','minecraft:fishing_rod'))"
+              "state_075": "q.get_animation_frame&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_fishing_rod')||q.is_item_name_any('slot.weapon.mainhand','minecraft:fishing_rod'))"
             }
           ],
           "blend_transition": 0.1
@@ -182,7 +182,7 @@
           "animations": [
             "lbr_punch",
             "lbr_punch_01",
-            "lbr_state_096"
+            "lbr_state_095"
           ],
           "transitions": [
             {
@@ -192,7 +192,7 @@
               "default": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_throwable')||q.is_item_name_any('slot.weapon.mainhand','minecraft:snowball','minecraft:wind_charge','minecraft:ender_pearl','minecraft:splash_potion','minecraft:lingering_potion','minecraft:experience_bottle','minecraft:egg','minecraft:blue_egg','minecraft:brown_egg','minecraft:ender_eye'))||(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_trident','lbr:is_trident'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_mace')||q.is_item_name_any('slot.weapon.mainhand','minecraft:mace'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_spear','minecraft:is_spear'))||q.all_animations_finished"
             },
             {
-              "state_076": "q.get_animation_frame&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_fishing_rod')||q.is_item_name_any('slot.weapon.mainhand','minecraft:fishing_rod'))"
+              "state_075": "q.get_animation_frame&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_fishing_rod')||q.is_item_name_any('slot.weapon.mainhand','minecraft:fishing_rod'))"
             }
           ],
           "blend_transition": 0.1
@@ -201,7 +201,7 @@
           "animations": [
             "lbr_punch",
             "lbr_punch_01",
-            "lbr_state_096"
+            "lbr_state_095"
           ],
           "transitions": [
             {
@@ -211,7 +211,7 @@
               "default": "(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_shovel','lbr:is_shovel'))||(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_sword','lbr:is_sword'))||(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_pickaxe','lbr:is_pickaxe'))||(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_axe','lbr:is_axe'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_rod')||q.is_item_name_any('slot.weapon.mainhand','minecraft:stick','minecraft:blaze_rod','minecraft:breeze_rod','minecraft:bone'))||q.all_animations_finished"
             },
             {
-              "state_076": "q.get_animation_frame&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_fishing_rod')||q.is_item_name_any('slot.weapon.mainhand','minecraft:fishing_rod'))"
+              "state_075": "q.get_animation_frame&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_fishing_rod')||q.is_item_name_any('slot.weapon.mainhand','minecraft:fishing_rod'))"
             }
           ],
           "blend_transition": 0.1
@@ -488,7 +488,7 @@
               "default": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_fishing_rod')||q.is_item_name_any('slot.weapon.mainhand','minecraft:fishing_rod'))||v.lbr_baf_v092"
             },
             {
-              "state_076": "q.get_animation_frame"
+              "state_075": "q.get_animation_frame"
             },
             {
               "punch": "v.attack_time"
@@ -507,7 +507,7 @@
               "default": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_fishing_rod')||q.is_item_name_any('slot.weapon.mainhand','minecraft:fishing_rod'))||v.lbr_baf_v092"
             },
             {
-              "state_076": "q.get_animation_frame"
+              "state_075": "q.get_animation_frame"
             },
             {
               "fishing_rod": "q.any_animation_finished"
@@ -518,10 +518,10 @@
           ],
           "blend_transition": 0.2
         },
-        "state_076": {
+        "state_075": {
           "animations": [
             {
-              "lbr_state_076": "1-v.lbr_baf_v139"
+              "lbr_state_075": "1-v.lbr_baf_v139"
             },
             {
               "lbr_riding_14": 0.5
@@ -1228,57 +1228,13 @@
             "v.lbr_baf_v377=0;"
           ]
         },
-        "shears_07": {
-          "animations": [
-            {
-              "lbr_shears_07": "v.is_holding_left?0.001:1"
-            },
-            {
-              "lbr_shears_08": "v.is_holding_left?1:0.001"
-            }
-          ],
-          "transitions": [
-            {
-              "default": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))||v.lbr_baf_v092"
-            },
-            {
-              "shears_07_01": "q.state_time>0.8&&v.attack_time"
-            },
-            {
-              "shears_06": "q.state_time>0.2&&q.in_range(v.attack_time,0.01,0.2)"
-            }
-          ],
-          "blend_transition": 0.1
-        },
-        "shears_07_01": {
-          "animations": [
-            {
-              "lbr_shears_07": "v.is_holding_left?0.001:1"
-            },
-            {
-              "lbr_shears_08": "v.is_holding_left?1:0.001"
-            }
-          ],
-          "transitions": [
-            {
-              "default": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))||v.lbr_baf_v092"
-            },
-            {
-              "shears_07": "q.state_time>0.8&&v.attack_time"
-            },
-            {
-              "shears_06": "q.state_time>=0.2&&q.in_range(v.attack_time,0.01,0.2)"
-            }
-          ],
-          "blend_transition": 0.1
-        },
         "shears_06": {
           "animations": [
             {
               "lbr_shears_06": "v.is_holding_left?0.001:1"
             },
             {
-              "lbr_shears_11": "v.is_holding_left?1:0.001"
+              "lbr_shears_07": "v.is_holding_left?1:0.001"
             }
           ],
           "transitions": [
@@ -1286,10 +1242,10 @@
               "default": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))||v.lbr_baf_v092"
             },
             {
-              "shears_07": "q.state_time>0.8&&v.attack_time"
+              "shears_06_01": "q.state_time>0.8&&v.attack_time"
             },
             {
-              "shears_06_01": "q.state_time>0.2&&q.in_range(v.attack_time,0.01,0.2)"
+              "shears_05": "q.state_time>0.2&&q.in_range(v.attack_time,0.01,0.2)"
             }
           ],
           "blend_transition": 0.1
@@ -1300,7 +1256,7 @@
               "lbr_shears_06": "v.is_holding_left?0.001:1"
             },
             {
-              "lbr_shears_11": "v.is_holding_left?1:0.001"
+              "lbr_shears_07": "v.is_holding_left?1:0.001"
             }
           ],
           "transitions": [
@@ -1308,21 +1264,65 @@
               "default": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))||v.lbr_baf_v092"
             },
             {
-              "shears_07": "q.state_time>0.8&&v.attack_time"
+              "shears_06": "q.state_time>0.8&&v.attack_time"
             },
             {
-              "shears_06": "q.state_time>0.2&&q.in_range(v.attack_time,0.01,0.2)"
+              "shears_05": "q.state_time>=0.2&&q.in_range(v.attack_time,0.01,0.2)"
             }
           ],
           "blend_transition": 0.1
         },
-        "golden_dandelion_04": {
+        "shears_05": {
           "animations": [
             {
-              "lbr_golden_dandelion_04": "v.is_holding_left?0.001:1"
+              "lbr_shears_05": "v.is_holding_left?0.001:1"
             },
             {
-              "lbr_golden_dandelion_01": "v.is_holding_left?1:0.001"
+              "lbr_shears_10": "v.is_holding_left?1:0.001"
+            }
+          ],
+          "transitions": [
+            {
+              "default": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))||v.lbr_baf_v092"
+            },
+            {
+              "shears_06": "q.state_time>0.8&&v.attack_time"
+            },
+            {
+              "shears_05_01": "q.state_time>0.2&&q.in_range(v.attack_time,0.01,0.2)"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "shears_05_01": {
+          "animations": [
+            {
+              "lbr_shears_05": "v.is_holding_left?0.001:1"
+            },
+            {
+              "lbr_shears_10": "v.is_holding_left?1:0.001"
+            }
+          ],
+          "transitions": [
+            {
+              "default": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))||v.lbr_baf_v092"
+            },
+            {
+              "shears_06": "q.state_time>0.8&&v.attack_time"
+            },
+            {
+              "shears_05": "q.state_time>0.2&&q.in_range(v.attack_time,0.01,0.2)"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "golden_dandelion_08": {
+          "animations": [
+            {
+              "lbr_golden_dandelion_08": "v.is_holding_left?0.001:1"
+            },
+            {
+              "lbr_golden_dandelion_07": "v.is_holding_left?1:0.001"
             }
           ],
           "transitions": [
@@ -1330,21 +1330,21 @@
               "default": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))||v.lbr_baf_v092"
             },
             {
-              "golden_dandelion_04_01": "q.state_time>1.2&&v.attack_time"
+              "golden_dandelion_08_01": "q.state_time>1.2&&v.attack_time"
             },
             {
-              "golden_dandelion_10": "q.state_time>0.25&&q.in_range(v.attack_time,0.01,0.2)"
+              "golden_dandelion_12": "q.state_time>0.25&&q.in_range(v.attack_time,0.01,0.2)"
             }
           ],
           "blend_transition": 0.1
         },
-        "golden_dandelion_04_01": {
+        "golden_dandelion_08_01": {
           "animations": [
             {
-              "lbr_golden_dandelion_04": "v.is_holding_left?0.001:1"
+              "lbr_golden_dandelion_08": "v.is_holding_left?0.001:1"
             },
             {
-              "lbr_golden_dandelion_01": "v.is_holding_left?1:0.001"
+              "lbr_golden_dandelion_07": "v.is_holding_left?1:0.001"
             }
           ],
           "transitions": [
@@ -1352,21 +1352,21 @@
               "default": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))||v.lbr_baf_v092"
             },
             {
-              "golden_dandelion_04": "q.state_time>1.2&&v.attack_time"
+              "golden_dandelion_08": "q.state_time>1.2&&v.attack_time"
             },
             {
-              "golden_dandelion_10": "q.state_time>=0.25&&q.in_range(v.attack_time,0.01,0.2)"
+              "golden_dandelion_12": "q.state_time>=0.25&&q.in_range(v.attack_time,0.01,0.2)"
             }
           ],
           "blend_transition": 0.1
         },
-        "golden_dandelion_10": {
+        "golden_dandelion_12": {
           "animations": [
             {
-              "lbr_golden_dandelion_10": "v.is_holding_left?0.001:1"
+              "lbr_golden_dandelion_12": "v.is_holding_left?0.001:1"
             },
             {
-              "lbr_golden_dandelion_08": "v.is_holding_left?1:0.001"
+              "lbr_golden_dandelion_11": "v.is_holding_left?1:0.001"
             }
           ],
           "transitions": [
@@ -1374,21 +1374,21 @@
               "default": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))||v.lbr_baf_v092"
             },
             {
-              "golden_dandelion_04": "q.state_time>1.2&&v.attack_time"
+              "golden_dandelion_08": "q.state_time>1.2&&v.attack_time"
             },
             {
-              "golden_dandelion_10_01": "q.state_time>0.25&&q.in_range(v.attack_time,0.01,0.2)"
+              "golden_dandelion_12_01": "q.state_time>0.25&&q.in_range(v.attack_time,0.01,0.2)"
             }
           ],
           "blend_transition": 0.1
         },
-        "golden_dandelion_10_01": {
+        "golden_dandelion_12_01": {
           "animations": [
             {
-              "lbr_golden_dandelion_10": "v.is_holding_left?0.001:1"
+              "lbr_golden_dandelion_12": "v.is_holding_left?0.001:1"
             },
             {
-              "lbr_golden_dandelion_08": "v.is_holding_left?1:0.001"
+              "lbr_golden_dandelion_11": "v.is_holding_left?1:0.001"
             }
           ],
           "transitions": [
@@ -1396,10 +1396,10 @@
               "default": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))||v.lbr_baf_v092"
             },
             {
-              "golden_dandelion_04": "q.state_time>1.4&&v.attack_time"
+              "golden_dandelion_08": "q.state_time>1.4&&v.attack_time"
             },
             {
-              "golden_dandelion_10": "q.state_time>0.5&&q.in_range(v.attack_time,0.01,0.2)"
+              "golden_dandelion_12": "q.state_time>0.5&&q.in_range(v.attack_time,0.01,0.2)"
             }
           ],
           "blend_transition": 0.1
@@ -1414,29 +1414,29 @@
           ],
           "transitions": [
             {
-              "shield_05": "(q.in_range(v.attack_time,0.001,0.1)||q.cooldown_time_remaining/v.lbr_baf_v191>0.9)&&q.main_hand_item_use_duration==0&&(!q.blocking||!(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))||q.is_riding)&&!v.lbr_baf_v092"
+              "shield_03": "(q.in_range(v.attack_time,0.001,0.1)||q.cooldown_time_remaining/v.lbr_baf_v191>0.9)&&q.main_hand_item_use_duration==0&&(!q.blocking||!(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))||q.is_riding)&&!v.lbr_baf_v092"
             }
           ]
         },
-        "shield_05": {
+        "shield_03": {
           "on_entry": [
             "!q.is_in_ui&&!v.is_paperdoll?{v.lbr_baf_v321=q.is_on_ground&&q.modified_move_speed<0.7;v.lbr_baf_v191=q.cooldown_time('slot.weapon.mainhand');};"
           ],
           "animations": [
             {
-              "lbr_shield_05": "!q.is_gliding?!q.is_riding?v.lbr_baf_v321"
+              "lbr_shield_03": "!q.is_gliding?!q.is_riding?v.lbr_baf_v321"
             },
             {
-              "lbr_shield_19": "!q.is_gliding?!q.is_riding?!v.lbr_baf_v321"
+              "lbr_shield_11": "!q.is_gliding?!q.is_riding?!v.lbr_baf_v321"
             },
             {
-              "lbr_shield_16": "q.is_riding?Math.clamp(1-v.lbr_baf_v037,0.001,1)"
+              "lbr_shield_09": "q.is_riding?Math.clamp(1-v.lbr_baf_v037,0.001,1)"
             },
             {
-              "lbr_shield_13": "q.is_gliding?1:q.is_riding?Math.clamp(v.lbr_baf_v037,0.001,1)"
+              "lbr_shield_07": "q.is_gliding?1:q.is_riding?Math.clamp(v.lbr_baf_v037,0.001,1)"
             },
             {
-              "lbr_shield_04": "q.is_riding"
+              "lbr_shield_02": "q.is_riding"
             }
           ],
           "transitions": [
@@ -1447,30 +1447,30 @@
               "step_01": "v.lbr_baf_v191!=q.cooldown_time('slot.weapon.mainhand')"
             },
             {
-              "shield_05_01": "q.state_time>v.lbr_baf_v191/4&&q.in_range(v.attack_time,0.001,0.1)&&!v.lbr_baf_v092"
+              "shield_03_01": "q.state_time>v.lbr_baf_v191/4&&q.in_range(v.attack_time,0.001,0.1)&&!v.lbr_baf_v092"
             }
           ],
           "blend_transition": 0.1
         },
-        "shield_05_01": {
+        "shield_03_01": {
           "on_entry": [
             "!q.is_in_ui&&!v.is_paperdoll?{v.lbr_baf_v237=q.is_on_ground&&q.modified_move_speed<0.7;v.lbr_baf_v191=q.cooldown_time('slot.weapon.mainhand');};"
           ],
           "animations": [
             {
-              "lbr_shield_05": "!q.is_gliding?!q.is_riding?v.lbr_baf_v321"
+              "lbr_shield_03": "!q.is_gliding?!q.is_riding?v.lbr_baf_v321"
             },
             {
-              "lbr_shield_19": "!q.is_gliding?!q.is_riding?!v.lbr_baf_v321"
+              "lbr_shield_11": "!q.is_gliding?!q.is_riding?!v.lbr_baf_v321"
             },
             {
-              "lbr_shield_16": "q.is_riding?Math.clamp(1-v.lbr_baf_v037,0.001,1)"
+              "lbr_shield_09": "q.is_riding?Math.clamp(1-v.lbr_baf_v037,0.001,1)"
             },
             {
-              "lbr_shield_13": "q.is_gliding?1:q.is_riding?Math.clamp(v.lbr_baf_v037,0.001,1)"
+              "lbr_shield_07": "q.is_gliding?1:q.is_riding?Math.clamp(v.lbr_baf_v037,0.001,1)"
             },
             {
-              "lbr_shield_04": "q.is_riding"
+              "lbr_shield_02": "q.is_riding"
             }
           ],
           "transitions": [
@@ -1481,7 +1481,7 @@
               "step_01": "v.lbr_baf_v191!=q.cooldown_time('slot.weapon.mainhand')"
             },
             {
-              "shield_05": "q.state_time>v.lbr_baf_v191/4&&q.in_range(v.attack_time,0.001,0.1)&&!v.lbr_baf_v092"
+              "shield_03": "q.state_time>v.lbr_baf_v191/4&&q.in_range(v.attack_time,0.001,0.1)&&!v.lbr_baf_v092"
             }
           ],
           "blend_transition": 0.1
@@ -1539,7 +1539,7 @@
           ],
           "transitions": [
             {
-              "state_092": "v.is_holding_left"
+              "state_091": "v.is_holding_left"
             }
           ]
         },
@@ -1555,7 +1555,7 @@
               "default": "!v.is_holding_left"
             },
             {
-              "state_092": "!v.lbr_baf_offhand_hold_up&&!(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_torch')||q.is_item_name_any('slot.weapon.offhand','minecraft:blaze_powder','minecraft:torch','minecraft:soul_torch','minecraft:copper_torch'))"
+              "state_091": "!v.lbr_baf_offhand_hold_up&&!(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_torch')||q.is_item_name_any('slot.weapon.offhand','minecraft:blaze_powder','minecraft:torch','minecraft:soul_torch','minecraft:copper_torch'))"
             },
             {
               "step_01": "q.is_gliding||q.is_swimming||v.lbr_baf_v092"
@@ -1572,19 +1572,19 @@
               "default": "!v.is_holding_left"
             },
             {
-              "state_092": "!v.lbr_baf_offhand_hold_up&&!(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_torch')||q.is_item_name_any('slot.weapon.offhand','minecraft:blaze_powder','minecraft:torch','minecraft:soul_torch','minecraft:copper_torch'))"
+              "state_091": "!v.lbr_baf_offhand_hold_up&&!(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_torch')||q.is_item_name_any('slot.weapon.offhand','minecraft:blaze_powder','minecraft:torch','minecraft:soul_torch','minecraft:copper_torch'))"
             },
             {
               "state_040": "!q.is_gliding&&!q.is_swimming&&!q.is_emoting&&!v.lbr_baf_v092"
             }
           ]
         },
-        "state_092": {
+        "state_091": {
           "on_entry": [
             "v.lbr_baf_v071=q.get_equipped_item_name(1);"
           ],
           "animations": [
-            "lbr_state_092",
+            "lbr_state_091",
             {
               "lbr_state_040": "v.lbr_baf_v135&&!q.is_gliding&&!q.is_swimming&&!q.is_emoting&&!(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_axe','lbr:is_axe'))&&!(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))&&!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))&&!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))"
             }
@@ -1679,14 +1679,14 @@
         "default": {
           "transitions": [
             {
-              "shield_11": "q.is_in_water"
+              "shield_06": "q.is_in_water"
             }
           ]
         },
-        "shield_11": {
+        "shield_06": {
           "animations": [
             {
-              "lbr_shield_11": "Math.clamp(1-v.lbr_baf_v139-Math.abs(v.lbr_baf_v014)*3,0,1)"
+              "lbr_shield_06": "Math.clamp(1-v.lbr_baf_v139-Math.abs(v.lbr_baf_v014)*3,0,1)"
             }
           ],
           "transitions": [
@@ -1708,7 +1708,7 @@
               "default": "!q.is_in_water&&q.state_time>1"
             },
             {
-              "shield_11": "v.attack_time==0&&q.main_hand_item_use_duration==0&&q.state_time>1&&!q.is_swimming&&!q.relative_block_has_any_tag(0,0,0,'water')&&(!q.blocking||(!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shield'))&&!(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))))"
+              "shield_06": "v.attack_time==0&&q.main_hand_item_use_duration==0&&q.state_time>1&&!q.is_swimming&&!q.relative_block_has_any_tag(0,0,0,'water')&&(!q.blocking||(!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shield'))&&!(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))))"
             }
           ],
           "blend_transition": {
@@ -1729,16 +1729,16 @@
         "default": {
           "transitions": [
             {
-              "state_117": "v.is_holding_right"
+              "state_116": "v.is_holding_right"
             }
           ]
         },
-        "state_117": {
+        "state_116": {
           "on_entry": [
             "v.lbr_baf_v214=q.get_equipped_item_name(0);"
           ],
           "animations": [
-            "lbr_state_117"
+            "lbr_state_116"
           ],
           "transitions": [
             {
@@ -1770,7 +1770,7 @@
               "default": "!v.is_holding_right"
             },
             {
-              "state_117": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_crossbow')||q.is_item_name_any('slot.weapon.mainhand','minecraft:crossbow'))"
+              "state_116": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_crossbow')||q.is_item_name_any('slot.weapon.mainhand','minecraft:crossbow'))"
             },
             {
               "controller_041": "q.blocking&&(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))&&!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
@@ -1790,7 +1790,7 @@
               "default": "!v.is_holding_right"
             },
             {
-              "state_117": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_torch')||q.is_item_name_any('slot.weapon.mainhand','minecraft:blaze_powder','minecraft:torch','minecraft:soul_torch','minecraft:copper_torch'))"
+              "state_116": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_torch')||q.is_item_name_any('slot.weapon.mainhand','minecraft:blaze_powder','minecraft:torch','minecraft:soul_torch','minecraft:copper_torch'))"
             },
             {
               "default": "v.lbr_baf_v214!=q.get_equipped_item_name(0)"
@@ -1811,7 +1811,7 @@
               "default": "!v.is_holding_right"
             },
             {
-              "state_117": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))||q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
+              "state_116": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))||q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
             },
             {
               "controller_041": "q.blocking&&(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))"
@@ -1837,7 +1837,7 @@
               "default": "!v.is_holding_right"
             },
             {
-              "state_117": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))||q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
+              "state_116": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))||q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
             },
             {
               "controller_041": "q.blocking&&(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))"
@@ -1865,7 +1865,7 @@
               "default": "!v.is_holding_right"
             },
             {
-              "state_117": "!q.blocking||q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
+              "state_116": "!q.blocking||q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
             }
           ],
           "blend_transition": 0.16
@@ -2156,20 +2156,20 @@
         "default": {
           "transitions": [
             {
-              "state_109": "q.main_hand_item_use_duration!=0"
+              "state_108": "q.main_hand_item_use_duration!=0"
             }
           ]
         },
-        "state_109": {
+        "state_108": {
           "animations": [
-            "lbr_state_109"
+            "lbr_state_108"
           ],
           "transitions": [
             {
               "state_014": "q.main_hand_item_use_duration==0&&q.state_time>0.375"
             },
             {
-              "state_126": "q.all_animations_finished"
+              "state_125": "q.all_animations_finished"
             },
             {
               "default": "q.main_hand_item_use_duration==0"
@@ -2177,9 +2177,9 @@
           ],
           "blend_transition": 0.16
         },
-        "state_126": {
+        "state_125": {
           "animations": [
-            "lbr_state_126"
+            "lbr_state_125"
           ],
           "transitions": [
             {
@@ -2197,7 +2197,7 @@
               "default": "q.any_animation_finished"
             },
             {
-              "state_109": "q.main_hand_item_use_duration!=0"
+              "state_108": "q.main_hand_item_use_duration!=0"
             }
           ],
           "blend_transition": 0.1
@@ -2304,7 +2304,7 @@
               "lbr_state_015": "Math.abs(q.vertical_speed)<6"
             },
             {
-              "lbr_state_078": "Math.abs(q.vertical_speed)<6"
+              "lbr_state_077": "Math.abs(q.vertical_speed)<6"
             }
           ],
           "transitions": [
@@ -2380,7 +2380,7 @@
       }
     },
     "controller.animation.lbr_baf.player.controller_014": {
-      "initial_state": "state_074",
+      "initial_state": "state_073",
       "states": {
         "default": {
           "on_entry": [
@@ -2388,23 +2388,23 @@
           ],
           "transitions": [
             {
-              "state_099": "v.lbr_baf_v280&&(v.lbr_baf_v087||v.lbr_baf_v107)"
+              "state_098": "v.lbr_baf_v280&&(v.lbr_baf_v087||v.lbr_baf_v107)"
             },
             {
-              "state_074": "v.lbr_baf_v332<q.health"
+              "state_073": "v.lbr_baf_v332<q.health"
             },
             {
-              "state_110": "v.lbr_baf_v280"
+              "state_109": "v.lbr_baf_v280"
             }
           ]
         },
-        "state_110": {
+        "state_109": {
           "on_entry": [
             "v.lbr_baf_v332=q.health;"
           ],
           "animations": [
             {
-              "lbr_state_110": "v.is_first_person"
+              "lbr_state_109": "v.is_first_person"
             },
             {
               "lbr_hurt": "!v.is_first_person"
@@ -2415,45 +2415,45 @@
               "default": "q.any_animation_finished||v.lbr_baf_v087||v.lbr_baf_v107"
             },
             {
-              "state_110_01": "q.state_time>0.49&&v.lbr_baf_v280"
+              "state_109_01": "q.state_time>0.49&&v.lbr_baf_v280"
             },
             {
-              "state_074": "v.lbr_baf_v332<q.health"
+              "state_073": "v.lbr_baf_v332<q.health"
             }
           ],
           "on_exit": [
             "v.lbr_baf_v094=0;"
           ]
         },
-        "state_099": {
+        "state_098": {
           "on_entry": [
             "v.lbr_baf_v332=q.health;"
           ],
           "animations": [
-            "lbr_state_099"
+            "lbr_state_098"
           ],
           "transitions": [
             {
               "default": "q.any_animation_finished"
             },
             {
-              "state_110_01": "q.state_time>0.49&&v.lbr_baf_v280"
+              "state_109_01": "q.state_time>0.49&&v.lbr_baf_v280"
             },
             {
-              "state_074": "v.lbr_baf_v332<q.health"
+              "state_073": "v.lbr_baf_v332<q.health"
             }
           ],
           "on_exit": [
             "v.lbr_baf_v094=0;"
           ]
         },
-        "state_110_01": {
+        "state_109_01": {
           "on_entry": [
             "v.lbr_baf_v332=q.health;"
           ],
           "animations": [
             {
-              "lbr_state_110": "v.is_first_person"
+              "lbr_state_109": "v.is_first_person"
             },
             {
               "lbr_hurt": "!v.is_first_person"
@@ -2461,10 +2461,10 @@
           ],
           "transitions": [
             {
-              "state_110": "q.state_time>0.49&&v.lbr_baf_v280"
+              "state_109": "q.state_time>0.49&&v.lbr_baf_v280"
             },
             {
-              "state_074": "v.lbr_baf_v332<q.health"
+              "state_073": "v.lbr_baf_v332<q.health"
             },
             {
               "default": "q.any_animation_finished"
@@ -2474,16 +2474,16 @@
             "v.lbr_baf_v094=0;"
           ]
         },
-        "state_074": {
+        "state_073": {
           "on_entry": [
             "v.lbr_baf_v332=q.health;"
           ],
           "animations": [
-            "lbr_state_074"
+            "lbr_state_073"
           ],
           "transitions": [
             {
-              "state_110": "v.lbr_baf_v280"
+              "state_109": "v.lbr_baf_v280"
             },
             {
               "default": "q.any_animation_finished"
@@ -2507,7 +2507,7 @@
               "step_01": "q.state_time>2.125||((q.is_local_player||q.state_time>0.5)&&v.lbr_baf_v074>0.5)||q.is_sneaking||q.is_in_water"
             },
             {
-              "state_104": "!q.is_alive"
+              "state_103": "!q.is_alive"
             }
           ],
           "blend_transition": 0.2
@@ -2515,13 +2515,13 @@
         "step_01": {
           "transitions": [
             {
-              "state_104": "!q.is_alive"
+              "state_103": "!q.is_alive"
             }
           ]
         },
-        "state_104": {
+        "state_103": {
           "animations": [
-            "lbr_state_104",
+            "lbr_state_103",
             "lbr_state_065"
           ],
           "transitions": [
@@ -2555,7 +2555,7 @@
               "lbr_fall": "(0.5+v.lbr_baf_v014*0.5)*!q.any(v.lbr_baf_v318,11,12)"
             },
             {
-              "lbr_state_143": "v.lbr_baf_v014*!q.any(v.lbr_baf_v318,11,12)"
+              "lbr_state_142": "v.lbr_baf_v014*!q.any(v.lbr_baf_v318,11,12)"
             }
           ],
           "transitions": [
@@ -2575,7 +2575,7 @@
               "step_03": "q.is_in_water&&!v.lbr_baf_v189"
             },
             {
-              "state_133": "q.is_item_name_any('slot.weapon.mainhand','minecraft:water_bucket')&&q.vertical_speed<-12"
+              "state_132": "q.is_item_name_any('slot.weapon.mainhand','minecraft:water_bucket')&&q.vertical_speed<-12"
             },
             {
               "step_02": "v.lbr_baf_v049<=0.3&&q.is_sneaking&&!v.lbr_baf_v040||v.lbr_baf_v092"
@@ -2605,24 +2605,24 @@
               "step_03": "q.is_in_water&&!v.lbr_baf_v189"
             },
             {
-              "state_133": "q.state_time>0.5&&q.is_item_name_any('slot.weapon.mainhand','minecraft:water_bucket')&&q.vertical_speed<-12"
+              "state_132": "q.state_time>0.5&&q.is_item_name_any('slot.weapon.mainhand','minecraft:water_bucket')&&q.vertical_speed<-12"
             }
           ],
           "blend_transition": 0.3
         },
-        "state_133": {
+        "state_132": {
           "animations": [
             {
-              "lbr_state_133": "!v.is_holding_left"
+              "lbr_state_132": "!v.is_holding_left"
             },
             {
               "lbr_state_017": "!v.is_holding_left"
             },
             {
-              "lbr_state_102": "v.is_holding_left"
+              "lbr_state_101": "v.is_holding_left"
             },
             {
-              "lbr_state_073": "v.is_holding_left"
+              "lbr_state_072": "v.is_holding_left"
             }
           ],
           "transitions": [
@@ -2656,7 +2656,7 @@
           ],
           "animations": [
             "lbr_state_018",
-            "lbr_state_141",
+            "lbr_state_140",
             "lbr_state_063"
           ],
           "transitions": [
@@ -2707,12 +2707,12 @@
           ],
           "blend_transition": 0.16
         },
-        "state_119": {
+        "state_118": {
           "on_entry": [
             "v.lbr_baf_v405=1;"
           ],
           "animations": [
-            "lbr_state_119",
+            "lbr_state_118",
             "lbr_state_029"
           ],
           "transitions": [
@@ -2777,7 +2777,7 @@
           ],
           "animations": [
             "lbr_state_032",
-            "lbr_state_129"
+            "lbr_state_128"
           ],
           "transitions": [
             {
@@ -2787,7 +2787,7 @@
               "state_018": "q.in_range(q.state_time/v.lbr_baf_v344,0,0.25)&&q.is_sneaking&&v.lbr_baf_v049>0.5"
             },
             {
-              "state_119": "q.in_range(q.state_time/v.lbr_baf_v344,0.25,0.5)&&q.is_sneaking&&v.lbr_baf_v049>0.3"
+              "state_118": "q.in_range(q.state_time/v.lbr_baf_v344,0.25,0.5)&&q.is_sneaking&&v.lbr_baf_v049>0.3"
             },
             {
               "water_09_01": "q.is_in_water&&v.lbr_baf_v189"
@@ -2862,33 +2862,33 @@
         "default": {
           "transitions": [
             {
-              "shield_24": "q.blocking&&!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
+              "shield_15": "q.blocking&&!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
             }
           ]
         },
-        "shield_24": {
+        "shield_15": {
           "animations": [
             {
-              "lbr_shield_24": "!(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))"
+              "lbr_shield_15": "!(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))"
             },
             {
-              "lbr_shield_10": "(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))&&v.lbr_baf_v220!=1"
+              "lbr_shield_05": "(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))&&v.lbr_baf_v220!=1"
             }
           ],
           "transitions": [
             {
-              "shield_22": "!q.blocking||q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
+              "shield_13": "!q.blocking||q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
             }
           ],
           "blend_transition": 0.24
         },
-        "shield_22": {
+        "shield_13": {
           "animations": [
             {
-              "lbr_shield_22": "!(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))"
+              "lbr_shield_13": "!(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))"
             },
             {
-              "lbr_shield_20": "(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))&&v.lbr_baf_v220!=1"
+              "lbr_shield_12": "(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))&&v.lbr_baf_v220!=1"
             }
           ],
           "transitions": [
@@ -2896,7 +2896,7 @@
               "default": "q.any_animation_finished"
             },
             {
-              "shield_24": "q.blocking&&!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
+              "shield_15": "q.blocking&&!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
             }
           ],
           "blend_transition": 0.1
@@ -2908,16 +2908,16 @@
         "default": {
           "transitions": [
             {
-              "state_080": "q.has_armor_slot(2)"
+              "state_079": "q.has_armor_slot(2)"
             }
           ]
         },
-        "state_080": {
+        "state_079": {
           "on_entry": [
             "v.lbr_baf_v256=q.armor_texture_slot(2);"
           ],
           "animations": [
-            "lbr_state_080"
+            "lbr_state_079"
           ],
           "transitions": [
             {
@@ -2995,7 +2995,7 @@
               "lbr_state_038": "Math.abs(q.vertical_speed)<6&&(q.main_hand_item_use_duration==0||(!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_bow')||q.is_item_name_any('slot.weapon.mainhand','minecraft:bow'))&&!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_crossbow')||q.is_item_name_any('slot.weapon.mainhand','minecraft:crossbow'))))"
             },
             {
-              "lbr_state_078": "Math.abs(q.vertical_speed)<6"
+              "lbr_state_077": "Math.abs(q.vertical_speed)<6"
             }
           ],
           "transitions": [
@@ -3021,7 +3021,7 @@
               "shield": "q.blocking"
             },
             {
-              "state_136": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_spear','minecraft:is_spear'))&&!v.lbr_baf_v092"
+              "state_135": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_spear','minecraft:is_spear'))&&!v.lbr_baf_v092"
             },
             {
               "step_01": "q.main_hand_item_use_duration>0"
@@ -3034,7 +3034,7 @@
               "state_010": "(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))"
             },
             {
-              "shield_17": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shield'))"
+              "shield_10": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shield'))"
             },
             {
               "spyglass_03": "v.is_holding_spyglass&&!v.lbr_baf_v092"
@@ -3043,17 +3043,17 @@
               "default": "!q.blocking"
             },
             {
-              "state_136": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_spear','minecraft:is_spear'))&&!v.lbr_baf_v092"
+              "state_135": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_spear','minecraft:is_spear'))&&!v.lbr_baf_v092"
             },
             {
               "blocking_05": "q.item_is_charged"
             }
           ]
         },
-        "shield_17": {
+        "shield_10": {
           "animations": [
             {
-              "lbr_shield_17": "!v.lbr_baf_v405?q.is_riding?(q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat','minecraft:pig','minecraft:strider')?0:0.5):1"
+              "lbr_shield_10": "!v.lbr_baf_v405?q.is_riding?(q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat','minecraft:pig','minecraft:strider')?0:0.5):1"
             }
           ],
           "transitions": [
@@ -3083,7 +3083,7 @@
               "state_052": "!q.blocking&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_spear','minecraft:is_spear'))&&q.main_hand_item_use_duration&&!v.lbr_baf_v092"
             },
             {
-              "state_136": "(!q.blocking||q.cooldown_time_remaining)&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_spear','minecraft:is_spear'))&&!v.lbr_baf_v092"
+              "state_135": "(!q.blocking||q.cooldown_time_remaining)&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_spear','minecraft:is_spear'))&&!v.lbr_baf_v092"
             },
             {
               "blocking_05": "!q.blocking&&q.item_is_charged"
@@ -3109,31 +3109,31 @@
               "blocking_05": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_crossbow')||q.is_item_name_any('slot.weapon.mainhand','minecraft:crossbow'))"
             },
             {
-              "state_136": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_spear','minecraft:is_spear'))&&!v.lbr_baf_v092"
+              "state_135": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_spear','minecraft:is_spear'))&&!v.lbr_baf_v092"
             },
             {
-              "state_089": "v.is_tooting_goat_horn||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_horn')||q.is_item_name_any('slot.weapon.mainhand','minecraft:goat_horn'))"
+              "state_088": "v.is_tooting_goat_horn||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_horn')||q.is_item_name_any('slot.weapon.mainhand','minecraft:goat_horn'))"
             },
             {
               "spyglass_03": "(v.is_holding_spyglass||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_spyglass')||q.is_item_name_any('slot.weapon.mainhand','minecraft:spyglass')))&&!v.lbr_baf_v092"
             },
             {
-              "state_089_01": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_potion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:potion','minecraft:ominous_bottle'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_drink')||q.is_item_name_any('slot.weapon.mainhand','minecraft:beetroot_soup','minecraft:mushroom_stew','minecraft:rabbit_stew','minecraft:suspicious_stew','minecraft:milk_bucket','minecraft:potion','minecraft:honey_bottle','minecraft:ominous_bottle'))"
+              "state_088_01": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_potion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:potion','minecraft:ominous_bottle'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_drink')||q.is_item_name_any('slot.weapon.mainhand','minecraft:beetroot_soup','minecraft:mushroom_stew','minecraft:rabbit_stew','minecraft:suspicious_stew','minecraft:milk_bucket','minecraft:potion','minecraft:honey_bottle','minecraft:ominous_bottle'))"
             },
             {
               "brush": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_brush')||q.is_item_name_any('slot.weapon.mainhand','minecraft:brush'))"
             },
             {
-              "state_089_02": "q.main_hand_item_max_duration<600"
+              "state_088_02": "q.main_hand_item_max_duration<600"
             },
             {
               "flint_and_steel": "1"
             }
           ]
         },
-        "state_089": {
+        "state_088": {
           "animations": [
-            "lbr_state_089",
+            "lbr_state_088",
             "lbr_goat_horn"
           ],
           "transitions": [
@@ -3199,9 +3199,9 @@
           ],
           "blend_transition": 0.1
         },
-        "state_089_01": {
+        "state_088_01": {
           "animations": [
-            "lbr_state_089",
+            "lbr_state_088",
             "lbr_state_036"
           ],
           "transitions": [
@@ -3211,9 +3211,9 @@
           ],
           "blend_transition": 0.2
         },
-        "state_089_02": {
+        "state_088_02": {
           "animations": [
-            "lbr_state_089",
+            "lbr_state_088",
             "lbr_eat"
           ],
           "transitions": [
@@ -3283,24 +3283,24 @@
         "step_02": {
           "transitions": [
             {
-              "shield_23_01": "q.is_riding&&!v.lbr_baf_v405"
+              "shield_14_01": "q.is_riding&&!v.lbr_baf_v405"
             },
             {
-              "shield_09": "q.is_riding&&v.lbr_baf_v405"
+              "shield_04": "q.is_riding&&v.lbr_baf_v405"
             },
             {
               "step_03": "!q.is_riding&&v.lbr_baf_v405"
             },
             {
-              "shield_23": "1"
+              "shield_14": "1"
             }
           ]
         },
-        "shield_23": {
+        "shield_14": {
           "blend_via_shortest_path": true,
           "animations": [
-            "lbr_shield_23",
-            "lbr_shield_14"
+            "lbr_shield_14",
+            "lbr_shield_08"
           ],
           "transitions": [
             {
@@ -3315,11 +3315,11 @@
           ],
           "blend_transition": 0.2
         },
-        "shield_23_01": {
+        "shield_14_01": {
           "blend_via_shortest_path": true,
           "animations": [
-            "lbr_shield_23",
-            "lbr_shield_09"
+            "lbr_shield_14",
+            "lbr_shield_04"
           ],
           "transitions": [
             {
@@ -3334,10 +3334,10 @@
           ],
           "blend_transition": 0.2
         },
-        "shield_09": {
+        "shield_04": {
           "blend_via_shortest_path": true,
           "animations": [
-            "lbr_shield_09"
+            "lbr_shield_04"
           ],
           "transitions": [
             {
@@ -3434,10 +3434,10 @@
               "lbr_state_043": "q.is_riding_any_entity_of_type('minecraft:nautilus','minecraft:zombie_nautilus')?0.001:1"
             },
             {
-              "lbr_state_100": "q.is_riding?0.001:1"
+              "lbr_state_099": "q.is_riding?0.001:1"
             },
             {
-              "lbr_state_116": "q.is_riding?1:0.001"
+              "lbr_state_115": "q.is_riding?1:0.001"
             }
           ],
           "transitions": [
@@ -3493,19 +3493,19 @@
           ],
           "blend_transition": 0.15
         },
-        "state_136": {
+        "state_135": {
           "on_entry": [
             "v.lbr_baf_v214=q.get_equipped_item_name(0);"
           ],
           "animations": [
             {
-              "lbr_state_136": "1-v.lbr_baf_v139"
+              "lbr_state_135": "1-v.lbr_baf_v139"
             },
             {
               "lbr_state_001": "q.is_riding?0:1-v.lbr_baf_v139"
             },
             {
-              "lbr_state_134": "q.is_riding"
+              "lbr_state_133": "q.is_riding"
             },
             "lbr_controller_003"
           ],
@@ -3533,15 +3533,15 @@
             {
               "lbr_state_004": "q.is_riding?0:!q.is_gliding-v.lbr_baf_v139"
             },
-            "lbr_state_087",
+            "lbr_state_086",
             {
               "lbr_state_012": "v.is_holding_left?0.001:1"
             },
             {
-              "lbr_state_105": "q.is_riding"
+              "lbr_state_104": "q.is_riding"
             },
             {
-              "lbr_state_079": "q.is_gliding"
+              "lbr_state_078": "q.is_gliding"
             }
           ],
           "transitions": [
@@ -3552,7 +3552,7 @@
               "state_010": "q.main_hand_item_use_duration==0&&q.blocking&&(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))&&!q.is_riding"
             },
             {
-              "state_136": "(!q.main_hand_item_use_duration||v.lbr_baf_v084>=1)&&q.state_time>0.1&&!v.lbr_baf_v092"
+              "state_135": "(!q.main_hand_item_use_duration||v.lbr_baf_v084>=1)&&q.state_time>0.1&&!v.lbr_baf_v092"
             }
           ],
           "blend_transition": {
@@ -3582,7 +3582,7 @@
               "shield": "q.blocking"
             },
             {
-              "state_136": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_spear','minecraft:is_spear'))&&!v.lbr_baf_v092"
+              "state_135": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_spear','minecraft:is_spear'))&&!v.lbr_baf_v092"
             },
             {
               "blocking_05": "q.item_is_charged"
@@ -3622,7 +3622,7 @@
               "state_005": "q.is_sprinting&&q.is_jumping&&q.in_range(v.lbr_baf_v120,0.1,0.6)"
             },
             {
-              "state_081": "q.is_sprinting&&q.is_jumping"
+              "state_080": "q.is_sprinting&&q.is_jumping"
             },
             {
               "jump": "!q.is_on_ground&&(q.vertical_speed>0||q.is_in_water)"
@@ -3651,7 +3651,7 @@
               "step_03": "v.lbr_baf_v087||v.lbr_baf_v107||v.lbr_baf_v092"
             },
             {
-              "state_081": "q.is_sprinting&&q.vertical_speed>0&&!q.is_on_ground"
+              "state_080": "q.is_sprinting&&q.vertical_speed>0&&!q.is_on_ground"
             },
             {
               "jump": "!q.is_on_ground&&(q.vertical_speed>0||q.is_in_water)"
@@ -3670,7 +3670,7 @@
               "step_03": "v.lbr_baf_v042||v.lbr_baf_v087||v.lbr_baf_v107||v.lbr_baf_v092"
             },
             {
-              "state_143": "q.is_in_water"
+              "state_142": "q.is_in_water"
             },
             {
               "default": "q.is_on_ground||q.vertical_speed<-7"
@@ -3685,7 +3685,7 @@
           "animations": [
             "lbr_state_005",
             {
-              "lbr_state_123": "v.lbr_baf_v353"
+              "lbr_state_122": "v.lbr_baf_v353"
             }
           ],
           "transitions": [
@@ -3693,10 +3693,10 @@
               "step_03": "v.lbr_baf_v042||v.lbr_baf_v087||v.lbr_baf_v107||v.lbr_baf_v092"
             },
             {
-              "state_143": "q.is_in_water"
+              "state_142": "q.is_in_water"
             },
             {
-              "state_081": "q.state_time>0.4&&q.vertical_speed>1&&q.is_sprinting&&v.lbr_baf_v354<1"
+              "state_080": "q.state_time>0.4&&q.vertical_speed>1&&q.is_sprinting&&v.lbr_baf_v354<1"
             },
             {
               "step_02": "q.is_on_ground&&q.vertical_speed>-0.3&&!q.is_jumping"
@@ -3711,12 +3711,12 @@
             "v.lbr_baf_v089=0.05;"
           ]
         },
-        "state_081": {
+        "state_080": {
           "on_entry": [
             "v.lbr_baf_v108=2;"
           ],
           "animations": [
-            "lbr_state_081",
+            "lbr_state_080",
             {
               "lbr_state_026": "v.lbr_baf_v353"
             }
@@ -3726,7 +3726,7 @@
               "step_03": "v.lbr_baf_v042||v.lbr_baf_v087||v.lbr_baf_v107||v.lbr_baf_v092"
             },
             {
-              "state_143": "q.is_in_water"
+              "state_142": "q.is_in_water"
             },
             {
               "state_005": "q.state_time>0.4&&q.vertical_speed>1&&q.is_sprinting&&v.lbr_baf_v354<1"
@@ -3752,10 +3752,10 @@
           ],
           "blend_transition": 0.3
         },
-        "state_143": {
+        "state_142": {
           "animations": [
             {
-              "lbr_state_143": "(1-v.lbr_baf_v139)*0.5"
+              "lbr_state_142": "(1-v.lbr_baf_v139)*0.5"
             }
           ],
           "transitions": [
@@ -3763,18 +3763,18 @@
               "default": "(!v.lbr_baf_v042&&!q.is_in_water&&Math.abs(q.vertical_speed)>3)||q.is_on_ground||v.lbr_baf_v087||v.lbr_baf_v107||v.lbr_baf_v092"
             },
             {
-              "state_143_01": "v.lbr_baf_v171"
+              "state_142_01": "v.lbr_baf_v171"
             }
           ],
           "blend_transition": 0.3
         },
-        "state_143_01": {
+        "state_142_01": {
           "on_entry": [
             "v.lbr_baf_v018=q.life_time;"
           ],
           "animations": [
             {
-              "lbr_state_143": "(1-v.lbr_baf_v139)*(0.5-Math.hermite_blend(Math.clamp((q.life_time-v.lbr_baf_v018)/0.25,0,1))*0.25)"
+              "lbr_state_142": "(1-v.lbr_baf_v139)*(0.5-Math.hermite_blend(Math.clamp((q.life_time-v.lbr_baf_v018)/0.25,0,1))*0.25)"
             }
           ],
           "transitions": [
@@ -3782,7 +3782,7 @@
               "default": "(!v.lbr_baf_v042&&!q.is_in_water)||q.is_on_ground"
             },
             {
-              "state_143": "!v.lbr_baf_v171"
+              "state_142": "!v.lbr_baf_v171"
             }
           ],
           "blend_transition": 0.3
@@ -3839,7 +3839,7 @@
               "lbr_state_009": "q.is_in_ui?0:v.lbr_baf_v197-Math.abs(v.lbr_baf_v197)*0.25"
             },
             {
-              "lbr_state_094": "q.is_in_ui?0:-v.lbr_baf_v197-Math.abs(v.lbr_baf_v197)*0.25"
+              "lbr_state_093": "q.is_in_ui?0:-v.lbr_baf_v197-Math.abs(v.lbr_baf_v197)*0.25"
             },
             {
               "lbr_state_034": "q.is_in_ui?-1:-v.lbr_baf_v038-Math.abs(v.lbr_baf_v197)*0.25"
@@ -3847,7 +3847,7 @@
             {
               "lbr_run_02": "v.lbr_baf_v074"
             },
-            "lbr_state_121"
+            "lbr_state_120"
           ],
           "transitions": [
             {
@@ -3915,7 +3915,7 @@
               "lbr_move_left": "q.is_in_ui?0:-v.lbr_baf_v197-Math.abs(v.lbr_baf_v197)*0.25"
             },
             {
-              "lbr_state_130": "q.is_in_ui?-1:-v.lbr_baf_v038-Math.abs(v.lbr_baf_v197)*0.25"
+              "lbr_state_129": "q.is_in_ui?-1:-v.lbr_baf_v038-Math.abs(v.lbr_baf_v197)*0.25"
             }
           ],
           "transitions": [
@@ -4044,7 +4044,7 @@
               "potion_01": "q.main_hand_item_use_duration>0&&((q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_food')&&!q.is_item_name_any('slot.weapon.mainhand','minecraft:beetroot_soup','minecraft:mushroom_stew','minecraft:rabbit_stew','minecraft:suspicious_stew','minecraft:milk_bucket','minecraft:potion','minecraft:honey_bottle','minecraft:ominous_bottle'))||q.is_item_name_any('slot.weapon.mainhand','minecraft:poisonous_potato','minecraft:chorus_fruit','minecraft:glow_berries','minecraft:cooked_salmon','minecraft:cooked_cod','minecraft:tropical_fish','minecraft:cod','minecraft:salmon','minecraft:pufferfish','minecraft:spider_eye'))"
             },
             {
-              "state_113": "q.main_hand_item_use_duration>0&&((q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_drink')||q.is_item_name_any('slot.weapon.mainhand','minecraft:beetroot_soup','minecraft:mushroom_stew','minecraft:rabbit_stew','minecraft:suspicious_stew','minecraft:milk_bucket','minecraft:potion','minecraft:honey_bottle','minecraft:ominous_bottle'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_potion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:potion','minecraft:ominous_bottle'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_milk')||q.is_item_name_any('slot.weapon.mainhand','minecraft:milk_bucket'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_soup')||q.is_item_name_any('slot.weapon.mainhand','minecraft:beetroot_soup','minecraft:mushroom_stew','minecraft:rabbit_stew','minecraft:suspicious_stew')))"
+              "state_112": "q.main_hand_item_use_duration>0&&((q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_drink')||q.is_item_name_any('slot.weapon.mainhand','minecraft:beetroot_soup','minecraft:mushroom_stew','minecraft:rabbit_stew','minecraft:suspicious_stew','minecraft:milk_bucket','minecraft:potion','minecraft:honey_bottle','minecraft:ominous_bottle'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_potion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:potion','minecraft:ominous_bottle'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_milk')||q.is_item_name_any('slot.weapon.mainhand','minecraft:milk_bucket'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_soup')||q.is_item_name_any('slot.weapon.mainhand','minecraft:beetroot_soup','minecraft:mushroom_stew','minecraft:rabbit_stew','minecraft:suspicious_stew')))"
             }
           ],
           "on_exit": [
@@ -4062,16 +4062,16 @@
           ],
           "blend_transition": 0.2
         },
-        "state_113": {
+        "state_112": {
           "animations": [
             {
-              "lbr_state_113": "v.lbr_baf_v075!='uowpvm'&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_soup')||q.is_item_name_any('slot.weapon.mainhand','minecraft:beetroot_soup','minecraft:mushroom_stew','minecraft:rabbit_stew','minecraft:suspicious_stew'))"
+              "lbr_state_112": "v.lbr_baf_v075!='uowpvm'&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_soup')||q.is_item_name_any('slot.weapon.mainhand','minecraft:beetroot_soup','minecraft:mushroom_stew','minecraft:rabbit_stew','minecraft:suspicious_stew'))"
             },
             {
               "lbr_state_062": "v.lbr_baf_v075!='uowpvm'&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_milk')||q.is_item_name_any('slot.weapon.mainhand','minecraft:milk_bucket'))"
             },
             {
-              "lbr_state_125": "v.lbr_baf_v075!='uowpvm'&&((q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_drink')||q.is_item_name_any('slot.weapon.mainhand','minecraft:beetroot_soup','minecraft:mushroom_stew','minecraft:rabbit_stew','minecraft:suspicious_stew','minecraft:milk_bucket','minecraft:potion','minecraft:honey_bottle','minecraft:ominous_bottle'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_potion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:potion','minecraft:ominous_bottle')))&&!((q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_soup')||q.is_item_name_any('slot.weapon.mainhand','minecraft:beetroot_soup','minecraft:mushroom_stew','minecraft:rabbit_stew','minecraft:suspicious_stew'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_milk')||q.is_item_name_any('slot.weapon.mainhand','minecraft:milk_bucket')))"
+              "lbr_state_124": "v.lbr_baf_v075!='uowpvm'&&((q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_drink')||q.is_item_name_any('slot.weapon.mainhand','minecraft:beetroot_soup','minecraft:mushroom_stew','minecraft:rabbit_stew','minecraft:suspicious_stew','minecraft:milk_bucket','minecraft:potion','minecraft:honey_bottle','minecraft:ominous_bottle'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_potion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:potion','minecraft:ominous_bottle')))&&!((q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_soup')||q.is_item_name_any('slot.weapon.mainhand','minecraft:beetroot_soup','minecraft:mushroom_stew','minecraft:rabbit_stew','minecraft:suspicious_stew'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_milk')||q.is_item_name_any('slot.weapon.mainhand','minecraft:milk_bucket')))"
             }
           ],
           "transitions": [
@@ -4102,14 +4102,14 @@
           ],
           "transitions": [
             {
-              "state_146": "q.main_hand_item_use_duration==0"
+              "state_145": "q.main_hand_item_use_duration==0"
             }
           ],
           "blend_transition": 0.1
         },
-        "state_146": {
+        "state_145": {
           "animations": [
-            "lbr_state_146"
+            "lbr_state_145"
           ],
           "transitions": [
             {
@@ -4213,14 +4213,14 @@
             {
               "lbr_holding": "!v.lbr_baf_v405"
             },
-            "lbr_state_117",
+            "lbr_state_116",
             {
               "lbr_state_060": "v.lbr_baf_v231&&!q.is_gliding&&!q.is_swimming&&!q.is_emoting&&!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shield'))&&!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))&&!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))"
             }
           ],
           "transitions": [
             {
-              "state_076": "(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_axe','lbr:is_axe'))"
+              "state_075": "(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_axe','lbr:is_axe'))"
             },
             {
               "flint_and_steel": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_mace')||q.is_item_name_any('slot.weapon.mainhand','minecraft:mace'))"
@@ -4248,16 +4248,16 @@
             }
           ]
         },
-        "state_076": {
+        "state_075": {
           "animations": [
             {
-              "lbr_state_076": "!v.is_holding_left-v.lbr_baf_v139"
+              "lbr_state_075": "!v.is_holding_left-v.lbr_baf_v139"
             },
             {
               "lbr_axe_07": "v.is_holding_left"
             },
             "lbr_blocking_09",
-            "lbr_state_117"
+            "lbr_state_116"
           ],
           "transitions": [
             {
@@ -4509,9 +4509,9 @@
             {
               "lbr_controller_021": "v.lbr_baf_v154&&!q.is_spectator"
             },
-            "lbr_state_084",
+            "lbr_state_083",
             {
-              "lbr_tmxius": "!v.is_first_person"
+              "lbr_riding_arms": "!v.is_first_person"
             }
           ],
           "transitions": [
@@ -4872,7 +4872,7 @@
             "v.lbr_baf_v312=0;"
           ],
           "animations": [
-            "lbr_state_072"
+            "lbr_first_person_swap_item"
           ],
           "transitions": [
             {
@@ -4885,7 +4885,7 @@
               "flint_and_steel": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_flint_and_steel')||q.is_item_name_any('slot.weapon.mainhand','minecraft:flint_and_steel'))"
             },
             {
-              "bow_01": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))"
+              "golden_dandelion": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))"
             },
             {
               "shears": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))"
@@ -4894,10 +4894,10 @@
               "shield": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shield'))"
             },
             {
-              "bow_01_01": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_throwable')||q.is_item_name_any('slot.weapon.mainhand','minecraft:snowball','minecraft:wind_charge','minecraft:ender_pearl','minecraft:splash_potion','minecraft:lingering_potion','minecraft:experience_bottle','minecraft:egg','minecraft:blue_egg','minecraft:brown_egg','minecraft:ender_eye'))"
+              "bow_01": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_throwable')||q.is_item_name_any('slot.weapon.mainhand','minecraft:snowball','minecraft:wind_charge','minecraft:ender_pearl','minecraft:splash_potion','minecraft:lingering_potion','minecraft:experience_bottle','minecraft:egg','minecraft:blue_egg','minecraft:brown_egg','minecraft:ender_eye'))"
             },
             {
-              "bow_01_02": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_upturned')||q.is_item_name_any('slot.weapon.mainhand','minecraft:nether_star','minecraft:end_crystal'))"
+              "bow_01_01": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_upturned')||q.is_item_name_any('slot.weapon.mainhand','minecraft:nether_star','minecraft:end_crystal'))"
             },
             {
               "crossbow": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_crossbow')||q.is_item_name_any('slot.weapon.mainhand','minecraft:crossbow'))"
@@ -4971,7 +4971,7 @@
             "v.lbr_baf_v220=0;"
           ]
         },
-        "bow_01": {
+        "golden_dandelion": {
           "on_entry": [
             "v.lbr_baf_v257=1-v.is_holding_left;",
             "v.lbr_baf_v168=q.get_equipped_item_name(0);"
@@ -4979,13 +4979,13 @@
           "animations": [
             "lbr_bow_01",
             {
-              "lbr_shears_02": "!v.is_holding_left"
+              "lbr_golden_dandelion_05": "!v.is_holding_left"
             },
             {
-              "lbr_golden_dandelion_11": "v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
+              "lbr_golden_dandelion_04": "v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
             },
             {
-              "lbr_golden_dandelion_13": "v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
+              "lbr_golden_dandelion_06": "v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
             }
           ],
           "transitions": [
@@ -5006,13 +5006,13 @@
           "animations": [
             "lbr_bow_01",
             {
-              "lbr_shears_02": "!v.is_holding_left"
+              "lbr_golden_dandelion_05": "!v.is_holding_left"
             },
             {
               "lbr_shears_01": "!v.is_holding_left&&!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
             },
             {
-              "lbr_shears_03": "v.is_holding_left&&!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
+              "lbr_shears_02": "v.is_holding_left&&!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
             }
           ],
           "transitions": [
@@ -5042,7 +5042,7 @@
             }
           ]
         },
-        "bow_01_01": {
+        "bow_01": {
           "on_entry": [
             "v.lbr_baf_v326=1-v.is_holding_left;",
             "v.lbr_baf_v168=q.get_equipped_item_name(0);"
@@ -5066,7 +5066,7 @@
             "v.lbr_baf_v312=0;"
           ]
         },
-        "bow_01_02": {
+        "bow_01_01": {
           "on_entry": [
             "v.lbr_baf_v168=q.get_equipped_item_name(0);"
           ],
@@ -5088,7 +5088,7 @@
             "v.lbr_baf_v168=q.get_equipped_item_name(0);"
           ],
           "animations": [
-            "lbr_crossbow",
+            "lbr_first_person_crossbow_hold",
             "lbr_controller_024"
           ],
           "transitions": [
@@ -5248,7 +5248,7 @@
               "flint_and_steel": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_flint_and_steel')||q.is_item_name_any('slot.weapon.mainhand','minecraft:flint_and_steel'))"
             },
             {
-              "bow_01": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))"
+              "golden_dandelion": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))"
             },
             {
               "shears": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))"
@@ -5260,10 +5260,10 @@
               "brush": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_brush')||q.is_item_name_any('slot.weapon.mainhand','minecraft:brush'))"
             },
             {
-              "bow_01_01": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_throwable')||q.is_item_name_any('slot.weapon.mainhand','minecraft:snowball','minecraft:wind_charge','minecraft:ender_pearl','minecraft:splash_potion','minecraft:lingering_potion','minecraft:experience_bottle','minecraft:egg','minecraft:blue_egg','minecraft:brown_egg','minecraft:ender_eye'))"
+              "bow_01": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_throwable')||q.is_item_name_any('slot.weapon.mainhand','minecraft:snowball','minecraft:wind_charge','minecraft:ender_pearl','minecraft:splash_potion','minecraft:lingering_potion','minecraft:experience_bottle','minecraft:egg','minecraft:blue_egg','minecraft:brown_egg','minecraft:ender_eye'))"
             },
             {
-              "bow_01_02": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_upturned')||q.is_item_name_any('slot.weapon.mainhand','minecraft:nether_star','minecraft:end_crystal'))"
+              "bow_01_01": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_upturned')||q.is_item_name_any('slot.weapon.mainhand','minecraft:nether_star','minecraft:end_crystal'))"
             },
             {
               "lantern": "v.lbr_baf_mainhand_hold_up"
@@ -5303,16 +5303,16 @@
         "default": {
           "transitions": [
             {
-              "state_090": "q.has_armor_slot(1)"
+              "state_089": "q.has_armor_slot(1)"
             }
           ]
         },
-        "state_090": {
+        "state_089": {
           "on_entry": [
             "v.lbr_baf_v249=q.armor_texture_slot(1);"
           ],
           "animations": [
-            "lbr_state_090"
+            "lbr_state_089"
           ],
           "transitions": [
             {
@@ -5334,9 +5334,9 @@
             }
           ]
         },
-        "shield_03": {
+        "shield_01": {
           "animations": [
-            "lbr_shield_03"
+            "lbr_shield_01"
           ],
           "transitions": [
             {
@@ -5358,14 +5358,14 @@
             {
               "lbr_humanoid_base_pose": "q.get_animation_frame>3"
             },
-            "lbr_state_091"
+            "lbr_state_090"
           ],
           "transitions": [
             {
               "default": "q.all_animations_finished"
             },
             {
-              "shield_03": "!q.any_animation_finished&&q.main_hand_item_use_duration==0"
+              "shield_01": "!q.any_animation_finished&&q.main_hand_item_use_duration==0"
             }
           ],
           "blend_transition": 0.1,
@@ -5382,14 +5382,14 @@
             "!q.is_in_ui&&!v.is_paperdoll?{v.lbr_baf_v113=1;};"
           ],
           "animations": [
-            "lbr_glide_01"
+            "lbr_look_at_target"
           ],
           "transitions": [
             {
               "state_028": "q.is_gliding"
             },
             {
-              "glide_01": "v.lbr_baf_v397||v.lbr_baf_v058"
+              "look_at_target": "v.lbr_baf_v397||v.lbr_baf_v058"
             }
           ],
           "on_exit": [
@@ -5403,7 +5403,7 @@
           "animations": [
             "lbr_state_028",
             {
-              "lbr_state_077": "1/Math.max(1,v.gliding_speed_value*0.6)"
+              "lbr_state_076": "1/Math.max(1,v.gliding_speed_value*0.6)"
             }
           ],
           "transitions": [
@@ -5416,9 +5416,9 @@
           ],
           "blend_transition": 0.15
         },
-        "glide_01": {
+        "look_at_target": {
           "animations": [
-            "lbr_glide_01"
+            "lbr_look_at_target"
           ],
           "transitions": [
             {
@@ -5491,10 +5491,10 @@
             "lbr_state_070",
             "lbr_state_028",
             {
-              "lbr_state_077": "1/Math.max(1,v.gliding_speed_value*0.6)"
+              "lbr_state_076": "1/Math.max(1,v.gliding_speed_value*0.6)"
             },
             {
-              "lbr_state_115": "q.is_local_player"
+              "lbr_state_114": "q.is_local_player"
             },
             {
               "lbr_state_037": "!q.is_local_player"
@@ -5508,24 +5508,24 @@
               "state_028": "q.is_gliding&&q.all_animations_finished"
             },
             {
-              "state_122": "q.is_gliding&&q.is_sneaking&&q.state_time>1.33"
+              "state_121": "q.is_gliding&&q.is_sneaking&&q.state_time>1.33"
             }
           ],
           "blend_transition": 0.15
         },
-        "state_122": {
+        "state_121": {
           "on_entry": [
             "!q.is_in_ui&&!v.is_paperdoll?{v.lbr_baf_v113=1;};"
           ],
           "blend_via_shortest_path": true,
           "animations": [
-            "lbr_state_122",
+            "lbr_state_121",
             "lbr_state_028",
             {
-              "lbr_state_077": "1/Math.max(1,v.gliding_speed_value*0.6)"
+              "lbr_state_076": "1/Math.max(1,v.gliding_speed_value*0.6)"
             },
             {
-              "lbr_state_115": "q.is_local_player"
+              "lbr_state_114": "q.is_local_player"
             },
             {
               "lbr_state_037": "!q.is_local_player"
@@ -5553,55 +5553,55 @@
             "v.lbr_baf_v312=0;"
           ],
           "animations": [
-            "lbr_state_075"
+            "lbr_state_074"
           ],
           "transitions": [
             {
-              "state_147": "q.main_hand_item_use_duration!=0"
+              "state_146": "q.main_hand_item_use_duration!=0"
             }
           ]
         },
-        "state_147": {
+        "state_146": {
           "animations": [
-            "lbr_state_147"
+            "lbr_state_146"
           ],
           "transitions": [
             {
-              "state_108": "q.any_animation_finished"
+              "state_107": "q.any_animation_finished"
             },
             {
-              "state_088": "q.state_time<0.35&&q.main_hand_item_use_duration==0"
+              "state_087": "q.state_time<0.35&&q.main_hand_item_use_duration==0"
             },
             {
-              "state_082": "q.state_time>0.35&&q.main_hand_item_use_duration==0"
+              "state_081": "q.state_time>0.35&&q.main_hand_item_use_duration==0"
             }
           ],
           "blend_transition": 0.1
         },
-        "state_108": {
+        "state_107": {
           "animations": [
-            "lbr_state_108"
+            "lbr_state_107"
           ],
           "transitions": [
             {
-              "state_082": "q.main_hand_item_use_duration==0"
+              "state_081": "q.main_hand_item_use_duration==0"
             }
           ],
           "blend_transition": 0.1
         },
-        "state_088": {
+        "state_087": {
           "animations": [
             {
-              "lbr_state_088": 0.5
+              "lbr_state_087": 0.5
             },
-            "lbr_shield_03"
+            "lbr_shield_01"
           ],
           "transitions": [
             {
               "default": "q.all_animations_finished"
             },
             {
-              "state_147": "q.main_hand_item_use_duration!=0"
+              "state_146": "q.main_hand_item_use_duration!=0"
             }
           ],
           "blend_transition": 0.1,
@@ -5609,16 +5609,16 @@
             "v.lbr_baf_v312=0;"
           ]
         },
-        "state_082": {
+        "state_081": {
           "animations": [
-            "lbr_state_082"
+            "lbr_state_081"
           ],
           "transitions": [
             {
               "default": "q.all_animations_finished"
             },
             {
-              "state_147": "q.main_hand_item_use_duration!=0"
+              "state_146": "q.main_hand_item_use_duration!=0"
             }
           ],
           "blend_transition": 0.1,
@@ -5957,7 +5957,7 @@
               "step_01": "v.lbr_baf_v013"
             },
             {
-              "state_088": "v.attack_time"
+              "state_087": "v.attack_time"
             },
             {
               "step_01": "v.lbr_baf_mainhand_custom_pos&&(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_axe','lbr:is_axe'))"
@@ -5981,7 +5981,7 @@
               "step_06": "v.lbr_baf_mainhand_custom_pos&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))"
             },
             {
-              "shears_10": "v.lbr_baf_mainhand_custom_pos&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))"
+              "shears_09": "v.lbr_baf_mainhand_custom_pos&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))"
             },
             {
               "step_07": "v.lbr_baf_mainhand_custom_pos&&(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_shovel','lbr:is_shovel'))"
@@ -6006,9 +6006,9 @@
             }
           ]
         },
-        "state_088": {
+        "state_087": {
           "animations": [
-            "lbr_state_088"
+            "lbr_state_087"
           ],
           "transitions": [
             {
@@ -6024,7 +6024,7 @@
               "default": "q.any_animation_finished"
             },
             {
-              "state_088": "q.state_time>0.175&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087": "q.state_time>0.175&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
               "step_01": "v.lbr_baf_mainhand_custom_pos&&(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_axe','lbr:is_axe'))"
@@ -6048,7 +6048,7 @@
               "step_06": "v.lbr_baf_mainhand_custom_pos&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))"
             },
             {
-              "shears_10": "v.lbr_baf_mainhand_custom_pos&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))"
+              "shears_09": "v.lbr_baf_mainhand_custom_pos&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))"
             },
             {
               "step_07": "v.lbr_baf_mainhand_custom_pos&&(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_shovel','lbr:is_shovel'))"
@@ -6138,20 +6138,20 @@
               "default": "!v.lbr_baf_mainhand_custom_pos||!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))"
             },
             {
-              "golden_dandelion_09": "q.in_range(v.attack_time,0.01,0.2)"
+              "golden_dandelion": "q.in_range(v.attack_time,0.01,0.2)"
             }
           ]
         },
-        "shears_10": {
+        "shears_09": {
           "on_entry": [
             "v.lbr_baf_v274=1-v.is_holding_left;"
           ],
           "animations": [
             {
-              "lbr_shears_10": "!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')&&!v.is_holding_left&&v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
+              "lbr_shears_09": "!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')&&!v.is_holding_left&&v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
             },
             {
-              "lbr_shears_04": "(q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')||v.is_holding_left)&&v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
+              "lbr_shears_03": "(q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')||v.is_holding_left)&&v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
             }
           ],
           "transitions": [
@@ -6159,7 +6159,7 @@
               "default": "!v.lbr_baf_mainhand_custom_pos||!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))"
             },
             {
-              "shears_09": "q.in_range(v.attack_time,0.01,0.2)"
+              "shears_08": "q.in_range(v.attack_time,0.01,0.2)"
             }
           ],
           "on_exit": [
@@ -6239,17 +6239,17 @@
               "default": "!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_petals')||q.is_item_name_any('slot.weapon.mainhand','minecraft:pink_petals','minecraft:wildflowers','minecraft:leaf_litter'))"
             },
             {
-              "state_088_01": "q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_01": "q.in_range(v.attack_time,0.01,0.2)"
             }
           ],
           "on_exit": [
             "v.lbr_baf_v312=0;"
           ]
         },
-        "state_088_01": {
+        "state_087_01": {
           "animations": [
             {
-              "lbr_state_088": "0.5"
+              "lbr_state_087": "0.5"
             },
             "lbr_petals_02",
             {
@@ -6261,23 +6261,23 @@
           ],
           "transitions": [
             {
-              "state_088_01": "q.state_time>3.5&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_01": "q.state_time>3.5&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
-              "state_088_02": "q.in_range(q.state_time,0.175,0.875)&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_02": "q.in_range(q.state_time,0.175,0.875)&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
-              "state_088_04": "q.in_range(q.state_time,0.85,3.5)&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_04": "q.in_range(q.state_time,0.85,3.5)&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
               "step_11": "!v.lbr_baf_mainhand_custom_pos||!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_petals')||q.is_item_name_any('slot.weapon.mainhand','minecraft:pink_petals','minecraft:wildflowers','minecraft:leaf_litter'))||q.state_time>4.16667"
             }
           ]
         },
-        "state_088_02": {
+        "state_087_02": {
           "animations": [
             {
-              "lbr_state_088": "0.5"
+              "lbr_state_087": "0.5"
             },
             {
               "lbr_petals_02": "v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
@@ -6288,13 +6288,13 @@
           ],
           "transitions": [
             {
-              "state_088_01": "q.state_time>3.5&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_01": "q.state_time>3.5&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
-              "state_088_03": "q.in_range(q.state_time,0.175,0.875)&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_03": "q.in_range(q.state_time,0.175,0.875)&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
-              "state_088_04": "q.in_range(q.state_time,0.85,3.5)&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_04": "q.in_range(q.state_time,0.85,3.5)&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
               "step_11": "!v.lbr_baf_mainhand_custom_pos||!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_petals')||q.is_item_name_any('slot.weapon.mainhand','minecraft:pink_petals','minecraft:wildflowers','minecraft:leaf_litter'))||q.state_time>4.08333"
@@ -6302,10 +6302,10 @@
           ],
           "blend_transition": 0.05
         },
-        "state_088_03": {
+        "state_087_03": {
           "animations": [
             {
-              "lbr_state_088": "0.5"
+              "lbr_state_087": "0.5"
             },
             {
               "lbr_petals_02": "v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
@@ -6316,13 +6316,13 @@
           ],
           "transitions": [
             {
-              "state_088_01": "q.state_time>3.5&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_01": "q.state_time>3.5&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
-              "state_088_02": "q.in_range(q.state_time,0.175,0.875)&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_02": "q.in_range(q.state_time,0.175,0.875)&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
-              "state_088_04": "q.in_range(q.state_time,0.85,3.5)&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_04": "q.in_range(q.state_time,0.85,3.5)&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
               "step_11": "!v.lbr_baf_mainhand_custom_pos||!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_petals')||q.is_item_name_any('slot.weapon.mainhand','minecraft:pink_petals','minecraft:wildflowers','minecraft:leaf_litter'))||q.state_time>4.08333"
@@ -6330,10 +6330,10 @@
           ],
           "blend_transition": 0.05
         },
-        "state_088_04": {
+        "state_087_04": {
           "animations": [
             {
-              "lbr_state_088": "0.5"
+              "lbr_state_087": "0.5"
             },
             {
               "lbr_petals_02": "v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
@@ -6344,13 +6344,13 @@
           ],
           "transitions": [
             {
-              "state_088_01": "q.state_time>3.5&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_01": "q.state_time>3.5&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
-              "state_088_02": "q.in_range(q.state_time,0.45,0.875)&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_02": "q.in_range(q.state_time,0.45,0.875)&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
-              "state_088_04": "q.in_range(q.state_time,0.85,3.5)&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_04": "q.in_range(q.state_time,0.85,3.5)&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
               "step_11": "!v.lbr_baf_mainhand_custom_pos||!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_petals')||q.is_item_name_any('slot.weapon.mainhand','minecraft:pink_petals','minecraft:wildflowers','minecraft:leaf_litter'))||q.state_time>4.08333"
@@ -6364,17 +6364,17 @@
               "default": "!v.lbr_baf_mainhand_custom_pos||!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_seeds')||q.is_item_name_any('slot.weapon.mainhand','minecraft:beetroot_seeds','minecraft:melon_seeds','minecraft:pumpkin_seeds','minecraft:torchflower_seeds','minecraft:wheat_seeds'))"
             },
             {
-              "state_088_05": "q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_05": "q.in_range(v.attack_time,0.01,0.2)"
             }
           ],
           "on_exit": [
             "v.lbr_baf_v312=0;"
           ]
         },
-        "state_088_05": {
+        "state_087_05": {
           "animations": [
             {
-              "lbr_state_088": "0.5"
+              "lbr_state_087": "0.5"
             },
             "lbr_seeds_04",
             {
@@ -6386,23 +6386,23 @@
           ],
           "transitions": [
             {
-              "state_088_05": "q.state_time>3.5&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_05": "q.state_time>3.5&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
-              "state_088_06": "q.in_range(q.state_time,0.175,0.875)&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_06": "q.in_range(q.state_time,0.175,0.875)&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
-              "state_088_08": "q.in_range(q.state_time,0.85,3.5)&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_08": "q.in_range(q.state_time,0.85,3.5)&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
               "step_12": "!v.lbr_baf_mainhand_custom_pos||!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_seeds')||q.is_item_name_any('slot.weapon.mainhand','minecraft:beetroot_seeds','minecraft:melon_seeds','minecraft:pumpkin_seeds','minecraft:torchflower_seeds','minecraft:wheat_seeds'))||q.state_time>4.16667"
             }
           ]
         },
-        "state_088_06": {
+        "state_087_06": {
           "animations": [
             {
-              "lbr_state_088": "0.5"
+              "lbr_state_087": "0.5"
             },
             {
               "lbr_seeds_04": "v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
@@ -6413,13 +6413,13 @@
           ],
           "transitions": [
             {
-              "state_088_05": "q.state_time>3.5&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_05": "q.state_time>3.5&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
-              "state_088_07": "q.in_range(q.state_time,0.175,0.875)&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_07": "q.in_range(q.state_time,0.175,0.875)&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
-              "state_088_08": "q.in_range(q.state_time,0.85,3.5)&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_08": "q.in_range(q.state_time,0.85,3.5)&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
               "step_12": "!v.lbr_baf_mainhand_custom_pos||!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_seeds')||q.is_item_name_any('slot.weapon.mainhand','minecraft:beetroot_seeds','minecraft:melon_seeds','minecraft:pumpkin_seeds','minecraft:torchflower_seeds','minecraft:wheat_seeds'))||q.state_time>4.08333"
@@ -6427,10 +6427,10 @@
           ],
           "blend_transition": 0.05
         },
-        "state_088_07": {
+        "state_087_07": {
           "animations": [
             {
-              "lbr_state_088": "0.5"
+              "lbr_state_087": "0.5"
             },
             {
               "lbr_seeds_04": "v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
@@ -6441,13 +6441,13 @@
           ],
           "transitions": [
             {
-              "state_088_05": "q.state_time>3.5&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_05": "q.state_time>3.5&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
-              "state_088_06": "q.in_range(q.state_time,0.175,0.875)&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_06": "q.in_range(q.state_time,0.175,0.875)&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
-              "state_088_08": "q.in_range(q.state_time,0.85,3.5)&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_08": "q.in_range(q.state_time,0.85,3.5)&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
               "step_12": "!v.lbr_baf_mainhand_custom_pos||!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_seeds')||q.is_item_name_any('slot.weapon.mainhand','minecraft:beetroot_seeds','minecraft:melon_seeds','minecraft:pumpkin_seeds','minecraft:torchflower_seeds','minecraft:wheat_seeds'))||q.state_time>4.08333"
@@ -6455,10 +6455,10 @@
           ],
           "blend_transition": 0.05
         },
-        "state_088_08": {
+        "state_087_08": {
           "animations": [
             {
-              "lbr_state_088": "0.5"
+              "lbr_state_087": "0.5"
             },
             {
               "lbr_seeds_04": "v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
@@ -6469,13 +6469,13 @@
           ],
           "transitions": [
             {
-              "state_088_05": "q.state_time>3.5&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_05": "q.state_time>3.5&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
-              "state_088_06": "q.in_range(q.state_time,0.45,0.875)&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_06": "q.in_range(q.state_time,0.45,0.875)&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
-              "state_088_08": "q.in_range(q.state_time,0.85,3.5)&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_087_08": "q.in_range(q.state_time,0.85,3.5)&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
               "step_12": "!v.lbr_baf_mainhand_custom_pos||!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_seeds')||q.is_item_name_any('slot.weapon.mainhand','minecraft:beetroot_seeds','minecraft:melon_seeds','minecraft:pumpkin_seeds','minecraft:torchflower_seeds','minecraft:wheat_seeds'))||q.state_time>4.08333"
@@ -6510,7 +6510,7 @@
               "step_06": "v.lbr_baf_mainhand_custom_pos&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))"
             },
             {
-              "shears_10": "v.lbr_baf_mainhand_custom_pos&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))"
+              "shears_09": "v.lbr_baf_mainhand_custom_pos&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))"
             },
             {
               "step_07": "v.lbr_baf_mainhand_custom_pos&&(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_shovel','lbr:is_shovel'))"
@@ -6531,7 +6531,7 @@
               "step_12": "v.lbr_baf_mainhand_custom_pos&&(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_seeds')||q.is_item_name_any('slot.weapon.mainhand','minecraft:beetroot_seeds','minecraft:melon_seeds','minecraft:pumpkin_seeds','minecraft:torchflower_seeds','minecraft:wheat_seeds'))"
             },
             {
-              "state_093": "q.in_range(v.attack_time,0.01,0.2)"
+              "state_092": "q.in_range(v.attack_time,0.01,0.2)"
             }
           ]
         },
@@ -6586,7 +6586,7 @@
               "lbr_axe_02": "q.get_equipped_item_name(1)==''?1:0.001"
             },
             {
-              "lbr_state_132": "q.get_equipped_item_name(1)==''?0.001:1"
+              "lbr_state_131": "q.get_equipped_item_name(1)==''?0.001:1"
             }
           ],
           "transitions": [
@@ -6908,14 +6908,14 @@
               "mace_03": "q.state_time>0.8&&q.vertical_speed<-8"
             },
             {
-              "state_132": "q.state_time>0.35&&v.attack_time"
+              "state_131": "q.state_time>0.35&&v.attack_time"
             }
           ],
           "blend_transition": 0.075
         },
-        "state_132": {
+        "state_131": {
           "animations": [
-            "lbr_state_132",
+            "lbr_state_131",
             {
               "lbr_mace_05": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_mace')||q.is_item_name_any('slot.weapon.mainhand','minecraft:mace'))"
             }
@@ -7000,26 +7000,26 @@
           ],
           "blend_transition": 0.075
         },
-        "golden_dandelion_09": {
+        "golden_dandelion": {
           "on_entry": [
             "v.lbr_baf_v232=q.life_time;"
           ],
           "animations": [
             {
-              "lbr_golden_dandelion_09": "!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')&&!v.is_holding_left&&v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
+              "lbr_golden_dandelion_03": "!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')&&!v.is_holding_left&&v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
             },
             {
-              "lbr_golden_dandelion_05": "(q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')||v.is_holding_left)&&v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
+              "lbr_golden_dandelion_02": "(q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')||v.is_holding_left)&&v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
             },
-            "lbr_golden_dandelion_02",
-            "lbr_golden_dandelion_03"
+            "lbr_golden_dandelion",
+            "lbr_golden_dandelion_01"
           ],
           "transitions": [
             {
               "default": "!v.lbr_baf_mainhand_custom_pos||!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))"
             },
             {
-              "golden_dandelion_07": "q.state_time>0.4&&q.in_range(v.attack_time,0.01,0.2)"
+              "golden_dandelion_10": "q.state_time>0.4&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
               "golden_dandelion_14": "q.state_time>2.5"
@@ -7027,18 +7027,18 @@
           ],
           "blend_transition": 0.1
         },
-        "golden_dandelion_07": {
+        "golden_dandelion_10": {
           "animations": [
-            "lbr_golden_dandelion_07",
-            "lbr_golden_dandelion_06",
-            "lbr_golden_dandelion_12"
+            "lbr_golden_dandelion_10",
+            "lbr_golden_dandelion_09",
+            "lbr_golden_dandelion_13"
           ],
           "transitions": [
             {
               "default": "!v.lbr_baf_mainhand_custom_pos||!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))"
             },
             {
-              "golden_dandelion_07_01": "q.state_time>0.4&&q.in_range(v.attack_time,0.01,0.2)"
+              "golden_dandelion_10_01": "q.state_time>0.4&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
               "golden_dandelion_14": "q.state_time>2.5"
@@ -7046,18 +7046,18 @@
           ],
           "blend_transition": 0.1
         },
-        "golden_dandelion_07_01": {
+        "golden_dandelion_10_01": {
           "animations": [
-            "lbr_golden_dandelion_07",
-            "lbr_golden_dandelion_06",
-            "lbr_golden_dandelion_12"
+            "lbr_golden_dandelion_10",
+            "lbr_golden_dandelion_09",
+            "lbr_golden_dandelion_13"
           ],
           "transitions": [
             {
               "default": "!v.lbr_baf_mainhand_custom_pos||!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))"
             },
             {
-              "golden_dandelion_07": "q.state_time>0.4&&q.in_range(v.attack_time,0.01,0.2)"
+              "golden_dandelion_10": "q.state_time>0.4&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
               "golden_dandelion_14": "q.state_time>2.5"
@@ -7079,10 +7079,10 @@
               "default": "!v.lbr_baf_mainhand_custom_pos||!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_golden_dandelion')||q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_dandelion'))"
             },
             {
-              "golden_dandelion_07": "q.state_time<0.7&&q.in_range(v.attack_time,0.01,0.2)"
+              "golden_dandelion_10": "q.state_time<0.7&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
-              "golden_dandelion_09": "q.state_time>0.7&&q.in_range(v.attack_time,0.01,0.2)"
+              "golden_dandelion": "q.state_time>0.7&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
               "step_06": "q.any_animation_finished"
@@ -7090,16 +7090,16 @@
           ],
           "blend_transition": 0.1
         },
-        "shears_09": {
+        "shears_08": {
           "on_entry": [
             "v.lbr_baf_v274=1-v.is_holding_left;"
           ],
           "animations": [
             {
-              "lbr_shears_09": "!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')&&!v.is_holding_left&&v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
+              "lbr_shears_08": "!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')&&!v.is_holding_left&&v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
             },
             {
-              "lbr_shears_05": "(q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')||v.is_holding_left)&&v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
+              "lbr_shears_04": "(q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')||v.is_holding_left)&&v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
             }
           ],
           "transitions": [
@@ -7107,10 +7107,10 @@
               "default": "!v.lbr_baf_mainhand_custom_pos||!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))"
             },
             {
-              "shears_09_01": "q.state_time>0.2&&q.in_range(v.attack_time,0.01,0.2)"
+              "shears_08_01": "q.state_time>0.2&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
-              "shears_10": "q.state_time>1.20833"
+              "shears_09": "q.state_time>1.20833"
             }
           ],
           "blend_transition": 0.1,
@@ -7118,16 +7118,16 @@
             "v.lbr_baf_v274=0;"
           ]
         },
-        "shears_09_01": {
+        "shears_08_01": {
           "on_entry": [
             "v.lbr_baf_v274=1-v.is_holding_left;"
           ],
           "animations": [
             {
-              "lbr_shears_09": "!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')&&!v.is_holding_left&&v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
+              "lbr_shears_08": "!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')&&!v.is_holding_left&&v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
             },
             {
-              "lbr_shears_05": "(q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')||v.is_holding_left)&&v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
+              "lbr_shears_04": "(q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')||v.is_holding_left)&&v.lbr_baf_v064==0&&v.lbr_baf_v186==0"
             }
           ],
           "transitions": [
@@ -7135,10 +7135,10 @@
               "default": "!v.lbr_baf_mainhand_custom_pos||!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_shears')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shears'))"
             },
             {
-              "shears_09": "q.state_time>0.2&&q.in_range(v.attack_time,0.01,0.2)"
+              "shears_08": "q.state_time>0.2&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
-              "shears_10": "q.state_time>1.20833"
+              "shears_09": "q.state_time>1.20833"
             }
           ],
           "blend_transition": 0.1,
@@ -7249,19 +7249,19 @@
               "lbr_state_002": "q.is_item_name_any('slot.weapon.mainhand','minecraft:wooden_sword','minecraft:stick','minecraft:blaze_rod','minecraft:breeze_rod')&&q.state_time<=0.05"
             },
             {
-              "lbr_state_144": "q.is_item_name_any('slot.weapon.mainhand','minecraft:stone_sword','minecraft:bone')&&q.state_time<=0.05"
+              "lbr_state_143": "q.is_item_name_any('slot.weapon.mainhand','minecraft:stone_sword','minecraft:bone')&&q.state_time<=0.05"
             },
             {
-              "lbr_state_101": "q.is_item_name_any('slot.weapon.mainhand','minecraft:copper_sword')&&q.state_time<=0.05"
+              "lbr_state_100": "q.is_item_name_any('slot.weapon.mainhand','minecraft:copper_sword')&&q.state_time<=0.05"
             },
             {
-              "lbr_state_128": "q.is_item_name_any('slot.weapon.mainhand','minecraft:iron_sword')&&q.state_time<=0.05"
+              "lbr_state_127": "q.is_item_name_any('slot.weapon.mainhand','minecraft:iron_sword')&&q.state_time<=0.05"
             },
             {
               "lbr_state_021": "q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_sword')&&q.state_time<=0.05"
             },
             {
-              "lbr_state_135": "q.is_item_name_any('slot.weapon.mainhand','minecraft:diamond_sword')&&q.state_time<=0.05"
+              "lbr_state_134": "q.is_item_name_any('slot.weapon.mainhand','minecraft:diamond_sword')&&q.state_time<=0.05"
             },
             {
               "lbr_state_059": "q.is_item_name_any('slot.weapon.mainhand','minecraft:netherite_sword')&&q.state_time<=0.05"
@@ -7278,7 +7278,7 @@
               "state_055_01": "q.state_time>0.6&&v.attack_time"
             },
             {
-              "state_132_01": "q.state_time>0.25&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_131_01": "q.state_time>0.25&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
               "step_09": "q.all_animations_finished"
@@ -7293,19 +7293,19 @@
               "lbr_state_002": "q.is_item_name_any('slot.weapon.mainhand','minecraft:wooden_sword','minecraft:stick','minecraft:blaze_rod','minecraft:breeze_rod')&&q.state_time<=0.05"
             },
             {
-              "lbr_state_144": "q.is_item_name_any('slot.weapon.mainhand','minecraft:stone_sword','minecraft:bone')&&q.state_time<=0.05"
+              "lbr_state_143": "q.is_item_name_any('slot.weapon.mainhand','minecraft:stone_sword','minecraft:bone')&&q.state_time<=0.05"
             },
             {
-              "lbr_state_101": "q.is_item_name_any('slot.weapon.mainhand','minecraft:copper_sword')&&q.state_time<=0.05"
+              "lbr_state_100": "q.is_item_name_any('slot.weapon.mainhand','minecraft:copper_sword')&&q.state_time<=0.05"
             },
             {
-              "lbr_state_128": "q.is_item_name_any('slot.weapon.mainhand','minecraft:iron_sword')&&q.state_time<=0.05"
+              "lbr_state_127": "q.is_item_name_any('slot.weapon.mainhand','minecraft:iron_sword')&&q.state_time<=0.05"
             },
             {
               "lbr_state_021": "q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_sword')&&q.state_time<=0.05"
             },
             {
-              "lbr_state_135": "q.is_item_name_any('slot.weapon.mainhand','minecraft:diamond_sword')&&q.state_time<=0.05"
+              "lbr_state_134": "q.is_item_name_any('slot.weapon.mainhand','minecraft:diamond_sword')&&q.state_time<=0.05"
             },
             {
               "lbr_state_059": "q.is_item_name_any('slot.weapon.mainhand','minecraft:netherite_sword')&&q.state_time<=0.05"
@@ -7322,7 +7322,7 @@
               "state_055": "q.state_time>0.6&&v.attack_time"
             },
             {
-              "state_132_01": "q.state_time>0.25&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_131_01": "q.state_time>0.25&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
               "step_09": "q.all_animations_finished"
@@ -7330,26 +7330,26 @@
           ],
           "blend_transition": 0.075
         },
-        "state_132_01": {
+        "state_131_01": {
           "animations": [
-            "lbr_state_132",
+            "lbr_state_131",
             {
               "lbr_state_002": "q.is_item_name_any('slot.weapon.mainhand','minecraft:wooden_sword','minecraft:stick','minecraft:blaze_rod','minecraft:breeze_rod')&&q.state_time<=0.05"
             },
             {
-              "lbr_state_144": "q.is_item_name_any('slot.weapon.mainhand','minecraft:stone_sword','minecraft:bone')&&q.state_time<=0.05"
+              "lbr_state_143": "q.is_item_name_any('slot.weapon.mainhand','minecraft:stone_sword','minecraft:bone')&&q.state_time<=0.05"
             },
             {
-              "lbr_state_101": "q.is_item_name_any('slot.weapon.mainhand','minecraft:copper_sword')&&q.state_time<=0.05"
+              "lbr_state_100": "q.is_item_name_any('slot.weapon.mainhand','minecraft:copper_sword')&&q.state_time<=0.05"
             },
             {
-              "lbr_state_128": "q.is_item_name_any('slot.weapon.mainhand','minecraft:iron_sword')&&q.state_time<=0.05"
+              "lbr_state_127": "q.is_item_name_any('slot.weapon.mainhand','minecraft:iron_sword')&&q.state_time<=0.05"
             },
             {
               "lbr_state_021": "q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_sword')&&q.state_time<=0.05"
             },
             {
-              "lbr_state_135": "q.is_item_name_any('slot.weapon.mainhand','minecraft:diamond_sword')&&q.state_time<=0.05"
+              "lbr_state_134": "q.is_item_name_any('slot.weapon.mainhand','minecraft:diamond_sword')&&q.state_time<=0.05"
             },
             {
               "lbr_state_059": "q.is_item_name_any('slot.weapon.mainhand','minecraft:netherite_sword')&&q.state_time<=0.05"
@@ -7381,19 +7381,19 @@
               "lbr_state_002": "q.is_item_name_any('slot.weapon.mainhand','minecraft:wooden_sword','minecraft:stick','minecraft:blaze_rod','minecraft:breeze_rod')&&q.state_time<=0.05"
             },
             {
-              "lbr_state_144": "q.is_item_name_any('slot.weapon.mainhand','minecraft:stone_sword','minecraft:bone')&&q.state_time<=0.05"
+              "lbr_state_143": "q.is_item_name_any('slot.weapon.mainhand','minecraft:stone_sword','minecraft:bone')&&q.state_time<=0.05"
             },
             {
-              "lbr_state_101": "q.is_item_name_any('slot.weapon.mainhand','minecraft:copper_sword')&&q.state_time<=0.05"
+              "lbr_state_100": "q.is_item_name_any('slot.weapon.mainhand','minecraft:copper_sword')&&q.state_time<=0.05"
             },
             {
-              "lbr_state_128": "q.is_item_name_any('slot.weapon.mainhand','minecraft:iron_sword')&&q.state_time<=0.05"
+              "lbr_state_127": "q.is_item_name_any('slot.weapon.mainhand','minecraft:iron_sword')&&q.state_time<=0.05"
             },
             {
               "lbr_state_021": "q.is_item_name_any('slot.weapon.mainhand','minecraft:golden_sword')&&q.state_time<=0.05"
             },
             {
-              "lbr_state_135": "q.is_item_name_any('slot.weapon.mainhand','minecraft:diamond_sword')&&q.state_time<=0.05"
+              "lbr_state_134": "q.is_item_name_any('slot.weapon.mainhand','minecraft:diamond_sword')&&q.state_time<=0.05"
             },
             {
               "lbr_state_059": "q.is_item_name_any('slot.weapon.mainhand','minecraft:netherite_sword')&&q.state_time<=0.05"
@@ -7495,13 +7495,13 @@
           ],
           "blend_transition": 0.075
         },
-        "state_093": {
+        "state_092": {
           "animations": [
             {
-              "lbr_state_093": "!v.lbr_baf_mainhand_hold_up&&v.lbr_baf_v047==0"
+              "lbr_state_092": "!v.lbr_baf_mainhand_hold_up&&v.lbr_baf_v047==0"
             },
             {
-              "lbr_state_088": "v.lbr_baf_mainhand_hold_up&&v.lbr_baf_v047==0?0.5"
+              "lbr_state_087": "v.lbr_baf_mainhand_hold_up&&v.lbr_baf_v047==0?0.5"
             },
             {
               "lbr_state_007": "v.lbr_baf_v047!=0"
@@ -7512,7 +7512,7 @@
               "default": "!v.is_holding_right||v.lbr_baf_v168!=q.get_equipped_item_name(0)"
             },
             {
-              "state_093_01": "q.state_time>0.175&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_092_01": "q.state_time>0.175&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
               "step_13": "q.any_animation_finished"
@@ -7570,13 +7570,13 @@
           ],
           "blend_transition": 0.05
         },
-        "state_093_01": {
+        "state_092_01": {
           "animations": [
             {
-              "lbr_state_093": "!v.lbr_baf_mainhand_hold_up&&v.lbr_baf_v047==0"
+              "lbr_state_092": "!v.lbr_baf_mainhand_hold_up&&v.lbr_baf_v047==0"
             },
             {
-              "lbr_state_088": "v.lbr_baf_mainhand_hold_up&&v.lbr_baf_v047==0?0.5"
+              "lbr_state_087": "v.lbr_baf_mainhand_hold_up&&v.lbr_baf_v047==0?0.5"
             },
             {
               "lbr_state_007": "v.lbr_baf_v047!=0"
@@ -7587,7 +7587,7 @@
               "default": "!v.is_holding_right||v.lbr_baf_v168!=q.get_equipped_item_name(0)"
             },
             {
-              "state_093": "q.state_time>0.175&&q.in_range(v.attack_time,0.01,0.2)"
+              "state_092": "q.state_time>0.175&&q.in_range(v.attack_time,0.01,0.2)"
             },
             {
               "step_13": "q.any_animation_finished"
@@ -7602,13 +7602,13 @@
         "default": {
           "transitions": [
             {
-              "state_112": "q.is_sprinting&&q.is_on_ground"
+              "state_111": "q.is_sprinting&&q.is_on_ground"
             }
           ]
         },
-        "state_112": {
+        "state_111": {
           "animations": [
-            "lbr_state_112"
+            "lbr_state_111"
           ],
           "transitions": [
             {
@@ -7664,7 +7664,7 @@
               "lbr_fall": "(0.5+v.lbr_baf_v014*0.5)*!q.any(v.lbr_baf_v318,11,12)"
             },
             {
-              "lbr_state_143": "v.lbr_baf_v014*!q.any(v.lbr_baf_v318,11,12)"
+              "lbr_state_142": "v.lbr_baf_v014*!q.any(v.lbr_baf_v318,11,12)"
             }
           ],
           "transitions": [
@@ -7684,7 +7684,7 @@
               "step_02": "q.is_in_water&&!v.lbr_baf_v189"
             },
             {
-              "state_133": "q.is_item_name_any('slot.weapon.mainhand','minecraft:water_bucket')&&q.vertical_speed<-12"
+              "state_132": "q.is_item_name_any('slot.weapon.mainhand','minecraft:water_bucket')&&q.vertical_speed<-12"
             },
             {
               "step_01": "v.lbr_baf_v049<=0.3&&q.is_sneaking&&!v.lbr_baf_v040||v.lbr_baf_v092"
@@ -7714,24 +7714,24 @@
               "step_02": "q.is_in_water&&!v.lbr_baf_v189"
             },
             {
-              "state_133": "q.state_time>0.5&&q.is_item_name_any('slot.weapon.mainhand','minecraft:water_bucket')&&q.vertical_speed<-12"
+              "state_132": "q.state_time>0.5&&q.is_item_name_any('slot.weapon.mainhand','minecraft:water_bucket')&&q.vertical_speed<-12"
             }
           ],
           "blend_transition": 0.3
         },
-        "state_133": {
+        "state_132": {
           "animations": [
             {
-              "lbr_state_133": "!v.is_holding_left"
+              "lbr_state_132": "!v.is_holding_left"
             },
             {
               "lbr_state_017": "!v.is_holding_left"
             },
             {
-              "lbr_state_102": "v.is_holding_left"
+              "lbr_state_101": "v.is_holding_left"
             },
             {
-              "lbr_state_073": "v.is_holding_left"
+              "lbr_state_072": "v.is_holding_left"
             }
           ],
           "transitions": [
@@ -7765,7 +7765,7 @@
           ],
           "animations": [
             "lbr_state_018",
-            "lbr_state_141",
+            "lbr_state_140",
             "lbr_state_063"
           ],
           "transitions": [
@@ -7812,12 +7812,12 @@
           ],
           "blend_transition": 0.16
         },
-        "state_119": {
+        "state_118": {
           "on_entry": [
             "v.lbr_baf_v405=1;"
           ],
           "animations": [
-            "lbr_state_119",
+            "lbr_state_118",
             "lbr_state_029"
           ],
           "transitions": [
@@ -7882,7 +7882,7 @@
           ],
           "animations": [
             "lbr_state_032",
-            "lbr_state_129"
+            "lbr_state_128"
           ],
           "transitions": [
             {
@@ -7892,7 +7892,7 @@
               "state_018": "q.in_range(q.state_time/v.lbr_baf_v344,0,0.25)&&q.is_sneaking&&v.lbr_baf_v049>0.5"
             },
             {
-              "state_119": "q.in_range(q.state_time/v.lbr_baf_v344,0.25,0.5)&&q.is_sneaking&&v.lbr_baf_v049>0.3"
+              "state_118": "q.in_range(q.state_time/v.lbr_baf_v344,0.25,0.5)&&q.is_sneaking&&v.lbr_baf_v049>0.3"
             },
             {
               "water_09_01": "q.is_in_water&&v.lbr_baf_v189"
@@ -7980,7 +7980,7 @@
           "animations": [
             "lbr_state_057",
             {
-              "lbr_state_097": "Math.clamp(!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_spear','minecraft:is_spear'))?1-v.lbr_baf_v266,0.001,1)*Math.clamp(v.lbr_baf_v007,0.001,1)"
+              "lbr_state_096": "Math.clamp(!(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_spear','minecraft:is_spear'))?1-v.lbr_baf_v266,0.001,1)*Math.clamp(v.lbr_baf_v007,0.001,1)"
             },
             {
               "lbr_state_067": "Math.clamp(1+v.lbr_baf_v266,0.001,1)*Math.clamp(v.lbr_baf_v007,0.001,1)"
@@ -8029,16 +8029,16 @@
           ],
           "transitions": [
             {
-              "state_138": "q.state_time>v.lbr_baf_v023"
+              "state_137": "q.state_time>v.lbr_baf_v023"
             },
             {
               "default": "q.any(v.lbr_baf_v318,0,1,5,9)"
             }
           ]
         },
-        "state_138": {
+        "state_137": {
           "animations": [
-            "lbr_state_138"
+            "lbr_state_137"
           ],
           "transitions": [
             {
@@ -8117,10 +8117,10 @@
               "lbr_state_011": "1-v.lbr_baf_v139"
             },
             {
-              "lbr_state_106": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_crossbow')||q.is_item_name_any('slot.weapon.mainhand','minecraft:crossbow'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_spyglass')||q.is_item_name_any('slot.weapon.mainhand','minecraft:spyglass'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_brush')||q.is_item_name_any('slot.weapon.mainhand','minecraft:brush'))"
+              "lbr_state_105": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_crossbow')||q.is_item_name_any('slot.weapon.mainhand','minecraft:crossbow'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_spyglass')||q.is_item_name_any('slot.weapon.mainhand','minecraft:spyglass'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_brush')||q.is_item_name_any('slot.weapon.mainhand','minecraft:brush'))"
             },
             {
-              "lbr_state_112": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_crossbow')||q.is_item_name_any('slot.weapon.mainhand','minecraft:crossbow'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_spyglass')||q.is_item_name_any('slot.weapon.mainhand','minecraft:spyglass'))?0:Math.min(1,v.lbr_baf_v074*6)"
+              "lbr_state_111": "(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_crossbow')||q.is_item_name_any('slot.weapon.mainhand','minecraft:crossbow'))||(q.equipped_item_any_tag('slot.weapon.mainhand','lbr:is_spyglass')||q.is_item_name_any('slot.weapon.mainhand','minecraft:spyglass'))?0:Math.min(1,v.lbr_baf_v074*6)"
             }
           ],
           "transitions": [
@@ -8172,24 +8172,24 @@
               "default": "!q.is_sneaking||q.any(v.lbr_baf_v318,3,5,7,9)"
             },
             {
-              "state_140": "q.is_sneaking&&q.state_time>5&&q.modified_move_speed<0.01&&q.target_x_rotation>90-20&&!q.is_in_water&&!v.lbr_baf_v290"
+              "state_139": "q.is_sneaking&&q.state_time>5&&q.modified_move_speed<0.01&&q.target_x_rotation>90-20&&!q.is_in_water&&!v.lbr_baf_v290"
             }
           ],
           "blend_transition": 0.1
         },
-        "state_140": {
+        "state_139": {
           "on_entry": [
             "!q.is_in_ui&&!v.is_paperdoll?{v.lbr_baf_v096=1;};",
             "v.lbr_baf_v112=q.life_time;"
           ],
           "animations": [
-            "lbr_state_140",
+            "lbr_state_139",
             "lbr_controller_028",
             {
-              "lbr_state_107": "Math.hermite_blend(Math.clamp((q.life_time-v.lbr_baf_v112),0,1))"
+              "lbr_state_106": "Math.hermite_blend(Math.clamp((q.life_time-v.lbr_baf_v112),0,1))"
             },
             {
-              "lbr_state_085": "Math.hermite_blend(Math.clamp((q.life_time-v.lbr_baf_v112),0,1))"
+              "lbr_state_084": "Math.hermite_blend(Math.clamp((q.life_time-v.lbr_baf_v112),0,1))"
             }
           ],
           "transitions": [
@@ -8200,7 +8200,7 @@
               "state_051": "q.is_on_ground&&q.modified_move_speed>0.01"
             },
             {
-              "state_137": "q.is_on_ground&&q.modified_move_speed<0.01&&!q.is_sneaking&&q.state_time<0.8"
+              "state_136": "q.is_on_ground&&q.modified_move_speed<0.01&&!q.is_sneaking&&q.state_time<0.8"
             }
           ],
           "blend_transition": {
@@ -8219,9 +8219,9 @@
             "v.lbr_baf_v076=0.8-q.state_time;"
           ]
         },
-        "state_137": {
+        "state_136": {
           "animations": [
-            "lbr_state_137"
+            "lbr_state_136"
           ],
           "transitions": [
             {
@@ -8313,13 +8313,13 @@
               "state_033_02": "(v.lbr_baf_v108||q.is_jumping)&&q.state_time>0.6"
             },
             {
-              "state_098": "q.in_range(q.state_time,0,0.25)&&!q.is_sprinting"
+              "state_097": "q.in_range(q.state_time,0,0.25)&&!q.is_sprinting"
             },
             {
-              "state_145": "q.in_range(q.state_time,0.25,0.4)&&!q.is_sprinting"
+              "state_144": "q.in_range(q.state_time,0.25,0.4)&&!q.is_sprinting"
             },
             {
-              "state_118": "q.in_range(q.state_time,0.4,0.6)&&!q.is_sprinting"
+              "state_117": "q.in_range(q.state_time,0.4,0.6)&&!q.is_sprinting"
             }
           ],
           "on_exit": [
@@ -8405,11 +8405,11 @@
             "v.lbr_baf_v025=0;"
           ]
         },
-        "state_098": {
+        "state_097": {
           "blend_via_shortest_path": true,
           "animations": [
-            "lbr_state_098",
-            "lbr_state_142",
+            "lbr_state_097",
+            "lbr_state_141",
             "lbr_state_049"
           ],
           "transitions": [
@@ -8438,11 +8438,11 @@
             "v.lbr_baf_v025=0;"
           ]
         },
-        "state_145": {
+        "state_144": {
           "blend_via_shortest_path": true,
           "animations": [
-            "lbr_state_145",
-            "lbr_state_142"
+            "lbr_state_144",
+            "lbr_state_141"
           ],
           "transitions": [
             {
@@ -8470,11 +8470,11 @@
             "v.lbr_baf_v025=0;"
           ]
         },
-        "state_118": {
+        "state_117": {
           "blend_via_shortest_path": true,
           "animations": [
-            "lbr_state_118",
-            "lbr_state_142"
+            "lbr_state_117",
+            "lbr_state_141"
           ],
           "transitions": [
             {
@@ -8534,15 +8534,15 @@
           ],
           "blend_transition": 0.12
         },
-        "state_139": {
+        "state_138": {
           "on_entry": [
             "v.lbr_baf_v087=1;",
             "v.lbr_baf_v397=1;",
             "v.lbr_baf_v250=!q.is_in_water&&(v.lbr_baf_v169-q.position(1)>=6);"
           ],
           "animations": [
-            "lbr_state_139",
-            "lbr_state_148",
+            "lbr_state_138",
+            "lbr_state_147",
             {
               "lbr_state_061": "v.lbr_baf_v250"
             }
@@ -8555,7 +8555,7 @@
               "step_01": "q.in_range(q.state_time,0.2,1.25)&&(v.lbr_baf_v108||q.is_jumping)"
             },
             {
-              "state_120": "q.is_on_ground&&q.in_range(q.state_time,0.2,1.25)&&v.lbr_baf_v074>0.25||(q.is_on_ground&&q.in_range(q.state_time,0.2,1.25)&&(q.in_range(v.attack_time,0.001,0.1)||q.main_hand_item_use_duration>0))"
+              "state_119": "q.is_on_ground&&q.in_range(q.state_time,0.2,1.25)&&v.lbr_baf_v074>0.25||(q.is_on_ground&&q.in_range(q.state_time,0.2,1.25)&&(q.in_range(v.attack_time,0.001,0.1)||q.main_hand_item_use_duration>0))"
             }
           ],
           "blend_transition": 0.1,
@@ -8564,13 +8564,13 @@
             "v.lbr_baf_v397=0;"
           ]
         },
-        "state_120": {
+        "state_119": {
           "on_entry": [
             "v.lbr_baf_v087=2;",
             "v.lbr_baf_v397=1;"
           ],
           "animations": [
-            "lbr_state_120"
+            "lbr_state_119"
           ],
           "transitions": [
             {
@@ -8591,7 +8591,7 @@
               "state_033": "(v.lbr_baf_v169-q.position(1)>3.333)&&q.is_on_ground&&q.is_sprinting&&!q.is_in_water&&v.lbr_baf_v264>1"
             },
             {
-              "state_139": "(v.lbr_baf_v169-q.position(1)>3.333)&&q.is_on_ground&&!q.is_in_water&&v.lbr_baf_v264>1"
+              "state_138": "(v.lbr_baf_v169-q.position(1)>3.333)&&q.is_on_ground&&!q.is_in_water&&v.lbr_baf_v264>1"
             },
             {
               "jump_03": "q.is_on_ground&&(v.lbr_baf_v074>0.5||v.lbr_baf_v290)&&v.lbr_baf_v264>1"
@@ -8647,13 +8647,13 @@
           ],
           "transitions": [
             {
-              "state_127": "(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_sword','lbr:is_sword'))||(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_axe','lbr:is_axe'))||(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_trident','lbr:is_trident'))"
+              "state_126": "(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_sword','lbr:is_sword'))||(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_axe','lbr:is_axe'))||(q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_trident','lbr:is_trident'))"
             }
           ]
         },
-        "state_127": {
+        "state_126": {
           "animations": [
-            "lbr_state_127",
+            "lbr_state_126",
             {
               "lbr_state_046": "v.lbr_baf_v409"
             }
@@ -8669,17 +8669,17 @@
               "state_046": "v.attack_time"
             },
             {
-              "state_111": "q.state_time>1.25"
+              "state_110": "q.state_time>1.25"
             }
           ],
           "blend_transition": 0.07
         },
-        "state_111": {
+        "state_110": {
           "on_entry": [
             "v.lbr_baf_v207=Math.random_integer(1,5);"
           ],
           "animations": [
-            "lbr_state_111",
+            "lbr_state_110",
             {
               "lbr_state_046": "v.lbr_baf_v409"
             }
@@ -8695,7 +8695,7 @@
               "state_046": "v.attack_time"
             },
             {
-              "state_111": "q.state_time>2&&v.lbr_baf_v183>1"
+              "state_110": "q.state_time>2&&v.lbr_baf_v183>1"
             },
             {
               "state_066": "q.state_time>v.lbr_baf_v207*2"
@@ -8721,7 +8721,7 @@
               "state_046": "v.attack_time"
             },
             {
-              "state_111": "q.state_time>4"
+              "state_110": "q.state_time>4"
             }
           ],
           "blend_transition": 0.07
@@ -8743,7 +8743,7 @@
               "state_046_01": "q.state_time>1&&q.main_hand_item_use_duration"
             },
             {
-              "state_127": "q.state_time>1"
+              "state_126": "q.state_time>1"
             }
           ],
           "blend_transition": 0.2
@@ -8762,7 +8762,7 @@
               "state_046": "q.state_time>1&&v.attack_time"
             },
             {
-              "state_127": "q.state_time>1&&q.main_hand_item_use_duration==0"
+              "state_126": "q.state_time>1&&q.main_hand_item_use_duration==0"
             }
           ]
         }
@@ -8918,13 +8918,13 @@
               "state_033_02": "!q.is_on_ground&&q.state_time>0.6"
             },
             {
-              "state_098": "q.in_range(q.state_time,0,0.25)&&!q.is_sprinting"
+              "state_097": "q.in_range(q.state_time,0,0.25)&&!q.is_sprinting"
             },
             {
-              "state_145": "q.in_range(q.state_time,0.25,0.4)&&!q.is_sprinting"
+              "state_144": "q.in_range(q.state_time,0.25,0.4)&&!q.is_sprinting"
             },
             {
-              "state_118": "q.in_range(q.state_time,0.4,0.6)&&!q.is_sprinting"
+              "state_117": "q.in_range(q.state_time,0.4,0.6)&&!q.is_sprinting"
             }
           ],
           "on_exit": [
@@ -9010,11 +9010,11 @@
             "v.lbr_baf_v025=0;"
           ]
         },
-        "state_098": {
+        "state_097": {
           "blend_via_shortest_path": true,
           "animations": [
-            "lbr_state_098",
-            "lbr_state_142",
+            "lbr_state_097",
+            "lbr_state_141",
             "lbr_state_049"
           ],
           "transitions": [
@@ -9043,11 +9043,11 @@
             "v.lbr_baf_v025=0;"
           ]
         },
-        "state_145": {
+        "state_144": {
           "blend_via_shortest_path": true,
           "animations": [
-            "lbr_state_145",
-            "lbr_state_142"
+            "lbr_state_144",
+            "lbr_state_141"
           ],
           "transitions": [
             {
@@ -9075,11 +9075,11 @@
             "v.lbr_baf_v025=0;"
           ]
         },
-        "state_118": {
+        "state_117": {
           "blend_via_shortest_path": true,
           "animations": [
-            "lbr_state_118",
-            "lbr_state_142"
+            "lbr_state_117",
+            "lbr_state_141"
           ],
           "transitions": [
             {
@@ -9139,15 +9139,15 @@
           ],
           "blend_transition": 0.12
         },
-        "state_139": {
+        "state_138": {
           "on_entry": [
             "v.lbr_baf_v087=1;",
             "v.lbr_baf_v397=1;",
             "v.lbr_baf_v250=!q.is_in_water&&(v.lbr_baf_v169-q.position(1)>=6);"
           ],
           "animations": [
-            "lbr_state_139",
-            "lbr_state_148",
+            "lbr_state_138",
+            "lbr_state_147",
             {
               "lbr_state_061": "v.lbr_baf_v250"
             }
@@ -9160,7 +9160,7 @@
               "step_02": "q.in_range(q.state_time,0.2,1.25)&&!q.is_on_ground"
             },
             {
-              "state_120": "q.is_on_ground&&q.in_range(q.state_time,0.2,1.25)&&v.lbr_baf_v074>0.25||q.in_range(v.attack_time,0.001,0.1)||q.main_hand_item_use_duration>0"
+              "state_119": "q.is_on_ground&&q.in_range(q.state_time,0.2,1.25)&&v.lbr_baf_v074>0.25||q.in_range(v.attack_time,0.001,0.1)||q.main_hand_item_use_duration>0"
             }
           ],
           "blend_transition": 0.1,
@@ -9169,13 +9169,13 @@
             "v.lbr_baf_v397=0;"
           ]
         },
-        "state_120": {
+        "state_119": {
           "on_entry": [
             "v.lbr_baf_v087=2;",
             "v.lbr_baf_v397=1;"
           ],
           "animations": [
-            "lbr_state_120"
+            "lbr_state_119"
           ],
           "transitions": [
             {
@@ -9196,7 +9196,7 @@
               "state_033": "(v.lbr_baf_v169-q.position(1)>3.333)&&q.is_on_ground&&q.is_sprinting&&!v.lbr_baf_v092&&!q.is_in_water&&v.lbr_baf_v264>1"
             },
             {
-              "state_139": "(v.lbr_baf_v169-q.position(1)>3.333)&&q.is_on_ground&&!q.is_in_water&&v.lbr_baf_v264>1"
+              "state_138": "(v.lbr_baf_v169-q.position(1)>3.333)&&q.is_on_ground&&!q.is_in_water&&v.lbr_baf_v264>1"
             },
             {
               "sprint_01": "q.is_on_ground&&(v.lbr_baf_v074>0.5||q.is_sprinting)&&v.lbr_baf_v264>1"
@@ -9259,10 +9259,10 @@
               "lantern": "v.lbr_baf_offhand_hold_up"
             },
             {
-              "shears_02": "(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))"
+              "golden_dandelion_05": "(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))"
             },
             {
-              "shears_02_01": "q.get_equipped_item_name(1)!=''"
+              "golden_dandelion_05_01": "q.get_equipped_item_name(1)!=''"
             }
           ]
         },
@@ -9278,9 +9278,9 @@
             }
           ]
         },
-        "shears_02": {
+        "golden_dandelion_05": {
           "animations": [
-            "lbr_shears_02",
+            "lbr_golden_dandelion_05",
             "lbr_lantern",
             "lbr_controller_017"
           ],
@@ -9290,9 +9290,9 @@
             }
           ]
         },
-        "shears_02_01": {
+        "golden_dandelion_05_01": {
           "animations": [
-            "lbr_shears_02",
+            "lbr_golden_dandelion_05",
             "lbr_lantern"
           ],
           "transitions": [
@@ -9300,26 +9300,26 @@
               "lantern": "v.lbr_baf_offhand_hold_up"
             },
             {
-              "shears_02": "(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))"
+              "golden_dandelion_05": "(q.equipped_item_any_tag('slot.weapon.offhand','lbr:is_shield')||q.is_item_name_any('slot.weapon.offhand','minecraft:shield'))"
             },
             {
-              "shears_02_01": "c.player_offhand_arm_height<0.25&&q.state_time>0.25"
+              "golden_dandelion_05_01": "c.player_offhand_arm_height<0.25&&q.state_time>0.25"
             },
             {
-              "shield_03": "q.get_equipped_item_name(1)==''"
+              "shield_01": "q.get_equipped_item_name(1)==''"
             }
           ]
         },
-        "shield_03": {
+        "shield_01": {
           "animations": [
-            "lbr_shield_03"
+            "lbr_shield_01"
           ],
           "transitions": [
             {
               "lantern": "v.lbr_baf_offhand_hold_up"
             },
             {
-              "shears_02_01": "q.get_equipped_item_name(1)!=''"
+              "golden_dandelion_05_01": "q.get_equipped_item_name(1)!=''"
             },
             {
               "default": "v.lbr_baf_v312==0"
@@ -9386,7 +9386,7 @@
               "lbr_state_006": "!q.is_gliding&&!q.is_in_ui&&!v.lbr_baf_v186"
             },
             "lbr_cape",
-            "lbr_controller_044",
+            "lbr_controller_player_movement_offset",
             "lbr_controller_042",
             {
               "lbr_run_04": "v.lbr_baf_v318!=3?!q.is_gliding-v.lbr_baf_v139"
@@ -9470,15 +9470,15 @@
         }
       }
     },
-    "controller.animation.lbr_baf.player.controller_044": {
+    "controller.animation.lbr_baf.player.controller_player_movement_offset": {
       "states": {
         "default": {
           "transitions": [
             {
-              "state_124": "v.lbr_baf_v323&&q.is_on_ground"
+              "state_123": "v.lbr_baf_v323&&q.is_on_ground"
             },
             {
-              "state_103": "v.lbr_baf_v100"
+              "state_102": "v.lbr_baf_v100"
             },
             {
               "state_048": "v.lbr_baf_v316"
@@ -9486,10 +9486,10 @@
           ],
           "blend_transition": 0.1
         },
-        "state_124": {
+        "state_123": {
           "animations": [
             {
-              "lbr_state_124": "!q.is_in_ui&&!v.is_paperdoll"
+              "lbr_state_123": "!q.is_in_ui&&!v.is_paperdoll"
             }
           ],
           "transitions": [
@@ -9499,10 +9499,10 @@
           ],
           "blend_transition": 0.1
         },
-        "state_103": {
+        "state_102": {
           "animations": [
             {
-              "lbr_state_103": "!q.is_in_ui&&!v.is_paperdoll"
+              "lbr_state_102": "!q.is_in_ui&&!v.is_paperdoll"
             }
           ],
           "transitions": [
@@ -9549,10 +9549,10 @@
               "paperdoll": "(v.is_paperdoll||q.is_in_ui)&&q.is_alive"
             },
             {
-              "shield_07": "v.is_first_person"
+              "first_person": "v.is_first_person"
             },
             {
-              "paperdoll_01": "q.is_alive"
+              "third_person": "q.is_alive"
             },
             {
               "look_at_target_ui": "1"
@@ -9589,44 +9589,44 @@
             }
           ]
         },
-        "shield_07": {
+        "first_person": {
           "animations": [
             {
-              "lbr_shield_07": "q.is_riding"
+              "lbr_first_person_base_pose": "q.is_riding"
             },
-            "lbr_shield_08",
+            "lbr_first_person_empty_hand",
             {
               "lbr_controller_019": "!q.is_item_name_any('slot.weapon.mainhand','minecraft:filled_map')&&!q.is_item_name_any('slot.weapon.offhand','minecraft:filled_map')"
             },
             {
-              "lbr_shield_12": "v.lbr_baf_v405?0:(q.is_gliding?0.5:1)"
+              "lbr_first_person_02": "v.lbr_baf_v405?0:(q.is_gliding?0.5:1)"
             },
             {
-              "lbr_shield_01": "v.bob_animation==0&&!q.is_gliding"
+              "lbr_first_person_walk": "v.bob_animation==0&&!q.is_gliding"
             },
             {
-              "lbr_shield_15": "!v.lbr_baf_mainhand_custom_pos&&q.is_item_equipped('main_hand')"
+              "lbr_first_person_03": "!v.lbr_baf_mainhand_custom_pos&&q.is_item_equipped('main_hand')"
             },
             {
-              "lbr_shield_06": "!v.lbr_baf_offhand_custom_pos&&q.is_item_equipped('off_hand')"
+              "lbr_first_person_01": "!v.lbr_baf_offhand_custom_pos&&q.is_item_equipped('off_hand')"
             },
             {
-              "lbr_shield_21": "(!q.is_item_name_any('slot.weapon.mainhand','minecraft:filled_map')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shield'))&&!q.is_item_name_any('slot.weapon.offhand','minecraft:filled_map')"
+              "lbr_first_person_05": "(!q.is_item_name_any('slot.weapon.mainhand','minecraft:filled_map')||q.is_item_name_any('slot.weapon.mainhand','minecraft:shield'))&&!q.is_item_name_any('slot.weapon.offhand','minecraft:filled_map')"
             },
             {
-              "lbr_shield_02": "!q.is_item_name_any('slot.weapon.mainhand','minecraft:filled_map')"
+              "lbr_first_person": "!q.is_item_name_any('slot.weapon.mainhand','minecraft:filled_map')"
             },
             {
-              "lbr_shield_18": "q.is_item_name_any('slot.weapon.mainhand','minecraft:filled_map')&&!q.is_item_name_any('slot.weapon.offhand','minecraft:filled_map','minecraft:shield')"
+              "lbr_first_person_04": "q.is_item_name_any('slot.weapon.mainhand','minecraft:filled_map')&&!q.is_item_name_any('slot.weapon.offhand','minecraft:filled_map','minecraft:shield')"
             }
           ],
           "transitions": [
             {
-              "paperdoll_01": "!v.is_paperdoll&&!v.is_first_person&&!q.is_spectator"
+              "third_person": "!v.is_paperdoll&&!v.is_first_person&&!q.is_spectator"
             }
           ]
         },
-        "paperdoll_01": {
+        "third_person": {
           "animations": [
             {
               "lbr_paperdoll_01": "v.lbr_baf_v122"
@@ -9638,7 +9638,7 @@
           ],
           "transitions": [
             {
-              "shield_07": "v.is_first_person"
+              "first_person": "v.is_first_person"
             },
             {
               "paperdoll": "v.is_paperdoll"
