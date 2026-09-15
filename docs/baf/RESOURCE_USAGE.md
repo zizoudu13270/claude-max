@@ -6,7 +6,7 @@ Only `UNUSED_CONFIRMED` assets may be deleted automatically. `UNRESOLVED` assets
 
 | status | count |
 |--------|-------|
-| USED | 57 |
+| USED | 55 |
 | UNRESOLVED | 2 |
 | UNUSED_CONFIRMED | 0 |
 
@@ -15,8 +15,6 @@ Only `UNUSED_CONFIRMED` assets may be deleted automatically. `UNRESOLVED` assets
 | `packs/BetterAnimationFeature_RP/pack_icon.png` | USED | pack icon, read by Minecraft directly |
 | `packs/BetterAnimationFeature_RP/textures/blocks/fern.png` | UNRESOLVED | sits on a vanilla texture path, so it replaces the vanilla file for every vanilla atlas entry that points there; kept |
 | `packs/BetterAnimationFeature_RP/textures/blocks/tallgrass.png` | UNRESOLVED | sits on a vanilla texture path, so it replaces the vanilla file for every vanilla atlas entry that points there; kept |
-| `packs/BetterAnimationFeature_RP/textures/lbr_baf/blocks/pebbles_emerald.png` | USED | referenced by path |
-| `packs/BetterAnimationFeature_RP/textures/lbr_baf/blocks/pebbles_emerald_broken.png` | USED | referenced by path |
 | `packs/BetterAnimationFeature_RP/textures/lbr_baf/blocks/rock.png` | USED | referenced by path |
 | `packs/BetterAnimationFeature_RP/textures/lbr_baf/blocks/rock_broken.png` | USED | referenced by path |
 | `packs/BetterAnimationFeature_RP/textures/lbr_baf/blocks/rock_coal.png` | USED | referenced by path |

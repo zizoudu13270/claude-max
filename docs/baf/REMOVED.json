@@ -1,0 +1,38 @@
+[
+  {
+    "block": "lbr:pebbles_emerald",
+    "reason": "Removed at the request of LBR Studio; the emerald boulder (lbr:rock_emerald) stays.",
+    "removed_on": "2026-09-15",
+    "features": [
+      "lbr:pebbles_emerald_feature",
+      "lbr:pebbles_emerald_shape_0_feature",
+      "lbr:pebbles_emerald_shape_1_feature"
+    ],
+    "feature_rules": [
+      "lbr:pebbles_emerald_rule"
+    ],
+    "geometries": [
+      "geometry.lbr_baf.pebbles_emerald",
+      "geometry.lbr_baf.pebbles_emerald_alt"
+    ],
+    "block_states": [
+      "lbr:shape"
+    ],
+    "texture_keys": [
+      "lbr_pebbles_emerald",
+      "lbr_pebbles_emerald_broken"
+    ],
+    "files": [
+      "packs/BetterAnimationFeature_BP/blocks/pebbles_emerald.json",
+      "packs/BetterAnimationFeature_BP/feature_rules/pebbles_emerald_rule.json",
+      "packs/BetterAnimationFeature_BP/features/pebbles_emerald_feature.json",
+      "packs/BetterAnimationFeature_BP/features/pebbles_emerald_shape_0_feature.json",
+      "packs/BetterAnimationFeature_BP/features/pebbles_emerald_shape_1_feature.json",
+      "packs/BetterAnimationFeature_BP/loot_tables/blocks/pebbles_emerald.json",
+      "packs/BetterAnimationFeature_RP/models/blocks/pebbles_emerald.geo.json",
+      "packs/BetterAnimationFeature_RP/models/blocks/pebbles_emerald_alt.geo.json",
+      "packs/BetterAnimationFeature_RP/textures/lbr_baf/blocks/pebbles_emerald.png",
+      "packs/BetterAnimationFeature_RP/textures/lbr_baf/blocks/pebbles_emerald_broken.png"
+    ]
+  }
+]

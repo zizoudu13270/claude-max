@@ -88,7 +88,7 @@ finding closes immediately: say so, and keep the unobfuscated source as proof.
 | Now | the same 30 tags under `lbr:` |
 
 **No item anywhere in this add-on defines any of these tags.** The behaviour
-pack ships seven blocks and no items at all. The controllers test them so that
+pack ships six blocks and no items at all. The controllers test them so that
 *modded* items can drive the player animations — which means they were written
 against a larger project that also ships the tagged items.
 

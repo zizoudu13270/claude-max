@@ -40,12 +40,6 @@
     "lbr_rock_emerald_broken": {
       "textures": "textures/lbr_baf/blocks/rock_emerald_broken"
     },
-    "lbr_pebbles_emerald": {
-      "textures": "textures/lbr_baf/blocks/pebbles_emerald"
-    },
-    "lbr_pebbles_emerald_broken": {
-      "textures": "textures/lbr_baf/blocks/pebbles_emerald_broken"
-    },
     "short_grass": {
       "textures": {
         "variations": [

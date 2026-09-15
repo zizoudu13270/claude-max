@@ -172,19 +172,58 @@ def invert_controller_states(data):
     return data
 
 
+def removal_log() -> list[dict]:
+    path = DOCS / "REMOVED.json"
+    return load(path) if path.exists() else []
+
+
+def removed_files() -> set[str]:
+    """Files deliberately deleted after the rename, per docs/baf/REMOVED.json."""
+    return {f for entry in removal_log() for f in entry["files"]}
+
+
+def removed_keys() -> set[str]:
+    """Identifiers deleted after the rename, under both their old and new names.
+
+    Some files - blocks.json, terrain_texture.json - survived a removal minus a
+    few entries. Those entries are dropped from the original side too, so the
+    comparison stays a rename check rather than a content check.
+    """
+    keys: set[str] = set()
+    for entry in removal_log():
+        keys.add(entry["block"])
+        for field in ("features", "feature_rules", "geometries",
+                      "block_states", "texture_keys"):
+            keys.update(entry.get(field, []))
+    return keys | {LITERALS.get(k, k) for k in keys}
+
+
+def strip_removed(node, keys: set[str]):
+    if isinstance(node, dict):
+        return {k: strip_removed(v, keys) for k, v in node.items() if k not in keys}
+    if isinstance(node, list):
+        return [strip_removed(v, keys) for v in node]
+    return node
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("original", type=Path, help="directory holding the 1.0.2 extraction")
     args = parser.parse_args()
 
+    removed = removed_files()
+    gone = removed_keys()
     failures = 0
     for old_rel, new_path in PAIRS:
         old_path = args.original / old_rel
+        if rel(new_path) in removed:
+            print(f"  removed  {rel(new_path)}  (documented in REMOVED.json)")
+            continue
         if not old_path.exists():
             print(f"  MISSING  {old_rel}")
             failures += 1
             continue
-        before = canonical(load(old_path))
+        before = canonical(strip_removed(load(old_path), gone))
         raw = load(new_path)
         if "animation_controllers" in raw:
             raw = invert_controller_states(raw)
@@ -199,7 +238,9 @@ def main() -> int:
     if failures:
         print(f"FAILED - {failures} file(s) are not a pure rename of the original")
         return 1
-    print(f"OK - all {len(PAIRS)} files round-trip to the original 1.0.2 content")
+    checked = len(PAIRS) - sum(1 for _o, n in PAIRS if rel(n) in removed)
+    print(f"OK - all {checked} remaining files round-trip to the original 1.0.2 content"
+          + (f" ({len(PAIRS) - checked} removed on purpose)" if checked != len(PAIRS) else ""))
     return 0
 
 

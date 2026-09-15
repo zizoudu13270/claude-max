@@ -1,5 +1,5 @@
 pack.name=Better Animation & Feature [RP]
-pack.description=Animaciones del jugador mejoradas, rocas, guijarros y hierba variada.
+pack.description=Animaciones del jugador mejoradas, rocas y hierba variada.
 
 tile.lbr:rock.name=Roca
 tile.lbr:rock_coal.name=Roca de Carbón
@@ -7,4 +7,3 @@ tile.lbr:rock_copper.name=Roca de Cobre
 tile.lbr:rock_iron.name=Roca de Hierro
 tile.lbr:rock_gold.name=Roca de Oro
 tile.lbr:rock_emerald.name=Roca de Esmeralda
-tile.lbr:pebbles_emerald.name=Guijarros de Esmeralda

@@ -23,9 +23,5 @@
   "lbr:rock_emerald": {
     "sound": "stone",
     "textures": "lbr_rock_emerald_broken"
-  },
-  "lbr:pebbles_emerald": {
-    "sound": "stone",
-    "textures": "lbr_pebbles_emerald_broken"
   }
 }

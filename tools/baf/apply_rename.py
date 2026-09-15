@@ -321,7 +321,7 @@ def convert_script(path: Path) -> None:
 # ------------------------------------------------------------------
 #  File layout
 # ------------------------------------------------------------------
-PACK_VERSION = [1, 1, 0]
+PACK_VERSION = [1, 2, 0]
 
 
 def convert_manifests() -> None:
@@ -329,8 +329,11 @@ def convert_manifests() -> None:
 
     UUIDs are deliberately left alone: they are what Minecraft uses to match an
     installed pack to a world, and changing them would orphan every world that
-    already has 1.0.2 applied. The version moves to 1.1.0 because the block
-    identifiers changed, which is a breaking change for existing worlds.
+    already has 1.0.2 applied.
+
+    PACK_VERSION is the version of the pack as it currently ships. 1.1.0 was the
+    rename (the block identifiers changed namespace, breaking existing worlds);
+    1.2.0 drops lbr:pebbles_emerald - see docs/baf/REMOVED.json.
     """
     bp = load(BP / "manifest.json")
     rp = load(RP / "manifest.json")

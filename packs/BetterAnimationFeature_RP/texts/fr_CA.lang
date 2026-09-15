@@ -1,5 +1,5 @@
 pack.name=Better Animation & Feature [RP]
-pack.description=Animations du joueur améliorées, rochers, cailloux et herbes variées.
+pack.description=Animations du joueur améliorées, rochers et herbes variées.
 
 tile.lbr:rock.name=Roche
 tile.lbr:rock_coal.name=Roche de Charbon
@@ -7,4 +7,3 @@ tile.lbr:rock_copper.name=Roche de Cuivre
 tile.lbr:rock_iron.name=Roche de Fer
 tile.lbr:rock_gold.name=Roche d'Or
 tile.lbr:rock_emerald.name=Roche d'Émeraude
-tile.lbr:pebbles_emerald.name=Cailloux d'Émeraude

@@ -7,8 +7,7 @@ const ROCK_TIERS = Object.freeze({
     "lbr:rock_copper": 1,
     "lbr:rock_iron": 1,
     "lbr:rock_gold": 2,
-    "lbr:rock_emerald": 2,
-    "lbr:pebbles_emerald": 2
+    "lbr:rock_emerald": 2
 });
 const ALLOWED_TIERS = Object.freeze({
     "0": [

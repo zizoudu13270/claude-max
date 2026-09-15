@@ -1,5 +1,5 @@
 pack.name=Better Animation & Feature [RP]
-pack.description=Improved player animations, boulders, pebbles and varied grass.
+pack.description=Improved player animations, boulders and varied grass.
 
 tile.lbr:rock.name=Boulder
 tile.lbr:rock_coal.name=Coal Boulder
@@ -7,4 +7,3 @@ tile.lbr:rock_copper.name=Copper Boulder
 tile.lbr:rock_iron.name=Iron Boulder
 tile.lbr:rock_gold.name=Gold Boulder
 tile.lbr:rock_emerald.name=Emerald Boulder
-tile.lbr:pebbles_emerald.name=Emerald Pebbles

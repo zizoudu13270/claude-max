@@ -10,21 +10,21 @@ Both packs were read in full — every manifest, animation, animation controller
 
 | item | count |
 |------|-------|
-| files (before → after) | 117 → 117 |
+| files (1.0.2 → now) | 117 → 107 |
 | animations | 457 |
 | animation controllers | 55 |
 | controller states | 391 |
 | render controllers | 9 |
 | player geometries | 5 |
-| block geometries | 7 |
+| block geometries | 5 |
 | custom materials | 4 |
 | client-entity animation aliases | 516 |
 | `initialize` statements | 499 |
 | `pre_animation` statements | 50 |
 | `animate` entries | 28 |
 | custom Molang variables | 429 |
-| blocks | 7 |
-| features + feature rules | 16 |
+| blocks | 6 |
+| features + feature rules | 12 |
 | item tags | 30 |
 
 ## 2. Legacy signatures found in 1.0.2
@@ -63,6 +63,23 @@ Obfuscated identifiers in 1.0.2: 435 of 457 animations, 55 of 55 animation contr
 | C | role not determinable - stable numbering | 148 |
 
 Per-animation reasoning is in `ANIMATION_INDEX.md`; the raw map is `RENAME_MAP.json`.
+
+## 4b. Content removed after the rename
+
+These are deletions requested by LBR Studio, not cleanup. Each one was taken as the full reference closure of the block — the block, the features and feature rules that placed it, the geometries and textures nothing else used, its block states, its translations and its entry in the mining-tier script — so no orphan is left behind. `tools/baf/remove_block.py` refuses to delete anything another block still uses.
+
+| removed | on | reason | files |
+|---------|----|--------|-------|
+| `lbr:pebbles_emerald` | 2026-09-15 | Removed at the request of LBR Studio; the emerald boulder (lbr:rock_emerald) stays. | 10 |
+
+**`lbr:pebbles_emerald`** also took with it:
+
+- features: `lbr:pebbles_emerald_feature`, `lbr:pebbles_emerald_shape_0_feature`, `lbr:pebbles_emerald_shape_1_feature`
+- feature rules: `lbr:pebbles_emerald_rule`
+- geometries: `geometry.lbr_baf.pebbles_emerald`, `geometry.lbr_baf.pebbles_emerald_alt`
+- block states: `lbr:shape`
+- terrain-texture keys: `lbr_pebbles_emerald`, `lbr_pebbles_emerald_broken`
+- translations in all 6 language files, and its entry in `scripts/main.js`
 
 ## 5. Deliberately not changed
 

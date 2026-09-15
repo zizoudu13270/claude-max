@@ -192,6 +192,41 @@ def resource_usage() -> str:
     return "\n".join(lines) + "\n"
 
 
+def _removed_section() -> str:
+    """Anything deleted on purpose after the rename, from REMOVED.json."""
+    path = DOCS / "REMOVED.json"
+    if not path.exists():
+        return "Nothing has been removed from the add-on."
+    log = load(path)
+    if not log:
+        return "Nothing has been removed from the add-on."
+    lines = [
+        "These are deletions requested by LBR Studio, not cleanup. Each one was "
+        "taken as the full reference closure of the block — the block, the "
+        "features and feature rules that placed it, the geometries and textures "
+        "nothing else used, its block states, its translations and its entry in "
+        "the mining-tier script — so no orphan is left behind. "
+        "`tools/baf/remove_block.py` refuses to delete anything another block "
+        "still uses.",
+        "",
+        "| removed | on | reason | files |",
+        "|---------|----|--------|-------|",
+    ]
+    for entry in log:
+        lines.append(f"| `{entry['block']}` | {entry['removed_on']} | "
+                     f"{entry['reason']} | {len(entry['files'])} |")
+    for entry in log:
+        lines += ["", f"**`{entry['block']}`** also took with it:", ""]
+        for key, label in (("features", "features"), ("feature_rules", "feature rules"),
+                           ("geometries", "geometries"), ("block_states", "block states"),
+                           ("texture_keys", "terrain-texture keys")):
+            if entry[key]:
+                lines.append(f"- {label}: " + ", ".join(f"`{v}`" for v in entry[key]))
+        lines.append("- translations in all 6 language files, and its entry in "
+                     "`scripts/main.js`")
+    return "\n".join(lines)
+
+
 def project_audit(facts: dict) -> str:
     entity = load(rp_paths()["entity"])["minecraft:client_entity"]["description"]
     tiers = collections.Counter(r["tier"] for r in MAP["animation_rationale"].values())
@@ -216,7 +251,7 @@ def project_audit(facts: dict) -> str:
         "",
         "| item | count |",
         "|------|-------|",
-        f"| files (before → after) | 117 → {files_after} |",
+        f"| files (1.0.2 → now) | 117 → {files_after} |",
         f"| animations | {len(MAP['animations'])} |",
         f"| animation controllers | {len(MAP['animation_controllers'])} |",
         f"| controller states | {sum(len(v) for v in MAP['controller_states'].values())} |",
@@ -229,8 +264,8 @@ def project_audit(facts: dict) -> str:
         f"| `pre_animation` statements | {len(entity['scripts']['pre_animation'])} |",
         f"| `animate` entries | {len(entity['scripts']['animate'])} |",
         f"| custom Molang variables | {len(MAP['molang_variables'])} |",
-        f"| blocks | {len(MAP['blocks'])} |",
-        f"| features + feature rules | {len(MAP['features'])} |",
+        f"| blocks | {sum(1 for _ in BP.glob('blocks/*.json'))} |",
+        f"| features + feature rules | {sum(1 for _ in BP.glob('features/*.json')) + sum(1 for _ in BP.glob('feature_rules/*.json'))} |",
         f"| item tags | {len(MAP['item_tags'])} |",
         "",
         "## 2. Legacy signatures found in 1.0.2",
@@ -278,6 +313,10 @@ def project_audit(facts: dict) -> str:
         "",
         "Per-animation reasoning is in `ANIMATION_INDEX.md`; the raw map is "
         "`RENAME_MAP.json`.",
+        "",
+        "## 4b. Content removed after the rename",
+        "",
+        _removed_section(),
         "",
         "## 5. Deliberately not changed",
         "",

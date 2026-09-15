@@ -2,7 +2,7 @@
 
 **Project:** Better Animation & Feature
 **Developer:** LBR Studio
-**Version:** 1.1.0 (refactored from 1.0.2)
+**Version:** 1.2.0 (1.0.2 refactored, then `lbr:pebbles_emerald` removed)
 **Namespaces:** `lbr:` for content, `lbr_baf` for the player-animation system
 
 This document records what the add-on is made of and where each part came
@@ -54,12 +54,12 @@ system.
 
 | part | identifiers |
 |------|-------------|
-| Blocks | `lbr:rock`, `lbr:rock_coal`, `lbr:rock_copper`, `lbr:rock_iron`, `lbr:rock_gold`, `lbr:rock_emerald`, `lbr:pebbles_emerald` |
-| Block state | `lbr:shape` (two shapes for `lbr:pebbles_emerald`) |
-| Features | 9, including a weighted-random feature that picks between the two pebble shapes |
-| Feature rules | 7, all surface-pass, overworld-biome gated |
-| Loot tables | 7, tier-gated by pickaxe material |
-| Block models | `geometry.lbr_baf.rock` and 4 ore variants, `geometry.lbr_baf.pebbles_emerald` + `_alt` |
+| Blocks | `lbr:rock`, `lbr:rock_coal`, `lbr:rock_copper`, `lbr:rock_iron`, `lbr:rock_gold`, `lbr:rock_emerald` |
+| Block states | none |
+| Features | 6, one per block |
+| Feature rules | 6, all surface-pass, overworld-biome gated |
+| Loot tables | 6, tier-gated by pickaxe material |
+| Block models | `geometry.lbr_baf.rock` and 4 ore variants |
 | Block textures | `textures/lbr_baf/blocks/` |
 
 ### 3. Grass and fern variation — resource pack
@@ -75,7 +75,7 @@ textures by occupying the vanilla path.
 
 `scripts/main.js`, a single module against `@minecraft/server` 2.0.0. It
 cancels `playerBreakBlock` when the tool tier is below the block's tier, for
-the seven `lbr:` blocks. Mining *speed* is handled by native block components,
+the six `lbr:` blocks. Mining *speed* is handled by native block components,
 not by the script.
 
 ---
@@ -105,4 +105,5 @@ inventing one would be a false metadata claim.
 | `RENAME_MAP.json` | every old → new identifier, machine-readable |
 | `ANIMATION_INDEX.md` | one row per animation: old id, new id, probable function, controller, guard, loop, length, bones |
 | `RESOURCE_USAGE.md` | USED / UNRESOLVED / UNUSED_CONFIRMED for every asset |
+| `REMOVED.json` | content deleted on request, with its full reference closure |
 | `THIRD_PARTY_REVIEW.md` | **material that does not appear to originate with LBR Studio** |

@@ -30,6 +30,7 @@ docs/baf/                            audit, rename map, provenance
 | `python3 tools/baf/validate_baf.py` | walk the whole reference graph and fail on anything broken |
 | `python3 tools/baf/signature.py <animation file> --out <json>` | fingerprint every animation payload |
 | `python3 tools/baf/verify_roundtrip.py <1.0.2 extraction>` | prove the refactor renamed and nothing else |
+| `python3 tools/baf/remove_block.py <id> [--dry-run]` | delete a block and the full closure of what only served it |
 | `python3 tools/baf/build_baf.py [--original <dir>]` | validate, then package to `dist/` |
 
 `build_baf.py` refuses to package unless `validate_baf.py` passes.
@@ -63,3 +64,4 @@ Where it does not, the identifier stays `state_NNN` — see `PROJECT_AUDIT.md` �
 | `RESOURCE_USAGE.md` | USED / UNRESOLVED / UNUSED_CONFIRMED per asset |
 | `RENAME_MAP.json` | every old → new identifier |
 | `FILE_MOVES.json` | every file that moved |
+| `REMOVED.json` | content deleted on request, with its full reference closure |
