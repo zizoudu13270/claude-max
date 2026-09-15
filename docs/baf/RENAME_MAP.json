@@ -1,0 +1,4924 @@
+{
+  "_about": {
+    "project": "Better Animation & Feature",
+    "studio": "LBR Studio",
+    "generated_by": "tools/baf/build_rename_map.py",
+    "policy": "tier A = readable token reused, tier B = single guard family/state, tier C = stable numbering"
+  },
+  "animations": {
+    "animation.minerplus.player.attack": "animation.lbr_baf.player.attack",
+    "animation.minerplus.player.bob": "animation.lbr_baf.player.bob",
+    "animation.minerplus.player.brush": "animation.lbr_baf.player.brush",
+    "animation.minerplus.player.cape": "animation.lbr_baf.player.cape",
+    "animation.minerplus.player.eat": "animation.lbr_baf.player.eat",
+    "animation.minerplus.player.fall": "animation.lbr_baf.player.fall",
+    "animation.minerplus.player.fly": "animation.lbr_baf.player.fly",
+    "animation.minerplus.player.goat_horn": "animation.lbr_baf.player.goat_horn",
+    "animation.minerplus.player.holding": "animation.lbr_baf.player.holding",
+    "animation.minerplus.player.humanoid_base_pose": "animation.lbr_baf.player.humanoid_base_pose",
+    "animation.minerplus.player.hurt": "animation.lbr_baf.player.hurt",
+    "animation.minerplus.player.jump": "animation.lbr_baf.player.jump",
+    "animation.minerplus.player.run": "animation.lbr_baf.player.run",
+    "animation.minerplus.player.shears": "animation.lbr_baf.player.shears",
+    "animation.minerplus.player.swim": "animation.lbr_baf.player.swim",
+    "animation.minerplus.player.throw": "animation.lbr_baf.player.throw",
+    "animation.minerplus.player.vanilla_move_arms": "animation.lbr_baf.player.vanilla_move_arms",
+    "animation.minerplus.player.vanilla_move_legs": "animation.lbr_baf.player.vanilla_move_legs",
+    "animation.minerplus.player.walk": "animation.lbr_baf.player.walk",
+    "animation.minerplus.player.afesjk": "animation.lbr_baf.player.minecart",
+    "animation.minerplus.player.atffds": "animation.lbr_baf.player.camel",
+    "animation.minerplus.player.atycwc": "animation.lbr_baf.player.crossbow",
+    "animation.minerplus.player.babwqr": "animation.lbr_baf.player.strider",
+    "animation.minerplus.player.bxtvze": "animation.lbr_baf.player.stop",
+    "animation.minerplus.player.cpmfac": "animation.lbr_baf.player.horse",
+    "animation.minerplus.player.ddqysw": "animation.lbr_baf.player.flint_and_steel",
+    "animation.minerplus.player.dhvule": "animation.lbr_baf.player.shears_01",
+    "animation.minerplus.player.eekwmk": "animation.lbr_baf.player.nautilus",
+    "animation.minerplus.player.esehxp": "animation.lbr_baf.player.horse_01",
+    "animation.minerplus.player.fcsrsv": "animation.lbr_baf.player.run_01",
+    "animation.minerplus.player.ffilnq": "animation.lbr_baf.player.pig",
+    "animation.minerplus.player.flubkg": "animation.lbr_baf.player.flint_and_steel_01",
+    "animation.minerplus.player.hmwdkc": "animation.lbr_baf.player.lantern",
+    "animation.minerplus.player.igkqcn": "animation.lbr_baf.player.punch",
+    "animation.minerplus.player.ijivez": "animation.lbr_baf.player.paperdoll",
+    "animation.minerplus.player.iynngn": "animation.lbr_baf.player.brush_01",
+    "animation.minerplus.player.izvkfh": "animation.lbr_baf.player.throw_01",
+    "animation.minerplus.player.jpqlzu": "animation.lbr_baf.player.horse_02",
+    "animation.minerplus.player.jtibvk": "animation.lbr_baf.player.minecart_01",
+    "animation.minerplus.player.jwbbyj": "animation.lbr_baf.player.horse_03",
+    "animation.minerplus.player.kccwes": "animation.lbr_baf.player.spawn",
+    "animation.minerplus.player.kfugel": "animation.lbr_baf.player.throw_02",
+    "animation.minerplus.player.kqqabo": "animation.lbr_baf.player.camel_01",
+    "animation.minerplus.player.ktgnrt": "animation.lbr_baf.player.run_02",
+    "animation.minerplus.player.lfqunk": "animation.lbr_baf.player.punch_01",
+    "animation.minerplus.player.lnnngf": "animation.lbr_baf.player.mine",
+    "animation.minerplus.player.mwfqoe": "animation.lbr_baf.player.strider_01",
+    "animation.minerplus.player.necyyu": "animation.lbr_baf.player.boat",
+    "animation.minerplus.player.nmcrtp": "animation.lbr_baf.player.nautilus_01",
+    "animation.minerplus.player.ofdycw": "animation.lbr_baf.player.paperdoll_01",
+    "animation.minerplus.player.otjmsp": "animation.lbr_baf.player.strider_02",
+    "animation.minerplus.player.ougmgy": "animation.lbr_baf.player.bow",
+    "animation.minerplus.player.ozzxxb": "animation.lbr_baf.player.minecart_02",
+    "animation.minerplus.player.piovjs": "animation.lbr_baf.player.lantern_01",
+    "animation.minerplus.player.pllibp": "animation.lbr_baf.player.lantern_02",
+    "animation.minerplus.player.pmgjno": "animation.lbr_baf.player.move_right",
+    "animation.minerplus.player.przmfq": "animation.lbr_baf.player.run_03",
+    "animation.minerplus.player.qnbnyz": "animation.lbr_baf.player.nautilus_02",
+    "animation.minerplus.player.qqibls": "animation.lbr_baf.player.camel_02",
+    "animation.minerplus.player.qzziyu": "animation.lbr_baf.player.move_left",
+    "animation.minerplus.player.rikfbu": "animation.lbr_baf.player.bow_01",
+    "animation.minerplus.player.rlemui": "animation.lbr_baf.player.camel_03",
+    "animation.minerplus.player.rqvpyo": "animation.lbr_baf.player.nautilus_03",
+    "animation.minerplus.player.sajedc": "animation.lbr_baf.player.happy_ghast",
+    "animation.minerplus.player.sfbpwk": "animation.lbr_baf.player.happy_ghast_01",
+    "animation.minerplus.player.sjzyjq": "animation.lbr_baf.player.boat_01",
+    "animation.minerplus.player.slqzdn": "animation.lbr_baf.player.llama",
+    "animation.minerplus.player.stscuf": "animation.lbr_baf.player.happy_ghast_02",
+    "animation.minerplus.player.sugeuj": "animation.lbr_baf.player.pig_01",
+    "animation.minerplus.player.sumvlq": "animation.lbr_baf.player.horse_04",
+    "animation.minerplus.player.tmjxlb": "animation.lbr_baf.player.shears_02",
+    "animation.minerplus.player.tnotod": "animation.lbr_baf.player.lantern_03",
+    "animation.minerplus.player.uckqyj": "animation.lbr_baf.player.llama_01",
+    "animation.minerplus.player.ujgpuf": "animation.lbr_baf.player.brush_02",
+    "animation.minerplus.player.umiujv": "animation.lbr_baf.player.camel_04",
+    "animation.minerplus.player.vkrtrr": "animation.lbr_baf.player.boat_02",
+    "animation.minerplus.player.vlhhwt": "animation.lbr_baf.player.nautilus_04",
+    "animation.minerplus.player.vzafxn": "animation.lbr_baf.player.pig_02",
+    "animation.minerplus.player.wgtjmy": "animation.lbr_baf.player.mine_01",
+    "animation.minerplus.player.wjefhz": "animation.lbr_baf.player.throw_03",
+    "animation.minerplus.player.xgixou": "animation.lbr_baf.player.shears_03",
+    "animation.minerplus.player.xjhpfh": "animation.lbr_baf.player.strider_03",
+    "animation.minerplus.player.xrpdbl": "animation.lbr_baf.player.llama_02",
+    "animation.minerplus.player.xzjxis": "animation.lbr_baf.player.mainhand",
+    "animation.minerplus.player.agaaze": "animation.lbr_baf.player.shield_01",
+    "animation.minerplus.player.aivnpb": "animation.lbr_baf.player.sneak_01",
+    "animation.minerplus.player.aparjw": "animation.lbr_baf.player.golden_dandelion_01",
+    "animation.minerplus.player.apbbgb": "animation.lbr_baf.player.riding_01",
+    "animation.minerplus.player.asxvzc": "animation.lbr_baf.player.blocking_01",
+    "animation.minerplus.player.atpxsp": "animation.lbr_baf.player.trident_01",
+    "animation.minerplus.player.bmwgbu": "animation.lbr_baf.player.water_01",
+    "animation.minerplus.player.bsktaw": "animation.lbr_baf.player.shield_02",
+    "animation.minerplus.player.buujkx": "animation.lbr_baf.player.bow_02",
+    "animation.minerplus.player.bwhhfq": "animation.lbr_baf.player.water_02",
+    "animation.minerplus.player.bzaxsc": "animation.lbr_baf.player.sneak_02",
+    "animation.minerplus.player.cftvxu": "animation.lbr_baf.player.crossbow_01",
+    "animation.minerplus.player.cickvk": "animation.lbr_baf.player.sneak_03",
+    "animation.minerplus.player.cohizd": "animation.lbr_baf.player.emote_01",
+    "animation.minerplus.player.cotdbo": "animation.lbr_baf.player.blocking_02",
+    "animation.minerplus.player.covlms": "animation.lbr_baf.player.emote_02",
+    "animation.minerplus.player.cqlhqf": "animation.lbr_baf.player.spear_01",
+    "animation.minerplus.player.crjmdq": "animation.lbr_baf.player.emote_03",
+    "animation.minerplus.player.cxcark": "animation.lbr_baf.player.jump_01",
+    "animation.minerplus.player.cymjbq": "animation.lbr_baf.player.shield_03",
+    "animation.minerplus.player.cyukrw": "animation.lbr_baf.player.torch_01",
+    "animation.minerplus.player.czzpvs": "animation.lbr_baf.player.potion_01",
+    "animation.minerplus.player.dbqgov": "animation.lbr_baf.player.water_03",
+    "animation.minerplus.player.dcxygc": "animation.lbr_baf.player.shears_04",
+    "animation.minerplus.player.diootb": "animation.lbr_baf.player.mace_01",
+    "animation.minerplus.player.djrlre": "animation.lbr_baf.player.throwable_01",
+    "animation.minerplus.player.dkhzav": "animation.lbr_baf.player.seeds_01",
+    "animation.minerplus.player.dlkimz": "animation.lbr_baf.player.petals_01",
+    "animation.minerplus.player.dnmnns": "animation.lbr_baf.player.golden_dandelion_02",
+    "animation.minerplus.player.dnsyxu": "animation.lbr_baf.player.spear_02",
+    "animation.minerplus.player.dubgwy": "animation.lbr_baf.player.blocking_03",
+    "animation.minerplus.player.dyafda": "animation.lbr_baf.player.shield_04",
+    "animation.minerplus.player.dzupsi": "animation.lbr_baf.player.riding_02",
+    "animation.minerplus.player.eagxpc": "animation.lbr_baf.player.riding_03",
+    "animation.minerplus.player.eanhne": "animation.lbr_baf.player.spear_03",
+    "animation.minerplus.player.echtst": "animation.lbr_baf.player.water_04",
+    "animation.minerplus.player.edwvta": "animation.lbr_baf.player.jump_02",
+    "animation.minerplus.player.eeoqqt": "animation.lbr_baf.player.emote_04",
+    "animation.minerplus.player.elfweg": "animation.lbr_baf.player.crossbow_02",
+    "animation.minerplus.player.eouoiy": "animation.lbr_baf.player.mace_02",
+    "animation.minerplus.player.epthqa": "animation.lbr_baf.player.shield_05",
+    "animation.minerplus.player.excxgk": "animation.lbr_baf.player.shears_05",
+    "animation.minerplus.player.exkusm": "animation.lbr_baf.player.shield_06",
+    "animation.minerplus.player.ffnybu": "animation.lbr_baf.player.golden_dandelion_03",
+    "animation.minerplus.player.first_person_base_pose": "animation.lbr_baf.player.shield_07",
+    "animation.minerplus.player.first_person_empty_hand": "animation.lbr_baf.player.shield_08",
+    "animation.minerplus.player.fizksm": "animation.lbr_baf.player.emote_05",
+    "animation.minerplus.player.flakfg": "animation.lbr_baf.player.crossbow_03",
+    "animation.minerplus.player.fqjkoo": "animation.lbr_baf.player.golden_dandelion_04",
+    "animation.minerplus.player.fqwxmj": "animation.lbr_baf.player.water_05",
+    "animation.minerplus.player.friiow": "animation.lbr_baf.player.spyglass_01",
+    "animation.minerplus.player.frlsgm": "animation.lbr_baf.player.flint_and_steel_02",
+    "animation.minerplus.player.fsicql": "animation.lbr_baf.player.shield_09",
+    "animation.minerplus.player.fuabuu": "animation.lbr_baf.player.mace_03",
+    "animation.minerplus.player.fxjogy": "animation.lbr_baf.player.shears_06",
+    "animation.minerplus.player.fyoptj": "animation.lbr_baf.player.mace_04",
+    "animation.minerplus.player.gazanr": "animation.lbr_baf.player.shield_10",
+    "animation.minerplus.player.ggpzhr": "animation.lbr_baf.player.hoe_01",
+    "animation.minerplus.player.gibwqi": "animation.lbr_baf.player.shovel_01",
+    "animation.minerplus.player.giiudv": "animation.lbr_baf.player.axe_01",
+    "animation.minerplus.player.gmycxu": "animation.lbr_baf.player.emote_06",
+    "animation.minerplus.player.gthnee": "animation.lbr_baf.player.emote_07",
+    "animation.minerplus.player.gtoqik": "animation.lbr_baf.player.readable_01",
+    "animation.minerplus.player.guojyw": "animation.lbr_baf.player.spyglass_02",
+    "animation.minerplus.player.guxkug": "animation.lbr_baf.player.mace_05",
+    "animation.minerplus.player.gzykxj": "animation.lbr_baf.player.blocking_04",
+    "animation.minerplus.player.hcijri": "animation.lbr_baf.player.swim_01",
+    "animation.minerplus.player.hgfjny": "animation.lbr_baf.player.flint_and_steel_03",
+    "animation.minerplus.player.hhwfje": "animation.lbr_baf.player.shovel_02",
+    "animation.minerplus.player.hidetu": "animation.lbr_baf.player.golden_dandelion_05",
+    "animation.minerplus.player.hkabsn": "animation.lbr_baf.player.petals_02",
+    "animation.minerplus.player.hmspas": "animation.lbr_baf.player.trident_02",
+    "animation.minerplus.player.hoxjpe": "animation.lbr_baf.player.flint_and_steel_04",
+    "animation.minerplus.player.hozblx": "animation.lbr_baf.player.shears_07",
+    "animation.minerplus.player.hqqude": "animation.lbr_baf.player.crawl_01",
+    "animation.minerplus.player.hsykho": "animation.lbr_baf.player.spear_04",
+    "animation.minerplus.player.hxtrev": "animation.lbr_baf.player.emote_08",
+    "animation.minerplus.player.icfpwq": "animation.lbr_baf.player.golden_dandelion_06",
+    "animation.minerplus.player.ifjwjf": "animation.lbr_baf.player.bow_03",
+    "animation.minerplus.player.igwshl": "animation.lbr_baf.player.sneak_04",
+    "animation.minerplus.player.ioecdr": "animation.lbr_baf.player.emote_09",
+    "animation.minerplus.player.iqfuif": "animation.lbr_baf.player.water_06",
+    "animation.minerplus.player.irkkjl": "animation.lbr_baf.player.trident_03",
+    "animation.minerplus.player.irkzxn": "animation.lbr_baf.player.riding_04",
+    "animation.minerplus.player.jawwtn": "animation.lbr_baf.player.blocking_05",
+    "animation.minerplus.player.jcyjaa": "animation.lbr_baf.player.spear_05",
+    "animation.minerplus.player.jehlua": "animation.lbr_baf.player.shield_11",
+    "animation.minerplus.player.jgvlci": "animation.lbr_baf.player.shovel_03",
+    "animation.minerplus.player.jhbxbl": "animation.lbr_baf.player.golden_dandelion_07",
+    "animation.minerplus.player.jhflca": "animation.lbr_baf.player.water_07",
+    "animation.minerplus.player.jiadjy": "animation.lbr_baf.player.spear_06",
+    "animation.minerplus.player.jivhbd": "animation.lbr_baf.player.hoe_02",
+    "animation.minerplus.player.jmjgft": "animation.lbr_baf.player.jump_03",
+    "animation.minerplus.player.jorvnw": "animation.lbr_baf.player.shield_12",
+    "animation.minerplus.player.jqsppm": "animation.lbr_baf.player.shears_08",
+    "animation.minerplus.player.kmahna": "animation.lbr_baf.player.riding_05",
+    "animation.minerplus.player.kpgrpw": "animation.lbr_baf.player.crossbow_04",
+    "animation.minerplus.player.kuzbeu": "animation.lbr_baf.player.water_08",
+    "animation.minerplus.player.lasqxu": "animation.lbr_baf.player.shears_09",
+    "animation.minerplus.player.limqso": "animation.lbr_baf.player.shovel_04",
+    "animation.minerplus.player.look_at_target": "animation.lbr_baf.player.glide_01",
+    "animation.minerplus.player.lqolzk": "animation.lbr_baf.player.mace_06",
+    "animation.minerplus.player.lrgvoo": "animation.lbr_baf.player.bow_04",
+    "animation.minerplus.player.lrzuus": "animation.lbr_baf.player.mace_07",
+    "animation.minerplus.player.lulchs": "animation.lbr_baf.player.mace_08",
+    "animation.minerplus.player.lwkpcq": "animation.lbr_baf.player.shovel_05",
+    "animation.minerplus.player.melzjw": "animation.lbr_baf.player.flint_and_steel_05",
+    "animation.minerplus.player.mjscqu": "animation.lbr_baf.player.riding_06",
+    "animation.minerplus.player.mnxiud": "animation.lbr_baf.player.seeds_02",
+    "animation.minerplus.player.mpbtnu": "animation.lbr_baf.player.bow_05",
+    "animation.minerplus.player.mqgdwp": "animation.lbr_baf.player.hoe_03",
+    "animation.minerplus.player.mrhxpr": "animation.lbr_baf.player.axe_02",
+    "animation.minerplus.player.nenqej": "animation.lbr_baf.player.axe_03",
+    "animation.minerplus.player.nhhccb": "animation.lbr_baf.player.crossbow_05",
+    "animation.minerplus.player.nhizir": "animation.lbr_baf.player.riding_07",
+    "animation.minerplus.player.nhzgnh": "animation.lbr_baf.player.crossbow_06",
+    "animation.minerplus.player.nnakwr": "animation.lbr_baf.player.shovel_06",
+    "animation.minerplus.player.nxoeoh": "animation.lbr_baf.player.swim_02",
+    "animation.minerplus.player.nzqcco": "animation.lbr_baf.player.golden_dandelion_08",
+    "animation.minerplus.player.oauslh": "animation.lbr_baf.player.sneak_05",
+    "animation.minerplus.player.ocxhgm": "animation.lbr_baf.player.shield_13",
+    "animation.minerplus.player.oeshwf": "animation.lbr_baf.player.riding_08",
+    "animation.minerplus.player.okfrua": "animation.lbr_baf.player.golden_dandelion_09",
+    "animation.minerplus.player.oloyce": "animation.lbr_baf.player.blocking_06",
+    "animation.minerplus.player.omzvrj": "animation.lbr_baf.player.petals_03",
+    "animation.minerplus.player.owabdh": "animation.lbr_baf.player.golden_dandelion_10",
+    "animation.minerplus.player.owaznb": "animation.lbr_baf.player.hoe_04",
+    "animation.minerplus.player.owdrar": "animation.lbr_baf.player.sneak_06",
+    "animation.minerplus.player.oznpfw": "animation.lbr_baf.player.emote_10",
+    "animation.minerplus.player.packmh": "animation.lbr_baf.player.shield_14",
+    "animation.minerplus.player.pdiqat": "animation.lbr_baf.player.sneak_07",
+    "animation.minerplus.player.phtcnx": "animation.lbr_baf.player.riding_09",
+    "animation.minerplus.player.pnfhyd": "animation.lbr_baf.player.crossbow_07",
+    "animation.minerplus.player.pomlkz": "animation.lbr_baf.player.blocking_07",
+    "animation.minerplus.player.powruo": "animation.lbr_baf.player.shield_15",
+    "animation.minerplus.player.pslhiv": "animation.lbr_baf.player.brush_03",
+    "animation.minerplus.player.psmdgh": "animation.lbr_baf.player.trident_04",
+    "animation.minerplus.player.ptaohb": "animation.lbr_baf.player.shield_16",
+    "animation.minerplus.player.ptmgtk": "animation.lbr_baf.player.crossbow_08",
+    "animation.minerplus.player.pzswhl": "animation.lbr_baf.player.seeds_03",
+    "animation.minerplus.player.qachfh": "animation.lbr_baf.player.crossbow_09",
+    "animation.minerplus.player.qfxdpt": "animation.lbr_baf.player.shears_10",
+    "animation.minerplus.player.qjbzou": "animation.lbr_baf.player.golden_dandelion_11",
+    "animation.minerplus.player.qjhnlq": "animation.lbr_baf.player.shield_17",
+    "animation.minerplus.player.qqxtjh": "animation.lbr_baf.player.throwable_02",
+    "animation.minerplus.player.qrwdru": "animation.lbr_baf.player.riding_10",
+    "animation.minerplus.player.rdcche": "animation.lbr_baf.player.emote_11",
+    "animation.minerplus.player.rgvsxz": "animation.lbr_baf.player.shield_18",
+    "animation.minerplus.player.roymuz": "animation.lbr_baf.player.water_09",
+    "animation.minerplus.player.rpswwn": "animation.lbr_baf.player.blocking_08",
+    "animation.minerplus.player.rqzbns": "animation.lbr_baf.player.shield_19",
+    "animation.minerplus.player.rrvlnm": "animation.lbr_baf.player.blocking_09",
+    "animation.minerplus.player.ruotpq": "animation.lbr_baf.player.shield_20",
+    "animation.minerplus.player.ryxvmj": "animation.lbr_baf.player.axe_04",
+    "animation.minerplus.player.rzwosc": "animation.lbr_baf.player.mace_09",
+    "animation.minerplus.player.shlsos": "animation.lbr_baf.player.riding_11",
+    "animation.minerplus.player.sixvql": "animation.lbr_baf.player.bow_06",
+    "animation.minerplus.player.smpzio": "animation.lbr_baf.player.shield_21",
+    "animation.minerplus.player.swjeja": "animation.lbr_baf.player.shield_22",
+    "animation.minerplus.player.szsgoa": "animation.lbr_baf.player.flint_and_steel_06",
+    "animation.minerplus.player.tfigoh": "animation.lbr_baf.player.sneak_08",
+    "animation.minerplus.player.tmhxkl": "animation.lbr_baf.player.spyglass_03",
+    "animation.minerplus.player.tshawr": "animation.lbr_baf.player.sneak_09",
+    "animation.minerplus.player.tzokim": "animation.lbr_baf.player.hoe_05",
+    "animation.minerplus.player.tzwuhb": "animation.lbr_baf.player.emote_12",
+    "animation.minerplus.player.ubrbke": "animation.lbr_baf.player.sprint_01",
+    "animation.minerplus.player.udlful": "animation.lbr_baf.player.water_10",
+    "animation.minerplus.player.ufbmwj": "animation.lbr_baf.player.axe_05",
+    "animation.minerplus.player.ugcwbv": "animation.lbr_baf.player.emote_13",
+    "animation.minerplus.player.ugsgjk": "animation.lbr_baf.player.throwable_03",
+    "animation.minerplus.player.ukuoim": "animation.lbr_baf.player.water_11",
+    "animation.minerplus.player.umhykx": "animation.lbr_baf.player.water_12",
+    "animation.minerplus.player.upcdwt": "animation.lbr_baf.player.emote_14",
+    "animation.minerplus.player.uwfmen": "animation.lbr_baf.player.emote_15",
+    "animation.minerplus.player.uxmkkj": "animation.lbr_baf.player.water_13",
+    "animation.minerplus.player.vewnch": "animation.lbr_baf.player.riding_12",
+    "animation.minerplus.player.vhtneu": "animation.lbr_baf.player.emote_16",
+    "animation.minerplus.player.vjlbvn": "animation.lbr_baf.player.trident_05",
+    "animation.minerplus.player.vkkmnc": "animation.lbr_baf.player.blocking_10",
+    "animation.minerplus.player.vxaqvy": "animation.lbr_baf.player.mace_10",
+    "animation.minerplus.player.vzrktp": "animation.lbr_baf.player.pickaxe_01",
+    "animation.minerplus.player.weqjnr": "animation.lbr_baf.player.golden_dandelion_12",
+    "animation.minerplus.player.wgdldd": "animation.lbr_baf.player.water_14",
+    "animation.minerplus.player.wnucgo": "animation.lbr_baf.player.spear_07",
+    "animation.minerplus.player.wnzlob": "animation.lbr_baf.player.water_15",
+    "animation.minerplus.player.wqaajl": "animation.lbr_baf.player.spear_08",
+    "animation.minerplus.player.wsejus": "animation.lbr_baf.player.blocking_11",
+    "animation.minerplus.player.wthavx": "animation.lbr_baf.player.throwable_04",
+    "animation.minerplus.player.wwfngv": "animation.lbr_baf.player.water_16",
+    "animation.minerplus.player.wxrzrd": "animation.lbr_baf.player.riding_13",
+    "animation.minerplus.player.wzpxjr": "animation.lbr_baf.player.axe_06",
+    "animation.minerplus.player.xafvwz": "animation.lbr_baf.player.crossbow_10",
+    "animation.minerplus.player.xaqwig": "animation.lbr_baf.player.spear_09",
+    "animation.minerplus.player.xddhzk": "animation.lbr_baf.player.golden_dandelion_13",
+    "animation.minerplus.player.xhlqeb": "animation.lbr_baf.player.flint_and_steel_07",
+    "animation.minerplus.player.xixepe": "animation.lbr_baf.player.shears_11",
+    "animation.minerplus.player.xjenwd": "animation.lbr_baf.player.spyglass_04",
+    "animation.minerplus.player.xnkpku": "animation.lbr_baf.player.water_17",
+    "animation.minerplus.player.xpnfrz": "animation.lbr_baf.player.seeds_04",
+    "animation.minerplus.player.xqsfmw": "animation.lbr_baf.player.axe_07",
+    "animation.minerplus.player.xrbooj": "animation.lbr_baf.player.emote_17",
+    "animation.minerplus.player.xsmkww": "animation.lbr_baf.player.shield_23",
+    "animation.minerplus.player.xvdslp": "animation.lbr_baf.player.jump_04",
+    "animation.minerplus.player.xyawug": "animation.lbr_baf.player.crossbow_11",
+    "animation.minerplus.player.ybhhpm": "animation.lbr_baf.player.petals_04",
+    "animation.minerplus.player.yelinn": "animation.lbr_baf.player.trident_06",
+    "animation.minerplus.player.ygqdrs": "animation.lbr_baf.player.upturned_01",
+    "animation.minerplus.player.ygsnrx": "animation.lbr_baf.player.mace_11",
+    "animation.minerplus.player.yjiljh": "animation.lbr_baf.player.water_18",
+    "animation.minerplus.player.ykeoah": "animation.lbr_baf.player.throwable_05",
+    "animation.minerplus.player.ykmnwz": "animation.lbr_baf.player.riding_14",
+    "animation.minerplus.player.ylrkda": "animation.lbr_baf.player.seeds_05",
+    "animation.minerplus.player.ymjnkc": "animation.lbr_baf.player.crossbow_12",
+    "animation.minerplus.player.yqlkbm": "animation.lbr_baf.player.readable_02",
+    "animation.minerplus.player.ywjfum": "animation.lbr_baf.player.riding_15",
+    "animation.minerplus.player.zbqqom": "animation.lbr_baf.player.spear_10",
+    "animation.minerplus.player.zduiys": "animation.lbr_baf.player.golden_dandelion_14",
+    "animation.minerplus.player.zfbcwp": "animation.lbr_baf.player.trident_07",
+    "animation.minerplus.player.zncoou": "animation.lbr_baf.player.petals_05",
+    "animation.minerplus.player.zorvxm": "animation.lbr_baf.player.shield_24",
+    "animation.minerplus.player.zpcyza": "animation.lbr_baf.player.spear_11",
+    "animation.minerplus.player.ztiajf": "animation.lbr_baf.player.trident_08",
+    "animation.minerplus.player.zuabue": "animation.lbr_baf.player.hoe_06",
+    "animation.minerplus.player.zvjgei": "animation.lbr_baf.player.golden_dandelion_15",
+    "animation.minerplus.player.adutle": "animation.lbr_baf.player.state_001",
+    "animation.minerplus.player.aeqzkw": "animation.lbr_baf.player.state_002",
+    "animation.minerplus.player.atdulf": "animation.lbr_baf.player.state_003",
+    "animation.minerplus.player.bcfocm": "animation.lbr_baf.player.state_004",
+    "animation.minerplus.player.bevrbk": "animation.lbr_baf.player.state_005",
+    "animation.minerplus.player.boabcq": "animation.lbr_baf.player.state_006",
+    "animation.minerplus.player.bsyjfs": "animation.lbr_baf.player.state_007",
+    "animation.minerplus.player.btoufw": "animation.lbr_baf.player.state_008",
+    "animation.minerplus.player.bwibmz": "animation.lbr_baf.player.state_009",
+    "animation.minerplus.player.bxmjdm": "animation.lbr_baf.player.state_010",
+    "animation.minerplus.player.chdinz": "animation.lbr_baf.player.state_011",
+    "animation.minerplus.player.ciauwg": "animation.lbr_baf.player.state_012",
+    "animation.minerplus.player.clvaeh": "animation.lbr_baf.player.state_013",
+    "animation.minerplus.player.cobhox": "animation.lbr_baf.player.state_014",
+    "animation.minerplus.player.cpmdbb": "animation.lbr_baf.player.state_015",
+    "animation.minerplus.player.csbahl": "animation.lbr_baf.player.state_016",
+    "animation.minerplus.player.csyfga": "animation.lbr_baf.player.state_017",
+    "animation.minerplus.player.cxfptc": "animation.lbr_baf.player.state_018",
+    "animation.minerplus.player.czohpy": "animation.lbr_baf.player.state_019",
+    "animation.minerplus.player.dfajpq": "animation.lbr_baf.player.state_020",
+    "animation.minerplus.player.eachaz": "animation.lbr_baf.player.state_021",
+    "animation.minerplus.player.eaqdwo": "animation.lbr_baf.player.state_022",
+    "animation.minerplus.player.eaqhvv": "animation.lbr_baf.player.state_023",
+    "animation.minerplus.player.eazaga": "animation.lbr_baf.player.state_024",
+    "animation.minerplus.player.eetykv": "animation.lbr_baf.player.state_025",
+    "animation.minerplus.player.efjroq": "animation.lbr_baf.player.state_026",
+    "animation.minerplus.player.egyxqi": "animation.lbr_baf.player.state_027",
+    "animation.minerplus.player.epcqqu": "animation.lbr_baf.player.state_028",
+    "animation.minerplus.player.eukmmw": "animation.lbr_baf.player.state_029",
+    "animation.minerplus.player.eyrmmr": "animation.lbr_baf.player.state_030",
+    "animation.minerplus.player.fpushb": "animation.lbr_baf.player.state_031",
+    "animation.minerplus.player.fxnhey": "animation.lbr_baf.player.state_032",
+    "animation.minerplus.player.gdkedd": "animation.lbr_baf.player.state_033",
+    "animation.minerplus.player.gipxth": "animation.lbr_baf.player.state_034",
+    "animation.minerplus.player.givntn": "animation.lbr_baf.player.state_035",
+    "animation.minerplus.player.gosbpl": "animation.lbr_baf.player.state_036",
+    "animation.minerplus.player.gsidfc": "animation.lbr_baf.player.state_037",
+    "animation.minerplus.player.gvxqqh": "animation.lbr_baf.player.state_038",
+    "animation.minerplus.player.holadk": "animation.lbr_baf.player.state_039",
+    "animation.minerplus.player.htayuy": "animation.lbr_baf.player.state_040",
+    "animation.minerplus.player.ihgsrl": "animation.lbr_baf.player.state_041",
+    "animation.minerplus.player.ihrncs": "animation.lbr_baf.player.state_042",
+    "animation.minerplus.player.ipbphe": "animation.lbr_baf.player.state_043",
+    "animation.minerplus.player.iqoneh": "animation.lbr_baf.player.state_044",
+    "animation.minerplus.player.izjepk": "animation.lbr_baf.player.state_045",
+    "animation.minerplus.player.izybvz": "animation.lbr_baf.player.state_046",
+    "animation.minerplus.player.jeskaf": "animation.lbr_baf.player.state_047",
+    "animation.minerplus.player.jiaxin": "animation.lbr_baf.player.state_048",
+    "animation.minerplus.player.jmcdqt": "animation.lbr_baf.player.state_049",
+    "animation.minerplus.player.joxcyv": "animation.lbr_baf.player.state_050",
+    "animation.minerplus.player.jtwnhx": "animation.lbr_baf.player.state_051",
+    "animation.minerplus.player.jvowde": "animation.lbr_baf.player.state_052",
+    "animation.minerplus.player.jvuwvf": "animation.lbr_baf.player.state_053",
+    "animation.minerplus.player.jwexco": "animation.lbr_baf.player.state_054",
+    "animation.minerplus.player.jwfwgi": "animation.lbr_baf.player.state_055",
+    "animation.minerplus.player.jwqzfb": "animation.lbr_baf.player.state_056",
+    "animation.minerplus.player.jzljpw": "animation.lbr_baf.player.state_057",
+    "animation.minerplus.player.jztycv": "animation.lbr_baf.player.state_058",
+    "animation.minerplus.player.kmnxqm": "animation.lbr_baf.player.state_059",
+    "animation.minerplus.player.kptsoh": "animation.lbr_baf.player.state_060",
+    "animation.minerplus.player.krqyht": "animation.lbr_baf.player.state_061",
+    "animation.minerplus.player.ksgygf": "animation.lbr_baf.player.state_062",
+    "animation.minerplus.player.layyrd": "animation.lbr_baf.player.state_063",
+    "animation.minerplus.player.lbtirb": "animation.lbr_baf.player.state_064",
+    "animation.minerplus.player.lfxtho": "animation.lbr_baf.player.state_065",
+    "animation.minerplus.player.lhsngr": "animation.lbr_baf.player.state_066",
+    "animation.minerplus.player.lhxuor": "animation.lbr_baf.player.state_067",
+    "animation.minerplus.player.ljrhsi": "animation.lbr_baf.player.state_068",
+    "animation.minerplus.player.lyflxw": "animation.lbr_baf.player.state_069",
+    "animation.minerplus.player.madybs": "animation.lbr_baf.player.state_070",
+    "animation.minerplus.player.maicuo": "animation.lbr_baf.player.state_071",
+    "animation.minerplus.player.meyrjy": "animation.lbr_baf.player.state_072",
+    "animation.minerplus.player.miuyts": "animation.lbr_baf.player.state_073",
+    "animation.minerplus.player.mjzrmd": "animation.lbr_baf.player.state_074",
+    "animation.minerplus.player.msmcbs": "animation.lbr_baf.player.state_075",
+    "animation.minerplus.player.mtugns": "animation.lbr_baf.player.state_076",
+    "animation.minerplus.player.mxzruo": "animation.lbr_baf.player.state_077",
+    "animation.minerplus.player.mzfpsm": "animation.lbr_baf.player.state_078",
+    "animation.minerplus.player.nbjeha": "animation.lbr_baf.player.state_079",
+    "animation.minerplus.player.ncbsec": "animation.lbr_baf.player.state_080",
+    "animation.minerplus.player.nvxqkp": "animation.lbr_baf.player.state_081",
+    "animation.minerplus.player.oczrpx": "animation.lbr_baf.player.state_082",
+    "animation.minerplus.player.oguppy": "animation.lbr_baf.player.state_083",
+    "animation.minerplus.player.oliooh": "animation.lbr_baf.player.state_084",
+    "animation.minerplus.player.ovndsf": "animation.lbr_baf.player.state_085",
+    "animation.minerplus.player.owltad": "animation.lbr_baf.player.state_086",
+    "animation.minerplus.player.photpz": "animation.lbr_baf.player.state_087",
+    "animation.minerplus.player.pkhzmk": "animation.lbr_baf.player.state_088",
+    "animation.minerplus.player.prfelo": "animation.lbr_baf.player.state_089",
+    "animation.minerplus.player.prxzwy": "animation.lbr_baf.player.state_090",
+    "animation.minerplus.player.ptdnvz": "animation.lbr_baf.player.state_091",
+    "animation.minerplus.player.pyhjiu": "animation.lbr_baf.player.state_092",
+    "animation.minerplus.player.pyricu": "animation.lbr_baf.player.state_093",
+    "animation.minerplus.player.qhunhy": "animation.lbr_baf.player.state_094",
+    "animation.minerplus.player.qlpzlh": "animation.lbr_baf.player.state_095",
+    "animation.minerplus.player.rouhts": "animation.lbr_baf.player.state_096",
+    "animation.minerplus.player.rvmpno": "animation.lbr_baf.player.state_097",
+    "animation.minerplus.player.sccjju": "animation.lbr_baf.player.state_098",
+    "animation.minerplus.player.sfnzpx": "animation.lbr_baf.player.state_099",
+    "animation.minerplus.player.shqbbl": "animation.lbr_baf.player.state_100",
+    "animation.minerplus.player.smollf": "animation.lbr_baf.player.state_101",
+    "animation.minerplus.player.souawl": "animation.lbr_baf.player.state_102",
+    "animation.minerplus.player.sqbpah": "animation.lbr_baf.player.state_103",
+    "animation.minerplus.player.szdzpt": "animation.lbr_baf.player.state_104",
+    "animation.minerplus.player.tawztg": "animation.lbr_baf.player.state_105",
+    "animation.minerplus.player.tddrdj": "animation.lbr_baf.player.state_106",
+    "animation.minerplus.player.tislhf": "animation.lbr_baf.player.state_107",
+    "animation.minerplus.player.tqrhlq": "animation.lbr_baf.player.state_108",
+    "animation.minerplus.player.trydez": "animation.lbr_baf.player.state_109",
+    "animation.minerplus.player.twrhbq": "animation.lbr_baf.player.state_110",
+    "animation.minerplus.player.ubvmvn": "animation.lbr_baf.player.state_111",
+    "animation.minerplus.player.ucaryc": "animation.lbr_baf.player.state_112",
+    "animation.minerplus.player.ucewak": "animation.lbr_baf.player.state_113",
+    "animation.minerplus.player.uivqbf": "animation.lbr_baf.player.state_114",
+    "animation.minerplus.player.ulmdkg": "animation.lbr_baf.player.state_115",
+    "animation.minerplus.player.uoijbk": "animation.lbr_baf.player.state_116",
+    "animation.minerplus.player.utlfik": "animation.lbr_baf.player.state_117",
+    "animation.minerplus.player.uvqzkm": "animation.lbr_baf.player.state_118",
+    "animation.minerplus.player.uwvidk": "animation.lbr_baf.player.state_119",
+    "animation.minerplus.player.uxpohu": "animation.lbr_baf.player.state_120",
+    "animation.minerplus.player.uyjkbn": "animation.lbr_baf.player.state_121",
+    "animation.minerplus.player.vdbtfq": "animation.lbr_baf.player.state_122",
+    "animation.minerplus.player.vplwqi": "animation.lbr_baf.player.state_123",
+    "animation.minerplus.player.vqhmlb": "animation.lbr_baf.player.state_124",
+    "animation.minerplus.player.vueoau": "animation.lbr_baf.player.state_125",
+    "animation.minerplus.player.vwkfjz": "animation.lbr_baf.player.state_126",
+    "animation.minerplus.player.vzbpmc": "animation.lbr_baf.player.state_127",
+    "animation.minerplus.player.wcjbfr": "animation.lbr_baf.player.state_128",
+    "animation.minerplus.player.wdbjew": "animation.lbr_baf.player.state_129",
+    "animation.minerplus.player.wmdvxo": "animation.lbr_baf.player.state_130",
+    "animation.minerplus.player.xghxmf": "animation.lbr_baf.player.state_131",
+    "animation.minerplus.player.xglhwt": "animation.lbr_baf.player.state_132",
+    "animation.minerplus.player.xiuohd": "animation.lbr_baf.player.state_133",
+    "animation.minerplus.player.xjzljd": "animation.lbr_baf.player.state_134",
+    "animation.minerplus.player.xkshub": "animation.lbr_baf.player.state_135",
+    "animation.minerplus.player.xlzflb": "animation.lbr_baf.player.state_136",
+    "animation.minerplus.player.xsleqa": "animation.lbr_baf.player.state_137",
+    "animation.minerplus.player.yasxuh": "animation.lbr_baf.player.state_138",
+    "animation.minerplus.player.yhgimt": "animation.lbr_baf.player.state_139",
+    "animation.minerplus.player.yhiiaw": "animation.lbr_baf.player.state_140",
+    "animation.minerplus.player.ynyzrb": "animation.lbr_baf.player.state_141",
+    "animation.minerplus.player.ynzwiq": "animation.lbr_baf.player.state_142",
+    "animation.minerplus.player.yrljkl": "animation.lbr_baf.player.state_143",
+    "animation.minerplus.player.ysiviy": "animation.lbr_baf.player.state_144",
+    "animation.minerplus.player.zlafhp": "animation.lbr_baf.player.state_145",
+    "animation.minerplus.player.zmsgam": "animation.lbr_baf.player.state_146",
+    "animation.minerplus.player.zobjoz": "animation.lbr_baf.player.state_147",
+    "animation.minerplus.player.zrvwvb": "animation.lbr_baf.player.state_148",
+    "animation.minerplus.player.zwpjfo": "animation.lbr_baf.player.state_149"
+  },
+  "animation_rationale": {
+    "animation.minerplus.player.attack": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "animation id",
+      "token": "attack"
+    },
+    "animation.minerplus.player.bob": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "animation id",
+      "token": "bob"
+    },
+    "animation.minerplus.player.brush": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "animation id",
+      "token": "brush"
+    },
+    "animation.minerplus.player.cape": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "animation id",
+      "token": "cape"
+    },
+    "animation.minerplus.player.eat": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "animation id",
+      "token": "eat"
+    },
+    "animation.minerplus.player.fall": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "animation id",
+      "token": "fall"
+    },
+    "animation.minerplus.player.fly": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "animation id",
+      "token": "fly"
+    },
+    "animation.minerplus.player.goat_horn": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "animation id",
+      "token": "goat_horn"
+    },
+    "animation.minerplus.player.holding": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "animation id",
+      "token": "holding"
+    },
+    "animation.minerplus.player.humanoid_base_pose": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "animation id",
+      "token": "humanoid_base_pose"
+    },
+    "animation.minerplus.player.hurt": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "animation id",
+      "token": "hurt"
+    },
+    "animation.minerplus.player.jump": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "animation id",
+      "token": "jump"
+    },
+    "animation.minerplus.player.run": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "animation id",
+      "token": "run"
+    },
+    "animation.minerplus.player.shears": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "animation id",
+      "token": "shears"
+    },
+    "animation.minerplus.player.swim": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "animation id",
+      "token": "swim"
+    },
+    "animation.minerplus.player.throw": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "animation id",
+      "token": "throw"
+    },
+    "animation.minerplus.player.vanilla_move_arms": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "animation id",
+      "token": "vanilla_move_arms"
+    },
+    "animation.minerplus.player.vanilla_move_legs": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "animation id",
+      "token": "vanilla_move_legs"
+    },
+    "animation.minerplus.player.walk": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "animation id",
+      "token": "walk"
+    },
+    "animation.minerplus.player.afesjk": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "minecart"
+    },
+    "animation.minerplus.player.atffds": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "camel"
+    },
+    "animation.minerplus.player.atycwc": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "crossbow"
+    },
+    "animation.minerplus.player.babwqr": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "strider"
+    },
+    "animation.minerplus.player.bxtvze": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "stop"
+    },
+    "animation.minerplus.player.cpmfac": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "horse"
+    },
+    "animation.minerplus.player.ddqysw": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "flint_and_steel"
+    },
+    "animation.minerplus.player.dhvule": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "shears"
+    },
+    "animation.minerplus.player.eekwmk": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "nautilus"
+    },
+    "animation.minerplus.player.esehxp": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "horse"
+    },
+    "animation.minerplus.player.fcsrsv": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "run"
+    },
+    "animation.minerplus.player.ffilnq": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "pig"
+    },
+    "animation.minerplus.player.flubkg": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "flint_and_steel"
+    },
+    "animation.minerplus.player.hmwdkc": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "lantern"
+    },
+    "animation.minerplus.player.igkqcn": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "punch"
+    },
+    "animation.minerplus.player.ijivez": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "paperdoll"
+    },
+    "animation.minerplus.player.iynngn": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "brush"
+    },
+    "animation.minerplus.player.izvkfh": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "throw"
+    },
+    "animation.minerplus.player.jpqlzu": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "horse"
+    },
+    "animation.minerplus.player.jtibvk": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "minecart"
+    },
+    "animation.minerplus.player.jwbbyj": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "horse"
+    },
+    "animation.minerplus.player.kccwes": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "client-entity alias",
+      "token": "spawn"
+    },
+    "animation.minerplus.player.kfugel": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "throw"
+    },
+    "animation.minerplus.player.kqqabo": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "camel"
+    },
+    "animation.minerplus.player.ktgnrt": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "run"
+    },
+    "animation.minerplus.player.lfqunk": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "punch"
+    },
+    "animation.minerplus.player.lnnngf": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "mine"
+    },
+    "animation.minerplus.player.mwfqoe": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "strider"
+    },
+    "animation.minerplus.player.necyyu": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "boat"
+    },
+    "animation.minerplus.player.nmcrtp": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "nautilus"
+    },
+    "animation.minerplus.player.ofdycw": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "paperdoll"
+    },
+    "animation.minerplus.player.otjmsp": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "strider"
+    },
+    "animation.minerplus.player.ougmgy": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "bow"
+    },
+    "animation.minerplus.player.ozzxxb": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "minecart"
+    },
+    "animation.minerplus.player.piovjs": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "lantern"
+    },
+    "animation.minerplus.player.pllibp": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "lantern"
+    },
+    "animation.minerplus.player.pmgjno": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "client-entity alias",
+      "token": "move_right"
+    },
+    "animation.minerplus.player.przmfq": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "run"
+    },
+    "animation.minerplus.player.qnbnyz": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "nautilus"
+    },
+    "animation.minerplus.player.qqibls": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "camel"
+    },
+    "animation.minerplus.player.qzziyu": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "client-entity alias",
+      "token": "move_left"
+    },
+    "animation.minerplus.player.rikfbu": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "bow"
+    },
+    "animation.minerplus.player.rlemui": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "camel"
+    },
+    "animation.minerplus.player.rqvpyo": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "nautilus"
+    },
+    "animation.minerplus.player.sajedc": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "happy_ghast"
+    },
+    "animation.minerplus.player.sfbpwk": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "happy_ghast"
+    },
+    "animation.minerplus.player.sjzyjq": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "boat"
+    },
+    "animation.minerplus.player.slqzdn": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "llama"
+    },
+    "animation.minerplus.player.stscuf": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "happy_ghast"
+    },
+    "animation.minerplus.player.sugeuj": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "pig"
+    },
+    "animation.minerplus.player.sumvlq": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "horse"
+    },
+    "animation.minerplus.player.tmjxlb": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "shears"
+    },
+    "animation.minerplus.player.tnotod": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "lantern"
+    },
+    "animation.minerplus.player.uckqyj": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "llama"
+    },
+    "animation.minerplus.player.ujgpuf": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "brush"
+    },
+    "animation.minerplus.player.umiujv": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "camel"
+    },
+    "animation.minerplus.player.vkrtrr": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "boat"
+    },
+    "animation.minerplus.player.vlhhwt": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "nautilus"
+    },
+    "animation.minerplus.player.vzafxn": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "pig"
+    },
+    "animation.minerplus.player.wgtjmy": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "mine"
+    },
+    "animation.minerplus.player.wjefhz": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "throw"
+    },
+    "animation.minerplus.player.xgixou": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "shears"
+    },
+    "animation.minerplus.player.xjhpfh": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "strider"
+    },
+    "animation.minerplus.player.xrpdbl": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "llama"
+    },
+    "animation.minerplus.player.xzjxis": {
+      "tier": "A",
+      "confidence": "high",
+      "source": "controller state",
+      "token": "mainhand"
+    },
+    "animation.minerplus.player.agaaze": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.aivnpb": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "sneak"
+    },
+    "animation.minerplus.player.aparjw": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "golden_dandelion"
+    },
+    "animation.minerplus.player.apbbgb": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "riding"
+    },
+    "animation.minerplus.player.asxvzc": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "blocking"
+    },
+    "animation.minerplus.player.atpxsp": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "trident"
+    },
+    "animation.minerplus.player.bmwgbu": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "water"
+    },
+    "animation.minerplus.player.bsktaw": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.buujkx": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "bow"
+    },
+    "animation.minerplus.player.bwhhfq": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "water"
+    },
+    "animation.minerplus.player.bzaxsc": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "sneak"
+    },
+    "animation.minerplus.player.cftvxu": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "crossbow"
+    },
+    "animation.minerplus.player.cickvk": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "sneak"
+    },
+    "animation.minerplus.player.cohizd": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "emote"
+    },
+    "animation.minerplus.player.cotdbo": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "blocking"
+    },
+    "animation.minerplus.player.covlms": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "emote"
+    },
+    "animation.minerplus.player.cqlhqf": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "spear"
+    },
+    "animation.minerplus.player.crjmdq": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "emote"
+    },
+    "animation.minerplus.player.cxcark": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "jump"
+    },
+    "animation.minerplus.player.cymjbq": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.cyukrw": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "torch"
+    },
+    "animation.minerplus.player.czzpvs": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "potion"
+    },
+    "animation.minerplus.player.dbqgov": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "water"
+    },
+    "animation.minerplus.player.dcxygc": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shears"
+    },
+    "animation.minerplus.player.diootb": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "mace"
+    },
+    "animation.minerplus.player.djrlre": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "throwable"
+    },
+    "animation.minerplus.player.dkhzav": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "seeds"
+    },
+    "animation.minerplus.player.dlkimz": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "petals"
+    },
+    "animation.minerplus.player.dnmnns": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "golden_dandelion"
+    },
+    "animation.minerplus.player.dnsyxu": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "spear"
+    },
+    "animation.minerplus.player.dubgwy": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "blocking"
+    },
+    "animation.minerplus.player.dyafda": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.dzupsi": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "riding"
+    },
+    "animation.minerplus.player.eagxpc": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "riding"
+    },
+    "animation.minerplus.player.eanhne": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "spear"
+    },
+    "animation.minerplus.player.echtst": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "water"
+    },
+    "animation.minerplus.player.edwvta": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "jump"
+    },
+    "animation.minerplus.player.eeoqqt": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "emote"
+    },
+    "animation.minerplus.player.elfweg": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "crossbow"
+    },
+    "animation.minerplus.player.eouoiy": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "mace"
+    },
+    "animation.minerplus.player.epthqa": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.excxgk": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shears"
+    },
+    "animation.minerplus.player.exkusm": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.ffnybu": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "golden_dandelion"
+    },
+    "animation.minerplus.player.first_person_base_pose": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.first_person_empty_hand": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.fizksm": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "emote"
+    },
+    "animation.minerplus.player.flakfg": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "crossbow"
+    },
+    "animation.minerplus.player.fqjkoo": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "golden_dandelion"
+    },
+    "animation.minerplus.player.fqwxmj": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "water"
+    },
+    "animation.minerplus.player.friiow": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "spyglass"
+    },
+    "animation.minerplus.player.frlsgm": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "flint_and_steel"
+    },
+    "animation.minerplus.player.fsicql": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.fuabuu": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "mace"
+    },
+    "animation.minerplus.player.fxjogy": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shears"
+    },
+    "animation.minerplus.player.fyoptj": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "mace"
+    },
+    "animation.minerplus.player.gazanr": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.ggpzhr": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "hoe"
+    },
+    "animation.minerplus.player.gibwqi": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shovel"
+    },
+    "animation.minerplus.player.giiudv": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "axe"
+    },
+    "animation.minerplus.player.gmycxu": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "emote"
+    },
+    "animation.minerplus.player.gthnee": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "emote"
+    },
+    "animation.minerplus.player.gtoqik": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "readable"
+    },
+    "animation.minerplus.player.guojyw": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "spyglass"
+    },
+    "animation.minerplus.player.guxkug": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "mace"
+    },
+    "animation.minerplus.player.gzykxj": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "blocking"
+    },
+    "animation.minerplus.player.hcijri": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "swim"
+    },
+    "animation.minerplus.player.hgfjny": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "flint_and_steel"
+    },
+    "animation.minerplus.player.hhwfje": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shovel"
+    },
+    "animation.minerplus.player.hidetu": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "golden_dandelion"
+    },
+    "animation.minerplus.player.hkabsn": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "petals"
+    },
+    "animation.minerplus.player.hmspas": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "trident"
+    },
+    "animation.minerplus.player.hoxjpe": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "flint_and_steel"
+    },
+    "animation.minerplus.player.hozblx": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shears"
+    },
+    "animation.minerplus.player.hqqude": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "crawl"
+    },
+    "animation.minerplus.player.hsykho": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "spear"
+    },
+    "animation.minerplus.player.hxtrev": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "emote"
+    },
+    "animation.minerplus.player.icfpwq": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "golden_dandelion"
+    },
+    "animation.minerplus.player.ifjwjf": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "bow"
+    },
+    "animation.minerplus.player.igwshl": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "sneak"
+    },
+    "animation.minerplus.player.ioecdr": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "emote"
+    },
+    "animation.minerplus.player.iqfuif": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "water"
+    },
+    "animation.minerplus.player.irkkjl": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "trident"
+    },
+    "animation.minerplus.player.irkzxn": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "riding"
+    },
+    "animation.minerplus.player.jawwtn": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "blocking"
+    },
+    "animation.minerplus.player.jcyjaa": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "spear"
+    },
+    "animation.minerplus.player.jehlua": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.jgvlci": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shovel"
+    },
+    "animation.minerplus.player.jhbxbl": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "golden_dandelion"
+    },
+    "animation.minerplus.player.jhflca": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "water"
+    },
+    "animation.minerplus.player.jiadjy": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "spear"
+    },
+    "animation.minerplus.player.jivhbd": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "hoe"
+    },
+    "animation.minerplus.player.jmjgft": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "jump"
+    },
+    "animation.minerplus.player.jorvnw": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.jqsppm": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shears"
+    },
+    "animation.minerplus.player.kmahna": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "riding"
+    },
+    "animation.minerplus.player.kpgrpw": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "crossbow"
+    },
+    "animation.minerplus.player.kuzbeu": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "water"
+    },
+    "animation.minerplus.player.lasqxu": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shears"
+    },
+    "animation.minerplus.player.limqso": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shovel"
+    },
+    "animation.minerplus.player.look_at_target": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "glide"
+    },
+    "animation.minerplus.player.lqolzk": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "mace"
+    },
+    "animation.minerplus.player.lrgvoo": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "bow"
+    },
+    "animation.minerplus.player.lrzuus": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "mace"
+    },
+    "animation.minerplus.player.lulchs": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "mace"
+    },
+    "animation.minerplus.player.lwkpcq": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shovel"
+    },
+    "animation.minerplus.player.melzjw": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "flint_and_steel"
+    },
+    "animation.minerplus.player.mjscqu": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "riding"
+    },
+    "animation.minerplus.player.mnxiud": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "seeds"
+    },
+    "animation.minerplus.player.mpbtnu": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "bow"
+    },
+    "animation.minerplus.player.mqgdwp": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "hoe"
+    },
+    "animation.minerplus.player.mrhxpr": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "axe"
+    },
+    "animation.minerplus.player.nenqej": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "axe"
+    },
+    "animation.minerplus.player.nhhccb": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "crossbow"
+    },
+    "animation.minerplus.player.nhizir": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "riding"
+    },
+    "animation.minerplus.player.nhzgnh": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "crossbow"
+    },
+    "animation.minerplus.player.nnakwr": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shovel"
+    },
+    "animation.minerplus.player.nxoeoh": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "swim"
+    },
+    "animation.minerplus.player.nzqcco": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "golden_dandelion"
+    },
+    "animation.minerplus.player.oauslh": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "sneak"
+    },
+    "animation.minerplus.player.ocxhgm": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.oeshwf": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "riding"
+    },
+    "animation.minerplus.player.okfrua": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "golden_dandelion"
+    },
+    "animation.minerplus.player.oloyce": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "blocking"
+    },
+    "animation.minerplus.player.omzvrj": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "petals"
+    },
+    "animation.minerplus.player.owabdh": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "golden_dandelion"
+    },
+    "animation.minerplus.player.owaznb": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "hoe"
+    },
+    "animation.minerplus.player.owdrar": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "sneak"
+    },
+    "animation.minerplus.player.oznpfw": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "emote"
+    },
+    "animation.minerplus.player.packmh": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.pdiqat": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "sneak"
+    },
+    "animation.minerplus.player.phtcnx": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "riding"
+    },
+    "animation.minerplus.player.pnfhyd": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "crossbow"
+    },
+    "animation.minerplus.player.pomlkz": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "blocking"
+    },
+    "animation.minerplus.player.powruo": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.pslhiv": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "brush"
+    },
+    "animation.minerplus.player.psmdgh": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "trident"
+    },
+    "animation.minerplus.player.ptaohb": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.ptmgtk": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "crossbow"
+    },
+    "animation.minerplus.player.pzswhl": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "seeds"
+    },
+    "animation.minerplus.player.qachfh": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "crossbow"
+    },
+    "animation.minerplus.player.qfxdpt": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shears"
+    },
+    "animation.minerplus.player.qjbzou": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "golden_dandelion"
+    },
+    "animation.minerplus.player.qjhnlq": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.qqxtjh": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "throwable"
+    },
+    "animation.minerplus.player.qrwdru": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "riding"
+    },
+    "animation.minerplus.player.rdcche": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "emote"
+    },
+    "animation.minerplus.player.rgvsxz": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.roymuz": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "water"
+    },
+    "animation.minerplus.player.rpswwn": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "blocking"
+    },
+    "animation.minerplus.player.rqzbns": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.rrvlnm": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "blocking"
+    },
+    "animation.minerplus.player.ruotpq": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.ryxvmj": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "axe"
+    },
+    "animation.minerplus.player.rzwosc": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "mace"
+    },
+    "animation.minerplus.player.shlsos": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "riding"
+    },
+    "animation.minerplus.player.sixvql": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "bow"
+    },
+    "animation.minerplus.player.smpzio": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.swjeja": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.szsgoa": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "flint_and_steel"
+    },
+    "animation.minerplus.player.tfigoh": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "sneak"
+    },
+    "animation.minerplus.player.tmhxkl": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "spyglass"
+    },
+    "animation.minerplus.player.tshawr": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "sneak"
+    },
+    "animation.minerplus.player.tzokim": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "hoe"
+    },
+    "animation.minerplus.player.tzwuhb": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "emote"
+    },
+    "animation.minerplus.player.ubrbke": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "sprint"
+    },
+    "animation.minerplus.player.udlful": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "water"
+    },
+    "animation.minerplus.player.ufbmwj": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "axe"
+    },
+    "animation.minerplus.player.ugcwbv": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "emote"
+    },
+    "animation.minerplus.player.ugsgjk": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "throwable"
+    },
+    "animation.minerplus.player.ukuoim": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "water"
+    },
+    "animation.minerplus.player.umhykx": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "water"
+    },
+    "animation.minerplus.player.upcdwt": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "emote"
+    },
+    "animation.minerplus.player.uwfmen": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "emote"
+    },
+    "animation.minerplus.player.uxmkkj": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "water"
+    },
+    "animation.minerplus.player.vewnch": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "riding"
+    },
+    "animation.minerplus.player.vhtneu": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "emote"
+    },
+    "animation.minerplus.player.vjlbvn": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "trident"
+    },
+    "animation.minerplus.player.vkkmnc": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "blocking"
+    },
+    "animation.minerplus.player.vxaqvy": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "mace"
+    },
+    "animation.minerplus.player.vzrktp": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "pickaxe"
+    },
+    "animation.minerplus.player.weqjnr": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "golden_dandelion"
+    },
+    "animation.minerplus.player.wgdldd": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "water"
+    },
+    "animation.minerplus.player.wnucgo": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "spear"
+    },
+    "animation.minerplus.player.wnzlob": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "water"
+    },
+    "animation.minerplus.player.wqaajl": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "spear"
+    },
+    "animation.minerplus.player.wsejus": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "blocking"
+    },
+    "animation.minerplus.player.wthavx": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "throwable"
+    },
+    "animation.minerplus.player.wwfngv": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "water"
+    },
+    "animation.minerplus.player.wxrzrd": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "riding"
+    },
+    "animation.minerplus.player.wzpxjr": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "axe"
+    },
+    "animation.minerplus.player.xafvwz": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "crossbow"
+    },
+    "animation.minerplus.player.xaqwig": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "spear"
+    },
+    "animation.minerplus.player.xddhzk": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "golden_dandelion"
+    },
+    "animation.minerplus.player.xhlqeb": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "flint_and_steel"
+    },
+    "animation.minerplus.player.xixepe": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shears"
+    },
+    "animation.minerplus.player.xjenwd": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "spyglass"
+    },
+    "animation.minerplus.player.xnkpku": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "water"
+    },
+    "animation.minerplus.player.xpnfrz": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "seeds"
+    },
+    "animation.minerplus.player.xqsfmw": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "axe"
+    },
+    "animation.minerplus.player.xrbooj": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "emote"
+    },
+    "animation.minerplus.player.xsmkww": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.xvdslp": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "jump"
+    },
+    "animation.minerplus.player.xyawug": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "crossbow"
+    },
+    "animation.minerplus.player.ybhhpm": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "petals"
+    },
+    "animation.minerplus.player.yelinn": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "trident"
+    },
+    "animation.minerplus.player.ygqdrs": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "upturned"
+    },
+    "animation.minerplus.player.ygsnrx": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "mace"
+    },
+    "animation.minerplus.player.yjiljh": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "water"
+    },
+    "animation.minerplus.player.ykeoah": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "throwable"
+    },
+    "animation.minerplus.player.ykmnwz": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "riding"
+    },
+    "animation.minerplus.player.ylrkda": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "seeds"
+    },
+    "animation.minerplus.player.ymjnkc": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "crossbow"
+    },
+    "animation.minerplus.player.yqlkbm": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "readable"
+    },
+    "animation.minerplus.player.ywjfum": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "player state in guard",
+      "token": "riding"
+    },
+    "animation.minerplus.player.zbqqom": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "spear"
+    },
+    "animation.minerplus.player.zduiys": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "golden_dandelion"
+    },
+    "animation.minerplus.player.zfbcwp": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "trident"
+    },
+    "animation.minerplus.player.zncoou": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "petals"
+    },
+    "animation.minerplus.player.zorvxm": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "shield"
+    },
+    "animation.minerplus.player.zpcyza": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "spear"
+    },
+    "animation.minerplus.player.ztiajf": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "trident"
+    },
+    "animation.minerplus.player.zuabue": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "hoe"
+    },
+    "animation.minerplus.player.zvjgei": {
+      "tier": "B",
+      "confidence": "probable",
+      "source": "item family in guard",
+      "token": "golden_dandelion"
+    },
+    "animation.minerplus.player.adutle": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.aeqzkw": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.atdulf": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.bcfocm": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.bevrbk": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.boabcq": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.bsyjfs": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.btoufw": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.bwibmz": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.bxmjdm": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.chdinz": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.ciauwg": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.clvaeh": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.cobhox": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.cpmdbb": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.csbahl": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.csyfga": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.cxfptc": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.czohpy": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.dfajpq": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.eachaz": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.eaqdwo": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.eaqhvv": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.eazaga": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.eetykv": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.efjroq": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.egyxqi": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.epcqqu": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.eukmmw": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.eyrmmr": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.fpushb": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.fxnhey": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.gdkedd": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.gipxth": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.givntn": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.gosbpl": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.gsidfc": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.gvxqqh": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.holadk": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.htayuy": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.ihgsrl": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.ihrncs": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.ipbphe": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.iqoneh": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.izjepk": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.izybvz": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.jeskaf": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.jiaxin": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.jmcdqt": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.joxcyv": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.jtwnhx": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.jvowde": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.jvuwvf": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.jwexco": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.jwfwgi": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.jwqzfb": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.jzljpw": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.jztycv": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.kmnxqm": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.kptsoh": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.krqyht": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.ksgygf": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.layyrd": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.lbtirb": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.lfxtho": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.lhsngr": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.lhxuor": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.ljrhsi": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.lyflxw": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.madybs": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.maicuo": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.meyrjy": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.miuyts": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.mjzrmd": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.msmcbs": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.mtugns": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.mxzruo": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.mzfpsm": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.nbjeha": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.ncbsec": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.nvxqkp": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.oczrpx": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.oguppy": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.oliooh": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.ovndsf": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.owltad": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.photpz": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.pkhzmk": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.prfelo": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.prxzwy": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.ptdnvz": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.pyhjiu": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.pyricu": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.qhunhy": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.qlpzlh": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.rouhts": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.rvmpno": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.sccjju": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.sfnzpx": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.shqbbl": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.smollf": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.souawl": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.sqbpah": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.szdzpt": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.tawztg": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.tddrdj": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.tislhf": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.tqrhlq": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.trydez": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.twrhbq": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.ubvmvn": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.ucaryc": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.ucewak": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.uivqbf": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.ulmdkg": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.uoijbk": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.utlfik": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.uvqzkm": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.uwvidk": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.uxpohu": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.uyjkbn": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.vdbtfq": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.vplwqi": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.vqhmlb": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.vueoau": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.vwkfjz": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.vzbpmc": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.wcjbfr": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.wdbjew": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.wmdvxo": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.xghxmf": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.xglhwt": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.xiuohd": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.xjzljd": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.xkshub": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.xlzflb": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.xsleqa": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.yasxuh": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.yhgimt": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.yhiiaw": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.ynyzrb": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.ynzwiq": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.yrljkl": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.ysiviy": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.zlafhp": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.zmsgam": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.zobjoz": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.zrvwvb": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    },
+    "animation.minerplus.player.zwpjfo": {
+      "tier": "C",
+      "confidence": "unknown",
+      "source": "stable numbering",
+      "token": null
+    }
+  },
+  "animation_controllers": {
+    "controller.animation.minerplus.player.camimd": "controller.animation.lbr_baf.player.punch",
+    "controller.animation.minerplus.player.knoyhk": "controller.animation.lbr_baf.player.shield",
+    "controller.animation.minerplus.player.lfjeov": "controller.animation.lbr_baf.player.jump",
+    "controller.animation.minerplus.player.lhbuwm": "controller.animation.lbr_baf.player.run",
+    "controller.animation.minerplus.player.mazfxe": "controller.animation.lbr_baf.player.brush",
+    "controller.animation.minerplus.player.nkazxa": "controller.animation.lbr_baf.player.boat",
+    "controller.animation.minerplus.player.ofrcyn": "controller.animation.lbr_baf.player.bow",
+    "controller.animation.minerplus.player.pwqhcf": "controller.animation.lbr_baf.player.mine",
+    "controller.animation.minerplus.player.pygoip": "controller.animation.lbr_baf.player.stop",
+    "controller.animation.minerplus.player.wqjvtj": "controller.animation.lbr_baf.player.lantern",
+    "controller.animation.minerplus.player.zyrcdq": "controller.animation.lbr_baf.player.paperdoll",
+    "controller.animation.minerplus.player.bpmdpb": "controller.animation.lbr_baf.player.controller_001",
+    "controller.animation.minerplus.player.bzcwhc": "controller.animation.lbr_baf.player.controller_002",
+    "controller.animation.minerplus.player.cqkhdi": "controller.animation.lbr_baf.player.controller_003",
+    "controller.animation.minerplus.player.deuxya": "controller.animation.lbr_baf.player.controller_004",
+    "controller.animation.minerplus.player.dpcxlx": "controller.animation.lbr_baf.player.controller_005",
+    "controller.animation.minerplus.player.ejxbht": "controller.animation.lbr_baf.player.controller_006",
+    "controller.animation.minerplus.player.fbwreq": "controller.animation.lbr_baf.player.controller_007",
+    "controller.animation.minerplus.player.fomrzp": "controller.animation.lbr_baf.player.controller_008",
+    "controller.animation.minerplus.player.fotixv": "controller.animation.lbr_baf.player.controller_009",
+    "controller.animation.minerplus.player.htgpzd": "controller.animation.lbr_baf.player.controller_010",
+    "controller.animation.minerplus.player.idxeob": "controller.animation.lbr_baf.player.controller_011",
+    "controller.animation.minerplus.player.iplurh": "controller.animation.lbr_baf.player.controller_012",
+    "controller.animation.minerplus.player.irkwzk": "controller.animation.lbr_baf.player.controller_013",
+    "controller.animation.minerplus.player.ismckx": "controller.animation.lbr_baf.player.controller_014",
+    "controller.animation.minerplus.player.itjppu": "controller.animation.lbr_baf.player.controller_015",
+    "controller.animation.minerplus.player.itvdym": "controller.animation.lbr_baf.player.controller_016",
+    "controller.animation.minerplus.player.jkzzlr": "controller.animation.lbr_baf.player.controller_017",
+    "controller.animation.minerplus.player.jsoljm": "controller.animation.lbr_baf.player.controller_018",
+    "controller.animation.minerplus.player.kjlghl": "controller.animation.lbr_baf.player.controller_019",
+    "controller.animation.minerplus.player.lvsjla": "controller.animation.lbr_baf.player.controller_020",
+    "controller.animation.minerplus.player.mqgxqk": "controller.animation.lbr_baf.player.controller_021",
+    "controller.animation.minerplus.player.njvelc": "controller.animation.lbr_baf.player.controller_022",
+    "controller.animation.minerplus.player.oiegfy": "controller.animation.lbr_baf.player.controller_023",
+    "controller.animation.minerplus.player.ooceit": "controller.animation.lbr_baf.player.controller_024",
+    "controller.animation.minerplus.player.ooprql": "controller.animation.lbr_baf.player.controller_025",
+    "controller.animation.minerplus.player.oqctis": "controller.animation.lbr_baf.player.controller_026",
+    "controller.animation.minerplus.player.osqylo": "controller.animation.lbr_baf.player.controller_027",
+    "controller.animation.minerplus.player.pjrlav": "controller.animation.lbr_baf.player.controller_028",
+    "controller.animation.minerplus.player.quiyxu": "controller.animation.lbr_baf.player.controller_029",
+    "controller.animation.minerplus.player.qxikjb": "controller.animation.lbr_baf.player.controller_030",
+    "controller.animation.minerplus.player.rnxhgi": "controller.animation.lbr_baf.player.controller_031",
+    "controller.animation.minerplus.player.rqzpao": "controller.animation.lbr_baf.player.controller_032",
+    "controller.animation.minerplus.player.sfoyqn": "controller.animation.lbr_baf.player.controller_033",
+    "controller.animation.minerplus.player.sktggi": "controller.animation.lbr_baf.player.controller_034",
+    "controller.animation.minerplus.player.sloczo": "controller.animation.lbr_baf.player.controller_035",
+    "controller.animation.minerplus.player.tjytvl": "controller.animation.lbr_baf.player.controller_036",
+    "controller.animation.minerplus.player.tnrbpo": "controller.animation.lbr_baf.player.controller_037",
+    "controller.animation.minerplus.player.unoswe": "controller.animation.lbr_baf.player.controller_038",
+    "controller.animation.minerplus.player.votwby": "controller.animation.lbr_baf.player.controller_039",
+    "controller.animation.minerplus.player.vowjlb": "controller.animation.lbr_baf.player.controller_040",
+    "controller.animation.minerplus.player.wieeaw": "controller.animation.lbr_baf.player.controller_041",
+    "controller.animation.minerplus.player.wrmobv": "controller.animation.lbr_baf.player.controller_042",
+    "controller.animation.minerplus.player.xunqct": "controller.animation.lbr_baf.player.controller_043",
+    "controller.animation.minerplus.player.yemteq": "controller.animation.lbr_baf.player.controller_044"
+  },
+  "render_controllers": {
+    "controller.render.minerplus.player.avgmxq": "controller.render.lbr_baf.player.legs_overlay",
+    "controller.render.minerplus.player.omixtu": "controller.render.lbr_baf.player.armor_layers",
+    "controller.render.minerplus.player.tgrzdm": "controller.render.lbr_baf.player.hidden_base",
+    "controller.render.minerplus.player.vlwafo": "controller.render.lbr_baf.player.legs_overlay_uv",
+    "controller.render.minerplus.player.vmmipy": "controller.render.lbr_baf.player.main",
+    "controller.render.minerplus.player.vxoiti": "controller.render.lbr_baf.player.boat_arms",
+    "controller.render.minerplus.player.first_person": "controller.render.lbr_baf.player.first_person",
+    "controller.render.minerplus.player.third_person": "controller.render.lbr_baf.player.third_person",
+    "controller.render.minerplus.player.third_person_spectator": "controller.render.lbr_baf.player.third_person_spectator"
+  },
+  "player_geometries": {
+    "geometry.minerplus.player.btumcw": "geometry.lbr_baf.player.main",
+    "geometry.minerplus.player.bvznrr": "geometry.lbr_baf.player.boat_arms_01",
+    "geometry.minerplus.player.hyzzjr": "geometry.lbr_baf.player.boat_arms_02",
+    "geometry.minerplus.player.pnawgz": "geometry.lbr_baf.player.legs_overlay_uv",
+    "geometry.minerplus.player.qthzxa": "geometry.lbr_baf.player.legs_overlay"
+  },
+  "block_geometries": {
+    "geometry.roche": "geometry.lbr_baf.rock",
+    "geometry.roche_charbon": "geometry.lbr_baf.rock_coal",
+    "geometry.roche_cuivre": "geometry.lbr_baf.rock_copper",
+    "geometry.roche_fer": "geometry.lbr_baf.rock_iron",
+    "geometry.roche_or": "geometry.lbr_baf.rock_gold",
+    "geometry.roche_emeraude": "geometry.lbr_baf.rock_emerald",
+    "geometry.caillou_emeraude": "geometry.lbr_baf.pebbles_emerald",
+    "geometry.caillou_emeraude_2": "geometry.lbr_baf.pebbles_emerald_alt"
+  },
+  "materials": {
+    "mp_player_kipfdc": "lbr_baf_player_base",
+    "mp_player_ojnhbt": "lbr_baf_player_uv_anim",
+    "mp_player_tmamiu": "lbr_baf_player_overlay",
+    "mp_player_rkenyc": "lbr_baf_player_overlay_equal"
+  },
+  "entity_animation_aliases": {
+    "mp_kgklcq": "lbr_state_131",
+    "blink": "lbr_blink",
+    "sleeping": "lbr_sleeping",
+    "look_at_target_ui": "lbr_look_at_target_ui",
+    "mp_move_arms": "lbr_vanilla_move_arms",
+    "mp_move_legs": "lbr_vanilla_move_legs",
+    "tmxius": "lbr_tmxius",
+    "mp_humanoid_base_pose": "lbr_humanoid_base_pose",
+    "mp_bob": "lbr_bob",
+    "mp_walk": "lbr_walk",
+    "mp_kzuqni": "lbr_state_023",
+    "mp_move": "lbr_run",
+    "mp_pgnnhd": "lbr_run_01",
+    "mp_swim": "lbr_swim",
+    "mp_uhcxuu": "lbr_water_07",
+    "mp_qgafwd": "lbr_water_17",
+    "mp_wxzmsp": "lbr_state_005",
+    "mp_rnmred": "lbr_state_081",
+    "mp_jump": "lbr_jump",
+    "mp_fall": "lbr_fall",
+    "mp_yytrhz": "lbr_state_069",
+    "mp_ydsari": "lbr_jump_04",
+    "mp_srluww": "lbr_jump_03",
+    "mp_wjmfbh": "lbr_state_143",
+    "mp_attack": "lbr_attack",
+    "mp_hurt": "lbr_hurt",
+    "mp_kuewhd": "lbr_state_104",
+    "mp_fly": "lbr_fly",
+    "mp_pluejt": "lbr_state_015",
+    "mp_yzwcaa": "lbr_state_084",
+    "mp_fjdvei": "lbr_horse_01",
+    "mp_lqrdrg": "lbr_camel_04",
+    "mp_wycrqr": "lbr_minecart_02",
+    "mp_pyuzck": "lbr_state_065",
+    "mp_fzimtw": "lbr_state_117",
+    "mp_xahrzd": "lbr_state_112",
+    "mp_sjvffv": "lbr_stop",
+    "mp_ekwgfb": "lbr_state_028",
+    "mp_mzllft": "lbr_state_077",
+    "mp_xfltzh": "lbr_state_006",
+    "mp_kmahlu": "lbr_state_106",
+    "mp_riprhp": "lbr_paperdoll_01",
+    "mp_qkoqcq": "lbr_paperdoll",
+    "mp_cape": "lbr_cape",
+    "mp_ejnecs": "lbr_state_022",
+    "mp_rjfeeq": "lbr_state_030",
+    "mp_look_at_target": "lbr_glide_01",
+    "mp_rjnuku": "lbr_bow_03",
+    "mp_itnwuj": "lbr_shield_23",
+    "mp_mhyyzj": "lbr_blocking_05",
+    "mp_ynzbly": "lbr_trident_06",
+    "mp_mlndpo": "lbr_trident_08",
+    "mp_nqqvnn": "lbr_state_043",
+    "mp_ircufr": "lbr_blocking_02",
+    "mp_bphbtz": "lbr_flint_and_steel",
+    "mp_xunqnt": "lbr_state_090",
+    "mp_nybxxf": "lbr_state_071",
+    "mp_hmvrsb": "lbr_state_080",
+    "mp_holding": "lbr_holding",
+    "mp_mtgdcm": "lbr_state_076",
+    "mp_ypjqpd": "lbr_axe_07",
+    "mp_tjnuyj": "lbr_blocking_04",
+    "mp_ccdlig": "lbr_riding_04",
+    "mp_mshwsb": "lbr_blocking_09",
+    "mp_kkyulq": "lbr_axe_05",
+    "mp_thaslm": "lbr_shovel_04",
+    "mp_oprkqi": "lbr_shovel_01",
+    "mp_rxtbga": "lbr_shovel_03",
+    "mp_oardtx": "lbr_shovel_05",
+    "mp_cixjgp": "lbr_hoe_02",
+    "mp_giaakz": "lbr_hoe_04",
+    "mp_ousprd": "lbr_hoe_01",
+    "mp_vcidrz": "lbr_hoe_03",
+    "mp_vorgpv": "lbr_pickaxe_01",
+    "mp_smebii": "lbr_riding_14",
+    "mp_dtymzj": "lbr_riding_05",
+    "mp_ilbzbh": "lbr_riding_06",
+    "mp_lhmzom": "lbr_axe_01",
+    "mp_sgdlzo": "lbr_axe_04",
+    "mp_kvpche": "lbr_riding_08",
+    "mp_uoveuo": "lbr_state_056",
+    "mp_mvkirz": "lbr_axe_06",
+    "mp_znxmrl": "lbr_mace_01",
+    "mp_tuxedu": "lbr_mace_02",
+    "mp_gduwtv": "lbr_mace_07",
+    "mp_yspduf": "lbr_mace_04",
+    "mp_huqdun": "lbr_mace_10",
+    "mp_warynq": "lbr_trident_02",
+    "mp_umhcat": "lbr_trident_01",
+    "mp_zfdtwh": "lbr_trident_05",
+    "mp_hddrqo": "lbr_state_100",
+    "mp_llywjj": "lbr_state_116",
+    "mp_zybvfq": "lbr_blocking_06",
+    "mp_iipemm": "lbr_trident_04",
+    "mp_virzrd": "lbr_trident_03",
+    "mp_onbevx": "lbr_bow_04",
+    "mp_rgqato": "lbr_bow_02",
+    "mp_izceee": "lbr_bow_06",
+    "mp_sizyvh": "lbr_shield_14",
+    "mp_tnnzib": "lbr_shield_09",
+    "mp_tcucxa": "lbr_blocking_03",
+    "mp_hfnozn": "lbr_blocking_01",
+    "mp_dtfqyg": "lbr_blocking_07",
+    "mp_bbvbhl": "lbr_state_016",
+    "mp_afmxrw": "lbr_punch",
+    "mp_spften": "lbr_punch_01",
+    "mp_sxoybj": "lbr_state_089",
+    "mp_tooting_goat_horn": "lbr_goat_horn",
+    "mp_eat": "lbr_eat",
+    "mp_ygsrfx": "lbr_state_036",
+    "mp_ujgolc": "lbr_spyglass_03",
+    "mp_ofpzzq": "lbr_spyglass_04",
+    "mp_brush": "lbr_brush",
+    "mp_bvdkjk": "lbr_brush_03",
+    "mp_tvugex": "lbr_readable_02",
+    "mp_etuxkz": "lbr_readable_01",
+    "mp_pjkxis": "lbr_shield_17",
+    "mp_oghagy": "lbr_state_010",
+    "mp_tjekez": "lbr_spyglass_02",
+    "mp_rewixh": "lbr_spyglass_01",
+    "mp_ecnujd": "lbr_flint_and_steel_06",
+    "mp_ahswoq": "lbr_flint_and_steel_04",
+    "mp_glvhfw": "lbr_flint_and_steel_02",
+    "mp_ubcyiz": "lbr_flint_and_steel_01",
+    "mp_jskozw": "lbr_spear_04",
+    "mp_zlwuzz": "lbr_spear_01",
+    "mp_shears": "lbr_shears",
+    "mp_lasrrf": "lbr_shears_07",
+    "mp_zuqsru": "lbr_shears_06",
+    "mp_uyaebq": "lbr_blocking_11",
+    "mp_gxtbmc": "lbr_shears_08",
+    "mp_pyuhhn": "lbr_shears_11",
+    "mp_qturaa": "lbr_blocking_08",
+    "mp_sotmvv": "lbr_golden_dandelion_04",
+    "mp_lnmxra": "lbr_golden_dandelion_01",
+    "mp_nedxhd": "lbr_golden_dandelion_10",
+    "mp_ygkshq": "lbr_golden_dandelion_08",
+    "mp_oyevwx": "lbr_throwable_03",
+    "mp_throw": "lbr_throw",
+    "mp_plxeqv": "lbr_state_047",
+    "mp_kcncjx": "lbr_throw_02",
+    "mp_cfsugb": "lbr_state_136",
+    "mp_tlpihx": "lbr_state_064",
+    "mp_psfxly": "lbr_state_052",
+    "mp_ztvjhq": "lbr_state_045",
+    "mp_gyjqzs": "lbr_state_001",
+    "mp_lnbnqq": "lbr_state_134",
+    "mp_ubrffa": "lbr_state_004",
+    "mp_wmwndh": "lbr_state_087",
+    "mp_kacdpv": "lbr_state_012",
+    "mp_rmzrev": "lbr_state_105",
+    "mp_ygqiqf": "lbr_state_079",
+    "mp_tmahcq": "lbr_shield_05",
+    "mp_uqdzip": "lbr_shield_19",
+    "mp_jxojqk": "lbr_shield_16",
+    "mp_uyecpe": "lbr_shield_04",
+    "mp_cluxhl": "lbr_shield_13",
+    "mp_sfbokk": "lbr_state_042",
+    "mp_bvlbek": "lbr_state_050",
+    "mp_fyennh": "lbr_state_039",
+    "mp_xoqtsu": "lbr_state_149",
+    "mp_dpoyzc": "lbr_state_068",
+    "mp_jaawph": "lbr_petals_02",
+    "mp_aovuvg": "lbr_petals_05",
+    "mp_simrfu": "lbr_petals_01",
+    "mp_bmzgyq": "lbr_petals_03",
+    "mp_gcmhpq": "lbr_petals_04",
+    "mp_pfpoqw": "lbr_seeds_04",
+    "mp_hieskk": "lbr_seeds_05",
+    "mp_fudbvz": "lbr_seeds_02",
+    "mp_lcjjcq": "lbr_seeds_01",
+    "mp_wkdkto": "lbr_seeds_03",
+    "mp_rweyer": "lbr_shield_15",
+    "mp_xlcblg": "lbr_shield_06",
+    "mp_first_person_base_pose": "lbr_shield_07",
+    "mp_first_person_empty_hand": "lbr_shield_08",
+    "mp_sgvsfc": "lbr_shears_02",
+    "mp_bdpsjn": "lbr_bow_01",
+    "mp_dpxncc": "lbr_bow",
+    "mp_kznwiv": "lbr_lantern",
+    "mp_ulvtty": "lbr_shield_18",
+    "mp_fuicbq": "lbr_mainhand",
+    "mp_uryzic": "lbr_lantern_01",
+    "mp_qjyoyo": "lbr_lantern_02",
+    "mp_owjeqt": "lbr_lantern_03",
+    "mp_tttvqy": "lbr_shield_21",
+    "mp_zwyfbg": "lbr_shield_02",
+    "mp_first_person_walk": "lbr_shield_01",
+    "mp_baiuuc": "lbr_shield_12",
+    "mp_rvwopr": "lbr_state_088",
+    "mp_vfngfu": "lbr_state_093",
+    "mp_ubywgf": "lbr_state_007",
+    "mp_first_person_swap_item": "lbr_state_072",
+    "mp_nibjkr": "lbr_shield_03",
+    "mp_cdklul": "lbr_state_075",
+    "mp_ieluqf": "lbr_state_147",
+    "mp_dgsvch": "lbr_state_108",
+    "mp_fzallz": "lbr_state_082",
+    "mp_xwtors": "lbr_state_109",
+    "mp_xyqubr": "lbr_state_126",
+    "mp_upekdi": "lbr_state_014",
+    "mp_aummym": "lbr_state_132",
+    "mp_ccqkmf": "lbr_state_055",
+    "mp_urbdlq": "lbr_state_058",
+    "mp_rxxsjs": "lbr_axe_02",
+    "mp_xsegte": "lbr_mine",
+    "mp_xhgjfy": "lbr_mine_01",
+    "mp_nlqtvi": "lbr_shovel_06",
+    "mp_clpsyb": "lbr_shovel_02",
+    "mp_first_person_crossbow_hold": "lbr_crossbow",
+    "mp_ieuavg": "lbr_blocking_10",
+    "mp_zuqizi": "lbr_state_091",
+    "mp_mgrqbz": "lbr_hoe_06",
+    "mp_splzfu": "lbr_hoe_05",
+    "mp_mksawo": "lbr_mace_08",
+    "mp_mbcbus": "lbr_mace_09",
+    "mp_oaewmz": "lbr_mace_03",
+    "mp_lulsqj": "lbr_mace_11",
+    "mp_qysndt": "lbr_axe_03",
+    "mp_qfawhu": "lbr_state_013",
+    "mp_yxbbwb": "lbr_state_024",
+    "mp_zavmgb": "lbr_state_038",
+    "mp_idsczu": "lbr_swim_02",
+    "mp_zxqxbo": "lbr_swim_01",
+    "mp_mihrhd": "lbr_crawl_01",
+    "mp_nfwexo": "lbr_brush_02",
+    "mp_abysxf": "lbr_brush_01",
+    "mp_krgevf": "lbr_state_146",
+    "mp_sizqjc": "lbr_flint_and_steel_03",
+    "mp_kwklcq": "lbr_flint_and_steel_05",
+    "mp_fxmeqx": "lbr_flint_and_steel_07",
+    "mp_fnbrkd": "lbr_potion_01",
+    "mp_hkqtbi": "lbr_state_113",
+    "mp_qsveyr": "lbr_state_062",
+    "mp_ezchno": "lbr_state_125",
+    "mp_hewara": "lbr_shears_01",
+    "mp_nrbvlz": "lbr_shears_10",
+    "mp_asetzz": "lbr_shears_09",
+    "mp_dzpltm": "lbr_shears_03",
+    "mp_pdgmno": "lbr_shears_04",
+    "mp_wkjmwq": "lbr_shears_05",
+    "mp_jzaqej": "lbr_spear_11",
+    "mp_dfvnsb": "lbr_spear_10",
+    "mp_bpkafj": "lbr_spear_02",
+    "mp_nolkoc": "lbr_spear_07",
+    "mp_ieaiqi": "lbr_spear_09",
+    "mp_jqxbjy": "lbr_spear_06",
+    "mp_ryxtuf": "lbr_spear_08",
+    "mp_jymmdz": "lbr_spear_03",
+    "mp_jovquu": "lbr_upturned_01",
+    "mp_fdlcmu": "lbr_throwable_01",
+    "mp_bwvgsg": "lbr_throwable_04",
+    "mp_jmvsdt": "lbr_throw_03",
+    "mp_aaxsrq": "lbr_throw_01",
+    "mp_tzoest": "lbr_throwable_02",
+    "mp_vnwuqj": "lbr_throwable_05",
+    "mp_tsvmfg": "lbr_shield_10",
+    "mp_eiloph": "lbr_shield_24",
+    "mp_hoxdia": "lbr_shield_20",
+    "mp_ckpnxi": "lbr_shield_22",
+    "mp_tkktku": "lbr_crossbow_04",
+    "mp_chpzrg": "lbr_crossbow_07",
+    "mp_qzrvat": "lbr_crossbow_09",
+    "mp_dewkqn": "lbr_crossbow_02",
+    "mp_fvhujl": "lbr_crossbow_01",
+    "mp_xahpfz": "lbr_crossbow_11",
+    "mp_kwtkko": "lbr_crossbow_03",
+    "mp_vfrhhn": "lbr_crossbow_12",
+    "mp_dmhvzl": "lbr_crossbow_10",
+    "mp_uejykw": "lbr_crossbow_06",
+    "mp_kkvkfq": "lbr_crossbow_05",
+    "mp_lqwtrt": "lbr_boat",
+    "mp_oxskiv": "lbr_boat_02",
+    "mp_ctkhoz": "lbr_boat_01",
+    "mp_kubzoq": "lbr_golden_dandelion_13",
+    "mp_seciea": "lbr_golden_dandelion_11",
+    "mp_wmflts": "lbr_golden_dandelion_09",
+    "mp_rpcmmb": "lbr_golden_dandelion_05",
+    "mp_fovtvq": "lbr_golden_dandelion_02",
+    "mp_czuvdz": "lbr_golden_dandelion_03",
+    "mp_kbhpou": "lbr_golden_dandelion_12",
+    "mp_bbrzsn": "lbr_golden_dandelion_06",
+    "mp_wpgkek": "lbr_golden_dandelion_07",
+    "mp_bgjune": "lbr_golden_dandelion_14",
+    "mp_kduvad": "lbr_golden_dandelion_15",
+    "mp_vrkauw": "lbr_emote_07",
+    "mp_tesczf": "lbr_emote_06",
+    "mp_tculwn": "lbr_spear_05",
+    "mp_qofebb": "lbr_emote_02",
+    "mp_hyopyb": "lbr_emote_15",
+    "mp_lsswib": "lbr_emote_03",
+    "mp_vmmadd": "lbr_emote_14",
+    "mp_sztvzu": "lbr_emote_10",
+    "mp_ksxdmq": "lbr_emote_12",
+    "mp_iljvrj": "lbr_emote_13",
+    "mp_nqwtki": "lbr_emote_01",
+    "mp_gppwit": "lbr_emote_11",
+    "mp_qsuikd": "lbr_emote_17",
+    "mp_ndhbnd": "lbr_emote_16",
+    "mp_jwkabt": "lbr_emote_09",
+    "mp_rgrypt": "lbr_emote_08",
+    "mp_hbadod": "lbr_emote_05",
+    "mp_cpnaoo": "lbr_emote_04",
+    "mp_wqleol": "lbr_state_086",
+    "mp_gzxwdv": "lbr_state_114",
+    "mp_gobhef": "lbr_state_095",
+    "mp_reytiv": "lbr_state_003",
+    "mp_drqjht": "lbr_state_138",
+    "mp_evrjlf": "lbr_state_070",
+    "mp_fpsgkf": "lbr_state_122",
+    "mp_cslzxk": "lbr_state_115",
+    "mp_kedqbe": "lbr_state_037",
+    "mp_xhexyy": "lbr_state_092",
+    "mp_hxfxxu": "lbr_run_02",
+    "mp_kojrxg": "lbr_shield_11",
+    "mp_ceotii": "lbr_riding_13",
+    "mp_yuahkn": "lbr_state_035",
+    "mp_ccjmet": "lbr_bow_05",
+    "mp_samtup": "lbr_riding_02",
+    "mp_ooixee": "lbr_riding_15",
+    "mp_lsiklr": "lbr_state_040",
+    "mp_afmdju": "lbr_state_060",
+    "mp_pfunsk": "lbr_torch_01",
+    "mp_wossdg": "lbr_camel",
+    "mp_hvhkzo": "lbr_horse_03",
+    "mp_cksrrc": "lbr_state_127",
+    "mp_uhremp": "lbr_state_111",
+    "mp_jlwxeo": "lbr_state_046",
+    "mp_llnwsb": "lbr_state_066",
+    "mp_uqvysd": "lbr_horse",
+    "mp_ojrlsz": "lbr_horse_02",
+    "mp_kwptnv": "lbr_horse_04",
+    "mp_bpwgts": "lbr_minecart_01",
+    "mp_msevbi": "lbr_minecart",
+    "mp_ivcqwb": "lbr_pig_01",
+    "mp_fpjgjw": "lbr_pig_02",
+    "mp_uzoyrb": "lbr_pig",
+    "mp_swrqon": "lbr_state_057",
+    "mp_lehleu": "lbr_crossbow_08",
+    "mp_ypjzyd": "lbr_state_097",
+    "mp_clknvs": "lbr_state_067",
+    "mp_nahehe": "lbr_strider_03",
+    "mp_ztyyck": "lbr_strider_02",
+    "mp_hnpxmu": "lbr_strider_01",
+    "mp_wkvipu": "lbr_strider",
+    "mp_gqmsqq": "lbr_llama_02",
+    "mp_igejlx": "lbr_llama",
+    "mp_bygfhn": "lbr_llama_01",
+    "mp_ntpjfg": "lbr_camel_03",
+    "mp_wjyzcn": "lbr_camel_02",
+    "mp_uxotsx": "lbr_camel_01",
+    "mp_gjpptb": "lbr_happy_ghast",
+    "mp_mibxbi": "lbr_happy_ghast_01",
+    "mp_sxhcks": "lbr_happy_ghast_02",
+    "mp_vtynpz": "lbr_nautilus_04",
+    "mp_apweya": "lbr_nautilus_01",
+    "mp_gruxxr": "lbr_nautilus_03",
+    "mp_hxgzlv": "lbr_water_10",
+    "mp_gimsyo": "lbr_water_01",
+    "mp_ngrpqq": "lbr_nautilus_02",
+    "mp_qnxygl": "lbr_nautilus",
+    "mp_ioasoc": "lbr_state_002",
+    "mp_jgppzz": "lbr_state_144",
+    "mp_ssoorx": "lbr_state_101",
+    "mp_oikwhp": "lbr_state_128",
+    "mp_taqjbz": "lbr_state_021",
+    "mp_tvrptx": "lbr_state_135",
+    "mp_ahqnep": "lbr_state_059",
+    "mp_nfheju": "lbr_mace_05",
+    "mp_wqmnij": "lbr_trident_07",
+    "mp_gocjip": "lbr_riding_10",
+    "mp_qthbqv": "lbr_riding_07",
+    "mp_cjfoow": "lbr_riding_03",
+    "mp_vurcjn": "lbr_riding_01",
+    "mp_dseicy": "lbr_riding_11",
+    "mp_ggtlte": "lbr_riding_12",
+    "mp_mrgiqu": "lbr_riding_09",
+    "mp_dopxsq": "lbr_mace_06",
+    "mp_emkqik": "lbr_state_078",
+    "mp_sozufu": "lbr_state_041",
+    "mp_sqwqbt": "lbr_state_083",
+    "mp_oprmcp": "lbr_run_03",
+    "mp_inxmkt": "lbr_state_121",
+    "mp_vwyhwm": "lbr_state_031",
+    "mp_pvgbyg": "lbr_state_020",
+    "mp_icxyyv": "lbr_state_054",
+    "mp_kzhobv": "lbr_state_053",
+    "mp_move_right": "lbr_move_right",
+    "mp_move_left": "lbr_move_left",
+    "mp_ksoign": "lbr_state_019",
+    "mp_ijczfy": "lbr_state_009",
+    "mp_movjvc": "lbr_state_094",
+    "mp_nlkzpp": "lbr_state_034",
+    "mp_pkdlkc": "lbr_water_11",
+    "mp_hnhukj": "lbr_water_02",
+    "mp_txkksi": "lbr_water_13",
+    "mp_xvsgam": "lbr_water_03",
+    "mp_usmlvw": "lbr_state_027",
+    "mp_bkydlx": "lbr_state_130",
+    "mp_txfjro": "lbr_water_16",
+    "mp_zvrxfq": "lbr_water_12",
+    "mp_enppde": "lbr_water_14",
+    "mp_oshqeo": "lbr_water_18",
+    "mp_yohkuj": "lbr_water_06",
+    "mp_lnscqe": "lbr_state_123",
+    "mp_xyxtfo": "lbr_state_026",
+    "mp_cfpejq": "lbr_sprint_01",
+    "mp_qfzlng": "lbr_state_011",
+    "mp_aodlni": "lbr_state_025",
+    "mp_nswqio": "lbr_state_096",
+    "mp_sxuoyn": "lbr_state_074",
+    "mp_xnifpo": "lbr_state_110",
+    "mp_dovmdl": "lbr_state_099",
+    "mp_spawn": "lbr_spawn",
+    "mp_qbfoza": "lbr_water_08",
+    "mp_taekbc": "lbr_state_133",
+    "mp_xcccfu": "lbr_state_017",
+    "mp_rtaoje": "lbr_state_102",
+    "mp_fqparn": "lbr_state_073",
+    "mp_oevndx": "lbr_state_032",
+    "mp_nqaxws": "lbr_state_129",
+    "mp_pgmfeo": "lbr_state_018",
+    "mp_gjocsa": "lbr_state_141",
+    "mp_kkpgpe": "lbr_state_063",
+    "mp_ttfwop": "lbr_water_04",
+    "mp_xfajjj": "lbr_water_09",
+    "mp_lbmawh": "lbr_state_029",
+    "mp_kuoukc": "lbr_state_119",
+    "mp_gquyku": "lbr_water_15",
+    "mp_qzkghc": "lbr_water_05",
+    "mp_aahvsz": "lbr_state_139",
+    "mp_hbuhsd": "lbr_state_061",
+    "mp_puuzne": "lbr_state_120",
+    "mp_exrzei": "lbr_state_148",
+    "mp_eboowj": "lbr_sneak_07",
+    "mp_utfydu": "lbr_sneak_04",
+    "mp_ytrpcp": "lbr_sneak_06",
+    "mp_aohpww": "lbr_sneak_05",
+    "mp_fqvjvt": "lbr_sneak_08",
+    "mp_ebnfyd": "lbr_sneak_01",
+    "mp_gbqknj": "lbr_sneak_09",
+    "mp_yjeqzi": "lbr_sneak_03",
+    "mp_wmvkpm": "lbr_sneak_02",
+    "mp_thqyqq": "lbr_jump_02",
+    "mp_hxqdkw": "lbr_state_049",
+    "mp_wwzgzr": "lbr_state_033",
+    "mp_ejguut": "lbr_jump_01",
+    "mp_ukckzf": "lbr_state_044",
+    "mp_neiorb": "lbr_state_142",
+    "mp_flwuqu": "lbr_state_098",
+    "mp_zkmqrc": "lbr_state_145",
+    "mp_liqruq": "lbr_state_118",
+    "mp_upatrp": "lbr_state_124",
+    "mp_dvwvti": "lbr_state_048",
+    "mp_rcdxne": "lbr_state_103",
+    "mp_yvmkva": "lbr_state_008",
+    "mp_wpqorb": "lbr_state_140",
+    "mp_idjknv": "lbr_state_051",
+    "mp_wecuin": "lbr_state_137",
+    "mp_yzykxu": "lbr_state_085",
+    "mp_luhwjm": "lbr_state_107",
+    "mp_wjfipe": "lbr_controller_005",
+    "mp_kcexxa": "lbr_controller_022",
+    "mp_fjtwtc": "lbr_controller_008",
+    "mp_ybphcg": "lbr_shield",
+    "mp_zxbclh": "lbr_controller_041",
+    "mp_whatac": "lbr_controller_011",
+    "mp_nngcdl": "lbr_controller_003",
+    "mp_ptaudk": "lbr_punch_02",
+    "mp_veywgp": "lbr_run_04",
+    "mp_psowex": "lbr_stop_01",
+    "mp_rylnkt": "lbr_controller_034",
+    "mp_controller_player_movement_offset": "lbr_controller_044",
+    "mp_flkskc": "lbr_controller_042",
+    "mp_okjrob": "lbr_controller_012",
+    "mp_cwxfxl": "lbr_controller_007",
+    "mp_pyioph": "lbr_controller_039",
+    "mp_ngeixo": "lbr_jump_05",
+    "mp_cmdvzm": "lbr_controller_027",
+    "mp_muiqdc": "lbr_controller_029",
+    "mp_vqkstr": "lbr_controller_016",
+    "mp_pyhwuc": "lbr_controller_036",
+    "mp_kjlymd": "lbr_controller_040",
+    "mp_hgymxj": "lbr_controller_014",
+    "mp_agyfrv": "lbr_controller_013",
+    "mp_eudgiz": "lbr_controller_035",
+    "mp_xnocvc": "lbr_lantern_04",
+    "mp_zdumse": "lbr_bow_07",
+    "mp_mbpzen": "lbr_mine_02",
+    "mp_bfcoju": "lbr_controller_026",
+    "mp_sqsobf": "lbr_brush_04",
+    "mp_vcxlip": "lbr_controller_017",
+    "mp_ghxdpy": "lbr_controller_024",
+    "mp_bdfssm": "lbr_controller_010",
+    "mp_wkddof": "lbr_controller_037",
+    "mp_oypqkc": "lbr_controller_019",
+    "mp_qjdkxn": "lbr_controller_002",
+    "mp_mqmgvu": "lbr_controller_020",
+    "mp_xeilsx": "lbr_controller_006",
+    "mp_fxsaqw": "lbr_controller_015",
+    "mp_rzkmtm": "lbr_controller_043",
+    "mp_dskssn": "lbr_paperdoll_02",
+    "mp_ppzqvo": "lbr_controller_031",
+    "mp_bjmscc": "lbr_controller_009",
+    "mp_hsfnbp": "lbr_controller_025",
+    "mp_qvpcyx": "lbr_controller_001",
+    "mp_chtnzc": "lbr_controller_033",
+    "mp_jsebow": "lbr_controller_023",
+    "mp_ccuxgq": "lbr_controller_018",
+    "mp_yplvjl": "lbr_controller_021",
+    "mp_ynbhzo": "lbr_boat_03",
+    "mp_dasjll": "lbr_controller_030",
+    "mp_hsyyaw": "lbr_controller_028",
+    "mp_rwkkbb": "lbr_controller_038",
+    "mp_uzryff": "lbr_controller_004",
+    "mp_pjoyta": "lbr_controller_032"
+  },
+  "controller_states": {
+    "controller.animation.minerplus.player.bpmdpb": {
+      "mp_pvflzw": "controller_033"
+    },
+    "controller.animation.minerplus.player.bzcwhc": {
+      "mp_qgafwd": "crawl_01",
+      "mp_uhcxuu": "swim_02",
+      "mp_xzmjxw": "swim_01"
+    },
+    "controller.animation.minerplus.player.camimd": {
+      "mp_punch": "punch",
+      "mp_throw": "throw",
+      "mp_fishing_rod": "fishing_rod",
+      "mp_mace": "mace",
+      "mp_flint_and_steel": "flint_and_steel",
+      "mp_fmriac": "step_01",
+      "mp_muqdev": "punch_01",
+      "mp_tggbpq": "punch_02",
+      "mp_ciakok": "punch_03",
+      "mp_cbjzqu": "punch_04",
+      "mp_zefcct": "punch_05",
+      "mp_thdqsk": "punch_06",
+      "mp_eqlzfq": "punch_07",
+      "mp_oyevwx": "throw_02",
+      "mp_lbdphr": "throw_02_01",
+      "mp_plxeqv": "punch_08",
+      "mp_ihubec": "riding_05",
+      "mp_jstihs": "state_076",
+      "mp_bcyrdi": "step_02",
+      "mp_aqfcvc": "mace_10",
+      "mp_azdvph": "mace_02",
+      "mp_hjmytu": "state_016",
+      "mp_qbiqbl": "mace_07",
+      "mp_qwqond": "step_03",
+      "mp_qwqond.1": "step_04",
+      "mp_dxdudb.jbrcdj": "axe_01",
+      "mp_dxdudb.htgavg": "state_016_01",
+      "mp_dxdudb.qclrte": "state_016_02",
+      "mp_dxdudb.a": "axe_05",
+      "mp_dxdudb.b": "axe_05_01",
+      "mp_dxdudb.c": "axe_06",
+      "mp_dxdudb.d": "axe_06_01",
+      "mp_vdmqkr": "state_016_03",
+      "mp_yrmdck": "state_016_04",
+      "mp_ydiysr": "state_016_05",
+      "mp_iovhzd": "punch_09",
+      "mp_iyrdcv": "punch_10",
+      "mp_yafbed": "state_016_06",
+      "mp_eutrbz": "state_016_07",
+      "mp_kuyjab": "step_05",
+      "mp_ecnujd": "flint_and_steel_01",
+      "mp_vaknop": "flint_and_steel_02",
+      "mp_ahswoq": "flint_and_steel_03",
+      "mp_phzzls": "flint_and_steel_04",
+      "mp_glvhfw": "flint_and_steel_05",
+      "mp_tatdag": "flint_and_steel_06",
+      "mp_lasrrf": "shears_07",
+      "mp_jtbyya": "shears_07_01",
+      "mp_obvmgz": "shears_06",
+      "mp_margoc": "shears_06_01",
+      "mp_sotmvv": "golden_dandelion_04",
+      "mp_oggmww": "golden_dandelion_04_01",
+      "mp_shvsed": "golden_dandelion_10",
+      "mp_lllecg": "golden_dandelion_10_01"
+    },
+    "controller.animation.minerplus.player.cqkhdi": {
+      "mp_tmahcq": "shield_05",
+      "mp_daaide": "shield_05_01",
+      "mp_lgjvtl": "step_01"
+    },
+    "controller.animation.minerplus.player.deuxya": {
+      "mp_gimsyo": "water_01"
+    },
+    "controller.animation.minerplus.player.dpcxlx": {
+      "mp_ydkyzm": "state_040",
+      "mp_nxbnll": "step_01",
+      "mp_ssulqn": "state_092"
+    },
+    "controller.animation.minerplus.player.ejxbht": {
+      "mp_uhcxuu": "crossbow_04",
+      "mp_ttfwop": "crossbow_03"
+    },
+    "controller.animation.minerplus.player.fbwreq": {
+      "mp_hihqcy": "shield_11",
+      "mp_pqblez": "step_01"
+    },
+    "controller.animation.minerplus.player.fomrzp": {
+      "mp_ssulqn": "state_117",
+      "mp_ltqtzr": "blocking_03",
+      "mp_ydkyzm": "torch_01",
+      "mp_lvkwjg": "flint_and_steel",
+      "mp_rfcjcg": "flint_and_steel_01",
+      "mp_ieyepd": "controller_041"
+    },
+    "controller.animation.minerplus.player.fotixv": {
+      "mp_uwpoku": "step_01",
+      "mp_wkbbnc": "step_02",
+      "mp_ssaxeh": "step_03",
+      "mp_blzrmm": "step_04",
+      "mp_tesczf": "emote_06",
+      "mp_tculwn": "spear_05",
+      "mp_qofebb": "emote_07",
+      "mp_hyopyb": "emote_07_01",
+      "mp_lsswib": "emote_07_02",
+      "mp_vmmadd": "emote_07_03",
+      "mp_sztvzu": "emote_10",
+      "mp_ksxdmq": "emote_12",
+      "mp_iljvrj": "emote_13",
+      "mp_nqwtki": "emote_01",
+      "mp_gppwit": "emote_11",
+      "mp_ufgjhm": "emote_07_04",
+      "mp_jfwsbg": "emote_07_05",
+      "mp_jssmqg": "step_05",
+      "mp_bhsawv": "step_06"
+    },
+    "controller.animation.minerplus.player.htgpzd": {
+      "mp_huqnch": "state_109",
+      "mp_ewrfxh": "state_126",
+      "mp_mtrqds": "state_014"
+    },
+    "controller.animation.minerplus.player.idxeob": {
+      "mp_ztvjhq": "state_045"
+    },
+    "controller.animation.minerplus.player.iplurh": {
+      "mp_eryuvy": "controller_036",
+      "mp_hgnodg": "controller_040",
+      "mp_pluejt": "state_015"
+    },
+    "controller.animation.minerplus.player.irkwzk": {
+      "mp_knxfvl": "step_01",
+      "mp_vywhcj": "state_030",
+      "mp_tuuckd": "step_02"
+    },
+    "controller.animation.minerplus.player.ismckx": {
+      "mp_nmagsu": "state_110",
+      "mp_dovmdl": "state_099",
+      "mp_ebniro": "state_110_01",
+      "mp_sxuoyn": "state_074"
+    },
+    "controller.animation.minerplus.player.itjppu": {
+      "mp_zvdydz": "spawn",
+      "mp_dmamrb": "step_01",
+      "mp_bnyqbz": "state_104"
+    },
+    "controller.animation.minerplus.player.itvdym": {
+      "mp_gvbikx": "step_01",
+      "mp_nqtrjo": "fall",
+      "mp_rfrkhc": "step_02",
+      "mp_taekbc": "state_133",
+      "mp_uhcxuu": "state_018",
+      "mp_ttfwop": "water_04",
+      "mp_yjxkeo": "water_04_01",
+      "mp_lbmawh": "state_119",
+      "mp_gquyku": "water_15",
+      "mp_miyvhk": "water_15_01",
+      "mp_oevndx": "state_032",
+      "mp_xfajjj": "water_09",
+      "mp_tqcvlk": "water_09_01",
+      "mp_hwuwvi": "step_03",
+      "mp_kzieij": "step_04"
+    },
+    "controller.animation.minerplus.player.jkzzlr": {
+      "mp_wtmojn": "shield_24",
+      "mp_njohhi": "shield_22"
+    },
+    "controller.animation.minerplus.player.jsoljm": {
+      "mp_rfgprb": "state_080"
+    },
+    "controller.animation.minerplus.player.kjlghl": {
+      "mp_ndyglg": "jump_03",
+      "mp_yytrhz": "jump_03_01",
+      "mp_zhbjho": "step_01",
+      "mp_pluejt": "state_038"
+    },
+    "controller.animation.minerplus.player.knoyhk": {
+      "mp_shield": "shield",
+      "mp_brush": "brush",
+      "mp_lvexfc": "shield_17",
+      "mp_btdwij": "state_010",
+      "mp_asudbd": "step_01",
+      "mp_rdjpaz": "state_089",
+      "mp_uvixvh": "spyglass_03",
+      "mp_ofpzzq": "spyglass_04",
+      "mp_vpfhlo": "spyglass_04_01",
+      "mp_ygsrfx": "state_089_01",
+      "mp_youfdz": "state_089_02",
+      "mp_tsnnjv": "brush_03",
+      "mp_dmyegi": "bow_03",
+      "mp_nvtgap": "step_02",
+      "mp_txvdtw": "shield_23",
+      "mp_bbhpjo": "shield_23_01",
+      "mp_dpuluf": "shield_09",
+      "mp_cemacn": "step_03",
+      "mp_inhpcc": "trident_08",
+      "mp_smxmmh": "blocking_02",
+      "mp_zobkiz": "trident_06",
+      "mp_hmhqgx": "state_043",
+      "mp_gjhnog": "blocking_05",
+      "mp_ikvaib": "blocking_07",
+      "mp_kuyjab": "state_136",
+      "mp_nookvi": "state_052",
+      "mp_jskozw": "flint_and_steel"
+    },
+    "controller.animation.minerplus.player.lfjeov": {
+      "mp_jump": "jump",
+      "mp_yutray": "step_01",
+      "mp_fmzeml": "step_02",
+      "mp_ypqtmb": "state_005",
+      "mp_seridw": "state_081",
+      "mp_wgbbhw": "step_03",
+      "mp_hihqcy": "state_143",
+      "mp_vcwrsx": "state_143_01"
+    },
+    "controller.animation.minerplus.player.lhbuwm": {
+      "mp_run": "run",
+      "mp_xdchdk": "state_019",
+      "mp_onccai": "walk",
+      "mp_rdvwhr": "state_027",
+      "mp_icxyyv": "state_054",
+      "mp_knxfvl": "step_01",
+      "mp_zhbjho": "water_11"
+    },
+    "controller.animation.minerplus.player.lvsjla": {
+      "mp_youfdz": "potion_01",
+      "mp_ygsrfx": "state_113"
+    },
+    "controller.animation.minerplus.player.mazfxe": {
+      "mp_brush": "brush",
+      "mp_tsnnjv": "state_146"
+    },
+    "controller.animation.minerplus.player.mqgxqk": {
+      "mp_seopja": "state_042"
+    },
+    "controller.animation.minerplus.player.njvelc": {
+      "mp_ydkyzm": "state_060",
+      "mp_nxbnll": "bob",
+      "mp_ssulqn": "bob_01",
+      "mp_edebnx": "state_076",
+      "mp_ltqtzr": "blocking_09",
+      "mp_tjnuyj": "flint_and_steel",
+      "mp_lvkwjg": "bob_02",
+      "mp_rfcjcg": "bob_03",
+      "mp_cfsugb": "controller_011",
+      "mp_crwayt": "bob_04",
+      "mp_etuxkz": "bob_05",
+      "mp_ieyepd": "holding"
+    },
+    "controller.animation.minerplus.player.nkazxa": {
+      "mp_boat": "boat",
+      "mp_camel": "camel",
+      "mp_happy_ghast": "happy_ghast",
+      "mp_horse": "horse",
+      "mp_llama": "llama",
+      "mp_minecart": "minecart",
+      "mp_nautilus": "nautilus",
+      "mp_pig": "pig",
+      "mp_strider": "strider",
+      "mp_uwpoku": "step_01",
+      "mp_slbpfr": "controller_021"
+    },
+    "controller.animation.minerplus.player.ofrcyn": {
+      "mp_bow": "bow",
+      "mp_brush": "brush",
+      "mp_flint_and_steel": "flint_and_steel",
+      "mp_shears": "shears",
+      "mp_shield": "shield",
+      "mp_crossbow": "crossbow",
+      "mp_goat_horn": "goat_horn",
+      "mp_trident": "trident",
+      "mp_lantern": "lantern",
+      "mp_mainhand": "mainhand",
+      "mp_reset": "reset",
+      "mp_golden_dandelion": "bow_01",
+      "mp_oyevwx": "bow_01_01",
+      "mp_nnblkt": "bow_01_02",
+      "mp_kuyjab": "spear_11",
+      "mp_nookvi": "spear_02",
+      "mp_ygnlht": "blocking_10"
+    },
+    "controller.animation.minerplus.player.oiegfy": {
+      "mp_eikieu": "state_090"
+    },
+    "controller.animation.minerplus.player.ooceit": {
+      "mp_mtrqds": "shield_03",
+      "mp_kypqpn": "humanoid_base_pose"
+    },
+    "controller.animation.minerplus.player.ooprql": {
+      "mp_cbixvs": "state_028",
+      "mp_elytik": "glide_01",
+      "mp_zuwmxg": "step_01",
+      "mp_yuahkn": "state_035",
+      "mp_evrjlf": "state_070",
+      "mp_fpsgkf": "state_122"
+    },
+    "controller.animation.minerplus.player.oqctis": {
+      "mp_wfzeen": "state_147",
+      "mp_dmwtio": "state_108",
+      "mp_gdgjmx": "state_088",
+      "mp_moudpj": "state_082"
+    },
+    "controller.animation.minerplus.player.osqylo": {
+      "mp_caixnr": "sneak_01",
+      "mp_xjwmoq": "sneak_01_01",
+      "mp_ppgltu": "sneak_03",
+      "mp_benjta": "sneak_03_01",
+      "mp_njuqpk": "sneak_07",
+      "mp_krcvcr": "sneak_07_01",
+      "mp_lawawe": "sneak_06",
+      "mp_iqlijs": "sneak_06_01"
+    },
+    "controller.animation.minerplus.player.pjrlav": {
+      "mp_rtygto": "punch",
+      "mp_ilvggo": "punch_01"
+    },
+    "controller.animation.minerplus.player.pwqhcf": {
+      "mp_mine": "mine",
+      "mp_throw": "throw",
+      "mp_fmriac": "state_088",
+      "mp_ckxkxw": "step_01",
+      "mp_htrord": "step_02",
+      "mp_musgsd": "step_03",
+      "mp_vvgaoj": "step_04",
+      "mp_hpajvt": "step_05",
+      "mp_ajyoxm": "step_06",
+      "mp_ylxrpq": "shears_10",
+      "mp_bxrccn": "step_07",
+      "mp_mbrenc": "step_08",
+      "mp_zjhbje": "step_09",
+      "mp_ewfgow": "step_10",
+      "mp_alpgfw": "throwable_01",
+      "mp_ubfqqi": "step_11",
+      "mp_tluupy": "state_088_01",
+      "mp_kokxvt": "state_088_02",
+      "mp_pykbys": "state_088_03",
+      "mp_jgaflp": "state_088_04",
+      "mp_fxksyo": "step_12",
+      "mp_wbzzur": "state_088_05",
+      "mp_ijlwyi": "state_088_06",
+      "mp_huiypu": "state_088_07",
+      "mp_rthjhp": "state_088_08",
+      "mp_kqeutm": "step_13",
+      "mp_kbwcll": "axe_03",
+      "mp_qmayqz": "axe_02",
+      "mp_nfpbms": "axe_02_01",
+      "mp_ecnujd": "flint_and_steel_03",
+      "mp_vaknop": "flint_and_steel_03_01",
+      "mp_ahswoq": "flint_and_steel_05",
+      "mp_phzzls": "flint_and_steel_05_01",
+      "mp_glvhfw": "flint_and_steel_07",
+      "mp_tatdag": "flint_and_steel_07_01",
+      "mp_dsrgim": "state_058",
+      "mp_evwndy": "state_058_01",
+      "mp_fpenke": "mace_08",
+      "mp_opctuq": "mace_08_01",
+      "mp_psitzj": "mace_09",
+      "mp_rrjacy": "state_132",
+      "mp_azdvph": "mace_03",
+      "mp_qbiqbl": "mace_11",
+      "mp_ssnjmx": "mace_11_01",
+      "mp_golden_dandelion": "golden_dandelion_09",
+      "mp_htekyb": "golden_dandelion_07",
+      "mp_fthqpx": "golden_dandelion_07_01",
+      "mp_bqtqqe": "golden_dandelion_14",
+      "mp_xjklnt": "shears_09",
+      "mp_bvdtzm": "shears_09_01",
+      "mp_vmbmhq": "shovel_06",
+      "mp_udrmqt": "shovel_02",
+      "mp_kuyjab": "spear_06",
+      "mp_vnsrck": "spear_06_01",
+      "mp_uipbyx": "step_14",
+      "mp_kzxkbg": "state_055",
+      "mp_rhrdjx": "state_055_01",
+      "mp_uhiykp": "state_132_01",
+      "mp_kqyqft": "state_058_02",
+      "mp_aojfba": "hoe_06",
+      "mp_sfdinx": "hoe_06_01",
+      "mp_lhsovj": "hoe_05",
+      "mp_kmpmle": "hoe_05_01",
+      "mp_rqnbaq": "state_093",
+      "mp_znedrw": "throw_03",
+      "mp_btyzga": "state_093_01"
+    },
+    "controller.animation.minerplus.player.pygoip": {
+      "mp_stop": "stop",
+      "mp_ptvsjb": "state_112",
+      "mp_zhbjho": "step_01"
+    },
+    "controller.animation.minerplus.player.quiyxu": {
+      "mp_nqtrjo": "fall",
+      "mp_rfrkhc": "step_01",
+      "mp_taekbc": "state_133",
+      "mp_uhcxuu": "state_018",
+      "mp_ttfwop": "water_04",
+      "mp_yjxkeo": "water_04_01",
+      "mp_lbmawh": "state_119",
+      "mp_gquyku": "water_15",
+      "mp_miyvhk": "water_15_01",
+      "mp_oevndx": "state_032",
+      "mp_xfajjj": "water_09",
+      "mp_tqcvlk": "water_09_01",
+      "mp_hwuwvi": "step_02",
+      "mp_kzieij": "step_03"
+    },
+    "controller.animation.minerplus.player.qxikjb": {
+      "mp_onctex": "state_057"
+    },
+    "controller.animation.minerplus.player.rnxhgi": {
+      "mp_njqykr": "state_050",
+      "mp_vmmbqn": "step_01",
+      "mp_tiybks": "state_138"
+    },
+    "controller.animation.minerplus.player.rqzpao": {
+      "mp_eofgku": "step_01"
+    },
+    "controller.animation.minerplus.player.sfoyqn": {
+      "mp_ynephu": "state_071"
+    },
+    "controller.animation.minerplus.player.sktggi": {
+      "mp_qfzlng": "state_011",
+      "mp_aodlni": "state_025"
+    },
+    "controller.animation.minerplus.player.sloczo": {
+      "mp_awsgka": "step_01",
+      "mp_wpqorb": "state_140",
+      "mp_wecuin": "state_137",
+      "mp_idjknv": "state_051"
+    },
+    "controller.animation.minerplus.player.tjytvl": {
+      "mp_wwzgzr": "state_033",
+      "mp_eyztea": "state_033_01",
+      "mp_ejguut": "jump_01",
+      "mp_rrppmg": "state_033_02",
+      "mp_flwuqu": "state_098",
+      "mp_zkmqrc": "state_145",
+      "mp_liqruq": "state_118",
+      "mp_cfpejq": "jump_03",
+      "mp_yytrhz": "jump_04",
+      "mp_aahvsz": "state_139",
+      "mp_puuzne": "state_120",
+      "mp_zhbjho": "step_01"
+    },
+    "controller.animation.minerplus.player.tnrbpo": {
+      "mp_jntewe": "state_013",
+      "mp_pclrkn": "state_024"
+    },
+    "controller.animation.minerplus.player.unoswe": {
+      "mp_qcpmmh": "state_127",
+      "mp_jylwlo": "state_111",
+      "mp_bitvrb": "state_066",
+      "mp_fmriac": "state_046",
+      "mp_yimprx": "state_046_01"
+    },
+    "controller.animation.minerplus.player.votwby": {
+      "mp_xzmjxw": "swim",
+      "mp_geddfs": "water_06"
+    },
+    "controller.animation.minerplus.player.vowjlb": {
+      "mp_uwpoku": "step_01",
+      "mp_wwzgzr": "state_033",
+      "mp_eyztea": "state_033_01",
+      "mp_ejguut": "jump_01",
+      "mp_rrppmg": "state_033_02",
+      "mp_flwuqu": "state_098",
+      "mp_zkmqrc": "state_145",
+      "mp_liqruq": "state_118",
+      "mp_cfpejq": "sprint_01",
+      "mp_yytrhz": "state_069",
+      "mp_aahvsz": "state_139",
+      "mp_puuzne": "state_120",
+      "mp_zhbjho": "step_02"
+    },
+    "controller.animation.minerplus.player.wieeaw": {
+      "mp_rfqyve": "riding_02",
+      "mp_ikvaib": "riding_15"
+    },
+    "controller.animation.minerplus.player.wqjvtj": {
+      "mp_lantern": "lantern",
+      "mp_mkphec": "shears_02",
+      "mp_ssulqn": "shears_02_01",
+      "mp_iszmjh": "shield_03"
+    },
+    "controller.animation.minerplus.player.wrmobv": {
+      "mp_rwbslw": "state_008",
+      "mp_ggywux": "state_008_01"
+    },
+    "controller.animation.minerplus.player.xunqct": {
+      "mp_bnyqbz": "step_01",
+      "mp_sykxyi": "sleeping",
+      "mp_zqihwb": "controller_008"
+    },
+    "controller.animation.minerplus.player.yemteq": {
+      "mp_upatrp": "state_124",
+      "mp_rcdxne": "state_103",
+      "mp_dvwvti": "state_048"
+    },
+    "controller.animation.minerplus.player.zyrcdq": {
+      "mp_paperdoll": "paperdoll",
+      "mp_zcqdcv": "look_at_target_ui",
+      "mp_xmioyc": "step_01",
+      "mp_first_person": "shield_07",
+      "mp_third_person": "paperdoll_01"
+    }
+  },
+  "entity_short_keys": {
+    "materials": {
+      "mp_tmamiu": "lbr_overlay",
+      "mp_rkenyc": "lbr_overlay_equal"
+    },
+    "textures": {
+      "mp_ugyjdo": "lbr_boat_arms_01",
+      "mp_mqjlqv": "lbr_boat_arms_02",
+      "mp_rpddig": "lbr_legs_overlay_uv"
+    },
+    "geometry": {
+      "mp_pfsswq": "lbr_main",
+      "mp_ugyjdo": "lbr_boat_arms_01",
+      "mp_mqjlqv": "lbr_boat_arms_02",
+      "mp_zyqqqv": "lbr_legs_overlay",
+      "mp_rpddig": "lbr_legs_overlay_uv"
+    }
+  },
+  "molang_variables": {
+    "mp_aacasc": "lbr_baf_v001",
+    "mp_abjhra": "lbr_baf_v002",
+    "mp_abnnde": "lbr_baf_v003",
+    "mp_acloko": "lbr_baf_v004",
+    "mp_acvrac": "lbr_baf_v005",
+    "mp_agfsck": "lbr_baf_v006",
+    "mp_aikbud": "lbr_baf_v007",
+    "mp_ajqebx": "lbr_baf_v008",
+    "mp_alhoin": "lbr_baf_v009",
+    "mp_ategwn": "lbr_baf_v010",
+    "mp_atlmrq": "lbr_baf_v011",
+    "mp_auumof": "lbr_baf_v012",
+    "mp_axe_held": "lbr_baf_v013",
+    "mp_axerqj": "lbr_baf_v014",
+    "mp_azbhyb": "lbr_baf_v015",
+    "mp_azunbf": "lbr_baf_v016",
+    "mp_bbzhgy": "lbr_baf_v017",
+    "mp_bdcpnd": "lbr_baf_v018",
+    "mp_bdfwqu": "lbr_baf_v019",
+    "mp_bdjsdw": "lbr_baf_v020",
+    "mp_bdtdec": "lbr_baf_v021",
+    "mp_bfqoqc": "lbr_baf_v022",
+    "mp_biljes": "lbr_baf_v023",
+    "mp_bjvukh": "lbr_baf_v024",
+    "mp_bkiimv": "lbr_baf_v025",
+    "mp_bmahve": "lbr_baf_v026",
+    "mp_boadtw": "lbr_baf_v027",
+    "mp_boots_armor_layer_hidden": "lbr_baf_boots_armor_layer_hidden",
+    "mp_bpxagq": "lbr_baf_v028",
+    "mp_bsddha": "lbr_baf_v029",
+    "mp_bueybx": "lbr_baf_v030",
+    "mp_bulvnr": "lbr_baf_v031",
+    "mp_bulxlo": "lbr_baf_v032",
+    "mp_buolhg": "lbr_baf_v033",
+    "mp_bwdroh": "lbr_baf_v034",
+    "mp_bwiepy": "lbr_baf_v035",
+    "mp_ccwxuc": "lbr_baf_v036",
+    "mp_chestplate_armor_layer_hidden": "lbr_baf_chestplate_armor_layer_hidden",
+    "mp_cketfg": "lbr_baf_v037",
+    "mp_cknrcn": "lbr_baf_v038",
+    "mp_cobido": "lbr_baf_v039",
+    "mp_crmhdi": "lbr_baf_v040",
+    "mp_cshmnj": "lbr_baf_v041",
+    "mp_cthrgf": "lbr_baf_v042",
+    "mp_cwrxmh": "lbr_baf_v043",
+    "mp_cxzerw": "lbr_baf_v044",
+    "mp_cyktco": "lbr_baf_v045",
+    "mp_dcmijv": "lbr_baf_v046",
+    "mp_dcrwhu": "lbr_baf_v047",
+    "mp_dcsizi": "lbr_baf_v048",
+    "mp_dfjlhy": "lbr_baf_v049",
+    "mp_dhybwd": "lbr_baf_v050",
+    "mp_diujph": "lbr_baf_v051",
+    "mp_divqzr": "lbr_baf_v052",
+    "mp_dkfpzv": "lbr_baf_v053",
+    "mp_doryem": "lbr_baf_v054",
+    "mp_drecst": "lbr_baf_v055",
+    "mp_drflti": "lbr_baf_v056",
+    "mp_dwoyvl": "lbr_baf_v057",
+    "mp_dxlndb": "lbr_baf_v058",
+    "mp_dxvpbr": "lbr_baf_v059",
+    "mp_ealvck": "lbr_baf_v060",
+    "mp_ebuodz": "lbr_baf_v061",
+    "mp_ebwyar": "lbr_baf_v062",
+    "mp_ecmehq": "lbr_baf_v063",
+    "mp_ecwrdm": "lbr_baf_v064",
+    "mp_edfatt": "lbr_baf_v065",
+    "mp_eeydlb": "lbr_baf_v066",
+    "mp_eiyxky": "lbr_baf_v067",
+    "mp_ejasfr": "lbr_baf_v068",
+    "mp_ektjzx": "lbr_baf_v069",
+    "mp_elfyxw": "lbr_baf_v070",
+    "mp_enkwhe": "lbr_baf_v071",
+    "mp_eqhdel": "lbr_baf_v072",
+    "mp_eqmsli": "lbr_baf_v073",
+    "mp_esnrkj": "lbr_baf_v074",
+    "mp_evlypi": "lbr_baf_v075",
+    "mp_eznppm": "lbr_baf_v076",
+    "mp_ezzhwg": "lbr_baf_v077",
+    "mp_fasizy": "lbr_baf_v078",
+    "mp_fbhhsh": "lbr_baf_v079",
+    "mp_fbqwvc": "lbr_baf_v080",
+    "mp_fdaxbb": "lbr_baf_v081",
+    "mp_fdkaua": "lbr_baf_v082",
+    "mp_fjoynm": "lbr_baf_v083",
+    "mp_frxzci": "lbr_baf_v084",
+    "mp_fuppgm": "lbr_baf_v085",
+    "mp_fvurlr": "lbr_baf_v086",
+    "mp_fxllpr": "lbr_baf_v087",
+    "mp_fyzmxs": "lbr_baf_v088",
+    "mp_gadjrq": "lbr_baf_v089",
+    "mp_gcbpjp": "lbr_baf_v090",
+    "mp_gcywxl": "lbr_baf_v091",
+    "mp_gddzeg": "lbr_baf_v092",
+    "mp_ggcegi": "lbr_baf_v093",
+    "mp_gjrfbe": "lbr_baf_v094",
+    "mp_gsnris": "lbr_baf_v095",
+    "mp_gtgvhp": "lbr_baf_v096",
+    "mp_gudkut": "lbr_baf_v097",
+    "mp_guktzp": "lbr_baf_v098",
+    "mp_gwwcib": "lbr_baf_v099",
+    "mp_gynlia": "lbr_baf_v100",
+    "mp_habcyx": "lbr_baf_v101",
+    "mp_hazgkz": "lbr_baf_v102",
+    "mp_hcmvys": "lbr_baf_v103",
+    "mp_hdseda": "lbr_baf_v104",
+    "mp_helmet_armor_layer_hidden": "lbr_baf_helmet_armor_layer_hidden",
+    "mp_heuwun": "lbr_baf_v105",
+    "mp_hgztwc": "lbr_baf_v106",
+    "mp_hhsumy": "lbr_baf_v107",
+    "mp_hirjne": "lbr_baf_v108",
+    "mp_hiwmfu": "lbr_baf_v109",
+    "mp_hmqclw": "lbr_baf_v110",
+    "mp_hnkmny": "lbr_baf_v111",
+    "mp_hnqkpl": "lbr_baf_v112",
+    "mp_htpchf": "lbr_baf_v113",
+    "mp_hxyjgv": "lbr_baf_v114",
+    "mp_iajodc": "lbr_baf_v115",
+    "mp_iaxjoy": "lbr_baf_v116",
+    "mp_ibgpmk": "lbr_baf_v117",
+    "mp_ibpoye": "lbr_baf_v118",
+    "mp_icmrij": "lbr_baf_v119",
+    "mp_ifcvde": "lbr_baf_v120",
+    "mp_igxlhx": "lbr_baf_v121",
+    "mp_ipboqg": "lbr_baf_v122",
+    "mp_irszku": "lbr_baf_v123",
+    "mp_ispgly": "lbr_baf_v124",
+    "mp_iwapxc": "lbr_baf_v125",
+    "mp_iwgvct": "lbr_baf_v126",
+    "mp_iygmji": "lbr_baf_v127",
+    "mp_iynnie": "lbr_baf_v128",
+    "mp_izbsmx": "lbr_baf_v129",
+    "mp_jafhnp": "lbr_baf_v130",
+    "mp_jbawka": "lbr_baf_v131",
+    "mp_jctqrr": "lbr_baf_v132",
+    "mp_jcvgdh": "lbr_baf_v133",
+    "mp_jgzabo": "lbr_baf_v134",
+    "mp_jiqwge": "lbr_baf_v135",
+    "mp_jjzail": "lbr_baf_v136",
+    "mp_jkanjy": "lbr_baf_v137",
+    "mp_jkfziv": "lbr_baf_v138",
+    "mp_jkpkmj": "lbr_baf_v139",
+    "mp_jkvxvk": "lbr_baf_v140",
+    "mp_jnffcc": "lbr_baf_v141",
+    "mp_josbuj": "lbr_baf_v142",
+    "mp_jrdblq": "lbr_baf_v143",
+    "mp_jrptkt": "lbr_baf_v144",
+    "mp_jvwxjf": "lbr_baf_v145",
+    "mp_jxofxc": "lbr_baf_v146",
+    "mp_jxuirp": "lbr_baf_v147",
+    "mp_jyerzu": "lbr_baf_v148",
+    "mp_jyyjbz": "lbr_baf_v149",
+    "mp_jzabye": "lbr_baf_v150",
+    "mp_kbshhs": "lbr_baf_v151",
+    "mp_kcpbpp": "lbr_baf_v152",
+    "mp_kddtfq": "lbr_baf_v153",
+    "mp_kdqvtc": "lbr_baf_v154",
+    "mp_kggwrp": "lbr_baf_v155",
+    "mp_kgklzy": "lbr_baf_v156",
+    "mp_khfrct": "lbr_baf_v157",
+    "mp_kjvidh": "lbr_baf_v158",
+    "mp_klmzdk": "lbr_baf_v159",
+    "mp_kmdjay": "lbr_baf_v160",
+    "mp_kmvnpf": "lbr_baf_v161",
+    "mp_kokmrq": "lbr_baf_v162",
+    "mp_kqkoyf": "lbr_baf_v163",
+    "mp_ktfvjs": "lbr_baf_v164",
+    "mp_kucfwk": "lbr_baf_v165",
+    "mp_kwookq": "lbr_baf_v166",
+    "mp_kxevvp": "lbr_baf_v167",
+    "mp_lbenrc": "lbr_baf_v168",
+    "mp_leggings_armor_layer_hidden": "lbr_baf_leggings_armor_layer_hidden",
+    "mp_lfltum": "lbr_baf_v169",
+    "mp_lfzvoq": "lbr_baf_v170",
+    "mp_lguaef": "lbr_baf_v171",
+    "mp_liigog": "lbr_baf_v172",
+    "mp_liucef": "lbr_baf_v173",
+    "mp_liynxr": "lbr_baf_v174",
+    "mp_llvdbu": "lbr_baf_v175",
+    "mp_loduhj": "lbr_baf_v176",
+    "mp_lqxdtl": "lbr_baf_v177",
+    "mp_lrnnba": "lbr_baf_v178",
+    "mp_ltztni": "lbr_baf_v179",
+    "mp_lymdfl": "lbr_baf_v180",
+    "mp_lzghwo": "lbr_baf_v181",
+    "mp_lzmpor": "lbr_baf_v182",
+    "mp_lzwweo": "lbr_baf_v183",
+    "mp_lzygkp": "lbr_baf_v184",
+    "mp_mainhand_custom_pos": "lbr_baf_mainhand_custom_pos",
+    "mp_mainhand_hold_up": "lbr_baf_mainhand_hold_up",
+    "mp_mainhand_visible": "lbr_baf_mainhand_visible",
+    "mp_martvv": "lbr_baf_v185",
+    "mp_mbqkjf": "lbr_baf_v186",
+    "mp_mbqtlv": "lbr_baf_v187",
+    "mp_metltd": "lbr_baf_v188",
+    "mp_misscd": "lbr_baf_v189",
+    "mp_mkpuos": "lbr_baf_v190",
+    "mp_mmbudv": "lbr_baf_v191",
+    "mp_mmxtrw": "lbr_baf_v192",
+    "mp_mnjame": "lbr_baf_v193",
+    "mp_mnlzjy": "lbr_baf_v194",
+    "mp_mpsivk": "lbr_baf_v195",
+    "mp_mrckdy": "lbr_baf_v196",
+    "mp_mrmeib": "lbr_baf_v197",
+    "mp_msehab": "lbr_baf_v198",
+    "mp_mvqhof": "lbr_baf_v199",
+    "mp_mvtbbr": "lbr_baf_v200",
+    "mp_mwofua": "lbr_baf_v201",
+    "mp_mzgxhe": "lbr_baf_v202",
+    "mp_narpvm": "lbr_baf_v203",
+    "mp_nbdusc": "lbr_baf_v204",
+    "mp_ndmmhp": "lbr_baf_v205",
+    "mp_neogsx": "lbr_baf_v206",
+    "mp_ngjrwv": "lbr_baf_v207",
+    "mp_njgktl": "lbr_baf_v208",
+    "mp_njrdop": "lbr_baf_v209",
+    "mp_nlodpt": "lbr_baf_v210",
+    "mp_noseiv": "lbr_baf_v211",
+    "mp_nqesap": "lbr_baf_v212",
+    "mp_nqexps": "lbr_baf_v213",
+    "mp_nshrzx": "lbr_baf_v214",
+    "mp_ntgqxq": "lbr_baf_v215",
+    "mp_nthjcy": "lbr_baf_v216",
+    "mp_nvvbmq": "lbr_baf_v217",
+    "mp_nwbaeq": "lbr_baf_v218",
+    "mp_nwocdu": "lbr_baf_v219",
+    "mp_nxlodg": "lbr_baf_v220",
+    "mp_obhshf": "lbr_baf_v221",
+    "mp_oblorc": "lbr_baf_v222",
+    "mp_odekyc": "lbr_baf_v223",
+    "mp_odgnyi": "lbr_baf_v224",
+    "mp_ofdozq": "lbr_baf_v225",
+    "mp_offhand_custom_pos": "lbr_baf_offhand_custom_pos",
+    "mp_offhand_hold_up": "lbr_baf_offhand_hold_up",
+    "mp_offhand_visible": "lbr_baf_offhand_visible",
+    "mp_oggbvj": "lbr_baf_v226",
+    "mp_ohkbax": "lbr_baf_v227",
+    "mp_okbbfi": "lbr_baf_v228",
+    "mp_onlypv": "lbr_baf_v229",
+    "mp_oohocu": "lbr_baf_v230",
+    "mp_orsuss": "lbr_baf_v231",
+    "mp_oudqbz": "lbr_baf_v232",
+    "mp_owadjr": "lbr_baf_v233",
+    "mp_owpjmy": "lbr_baf_v234",
+    "mp_oxcttd": "lbr_baf_v235",
+    "mp_oxglad": "lbr_baf_v236",
+    "mp_oykicb": "lbr_baf_v237",
+    "mp_oyzemt": "lbr_baf_v238",
+    "mp_pbgflo": "lbr_baf_v239",
+    "mp_pcbxuv": "lbr_baf_v240",
+    "mp_pdgwcc": "lbr_baf_v241",
+    "mp_pfqace": "lbr_baf_v242",
+    "mp_pftcjw": "lbr_baf_v243",
+    "mp_pgkkzo": "lbr_baf_v244",
+    "mp_phrlyy": "lbr_baf_v245",
+    "mp_pijzpu": "lbr_baf_v246",
+    "mp_pkwiaw": "lbr_baf_v247",
+    "mp_player_animations": "lbr_baf_player_animations",
+    "mp_pmtxpe": "lbr_baf_v248",
+    "mp_popeac": "lbr_baf_v249",
+    "mp_poubzo": "lbr_baf_v250",
+    "mp_psbfqq": "lbr_baf_v251",
+    "mp_pvdnsw": "lbr_baf_v252",
+    "mp_pvzdpf": "lbr_baf_v253",
+    "mp_pwllfx": "lbr_baf_v254",
+    "mp_pybruz": "lbr_baf_v255",
+    "mp_qcizgz": "lbr_baf_v256",
+    "mp_qdohvx": "lbr_baf_v257",
+    "mp_qeldwy": "lbr_baf_v258",
+    "mp_qfmybz": "lbr_baf_v259",
+    "mp_qfzzuw": "lbr_baf_v260",
+    "mp_qhbmmm": "lbr_baf_v261",
+    "mp_qhhozj": "lbr_baf_v262",
+    "mp_qkrfdi": "lbr_baf_v263",
+    "mp_qlczor": "lbr_baf_v264",
+    "mp_qmmucl": "lbr_baf_v265",
+    "mp_qmovlw": "lbr_baf_v266",
+    "mp_qpfuoe": "lbr_baf_v267",
+    "mp_qpjczw": "lbr_baf_v268",
+    "mp_qpptaw": "lbr_baf_v269",
+    "mp_qpwdgm": "lbr_baf_v270",
+    "mp_qttrdf": "lbr_baf_v271",
+    "mp_qugnsz": "lbr_baf_v272",
+    "mp_qxxvoo": "lbr_baf_v273",
+    "mp_qxywoh": "lbr_baf_v274",
+    "mp_rcgezu": "lbr_baf_v275",
+    "mp_rdmkec": "lbr_baf_v276",
+    "mp_rekcjp": "lbr_baf_v277",
+    "mp_rfayak": "lbr_baf_v278",
+    "mp_rghlbo": "lbr_baf_v279",
+    "mp_rjwqox": "lbr_baf_v280",
+    "mp_rlxkzy": "lbr_baf_v281",
+    "mp_rmozxv": "lbr_baf_v282",
+    "mp_robswp": "lbr_baf_v283",
+    "mp_rpbnpq": "lbr_baf_v284",
+    "mp_rppydy": "lbr_baf_v285",
+    "mp_rquezm": "lbr_baf_v286",
+    "mp_rtbkew": "lbr_baf_v287",
+    "mp_ruggxl": "lbr_baf_v288",
+    "mp_rupatf": "lbr_baf_v289",
+    "mp_rvwafl": "lbr_baf_v290",
+    "mp_rwmywy": "lbr_baf_v291",
+    "mp_rxnqkv": "lbr_baf_v292",
+    "mp_serpzr": "lbr_baf_v293",
+    "mp_sfdeke": "lbr_baf_v294",
+    "mp_sgeovf": "lbr_baf_v295",
+    "mp_shnqjb": "lbr_baf_v296",
+    "mp_sjlbms": "lbr_baf_v297",
+    "mp_skvsja": "lbr_baf_v298",
+    "mp_smicgu": "lbr_baf_v299",
+    "mp_smxhpy": "lbr_baf_v300",
+    "mp_snwgjb": "lbr_baf_v301",
+    "mp_spdrmm": "lbr_baf_v302",
+    "mp_spokle": "lbr_baf_v303",
+    "mp_ssrlod": "lbr_baf_v304",
+    "mp_ssxpub": "lbr_baf_v305",
+    "mp_stxhuv": "lbr_baf_v306",
+    "mp_sxeczg": "lbr_baf_v307",
+    "mp_sxqiqn": "lbr_baf_v308",
+    "mp_syquoy": "lbr_baf_v309",
+    "mp_tatbcp": "lbr_baf_v310",
+    "mp_tgmzwf": "lbr_baf_v311",
+    "mp_thqhhs": "lbr_baf_v312",
+    "mp_tilzsv": "lbr_baf_v313",
+    "mp_tjbdov": "lbr_baf_v314",
+    "mp_tjswog": "lbr_baf_v315",
+    "mp_tkterv": "lbr_baf_v316",
+    "mp_tmkrbd": "lbr_baf_v317",
+    "mp_tnlxsa": "lbr_baf_v318",
+    "mp_tnswmo": "lbr_baf_v319",
+    "mp_toclgf": "lbr_baf_v320",
+    "mp_tofgxa": "lbr_baf_v321",
+    "mp_toikmx": "lbr_baf_v322",
+    "mp_trznwu": "lbr_baf_v323",
+    "mp_tsrqrd": "lbr_baf_v324",
+    "mp_txckzj": "lbr_baf_v325",
+    "mp_txfqcm": "lbr_baf_v326",
+    "mp_txtwqb": "lbr_baf_v327",
+    "mp_txvzcq": "lbr_baf_v328",
+    "mp_tyidep": "lbr_baf_v329",
+    "mp_ufojdf": "lbr_baf_v330",
+    "mp_ufrnea": "lbr_baf_v331",
+    "mp_ugxubt": "lbr_baf_v332",
+    "mp_ujdcnq": "lbr_baf_v333",
+    "mp_ujrabr": "lbr_baf_v334",
+    "mp_undfyr": "lbr_baf_v335",
+    "mp_unzgms": "lbr_baf_v336",
+    "mp_uoukzj": "lbr_baf_v337",
+    "mp_upxhvv": "lbr_baf_v338",
+    "mp_uroqqy": "lbr_baf_v339",
+    "mp_usbago": "lbr_baf_v340",
+    "mp_usiyxa": "lbr_baf_v341",
+    "mp_utrpiv": "lbr_baf_v342",
+    "mp_uumlcn": "lbr_baf_v343",
+    "mp_uzpykk": "lbr_baf_v344",
+    "mp_vbcdda": "lbr_baf_v345",
+    "mp_vbvqoi": "lbr_baf_v346",
+    "mp_vccyhr": "lbr_baf_v347",
+    "mp_vcftgd": "lbr_baf_v348",
+    "mp_vepkju": "lbr_baf_v349",
+    "mp_vfewmx": "lbr_baf_v350",
+    "mp_vftlcw": "lbr_baf_v351",
+    "mp_vgabdg": "lbr_baf_v352",
+    "mp_vgieqh": "lbr_baf_v353",
+    "mp_vlcvyq": "lbr_baf_v354",
+    "mp_vsnqcv": "lbr_baf_v355",
+    "mp_vvtgzf": "lbr_baf_v356",
+    "mp_vxpjfy": "lbr_baf_v357",
+    "mp_vxtvnn": "lbr_baf_v358",
+    "mp_vyjyhz": "lbr_baf_v359",
+    "mp_vyqfml": "lbr_baf_v360",
+    "mp_weqmqb": "lbr_baf_v361",
+    "mp_wffqel": "lbr_baf_v362",
+    "mp_wfyvyl": "lbr_baf_v363",
+    "mp_wgtwxc": "lbr_baf_v364",
+    "mp_wgyjvj": "lbr_baf_v365",
+    "mp_widbiz": "lbr_baf_v366",
+    "mp_wilzqe": "lbr_baf_v367",
+    "mp_wnlzre": "lbr_baf_v368",
+    "mp_woataa": "lbr_baf_v369",
+    "mp_wrxogz": "lbr_baf_v370",
+    "mp_wsthwm": "lbr_baf_v371",
+    "mp_wtlyok": "lbr_baf_v372",
+    "mp_wvykhd": "lbr_baf_v373",
+    "mp_wyuvst": "lbr_baf_v374",
+    "mp_xansqu": "lbr_baf_v375",
+    "mp_xcjrfy": "lbr_baf_v376",
+    "mp_xcpgvu": "lbr_baf_v377",
+    "mp_xewhlu": "lbr_baf_v378",
+    "mp_xfbwmp": "lbr_baf_v379",
+    "mp_xfnyla": "lbr_baf_v380",
+    "mp_xgnfpn": "lbr_baf_v381",
+    "mp_xieegi": "lbr_baf_v382",
+    "mp_xiemzw": "lbr_baf_v383",
+    "mp_xjryuc": "lbr_baf_v384",
+    "mp_xkivop": "lbr_baf_v385",
+    "mp_xkuslt": "lbr_baf_v386",
+    "mp_xrtrow": "lbr_baf_v387",
+    "mp_xsttiu": "lbr_baf_v388",
+    "mp_xuasnj": "lbr_baf_v389",
+    "mp_xvbbte": "lbr_baf_v390",
+    "mp_xxqkct": "lbr_baf_v391",
+    "mp_yfuzcx": "lbr_baf_v392",
+    "mp_yirztn": "lbr_baf_v393",
+    "mp_ylaird": "lbr_baf_v394",
+    "mp_yltfra": "lbr_baf_v395",
+    "mp_ympdnj": "lbr_baf_v396",
+    "mp_yngszr": "lbr_baf_v397",
+    "mp_yocijz": "lbr_baf_v398",
+    "mp_yoihtk": "lbr_baf_v399",
+    "mp_yqxtkw": "lbr_baf_v400",
+    "mp_yrtcsk": "lbr_baf_v401",
+    "mp_yuuvqa": "lbr_baf_v402",
+    "mp_ywlneb": "lbr_baf_v403",
+    "mp_yxeyjs": "lbr_baf_v404",
+    "mp_yyjpfg": "lbr_baf_v405",
+    "mp_yyqlcj": "lbr_baf_v406",
+    "mp_zagini": "lbr_baf_v407",
+    "mp_zcnzkd": "lbr_baf_v408",
+    "mp_zdfvrw": "lbr_baf_v409",
+    "mp_zexxcg": "lbr_baf_v410",
+    "mp_zgldyg": "lbr_baf_v411",
+    "mp_zknmnw": "lbr_baf_v412",
+    "mp_zkzmro": "lbr_baf_v413",
+    "mp_zmdkge": "lbr_baf_v414",
+    "mp_zmpzgo": "lbr_baf_v415",
+    "mp_zwbsgq": "lbr_baf_v416",
+    "mp_zwgbad": "lbr_baf_v417",
+    "mp_zxxjyc": "lbr_baf_v418"
+  },
+  "item_tags": {
+    "minerplus:is_axe": "lbr:is_axe",
+    "minerplus:is_bow": "lbr:is_bow",
+    "minerplus:is_brush": "lbr:is_brush",
+    "minerplus:is_crossbow": "lbr:is_crossbow",
+    "minerplus:is_drink": "lbr:is_drink",
+    "minerplus:is_fishing_rod": "lbr:is_fishing_rod",
+    "minerplus:is_flint_and_steel": "lbr:is_flint_and_steel",
+    "minerplus:is_golden_dandelion": "lbr:is_golden_dandelion",
+    "minerplus:is_hoe": "lbr:is_hoe",
+    "minerplus:is_horn": "lbr:is_horn",
+    "minerplus:is_mace": "lbr:is_mace",
+    "minerplus:is_milk": "lbr:is_milk",
+    "minerplus:is_on_a_stick": "lbr:is_on_a_stick",
+    "minerplus:is_petals": "lbr:is_petals",
+    "minerplus:is_pickaxe": "lbr:is_pickaxe",
+    "minerplus:is_potion": "lbr:is_potion",
+    "minerplus:is_readable": "lbr:is_readable",
+    "minerplus:is_rod": "lbr:is_rod",
+    "minerplus:is_seeds": "lbr:is_seeds",
+    "minerplus:is_shears": "lbr:is_shears",
+    "minerplus:is_shield": "lbr:is_shield",
+    "minerplus:is_shovel": "lbr:is_shovel",
+    "minerplus:is_soup": "lbr:is_soup",
+    "minerplus:is_spear": "lbr:is_spear",
+    "minerplus:is_spyglass": "lbr:is_spyglass",
+    "minerplus:is_sword": "lbr:is_sword",
+    "minerplus:is_throwable": "lbr:is_throwable",
+    "minerplus:is_torch": "lbr:is_torch",
+    "minerplus:is_trident": "lbr:is_trident",
+    "minerplus:is_upturned": "lbr:is_upturned"
+  },
+  "blocks": {
+    "custom:roche": "lbr:rock",
+    "custom:roche_charbon": "lbr:rock_coal",
+    "custom:roche_cuivre": "lbr:rock_copper",
+    "custom:roche_fer": "lbr:rock_iron",
+    "custom:roche_or": "lbr:rock_gold",
+    "custom:roche_emeraude": "lbr:rock_emerald",
+    "custom:caillou_emeraude": "lbr:pebbles_emerald"
+  },
+  "features": {
+    "minerplus:caillou_emeraude_feature": "lbr:pebbles_emerald_feature",
+    "minerplus:caillou_emeraude_forme_0_feature": "lbr:pebbles_emerald_shape_0_feature",
+    "minerplus:caillou_emeraude_forme_1_feature": "lbr:pebbles_emerald_shape_1_feature",
+    "minerplus:caillou_emeraude_rule": "lbr:pebbles_emerald_rule",
+    "minerplus:roche_charbon_feature": "lbr:rock_coal_feature",
+    "minerplus:roche_charbon_rule": "lbr:rock_coal_rule",
+    "minerplus:roche_cuivre_feature": "lbr:rock_copper_feature",
+    "minerplus:roche_cuivre_rule": "lbr:rock_copper_rule",
+    "minerplus:roche_emeraude_feature": "lbr:rock_emerald_feature",
+    "minerplus:roche_emeraude_rule": "lbr:rock_emerald_rule",
+    "minerplus:roche_feature": "lbr:rock_feature",
+    "minerplus:roche_fer_feature": "lbr:rock_iron_feature",
+    "minerplus:roche_fer_rule": "lbr:rock_iron_rule",
+    "minerplus:roche_or_feature": "lbr:rock_gold_feature",
+    "minerplus:roche_or_rule": "lbr:rock_gold_rule",
+    "minerplus:roche_rule": "lbr:rock_rule"
+  },
+  "block_states": {
+    "minerplus:forme": "lbr:shape"
+  },
+  "terrain_texture_keys": {
+    "roche": "lbr_rock",
+    "roche_casse": "lbr_rock_broken",
+    "roche_charbon": "lbr_rock_coal",
+    "roche_charbon_casse": "lbr_rock_coal_broken",
+    "roche_cuivre": "lbr_rock_copper",
+    "roche_cuivre_casse": "lbr_rock_copper_broken",
+    "roche_fer": "lbr_rock_iron",
+    "roche_fer_casse": "lbr_rock_iron_broken",
+    "roche_or": "lbr_rock_gold",
+    "roche_or_casse": "lbr_rock_gold_broken",
+    "roche_emeraude": "lbr_rock_emerald",
+    "roche_emeraude_casse": "lbr_rock_emerald_broken",
+    "caillou_emeraude": "lbr_pebbles_emerald",
+    "caillou_emeraude_casse": "lbr_pebbles_emerald_broken"
+  },
+  "texture_paths": {
+    "textures/minerplus/player/cdy": "textures/lbr_baf/player/boat_arms_01",
+    "textures/minerplus/player/cdz": "textures/lbr_baf/player/boat_arms_02",
+    "textures/minerplus/player/cea": "textures/lbr_baf/player/legs_overlay_uv",
+    "textures/blocks/roche": "textures/lbr_baf/blocks/rock",
+    "textures/blocks/roche_casse": "textures/lbr_baf/blocks/rock_broken",
+    "textures/blocks/roche_charbon": "textures/lbr_baf/blocks/rock_coal",
+    "textures/blocks/roche_charbon_casse": "textures/lbr_baf/blocks/rock_coal_broken",
+    "textures/blocks/roche_cuivre": "textures/lbr_baf/blocks/rock_copper",
+    "textures/blocks/roche_cuivre_casse": "textures/lbr_baf/blocks/rock_copper_broken",
+    "textures/blocks/roche_fer": "textures/lbr_baf/blocks/rock_iron",
+    "textures/blocks/roche_fer_casse": "textures/lbr_baf/blocks/rock_iron_broken",
+    "textures/blocks/roche_or": "textures/lbr_baf/blocks/rock_gold",
+    "textures/blocks/roche_or_casse": "textures/lbr_baf/blocks/rock_gold_broken",
+    "textures/blocks/roche_emeraude": "textures/lbr_baf/blocks/rock_emerald",
+    "textures/blocks/roche_emeraude_casse": "textures/lbr_baf/blocks/rock_emerald_broken",
+    "textures/blocks/caillou_emeraude": "textures/lbr_baf/blocks/pebbles_emerald",
+    "textures/blocks/caillou_emeraude_casse": "textures/lbr_baf/blocks/pebbles_emerald_broken",
+    "textures/blocks/mp_grass_0": "textures/lbr_baf/environment/grass_0",
+    "textures/blocks/mp_grass_1": "textures/lbr_baf/environment/grass_1",
+    "textures/blocks/mp_grass_2": "textures/lbr_baf/environment/grass_2",
+    "textures/blocks/mp_grass_3": "textures/lbr_baf/environment/grass_3",
+    "textures/blocks/mp_grass_4": "textures/lbr_baf/environment/grass_4",
+    "textures/blocks/mp_grass_5": "textures/lbr_baf/environment/grass_5",
+    "textures/blocks/mp_grass_6": "textures/lbr_baf/environment/grass_6",
+    "textures/blocks/mp_grass_7": "textures/lbr_baf/environment/grass_7",
+    "textures/blocks/mp_fern_0": "textures/lbr_baf/environment/fern_0",
+    "textures/blocks/mp_fern_1": "textures/lbr_baf/environment/fern_1",
+    "textures/blocks/mp_fern_2": "textures/lbr_baf/environment/fern_2",
+    "textures/blocks/mp_fern_3": "textures/lbr_baf/environment/fern_3",
+    "textures/blocks/mp_fern_4": "textures/lbr_baf/environment/fern_4",
+    "textures/blocks/mp_fern_5": "textures/lbr_baf/environment/fern_5",
+    "textures/blocks/mp_fern_6": "textures/lbr_baf/environment/fern_6",
+    "textures/blocks/mp_fern_7": "textures/lbr_baf/environment/fern_7",
+    "textures/blocks/mp_tallgrass_top_0": "textures/lbr_baf/environment/tallgrass_top_0",
+    "textures/blocks/mp_tallgrass_top_1": "textures/lbr_baf/environment/tallgrass_top_1",
+    "textures/blocks/mp_tallgrass_top_2": "textures/lbr_baf/environment/tallgrass_top_2",
+    "textures/blocks/mp_tallgrass_top_3": "textures/lbr_baf/environment/tallgrass_top_3",
+    "textures/blocks/mp_tallgrass_top_4": "textures/lbr_baf/environment/tallgrass_top_4",
+    "textures/blocks/mp_tallgrass_top_5": "textures/lbr_baf/environment/tallgrass_top_5",
+    "textures/blocks/mp_tallgrass_top_6": "textures/lbr_baf/environment/tallgrass_top_6",
+    "textures/blocks/mp_tallgrass_top_7": "textures/lbr_baf/environment/tallgrass_top_7",
+    "textures/blocks/mp_tallgrass_bot_0": "textures/lbr_baf/environment/tallgrass_bot_0",
+    "textures/blocks/mp_tallgrass_bot_1": "textures/lbr_baf/environment/tallgrass_bot_1",
+    "textures/blocks/mp_largefern_top_0": "textures/lbr_baf/environment/largefern_top_0",
+    "textures/blocks/mp_largefern_top_1": "textures/lbr_baf/environment/largefern_top_1",
+    "textures/blocks/mp_largefern_top_2": "textures/lbr_baf/environment/largefern_top_2",
+    "textures/blocks/mp_largefern_top_3": "textures/lbr_baf/environment/largefern_top_3",
+    "textures/blocks/mp_largefern_top_4": "textures/lbr_baf/environment/largefern_top_4",
+    "textures/blocks/mp_largefern_top_5": "textures/lbr_baf/environment/largefern_top_5",
+    "textures/blocks/mp_largefern_top_6": "textures/lbr_baf/environment/largefern_top_6",
+    "textures/blocks/mp_largefern_top_7": "textures/lbr_baf/environment/largefern_top_7",
+    "textures/blocks/mp_largefern_bot_0": "textures/lbr_baf/environment/largefern_bot_0",
+    "textures/blocks/mp_largefern_bot_1": "textures/lbr_baf/environment/largefern_bot_1",
+    "textures/blocks/mp_largefern_bot_2": "textures/lbr_baf/environment/largefern_bot_2",
+    "textures/blocks/mp_largefern_bot_3": "textures/lbr_baf/environment/largefern_bot_3"
+  },
+  "loot_table_paths": {
+    "loot_tables/blocks/roche.json": "loot_tables/blocks/rock.json",
+    "loot_tables/blocks/roche_charbon.json": "loot_tables/blocks/rock_coal.json",
+    "loot_tables/blocks/roche_cuivre.json": "loot_tables/blocks/rock_copper.json",
+    "loot_tables/blocks/roche_fer.json": "loot_tables/blocks/rock_iron.json",
+    "loot_tables/blocks/roche_or.json": "loot_tables/blocks/rock_gold.json",
+    "loot_tables/blocks/roche_emeraude.json": "loot_tables/blocks/rock_emerald.json",
+    "loot_tables/blocks/caillou_emeraude.json": "loot_tables/blocks/pebbles_emerald.json"
+  },
+  "vanilla_terrain_keys_kept": [
+    "fern",
+    "large_fern_bottom",
+    "large_fern_top",
+    "short_grass",
+    "tall_grass_bottom",
+    "tall_grass_top"
+  ]
+}

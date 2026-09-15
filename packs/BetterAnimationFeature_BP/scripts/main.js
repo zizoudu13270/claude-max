@@ -2,13 +2,13 @@ import { world, GameMode } from "@minecraft/server";
 
 // Native components handle mining speed. This event only denies invalid breaks.
 const ROCK_TIERS = Object.freeze({
-    "custom:roche": 0,
-    "custom:roche_charbon": 0,
-    "custom:roche_cuivre": 1,
-    "custom:roche_fer": 1,
-    "custom:roche_or": 2,
-    "custom:roche_emeraude": 2,
-    "custom:caillou_emeraude": 2
+    "lbr:rock": 0,
+    "lbr:rock_coal": 0,
+    "lbr:rock_copper": 1,
+    "lbr:rock_iron": 1,
+    "lbr:rock_gold": 2,
+    "lbr:rock_emerald": 2,
+    "lbr:pebbles_emerald": 2
 });
 const ALLOWED_TIERS = Object.freeze({
     "0": [

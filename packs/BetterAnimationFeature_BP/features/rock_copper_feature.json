@@ -1,0 +1,41 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "lbr:rock_copper_feature"
+    },
+    "places_block": "lbr:rock_copper",
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_replace": [
+      {
+        "name": "minecraft:air"
+      },
+      {
+        "name": "minecraft:short_grass"
+      },
+      {
+        "name": "minecraft:tall_grass"
+      },
+      {
+        "name": "minecraft:fern"
+      },
+      {
+        "name": "minecraft:snow_layer"
+      },
+      {
+        "name": "minecraft:deadbush"
+      }
+    ],
+    "may_attach_to": {
+      "bottom": [
+        "minecraft:stone",
+        "minecraft:andesite",
+        "minecraft:gravel",
+        "minecraft:dirt",
+        "minecraft:grass_block",
+        "minecraft:moss_block"
+      ]
+    }
+  }
+}

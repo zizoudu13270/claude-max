@@ -1,0 +1,66 @@
+{
+  "format_version": "1.21.110",
+  "minecraft:block": {
+    "description": {
+      "identifier": "lbr:rock",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+      "minecraft:geometry": {
+        "identifier": "geometry.lbr_baf.rock"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "lbr_rock",
+          "render_method": "alpha_test",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.5,
+        "item_specific_speeds": [
+          {
+            "item": {
+              "tags": "q.any_tag('minecraft:is_pickaxe') && q.any_tag('minecraft:wooden_tier', 'minecraft:golden_tier', 'minecraft:stone_tier', 'minecraft:copper_tier', 'minecraft:iron_tier', 'minecraft:diamond_tier', 'minecraft:netherite_tier')"
+            },
+            "destroy_speed": 1.5
+          }
+        ]
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 6
+      },
+      "minecraft:map_color": "#818181",
+      "minecraft:light_dampening": 0,
+      "minecraft:collision_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          14,
+          16
+        ]
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          14,
+          16
+        ]
+      },
+      "minecraft:loot": "loot_tables/blocks/rock.json",
+      "tag:minecraft:is_pickaxe_item_destructible": {}
+    }
+  }
+}

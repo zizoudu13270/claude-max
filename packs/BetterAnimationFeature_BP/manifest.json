@@ -6,8 +6,8 @@
     "uuid": "5865dbd5-311a-4070-8a9b-e733726f6943",
     "version": [
       1,
-      0,
-      2
+      1,
+      0
     ],
     "min_engine_version": [
       1,
@@ -21,8 +21,8 @@
       "uuid": "49c87d6b-b578-449a-9829-82d713a0254a",
       "version": [
         1,
-        0,
-        2
+        1,
+        0
       ]
     },
     {
@@ -32,8 +32,8 @@
       "entry": "scripts/main.js",
       "version": [
         1,
-        0,
-        2
+        1,
+        0
       ]
     }
   ],
@@ -42,13 +42,23 @@
       "uuid": "db3ae419-b153-4ace-ac2f-3178ca8a3ca5",
       "version": [
         1,
-        0,
-        2
+        1,
+        0
       ]
     },
     {
       "module_name": "@minecraft/server",
       "version": "2.0.0"
     }
-  ]
+  ],
+  "metadata": {
+    "authors": [
+      "LBR Studio"
+    ],
+    "generated_with": {
+      "lbr_baf_tools": [
+        "1.0.0"
+      ]
+    }
+  }
 }

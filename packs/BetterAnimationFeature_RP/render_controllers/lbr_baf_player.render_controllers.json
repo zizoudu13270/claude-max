@@ -1,0 +1,314 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.lbr_baf.player.legs_overlay": {
+      "geometry": "Geometry.lbr_legs_overlay",
+      "textures": [
+        "Texture.default"
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ]
+    },
+    "controller.render.lbr_baf.player.armor_layers": {
+      "geometry": "Geometry.default",
+      "textures": [
+        "Texture.default"
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "part_visibility": [
+        {
+          "*": true
+        },
+        {
+          "helmet": "v.helmet_layer_visible"
+        },
+        {
+          "leftleg8af8": "v.leg_layer_visible"
+        },
+        {
+          "rightleg8af8": "v.leg_layer_visible"
+        },
+        {
+          "d67l3ggl": "v.boot_layer_visible"
+        },
+        {
+          "ja89l3ggl": "v.boot_layer_visible"
+        },
+        {
+          "d67lkg4c": "v.boot_layer_visible&&v.leg_layer_visible"
+        },
+        {
+          "ja89lkg4c": "v.boot_layer_visible&&v.leg_layer_visible"
+        },
+        {
+          "bodyArmor": "v.chest_layer_visible&&!q.has_cape"
+        },
+        {
+          "leftArmArmor": "v.chest_layer_visible&&!q.has_cape"
+        },
+        {
+          "rightArmArmor": "v.chest_layer_visible&&!q.has_cape"
+        },
+        {
+          "36dl": "v.chest_layer_visible&&v.leg_layer_visible"
+        },
+        {
+          "rightleg": false
+        },
+        {
+          "leftleg": false
+        },
+        {
+          "rightpants": false
+        },
+        {
+          "leftpants": false
+        }
+      ]
+    },
+    "controller.render.lbr_baf.player.hidden_base": {
+      "geometry": "Geometry.default",
+      "textures": [
+        "q.is_in_ui?{t.aux_data=-1;};return Texture.default;"
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        }
+      ],
+      "is_hurt_color": {
+        "r": "v.lbr_baf_v324=1;",
+        "g": 0,
+        "b": 0,
+        "a": 0
+      }
+    },
+    "controller.render.lbr_baf.player.legs_overlay_uv": {
+      "uv_anim": {
+        "offset": [
+          "Math.ease_out_circ(0,0.5,v.lbr_baf_v400)",
+          0
+        ],
+        "scale": [
+          1,
+          1
+        ]
+      },
+      "geometry": "Geometry.lbr_legs_overlay_uv",
+      "textures": [
+        "Texture.lbr_legs_overlay_uv"
+      ],
+      "materials": [
+        {
+          "*": "Material.lbr_overlay"
+        },
+        {
+          "leftpants4ghq": "Material.lbr_overlay_equal",
+          "rightpants4ghq": "Material.lbr_overlay_equal"
+        }
+      ],
+      "light_color_multiplier": 1.075
+    },
+    "controller.render.lbr_baf.player.main": {
+      "geometry": "Geometry.lbr_main",
+      "textures": [
+        "Texture.default"
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "on_fire_color": {
+        "r": 1,
+        "g": 0.4,
+        "b": 0,
+        "a": "Math.cos(q.life_time*1200)*-0.35+0.35"
+      },
+      "is_hurt_color": {
+        "r": 1,
+        "g": "v.lbr_baf_v094*0.5",
+        "b": "v.lbr_baf_v094*0.5",
+        "a": "v.lbr_baf_v094*0.5"
+      },
+      "light_color_multiplier": "v.lbr_baf_v094+1"
+    },
+    "controller.render.lbr_baf.player.boat_arms": {
+      "geometry": "v.lbr_baf_v137?Geometry.lbr_boat_arms_01:Geometry.lbr_boat_arms_02",
+      "textures": [
+        "v.lbr_baf_v137?Texture.lbr_boat_arms_01:Texture.lbr_boat_arms_02"
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ]
+    },
+    "controller.render.lbr_baf.player.first_person": {
+      "geometry": "Geometry.default",
+      "textures": [
+        "Texture.default"
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        },
+        {
+          "*rightarm*": "v.lbr_baf_v077"
+        },
+        {
+          "*leftarm*": "v.lbr_baf_v373"
+        },
+        {
+          "rightsleeve": "v.lbr_baf_v318<=1?{return v.lbr_baf_v077;};return v.lbr_baf_v372&&!q.is_gliding&&!v.is_first_person&&!q.is_in_ui;"
+        },
+        {
+          "leftsleeve": "v.lbr_baf_v318<=1?{return v.lbr_baf_v373;};return v.lbr_baf_v372&&!q.is_gliding&&!v.is_first_person&&!q.is_in_ui;"
+        },
+        {
+          "jacket": "v.lbr_baf_v318<=1?{return 0;};return v.lbr_baf_v372&&!q.is_gliding&&!v.is_first_person&&!q.is_in_ui;"
+        }
+      ],
+      "on_fire_color": {
+        "r": 1,
+        "g": 0.4,
+        "b": 0,
+        "a": "Math.cos(q.life_time*1200)*-0.35+0.35"
+      },
+      "is_hurt_color": {
+        "r": 1,
+        "g": "v.lbr_baf_v094*0.5",
+        "b": "v.lbr_baf_v094*0.5",
+        "a": "v.lbr_baf_v094*0.5"
+      },
+      "light_color_multiplier": "v.lbr_baf_v094+1"
+    },
+    "controller.render.lbr_baf.player.third_person": {
+      "geometry": "Geometry.default",
+      "textures": [
+        "Texture.default"
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "part_visibility": [
+        {
+          "*": true
+        },
+        {
+          "helmet": "(q.is_in_ui?v.helmet_layer_visible:v.lbr_baf_v278)"
+        },
+        {
+          "leftleg8af8": "(q.is_in_ui?v.leg_layer_visible:v.lbr_baf_v017)"
+        },
+        {
+          "rightleg8af8": "(q.is_in_ui?v.leg_layer_visible:v.lbr_baf_v017)"
+        },
+        {
+          "d67l3ggl": "(q.is_in_ui?v.boot_layer_visible:v.lbr_baf_v255)"
+        },
+        {
+          "ja89l3ggl": "(q.is_in_ui?v.boot_layer_visible:v.lbr_baf_v255)"
+        },
+        {
+          "d67lkg4c": "(q.is_in_ui?v.boot_layer_visible:v.lbr_baf_v255)&&(q.is_in_ui?v.leg_layer_visible:v.lbr_baf_v017)"
+        },
+        {
+          "ja89lkg4c": "(q.is_in_ui?v.boot_layer_visible:v.lbr_baf_v255)&&(q.is_in_ui?v.leg_layer_visible:v.lbr_baf_v017)"
+        },
+        {
+          "bodyArmor": "(q.is_in_ui?v.chest_layer_visible:v.lbr_baf_v244)"
+        },
+        {
+          "leftArmArmor": "(q.is_in_ui?v.chest_layer_visible:v.lbr_baf_v244)"
+        },
+        {
+          "rightArmArmor": "(q.is_in_ui?v.chest_layer_visible:v.lbr_baf_v244)"
+        },
+        {
+          "36dl": "(q.is_in_ui?v.chest_layer_visible:v.lbr_baf_v244)&&(q.is_in_ui?v.leg_layer_visible:v.lbr_baf_v017)"
+        },
+        {
+          "rightsleeve": "v.lbr_baf_v318<=1?{return 1;};return v.lbr_baf_v372&&!q.is_gliding&&!v.is_first_person&&!q.is_in_ui;"
+        },
+        {
+          "leftsleeve": "v.lbr_baf_v318<=1?{return 1;};return v.lbr_baf_v372&&!q.is_gliding&&!v.is_first_person&&!q.is_in_ui;"
+        },
+        {
+          "jacket": "v.lbr_baf_v318<=1?{return 1;};return v.lbr_baf_v372&&!q.is_gliding&&!v.is_first_person&&!q.is_in_ui;"
+        }
+      ],
+      "on_fire_color": {
+        "r": 1,
+        "g": 0.4,
+        "b": 0,
+        "a": "Math.cos(q.life_time*1200)*-0.35+0.35"
+      },
+      "is_hurt_color": {
+        "r": 1,
+        "g": "v.lbr_baf_v094*0.5",
+        "b": "v.lbr_baf_v094*0.5",
+        "a": "v.lbr_baf_v094*0.5"
+      },
+      "light_color_multiplier": "v.lbr_baf_v094+1"
+    },
+    "controller.render.lbr_baf.player.third_person_spectator": {
+      "geometry": "Geometry.default",
+      "textures": [
+        "Texture.default"
+      ],
+      "materials": [
+        {
+          "*": "Material.spectator"
+        }
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        },
+        {
+          "head": true
+        },
+        {
+          "hat": true
+        },
+        {
+          "helmet": "(q.is_in_ui?v.helmet_layer_visible:v.lbr_baf_v278)&&!q.has_head_gear"
+        }
+      ],
+      "overlay_color": {
+        "r": 0,
+        "g": 0.2,
+        "b": 0.5,
+        "a": 0.8
+      },
+      "color": {
+        "r": 0.7,
+        "g": 0.9,
+        "b": 1,
+        "a": 0.5
+      },
+      "ignore_lighting": true,
+      "light_color_multiplier": 2.5
+    }
+  }
+}

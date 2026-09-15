@@ -1,0 +1,18 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "lbr:pebbles_emerald_feature"
+    },
+    "features": [
+      [
+        "lbr:pebbles_emerald_shape_0_feature",
+        1
+      ],
+      [
+        "lbr:pebbles_emerald_shape_1_feature",
+        1
+      ]
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "materials": {
     "version": "1.0.0",
-    "mp_player_kipfdc:entity_alphablend": {
+    "lbr_baf_player_base:entity_alphablend": {
       "-defines": [
         "FANCY"
       ],
@@ -9,7 +9,7 @@
         "DisableCulling"
       ]
     },
-    "mp_player_ojnhbt:mp_player_kipfdc": {
+    "lbr_baf_player_uv_anim:lbr_baf_player_base": {
       "+defines": [
         "USE_UV_ANIM"
       ],
@@ -21,13 +21,13 @@
         }
       ]
     },
-    "mp_player_tmamiu:mp_player_ojnhbt": {
+    "lbr_baf_player_overlay:lbr_baf_player_uv_anim": {
       "+states": [
         "DisableCulling"
       ],
       "depthFunc": "LessEqual"
     },
-    "mp_player_rkenyc:mp_player_tmamiu": {
+    "lbr_baf_player_overlay_equal:lbr_baf_player_overlay": {
       "depthFunc": "Equal"
     }
   }

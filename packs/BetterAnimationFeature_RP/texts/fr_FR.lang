@@ -1,10 +1,10 @@
 pack.name=Better Animation & Feature [RP]
 pack.description=Animations du joueur améliorées, rochers, cailloux et herbes variées.
 
-tile.custom:roche.name=Roche
-tile.custom:roche_charbon.name=Roche de Charbon
-tile.custom:roche_cuivre.name=Roche de Cuivre
-tile.custom:roche_fer.name=Roche de Fer
-tile.custom:roche_or.name=Roche d'Or
-tile.custom:roche_emeraude.name=Roche d'Émeraude
-tile.custom:caillou_emeraude.name=Cailloux d'Émeraude
+tile.lbr:rock.name=Roche
+tile.lbr:rock_coal.name=Roche de Charbon
+tile.lbr:rock_copper.name=Roche de Cuivre
+tile.lbr:rock_iron.name=Roche de Fer
+tile.lbr:rock_gold.name=Roche d'Or
+tile.lbr:rock_emerald.name=Roche d'Émeraude
+tile.lbr:pebbles_emerald.name=Cailloux d'Émeraude

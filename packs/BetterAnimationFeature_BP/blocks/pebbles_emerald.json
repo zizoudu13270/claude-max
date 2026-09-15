@@ -1,0 +1,83 @@
+{
+  "format_version": "1.21.110",
+  "minecraft:block": {
+    "description": {
+      "identifier": "lbr:pebbles_emerald",
+      "menu_category": {
+        "category": "nature"
+      },
+      "states": {
+        "lbr:shape": [
+          0,
+          1
+        ]
+      }
+    },
+    "components": {
+      "minecraft:geometry": {
+        "identifier": "geometry.lbr_baf.pebbles_emerald"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "lbr_pebbles_emerald",
+          "render_method": "alpha_test",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 3,
+        "item_specific_speeds": [
+          {
+            "item": {
+              "tags": "q.any_tag('minecraft:is_pickaxe') && q.any_tag('minecraft:iron_tier', 'minecraft:diamond_tier', 'minecraft:netherite_tier')"
+            },
+            "destroy_speed": 3
+          }
+        ]
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.3
+      },
+      "minecraft:map_color": "#3A4A32",
+      "minecraft:light_dampening": 0,
+      "minecraft:collision_box": {
+        "origin": [
+          -6,
+          0,
+          -6
+        ],
+        "size": [
+          12,
+          2,
+          12
+        ]
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -6,
+          0,
+          -6
+        ],
+        "size": [
+          12,
+          2,
+          12
+        ]
+      },
+      "tag:minecraft:is_pickaxe_item_destructible": {},
+      "tag:minecraft:iron_tier_destructible": {},
+      "minecraft:loot": "loot_tables/blocks/pebbles_emerald.json"
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('lbr:shape') == 1",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.lbr_baf.pebbles_emerald_alt"
+          }
+        }
+      }
+    ]
+  }
+}

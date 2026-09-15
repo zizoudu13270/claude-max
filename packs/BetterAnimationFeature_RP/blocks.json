@@ -1,31 +1,31 @@
 {
   "format_version": "1.1.0",
-  "custom:roche": {
+  "lbr:rock": {
     "sound": "stone",
-    "textures": "roche_casse"
+    "textures": "lbr_rock_broken"
   },
-  "custom:roche_charbon": {
+  "lbr:rock_coal": {
     "sound": "stone",
-    "textures": "roche_charbon_casse"
+    "textures": "lbr_rock_coal_broken"
   },
-  "custom:roche_cuivre": {
+  "lbr:rock_copper": {
     "sound": "stone",
-    "textures": "roche_cuivre_casse"
+    "textures": "lbr_rock_copper_broken"
   },
-  "custom:roche_fer": {
+  "lbr:rock_iron": {
     "sound": "stone",
-    "textures": "roche_fer_casse"
+    "textures": "lbr_rock_iron_broken"
   },
-  "custom:roche_or": {
+  "lbr:rock_gold": {
     "sound": "stone",
-    "textures": "roche_or_casse"
+    "textures": "lbr_rock_gold_broken"
   },
-  "custom:roche_emeraude": {
+  "lbr:rock_emerald": {
     "sound": "stone",
-    "textures": "roche_emeraude_casse"
+    "textures": "lbr_rock_emerald_broken"
   },
-  "custom:caillou_emeraude": {
+  "lbr:pebbles_emerald": {
     "sound": "stone",
-    "textures": "caillou_emeraude_casse"
+    "textures": "lbr_pebbles_emerald_broken"
   }
 }
