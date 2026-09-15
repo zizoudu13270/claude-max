@@ -1,0 +1,10 @@
+pack.name=Better Animation & Feature [RP]
+pack.description=Improved player animations, boulders, pebbles and varied grass.
+
+tile.custom:roche.name=Boulder
+tile.custom:roche_charbon.name=Coal Boulder
+tile.custom:roche_cuivre.name=Copper Boulder
+tile.custom:roche_fer.name=Iron Boulder
+tile.custom:roche_or.name=Gold Boulder
+tile.custom:roche_emeraude.name=Emerald Boulder
+tile.custom:caillou_emeraude.name=Emerald Pebbles

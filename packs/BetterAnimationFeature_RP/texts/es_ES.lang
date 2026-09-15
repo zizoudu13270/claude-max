@@ -1,0 +1,10 @@
+pack.name=Better Animation & Feature [RP]
+pack.description=Animaciones del jugador mejoradas, rocas, guijarros y hierba variada.
+
+tile.custom:roche.name=Roca
+tile.custom:roche_charbon.name=Roca de Carbón
+tile.custom:roche_cuivre.name=Roca de Cobre
+tile.custom:roche_fer.name=Roca de Hierro
+tile.custom:roche_or.name=Roca de Oro
+tile.custom:roche_emeraude.name=Roca de Esmeralda
+tile.custom:caillou_emeraude.name=Guijarros de Esmeralda

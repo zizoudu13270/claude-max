@@ -1,0 +1,238 @@
+{
+  "resource_pack_name": "BetterAnimationFeature",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "roche": {
+      "textures": "textures/blocks/roche"
+    },
+    "roche_casse": {
+      "textures": "textures/blocks/roche_casse"
+    },
+    "roche_charbon": {
+      "textures": "textures/blocks/roche_charbon"
+    },
+    "roche_charbon_casse": {
+      "textures": "textures/blocks/roche_charbon_casse"
+    },
+    "roche_cuivre": {
+      "textures": "textures/blocks/roche_cuivre"
+    },
+    "roche_cuivre_casse": {
+      "textures": "textures/blocks/roche_cuivre_casse"
+    },
+    "roche_fer": {
+      "textures": "textures/blocks/roche_fer"
+    },
+    "roche_fer_casse": {
+      "textures": "textures/blocks/roche_fer_casse"
+    },
+    "roche_or": {
+      "textures": "textures/blocks/roche_or"
+    },
+    "roche_or_casse": {
+      "textures": "textures/blocks/roche_or_casse"
+    },
+    "roche_emeraude": {
+      "textures": "textures/blocks/roche_emeraude"
+    },
+    "roche_emeraude_casse": {
+      "textures": "textures/blocks/roche_emeraude_casse"
+    },
+    "caillou_emeraude": {
+      "textures": "textures/blocks/caillou_emeraude"
+    },
+    "caillou_emeraude_casse": {
+      "textures": "textures/blocks/caillou_emeraude_casse"
+    },
+    "short_grass": {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/mp_grass_0",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_grass_1",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_grass_2",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_grass_3",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_grass_4",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_grass_5",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_grass_6",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_grass_7",
+            "weight": 2
+          }
+        ]
+      }
+    },
+    "fern": {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/mp_fern_0",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_fern_1",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_fern_2",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_fern_3",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_fern_4",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_fern_5",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_fern_6",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_fern_7",
+            "weight": 2
+          }
+        ]
+      }
+    },
+    "tall_grass_top": {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/mp_tallgrass_top_0",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_tallgrass_top_1",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_tallgrass_top_2",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_tallgrass_top_3",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_tallgrass_top_4",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_tallgrass_top_5",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_tallgrass_top_6",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_tallgrass_top_7",
+            "weight": 2
+          }
+        ]
+      }
+    },
+    "tall_grass_bottom": {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/mp_tallgrass_bot_0",
+            "weight": 4
+          },
+          {
+            "path": "textures/blocks/mp_tallgrass_bot_1",
+            "weight": 12
+          }
+        ]
+      }
+    },
+    "large_fern_top": {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/mp_largefern_top_0",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_largefern_top_1",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_largefern_top_2",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_largefern_top_3",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_largefern_top_4",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_largefern_top_5",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_largefern_top_6",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/mp_largefern_top_7",
+            "weight": 2
+          }
+        ]
+      }
+    },
+    "large_fern_bottom": {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/mp_largefern_bot_0",
+            "weight": 4
+          },
+          {
+            "path": "textures/blocks/mp_largefern_bot_1",
+            "weight": 4
+          },
+          {
+            "path": "textures/blocks/mp_largefern_bot_2",
+            "weight": 4
+          },
+          {
+            "path": "textures/blocks/mp_largefern_bot_3",
+            "weight": 4
+          }
+        ]
+      }
+    }
+  }
+}

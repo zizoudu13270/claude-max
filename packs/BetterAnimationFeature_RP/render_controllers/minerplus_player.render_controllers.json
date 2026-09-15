@@ -1,0 +1,314 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.minerplus.player.avgmxq": {
+      "geometry": "Geometry.mp_zyqqqv",
+      "textures": [
+        "Texture.default"
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ]
+    },
+    "controller.render.minerplus.player.omixtu": {
+      "geometry": "Geometry.default",
+      "textures": [
+        "Texture.default"
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "part_visibility": [
+        {
+          "*": true
+        },
+        {
+          "helmet": "v.helmet_layer_visible"
+        },
+        {
+          "leftleg8af8": "v.leg_layer_visible"
+        },
+        {
+          "rightleg8af8": "v.leg_layer_visible"
+        },
+        {
+          "d67l3ggl": "v.boot_layer_visible"
+        },
+        {
+          "ja89l3ggl": "v.boot_layer_visible"
+        },
+        {
+          "d67lkg4c": "v.boot_layer_visible&&v.leg_layer_visible"
+        },
+        {
+          "ja89lkg4c": "v.boot_layer_visible&&v.leg_layer_visible"
+        },
+        {
+          "bodyArmor": "v.chest_layer_visible&&!q.has_cape"
+        },
+        {
+          "leftArmArmor": "v.chest_layer_visible&&!q.has_cape"
+        },
+        {
+          "rightArmArmor": "v.chest_layer_visible&&!q.has_cape"
+        },
+        {
+          "36dl": "v.chest_layer_visible&&v.leg_layer_visible"
+        },
+        {
+          "rightleg": false
+        },
+        {
+          "leftleg": false
+        },
+        {
+          "rightpants": false
+        },
+        {
+          "leftpants": false
+        }
+      ]
+    },
+    "controller.render.minerplus.player.tgrzdm": {
+      "geometry": "Geometry.default",
+      "textures": [
+        "q.is_in_ui?{t.aux_data=-1;};return Texture.default;"
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        }
+      ],
+      "is_hurt_color": {
+        "r": "v.mp_tsrqrd=1;",
+        "g": 0,
+        "b": 0,
+        "a": 0
+      }
+    },
+    "controller.render.minerplus.player.vlwafo": {
+      "uv_anim": {
+        "offset": [
+          "Math.ease_out_circ(0,0.5,v.mp_yqxtkw)",
+          0
+        ],
+        "scale": [
+          1,
+          1
+        ]
+      },
+      "geometry": "Geometry.mp_rpddig",
+      "textures": [
+        "Texture.mp_rpddig"
+      ],
+      "materials": [
+        {
+          "*": "Material.mp_tmamiu"
+        },
+        {
+          "leftpants4ghq": "Material.mp_rkenyc",
+          "rightpants4ghq": "Material.mp_rkenyc"
+        }
+      ],
+      "light_color_multiplier": 1.075
+    },
+    "controller.render.minerplus.player.vmmipy": {
+      "geometry": "Geometry.mp_pfsswq",
+      "textures": [
+        "Texture.default"
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "on_fire_color": {
+        "r": 1,
+        "g": 0.4,
+        "b": 0,
+        "a": "Math.cos(q.life_time*1200)*-0.35+0.35"
+      },
+      "is_hurt_color": {
+        "r": 1,
+        "g": "v.mp_gjrfbe*0.5",
+        "b": "v.mp_gjrfbe*0.5",
+        "a": "v.mp_gjrfbe*0.5"
+      },
+      "light_color_multiplier": "v.mp_gjrfbe+1"
+    },
+    "controller.render.minerplus.player.vxoiti": {
+      "geometry": "v.mp_jkanjy?Geometry.mp_ugyjdo:Geometry.mp_mqjlqv",
+      "textures": [
+        "v.mp_jkanjy?Texture.mp_ugyjdo:Texture.mp_mqjlqv"
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ]
+    },
+    "controller.render.minerplus.player.first_person": {
+      "geometry": "Geometry.default",
+      "textures": [
+        "Texture.default"
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        },
+        {
+          "*rightarm*": "v.mp_ezzhwg"
+        },
+        {
+          "*leftarm*": "v.mp_wvykhd"
+        },
+        {
+          "rightsleeve": "v.mp_tnlxsa<=1?{return v.mp_ezzhwg;};return v.mp_wtlyok&&!q.is_gliding&&!v.is_first_person&&!q.is_in_ui;"
+        },
+        {
+          "leftsleeve": "v.mp_tnlxsa<=1?{return v.mp_wvykhd;};return v.mp_wtlyok&&!q.is_gliding&&!v.is_first_person&&!q.is_in_ui;"
+        },
+        {
+          "jacket": "v.mp_tnlxsa<=1?{return 0;};return v.mp_wtlyok&&!q.is_gliding&&!v.is_first_person&&!q.is_in_ui;"
+        }
+      ],
+      "on_fire_color": {
+        "r": 1,
+        "g": 0.4,
+        "b": 0,
+        "a": "Math.cos(q.life_time*1200)*-0.35+0.35"
+      },
+      "is_hurt_color": {
+        "r": 1,
+        "g": "v.mp_gjrfbe*0.5",
+        "b": "v.mp_gjrfbe*0.5",
+        "a": "v.mp_gjrfbe*0.5"
+      },
+      "light_color_multiplier": "v.mp_gjrfbe+1"
+    },
+    "controller.render.minerplus.player.third_person": {
+      "geometry": "Geometry.default",
+      "textures": [
+        "Texture.default"
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "part_visibility": [
+        {
+          "*": true
+        },
+        {
+          "helmet": "(q.is_in_ui?v.helmet_layer_visible:v.mp_rfayak)"
+        },
+        {
+          "leftleg8af8": "(q.is_in_ui?v.leg_layer_visible:v.mp_bbzhgy)"
+        },
+        {
+          "rightleg8af8": "(q.is_in_ui?v.leg_layer_visible:v.mp_bbzhgy)"
+        },
+        {
+          "d67l3ggl": "(q.is_in_ui?v.boot_layer_visible:v.mp_pybruz)"
+        },
+        {
+          "ja89l3ggl": "(q.is_in_ui?v.boot_layer_visible:v.mp_pybruz)"
+        },
+        {
+          "d67lkg4c": "(q.is_in_ui?v.boot_layer_visible:v.mp_pybruz)&&(q.is_in_ui?v.leg_layer_visible:v.mp_bbzhgy)"
+        },
+        {
+          "ja89lkg4c": "(q.is_in_ui?v.boot_layer_visible:v.mp_pybruz)&&(q.is_in_ui?v.leg_layer_visible:v.mp_bbzhgy)"
+        },
+        {
+          "bodyArmor": "(q.is_in_ui?v.chest_layer_visible:v.mp_pgkkzo)"
+        },
+        {
+          "leftArmArmor": "(q.is_in_ui?v.chest_layer_visible:v.mp_pgkkzo)"
+        },
+        {
+          "rightArmArmor": "(q.is_in_ui?v.chest_layer_visible:v.mp_pgkkzo)"
+        },
+        {
+          "36dl": "(q.is_in_ui?v.chest_layer_visible:v.mp_pgkkzo)&&(q.is_in_ui?v.leg_layer_visible:v.mp_bbzhgy)"
+        },
+        {
+          "rightsleeve": "v.mp_tnlxsa<=1?{return 1;};return v.mp_wtlyok&&!q.is_gliding&&!v.is_first_person&&!q.is_in_ui;"
+        },
+        {
+          "leftsleeve": "v.mp_tnlxsa<=1?{return 1;};return v.mp_wtlyok&&!q.is_gliding&&!v.is_first_person&&!q.is_in_ui;"
+        },
+        {
+          "jacket": "v.mp_tnlxsa<=1?{return 1;};return v.mp_wtlyok&&!q.is_gliding&&!v.is_first_person&&!q.is_in_ui;"
+        }
+      ],
+      "on_fire_color": {
+        "r": 1,
+        "g": 0.4,
+        "b": 0,
+        "a": "Math.cos(q.life_time*1200)*-0.35+0.35"
+      },
+      "is_hurt_color": {
+        "r": 1,
+        "g": "v.mp_gjrfbe*0.5",
+        "b": "v.mp_gjrfbe*0.5",
+        "a": "v.mp_gjrfbe*0.5"
+      },
+      "light_color_multiplier": "v.mp_gjrfbe+1"
+    },
+    "controller.render.minerplus.player.third_person_spectator": {
+      "geometry": "Geometry.default",
+      "textures": [
+        "Texture.default"
+      ],
+      "materials": [
+        {
+          "*": "Material.spectator"
+        }
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        },
+        {
+          "head": true
+        },
+        {
+          "hat": true
+        },
+        {
+          "helmet": "(q.is_in_ui?v.helmet_layer_visible:v.mp_rfayak)&&!q.has_head_gear"
+        }
+      ],
+      "overlay_color": {
+        "r": 0,
+        "g": 0.2,
+        "b": 0.5,
+        "a": 0.8
+      },
+      "color": {
+        "r": 0.7,
+        "g": 0.9,
+        "b": 1,
+        "a": 0.5
+      },
+      "ignore_lighting": true,
+      "light_color_multiplier": 2.5
+    }
+  }
+}

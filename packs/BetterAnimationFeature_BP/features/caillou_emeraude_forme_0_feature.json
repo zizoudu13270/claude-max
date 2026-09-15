@@ -1,0 +1,41 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "minerplus:caillou_emeraude_forme_0_feature"
+    },
+    "places_block": {
+      "name": "custom:caillou_emeraude",
+      "states": {
+        "minerplus:forme": 0
+      }
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_replace": [
+      {
+        "name": "minecraft:air"
+      },
+      {
+        "name": "minecraft:short_grass"
+      },
+      {
+        "name": "minecraft:fern"
+      },
+      {
+        "name": "minecraft:snow_layer"
+      }
+    ],
+    "may_attach_to": {
+      "bottom": [
+        "minecraft:grass_block",
+        "minecraft:dirt",
+        "minecraft:coarse_dirt",
+        "minecraft:podzol",
+        "minecraft:moss_block",
+        "minecraft:stone",
+        "minecraft:gravel"
+      ]
+    }
+  }
+}
